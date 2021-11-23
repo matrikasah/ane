@@ -24,6 +24,22 @@ class ApplicantPersonalDetail extends Model
         'offshore_student'
     ];
 
+    public function setDisableAttribute($value) 
 
+    { 
+
+        $this->attributes['disable'] = json_encode($value); 
+
+    } 
+
+ 
+
+    public function getDisableAttribute($value) 
+
+    { 
+
+        return $this->attributes['disable'] = json_decode($value); 
+
+    } 
 
 }

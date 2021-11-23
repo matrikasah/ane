@@ -22,7 +22,7 @@ class CreateApplicantPersonalDetailsTable extends Migration
             $table->string('stdpostcode');
             $table->string('stdtelnum');
             $table->string('stdemail');
-            $table->date('stddob');
+            $table->string('stddob');
             $table->string('sex');
             $table->string('is_disable');
             $table->string('disable');

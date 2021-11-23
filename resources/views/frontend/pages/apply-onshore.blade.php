@@ -6,12 +6,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-8 col-lg-7">
-					<h1 class="innerpage-title">Offshore Students</h1>
-					<p>Apply as Offshore Students</p>
+					<h1 class="innerpage-title">Onshore Students</h1>
+					<p>Apply as Onshore Students</p>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb">
 					    <li class="breadcrumb-item"><a href="#">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">Offshore Students</li>
+					    <li class="breadcrumb-item active" aria-current="page">Onshore Students</li>
 					  </ol>
 					</nav>
 				</div>
@@ -21,40 +21,37 @@
 </section>
 
 
-<section class="innerpage-content offshoreForm">
+<section class="innerpage-content onshoreForm">
 	<div class="container">
         <div class="row   mt-5">
-
             <div class="col-sm-6">
                 <div class="small-title title">
-                    <h3>Offshore Students</h3>
-                    <h1>OFFSHORE STUDENT ENROLLMENT FORM</h1>
+                    <h3>Onshore Students</h3>
+                    <h1>ONSHORE STUDENT ENROLLMENT FORM</h1>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
-                    <a type="button"  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                  
-                    <a type="button" target="_blank" href="image/StudentEnrolmentForm(Offshore).pdf" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
+                    <a type="button" onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>
+                    <a type="button" target="_blank" href="image/StudentEnrolmentForm(Onshore).pdf" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 		<div class="row calender content-text">
 			<div class="col-12">
-				<section class="offshoreForm">
+					 <section class="onshoreForm">
         
-       <div class="aneContent">
+        <div class="aneContent">
             <p class="enrollmentDesc">Before you complete this Enrollment Form, please read all available information and
                 Course Pre-
                 Information on our
                 website. If you have any enquiries, please contact the ANE College or email us from the Contact Us link
-                on our website <a target="_blank" href="http://www.ane.edu.au">www.ane.edu.au</a>.
+                on our website <a target="_blank" href="http://www.ane.edu.au"> www.ane.edu.au </a> .
                 Once signed and the issue of a receipt for initial fees this document is a binding
                 contract.</p>
-            <form action="{{route('offshore.store')}}" method="POST" >
-                @csrf
-               
+            <form action="">
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
                         <h3>Personal Details</h3>
@@ -102,7 +99,6 @@
                                     placeholder="Enter Your Suburb">
                             </div>
                         </div>
-
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userState" class="input-group-text">State & Postcode</label>
@@ -112,9 +108,7 @@
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
-                                <label for="telNum" class="input-group-text">Telephone Number <span
-                                        style="display: block;" class="secondarySpan">(Including
-                                        Country & Area Code) </span></label>
+                                <label for="telNum" class="input-group-text">Telephone Number </label>
                                 <input id="telNum" name="stdtelnum" type="number" class="form-control"
                                     placeholder="Enter Your Telephone Number">
                             </div>
@@ -201,12 +195,12 @@
 
                             <div class="d-flex secondaryspanChoose">
                                 <div class="d-flex align-items-center">
-                                    <input id="yes" name="emergency_pay" type="radio">
+                                    <input id="yes" name="emergency" type="radio">
                                     <label class="genderLabel" for="yes"> Yes </label>
                                 </div>
 
                                 <div class="d-flex align-items-center">
-                                    <input id="noemer" name="emergency_pay" type="radio">
+                                    <input id="noemer" name="emergency" type="radio">
                                     <label class="genderLabel" for="noemer"> No</label>
                                 </div>
                             </div>
@@ -225,12 +219,12 @@
                                 <span class="input-group-text ml-0">Are you applying through agent?</span>
                                 <div class="agentChoose d-flex">
                                     <div class="d-flex align-items-center" style="margin-right: 10px;">
-                                        <input id="yesagent" name="apply_through_agent" type="radio">
+                                        <input id="yesagent" name="emergency" type="radio">
                                         <label class="genderLabel" for="yesagent"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noagent" name="apply_through_agent" type="radio">
+                                        <input id="noagent" name="emergency" type="radio">
                                         <label class="genderLabel" for="noagent"> No </label>
                                     </div>
                                 </div>
@@ -269,20 +263,21 @@
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 12 or equivalent
                                         </label>
-                                        <input id="year11" name="higher_edu" type="radio">
+                                        <input id="year11" name="emergency" type="radio">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 11 or equivalent
                                         </label>
-                                        <input id="year11" name="higher_edu" type="radio">
+                                        <input id="year11" name="emergency" type="radio">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 10 or equivalent
                                         </label>
-                                        <input id="year11" name="higher_edu" type="radio">
+                                        <input id="year11" name="emergency" type="radio">
                                     </div>
                                     <div class="input-group mt-4">
-                                        <label for="completionYear" class="input-group-text">What YEAR did you 
+                                        <label for="completionYear" style="text-align: left;"
+                                            class="input-group-text">What YEAR did you
                                             complete <br> the relevant
                                             qualification?</label>
                                         <input id="completionYear" name="yearCompletion" type="number"
@@ -616,12 +611,12 @@
                                     disability, impairment or long-term condition?</span>
                                 <div class="secondaryChoose priorChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yeslongtermDis" name="is_disable" type="radio">
+                                        <input id="yeslongtermDis" name="longtermDis" type="radio">
                                         <label class="genderLabel " for="yeslongtermDis"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="nolongtermDis" name="is_disable" type="radio">
+                                        <input id="nolongtermDis" name="longtermDis" type="radio">
                                         <label class="genderLabel" for="nolongtermDis"> No </label>
                                     </div>
 
@@ -636,7 +631,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="hearDeaf"> Hearing/Deaf
                                 </label>
-                                <input id="hearDeaf" name="disable[]" type="checkbox">
+                                <input id="hearDeaf" name="hearDeaf" type="checkbox">
                             </div>
                         </div>
 
@@ -644,7 +639,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="learning"> Learning
                                 </label>
-                                <input id="learning" name="disable[]" type="checkbox">
+                                <input id="learning" name="learning" type="checkbox">
                             </div>
                         </div>
 
@@ -652,7 +647,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="vision"> Vision
                                 </label>
-                                <input id="vision" name="disable[]" type="checkbox">
+                                <input id="vision" name="vision" type="checkbox">
                             </div>
                         </div>
 
@@ -661,7 +656,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="physical"> Physical
                                 </label>
-                                <input id="physical" name="disable[]" type="checkbox">
+                                <input id="physical" name="physical" type="checkbox">
                             </div>
                         </div>
 
@@ -669,7 +664,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="mentalIllness"> Mental Illness
                                 </label>
-                                <input id="mentalIllness" name="disable[]" type="checkbox">
+                                <input id="mentalIllness" name="mentalIllness" type="checkbox">
                             </div>
                         </div>
 
@@ -677,7 +672,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="medicalCond"> Medical Condition
                                 </label>
-                                <input id="medicalCond" name="disable[]" type="checkbox">
+                                <input id="medicalCond" name="medicalCond" type="checkbox">
                             </div>
                         </div>
 
@@ -686,7 +681,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="intellectual"> Intellectual
                                 </label>
-                                <input id="intellectual" name="disable[]" type="checkbox">
+                                <input id="intellectual" name="intellectual" type="checkbox">
                             </div>
                         </div>
 
@@ -694,7 +689,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="brainImpair"> Acquired Brain Impairment
                                 </label>
-                                <input id="brainImpair" name="disable[]" type="checkbox">
+                                <input id="brainImpair" name="brainImpair" type="checkbox">
                             </div>
                         </div>
 
@@ -702,7 +697,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="otherDis"> Other
                                 </label>
-                                <input id="otherDis" name="disable[]" type="checkbox">
+                                <input id="otherDis" name="otherDis" type="checkbox">
                             </div>
                         </div>
 
@@ -736,20 +731,20 @@
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Score:</b></p>
-                            <input id="ieltsscr" name="ieltsscr" type="text" class="form-control mt-4"
+                            <input id="ieltsscr" type="text" class="form-control mt-4"
                                 placeholder="Enter your IELTS score">
-                            <input id="ptescr" name="ptescr" type="text" class="form-control mt-4" placeholder="Enter your PTE score">
-                            <input id="toeflscr" name="toeflscr" type="text" class="form-control mt-4"
+                            <input id="ptescr" type="text" class="form-control mt-4" placeholder="Enter your PTE score">
+                            <input id="toeflscr" type="text" class="form-control mt-4"
                                 placeholder="Enter your TOEFL score">
-                            <input id="otherscr" name="otherscr" type="text" class="form-control mt-4"
+                            <input id="otherscr" type="text" class="form-control mt-4"
                                 placeholder="Enter your other test score">
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Year:</b></p>
-                            <input type="number" name="ieltsyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="pteyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="tofelyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="otheryear" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
                         </div>
                     </div>
                 </div>
@@ -942,6 +937,19 @@
                             apply to the second payment.</p>
 
                     </div>
+                    <div class="noteMessage">
+                        <p class="highlightNote">
+                            Please Note ANE College does not accept Cash Payments under any circumstances. No
+                            responsibility will be taken if cash
+                            is paid to any person.
+
+                            All payments by Bank Transfer Only. Minimum payment from 1 July 2020 for any COE issue will
+                            be - $3,150.00
+
+                            Please check student eligibility for entry at <a target="_blank"
+                                href="http://www.training.gov.au">www.training.gov.au</a>
+                        </p>
+                    </div>
 
                 </div>
 
@@ -984,8 +992,8 @@
                             <tr>
                                 <td>2nd Assessment – same unit</td>
                                 <td>No Fee</td>
-                                <td>Welfare Service – ANE College Representative</td>
-                                <td>No Fee</td>
+                                <td>Student ID</td>
+                                <td>$25</td>
                             </tr>
                             <tr>
                                 <td>3rd and subsequent Reassessment – Maximum 4 (same unit)</td>
@@ -1452,11 +1460,11 @@
 
                         <div class="row">
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="applicant_sign" type="text">
+                                <input class="form-control signNdate" type="text">
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_sign" type="text">
+                                <input class="form-control signNdate" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1483,14 +1491,14 @@
 
 
                     <div class="mt-3">
-                        <p> <b>Off-Shore Student</b> </p>
+                        <p> <b>On-Shore Student</b> </p>
                         <ol>
-                            <li>Student Visa Supporting Evidence Checklist – Genuine Temporary Entrant (GTE) Document;
+                            <li>Student Visa Supporting Evidence;
                             </li>
-                            <li>ANE Pre-Enrolment Questionnaire;</li>
-                            <li>Previous Academic Certificate (Certified if not in English);</li>
-                            <li>Statement of Purpose (SOP);</li>
+                            <li>Copy of a Valid Passport;</li>
+                            <li>Previous Academic Certificate (Certified if not in English); and</li>
                             <li>Certificate of English Language Proficiency.</li>
+
                         </ol>
                         <p>If you do not have access to these forms, please contact us at
                             <a target="_blank" href="mailto:sydney.campus@ane.edu.au">sydney.campus@ane.edu.au</a> and
@@ -1560,11 +1568,11 @@
 
                         <div class="row">
                             <div class="col-md-6 mt-4">
-                                <input name="applicant_sign" class="form-control signNdate" type="text">
+                                <input name="applicantsign" class="form-control signNdate" type="text">
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input name="date_of_sign" class="form-control signNdate" type="text">
+                                <input name="signdate" class="form-control signNdate" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1623,11 +1631,11 @@
 
                         <div class="row">
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="applicant_signB" type="text">
+                                <input class="form-control signNdate" type="text">
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_signB" type="text">
+                                <input class="form-control signNdate" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1639,8 +1647,7 @@
 
 
                 <div class=" mt-4">
-                                    <div class="postPara bold-text">Please post or email enrollment to</div>
-
+                    <div class="postPara bold-text">Please post or email enrollment to</div>
                     <div class="table-responsive">
 
                         <table class="table table-striped">
@@ -1686,7 +1693,7 @@
 
                 </div>
 
-                    <button type="submit" class="btn btn-black mb-2 hvr-sweep-to-right">Submit</button>
+                <button type="submit" class="btn btn-black mb-2 hvr-sweep-to-right">Submit</button>
             </form>
         </div>
     </section>
@@ -1695,9 +1702,8 @@
 	</div>
 </section>
 
-    
+
 
 
 
 @endsection
-

@@ -22,3 +22,7 @@ Route::get('/', function () {
 
 Route::get('/home',[HomeController::class,'index']);
 Route::get('/apply-offshore',[HomeController::class,'offshore_form']);
+Route::get('/apply-onshore',[HomeController::class,'onshore_form']);
+Route::get('/apply-agent',[HomeController::class,'agent_form']);
+Route::get('/become-agent',[HomeController::class,'agent']);
+Route::post('/apply-offshore/store',[HomeController::class,'store_ofshore'])->name('offshore.store');

@@ -90,7 +90,7 @@
                           <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown1">
                             <li><a class="dropdown-item" href="/apply-offshore">Offshore student</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="apply-onshore.php">Onshore student</a></li>
+                            <li><a class="dropdown-item" href="/apply-onshore">Onshore student</a></li>
                             <li><hr class="dropdown-divider"></li>
                             
                                 <li class="nav-item dropdown submenu">
@@ -98,9 +98,9 @@
                                          Agent
                                       </a>
                                       <ul class="dropdown-menu show" aria-labelledby="navbarDropdown2">
-                                        <li><a class="dropdown-item" href="become-agent.php"> Become an Agent</a></li>
+                                        <li><a class="dropdown-item" href="/become-agent"> Become an Agent</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="agent.php">Apply now</a></li>								            
+                                        <li><a class="dropdown-item" href="/apply-agent">Apply now</a></li>								            
                                       </ul>
                                     </li>
                           </ul>
