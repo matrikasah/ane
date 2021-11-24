@@ -48,3 +48,5 @@ Route::get('/notice',[HomeController::class,'notice']);
 
 
 Route::post('/apply-offshore/store',[HomeController::class,'store_ofshore'])->name('offshore.store');
+Route::post('/apply-onshore/store',[HomeController::class,'store_onshore'])->name('onshore.store');
+Route::post('/apply-agent/store',[HomeController::class,'store_agent_application'])->name('agent.store');

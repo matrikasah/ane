@@ -54,7 +54,14 @@
                 contract.</p>
             <form action="{{route('offshore.store')}}" method="POST" >
                 @csrf
-               
+                <ul class="error">
+                    @foreach($errors->all() as $error)
+                    <li><div class="alert alert-danger" role="alert">
+                        {{ $error }}
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
                         <h3>Personal Details</h3>

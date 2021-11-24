@@ -51,7 +51,19 @@
                 on our website <a target="_blank" href="http://www.ane.edu.au"> www.ane.edu.au </a> .
                 Once signed and the issue of a receipt for initial fees this document is a binding
                 contract.</p>
-            <form action="">
+            <form action="{{route('onshore.store')}}" method="POST">
+                @csrf
+                
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
                         <h3>Personal Details</h3>
@@ -74,8 +86,11 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userSurname" class="input-group-text">Surname</label>
-                                <input id="userSurname" name="stdsurname" type="text" class="form-control"
+                                <input id="userSurname" name="stdsurname" type="text" class="form-control @error('stdsurname') is-invalid @enderror"
                                     placeholder="Enter Your Surname">
+                                    @error('stdsurname')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -195,12 +210,12 @@
 
                             <div class="d-flex secondaryspanChoose">
                                 <div class="d-flex align-items-center">
-                                    <input id="yes" name="emergency" type="radio">
+                                    <input id="yes" name="emergency_pay" type="radio">
                                     <label class="genderLabel" for="yes"> Yes </label>
                                 </div>
 
                                 <div class="d-flex align-items-center">
-                                    <input id="noemer" name="emergency" type="radio">
+                                    <input id="noemer" name="emergency_pay" type="radio">
                                     <label class="genderLabel" for="noemer"> No</label>
                                 </div>
                             </div>
@@ -219,12 +234,12 @@
                                 <span class="input-group-text ml-0">Are you applying through agent?</span>
                                 <div class="agentChoose d-flex">
                                     <div class="d-flex align-items-center" style="margin-right: 10px;">
-                                        <input id="yesagent" name="emergency" type="radio">
+                                        <input id="yesagent" name="apply_through_agent" type="radio">
                                         <label class="genderLabel" for="yesagent"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noagent" name="emergency" type="radio">
+                                        <input id="noagent" name="apply_through_agent" type="radio">
                                         <label class="genderLabel" for="noagent"> No </label>
                                     </div>
                                 </div>
@@ -263,17 +278,17 @@
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 12 or equivalent
                                         </label>
-                                        <input id="year11" name="emergency" type="radio">
+                                        <input id="year11" name="higher_edu" type="radio">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 11 or equivalent
                                         </label>
-                                        <input id="year11" name="emergency" type="radio">
+                                        <input id="year11" name="higher_edu" type="radio">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 10 or equivalent
                                         </label>
-                                        <input id="year11" name="emergency" type="radio">
+                                        <input id="year11" name="higher_edu" type="radio">
                                     </div>
                                     <div class="input-group mt-4">
                                         <label for="completionYear" style="text-align: left;"
@@ -611,12 +626,12 @@
                                     disability, impairment or long-term condition?</span>
                                 <div class="secondaryChoose priorChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yeslongtermDis" name="longtermDis" type="radio">
+                                        <input id="yeslongtermDis" name="is_disable" type="radio">
                                         <label class="genderLabel " for="yeslongtermDis"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="nolongtermDis" name="longtermDis" type="radio">
+                                        <input id="nolongtermDis" name="is_disable" type="radio">
                                         <label class="genderLabel" for="nolongtermDis"> No </label>
                                     </div>
 
@@ -631,7 +646,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="hearDeaf"> Hearing/Deaf
                                 </label>
-                                <input id="hearDeaf" name="hearDeaf" type="checkbox">
+                                <input id="hearDeaf" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -639,7 +654,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="learning"> Learning
                                 </label>
-                                <input id="learning" name="learning" type="checkbox">
+                                <input id="learning" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -647,7 +662,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="vision"> Vision
                                 </label>
-                                <input id="vision" name="vision" type="checkbox">
+                                <input id="vision" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -656,7 +671,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="physical"> Physical
                                 </label>
-                                <input id="physical" name="physical" type="checkbox">
+                                <input id="physical" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -664,7 +679,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="mentalIllness"> Mental Illness
                                 </label>
-                                <input id="mentalIllness" name="mentalIllness" type="checkbox">
+                                <input id="mentalIllness" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -672,7 +687,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="medicalCond"> Medical Condition
                                 </label>
-                                <input id="medicalCond" name="medicalCond" type="checkbox">
+                                <input id="medicalCond" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -681,7 +696,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="intellectual"> Intellectual
                                 </label>
-                                <input id="intellectual" name="intellectual" type="checkbox">
+                                <input id="intellectual" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -689,7 +704,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="brainImpair"> Acquired Brain Impairment
                                 </label>
-                                <input id="brainImpair" name="brainImpair" type="checkbox">
+                                <input id="brainImpair" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -697,7 +712,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="otherDis"> Other
                                 </label>
-                                <input id="otherDis" name="otherDis" type="checkbox">
+                                <input id="otherDis" name="disable[]" type="checkbox">
                             </div>
                         </div>
 
@@ -731,20 +746,20 @@
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Score:</b></p>
-                            <input id="ieltsscr" type="text" class="form-control mt-4"
+                            <input id="ieltsscr" name="ieltsscr" type="text" class="form-control mt-4"
                                 placeholder="Enter your IELTS score">
-                            <input id="ptescr" type="text" class="form-control mt-4" placeholder="Enter your PTE score">
-                            <input id="toeflscr" type="text" class="form-control mt-4"
+                            <input id="ptescr" name="ptescr" type="text" class="form-control mt-4" placeholder="Enter your PTE score">
+                            <input id="toeflscr" name="toeflscr"  type="text" class="form-control mt-4"
                                 placeholder="Enter your TOEFL score">
-                            <input id="otherscr" type="text" class="form-control mt-4"
+                            <input id="otherscr" name="otherscr" type="text" class="form-control mt-4"
                                 placeholder="Enter your other test score">
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Year:</b></p>
-                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" name="ieltsyear" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" name="pteyear" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" name="tofelyear" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" name="otheryear" class="form-control mt-4" placeholder="Enter Year">
                         </div>
                     </div>
                 </div>
@@ -1631,11 +1646,11 @@
 
                         <div class="row">
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" type="text">
+                                <input class="form-control signNdate" name="applicant_signB" type="text">
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" type="text">
+                                <input class="form-control signNdate" name="date_of_signB" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
