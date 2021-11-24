@@ -39,7 +39,7 @@
                         <div class="notice-text-wrap">	
                             <span>Notice:</span>
                              <p>Applications are now open to study in one of Australia’s fastest-rising training organizations in 2022!</p>
-                             <a type="submit" href="notice.php" class="btn btn-black mb-2 hvr-sweep-to-right">View Updates</a>
+                             <a type="submit" href="/notice" class="btn btn-black mb-2 hvr-sweep-to-right">View Updates</a>
                             </div>
                     </div>
                 </div>
@@ -108,18 +108,18 @@
                   </ul>
                   <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="menu-topbar-right">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                          <a class="nav-link active" aria-current="page" href="/home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle drop-new" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Study with us
                           </a>
                           <ul class="dropdown-menu show" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="about.php">Why study with us</a></li>
+                            <li><a class="dropdown-item" href="/about">Why study with us</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="international-students.php">International students</a></li>
+                            <li><a class="dropdown-item" href="/international-students">International students</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="message-ceo.php">Message from CEO</a></li>
+                            <li><a class="dropdown-item" href="/message-ceo">Message from CEO</a></li>
                             
                           </ul>
                         </li>
@@ -144,11 +144,11 @@
                             Admission
                           </a>
                           <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown4">
-                            <li><a class="dropdown-item" href="how-to-apply.php">How to Apply</a></li>
+                            <li><a class="dropdown-item" href="/how-to-apply">How to Apply</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="intake-dates.php">Intake Dates</a></li>
+                            <li><a class="dropdown-item" href="/intake-date">Intake Dates</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="who-can-apply.php">Who can apply</a></li>
+                            <li><a class="dropdown-item" href="/who-can-apply">Who can apply</a></li>
                           </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -156,25 +156,25 @@
                             Student information
                           </a>
                           <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown5">
-                            <li><a class="dropdown-item" href="first-day.php">First Day at college</a></li>
+                            <li><a class="dropdown-item" href="/first-day">First Day at college</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="orientation.php">Orientation</a></li>
+                            <li><a class="dropdown-item" href="/orientation">Orientation</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="campus-location.php">Campus Map</a></li>
+                            <li><a class="dropdown-item" href="/campus-location">Campus Map</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="student-support.php">Student Support</a></li>
+                            <li><a class="dropdown-item" href="/student-support">Student Support</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="rules&regulations.php">College rules & regulations</a></li>
+                            <li><a class="dropdown-item" href="/rules-regulations">College rules & regulations</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="airport-pick-up.php">Airport pick-up</a></li>
+                            <li><a class="dropdown-item" href="/airport-pick-up">Airport pick-up</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="oshc.php">OSHC</a></li>
+                            <li><a class="dropdown-item" href="/oshc">OSHC</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="faqs.php">FAQs</a></li>
+                            <li><a class="dropdown-item" href="/faqs">FAQs</a></li>
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="contact.php">Contact Us</a>
+                          <a class="nav-link" href="/contact">Contact Us</a>
                         </li>
                   </ul>
                 </div>

@@ -103,6 +103,94 @@ public function agent(){
 
 }
 
+public function who_can_apply(){
+
+    return view('frontend.pages.who-can-apply');
+
+}
+
+public function intake_date(){
+
+    return view('frontend.pages.intake-date');
+
+}
+public function how_to_apply(){
+
+    return view('frontend.pages.how-to-apply');
+
+}
+public function first_day(){
+
+    return view('frontend.pages.first-day');
+
+}
+public function orientation(){
+
+    return view('frontend.pages.orientation');
+
+}
+public function campus_location(){
+
+    return view('frontend.pages.campus-location');
+
+}
+public function student_support(){
+
+    return view('frontend.pages.student-support');
+
+}
+public function rules_regulations(){
+
+    return view('frontend.pages.rulesandregulations');
+
+}
+
+public function airport_pick_up(){
+
+    return view('frontend.pages.airport-pick-up');
+
+}
+
+public function oshc(){
+
+    return view('frontend.pages.oshc');
+
+}
+
+public function faqs(){
+
+    return view('frontend.pages.faq');
+
+}
+
+public function about(){
+
+    return view('frontend.pages.about');
+
+}
+
+public function international_student(){
+
+    return view('frontend.pages.international-student');
+
+}
+public function message_ceo(){
+
+    return view('frontend.pages.message-ceo');
+
+}
+
+public function contact(){
+
+    return view('frontend.pages.contact');
+
+}
+public function notice(){
+
+    return view('frontend.pages.notice');
+
+}
+
 
 
 
