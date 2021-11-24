@@ -34,7 +34,7 @@ class ApplicantPostRequest extends FormRequest
             'stdemail' => 'required',
             'stddob' => 'required',
             'sex' => 'required',
-            'offshore_student' => 'required',
+          
 
 
 

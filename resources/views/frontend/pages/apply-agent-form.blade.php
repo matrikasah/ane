@@ -45,6 +45,7 @@
 					 <section class="offshoreForm">
         
         <form action="{{route('agent.store')}}" method="POST">
+            @csrf
             <div class="AgentDetails p-1 mt-4 gap">
                 <div class="personalDetailsHead mainFormHeadings">
                     <h3 class="bold-text">Details</h3>
@@ -54,103 +55,123 @@
 
                     <div class="col-md-6  mt-4">
                         <div class="input-group">
-                            <label for="userUsi" class="input-group-text userusiLabel">Agent Name :</label>
-                            <input id="userUsi" name="name" type="text" class="form-control" placeholder="Agent Name">
+                            <label for="agent_name" class="input-group-text agent_nameLabel">Agent Name :</label>
+                            <input id="agent_name" name="name" type="text" class="form-control" placeholder="Agent Name">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userSurname" class="input-group-text">Surname</label>
-                            <input id="userSurname" name="surname" type="text" class="form-control"
+                            <label for="agent_surname" class="input-group-text">Surname</label>
+                            <input id="agent_surname" name="surname" type="text" class="form-control"
                                 placeholder="Enter Your Surname">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userGivenName" class="input-group-text">Given Name</label>
-                            <input id="userGivenName" name="givenname" type="text" class="form-control"
+                            <label for="agent_givename" class="input-group-text">Given Name</label>
+                            <input id="agent_givename" name="givenname" type="text" class="form-control"
                                 placeholder="Enter Your Given Name">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userHomeAddress" class="input-group-text">Address in Australia</label>
-                            <input id="userHomeAddress" name="address_in_aus" type="text" class="form-control"
+                            <label for="agent_ausaddress" class="input-group-text">Address in Australia</label>
+                            <input id="agent_ausaddress" name="address_in_aus" type="text" class="form-control"
                                 placeholder="Enter Your Address in Australia">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userSuburb" class="input-group-text">Suburb</label>
-                            <input id="userSuburb" name="suburb" type="text" class="form-control"
+                            <label for="agent_suburb" class="input-group-text">Suburb</label>
+                            <input id="agent_suburb" name="suburb" type="text" class="form-control"
                                 placeholder="Enter Your Suburb">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userState" class="input-group-text">Country</label>
-                            <input id="userState" name="country" type="text" class="form-control"
+                            <label for="agent_country" class="input-group-text">Country</label>
+                            <input id="agent_country" name="country" type="text" class="form-control"
                                 placeholder="Enter Your Country">
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="input-group">
-                            <label for="telNum" class="input-group-text">Address <span class="secondarySpan"> (Outside
+                            <label for="agent_out_aus" class="input-group-text">Address <span class="secondarySpan"> (Outside
                                     Australia)</span> </label>
-                            <input id="text" name="address_outside_aus" type="text" class="form-control"
+                            <input id="agent_out_aus" name="address_outside_aus" type="text" class="form-control"
                                 placeholder="Enter Your Address Outside Australia">
                         </div>
                     </div>
 
+                    {{-- sub outside aus --}}
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userEmail" class="input-group-text">Suburb</label>
-                            <input id="userEmail"  type="text" class="form-control"
+                            <label for="suburb_out_aus" class="input-group-text">Suburb </label>
+                            <input id="suburb_out_aus" name="suburb_outside_aus"  type="text" class="form-control"
                                 placeholder="Enter Your Suburb">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userDob" class="input-group-text">Postcode</label>
-                            <input id="text" name="post_code" type="text" class="form-control"
+                            <label for="agent_postcode" class="input-group-text">Postcode</label>
+                            <input id="agent_postcode" name="post_code" type="text" class="form-control"
                                 placeholder="Enter Your Postcode">
                         </div>
                     </div>
 
+                  
+
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userDob" class="input-group-text">Mobile</label>
-                            <input id="userDob" name="mobile_num" type="number" class="form-control"
+                            <label for="agent_mobile" class="input-group-text">Mobile</label>
+                            <input id="agent_mobile" name="mobile_num" type="number" class="form-control"
                                 placeholder="Enter Your Mobile">
                         </div>
                     </div>
 
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userDob" class="input-group-text">Telephone (work)</label>
-                            <input id="userDob" name="telephone_num" type="text" class="form-control"
+                            <label for="agent_tel_work" class="input-group-text">Telephone (work)</label>
+                            <input id="agent_tel_work" name="telephone_num" type="text" class="form-control"
                                 placeholder="Enter Your Telephone">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 mt-4">
+                        <div class="input-group">
+                            <label for="agent_abn" class="input-group-text">ABN</label>
+                            <input id="agent_abn" name="abn" type="text" class="form-control"
+                                placeholder="Enter Your Postcode">
                         </div>
                     </div>
 
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userDob" class="input-group-text">Emergency Contact</label>
-                            <input id="userDob" name="emergency_contact" type="text" class="form-control"
+                            <label for="agent_acn" class="input-group-text">ACN</label>
+                            <input id="agent_acn" name="acn" type="text" class="form-control"
+                                placeholder="Enter Your Postcode">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <div class="input-group">
+                            <label for="agent_emer_cont" class="input-group-text">Emergency Contact</label>
+                            <input id="agent_emer_cont" name="emergency_contact" type="text" class="form-control"
                                 placeholder="Enter Your Emergency Contact">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userDob" class="input-group-text">Address</label>
-                            <input id="userDob" name="emgy_address" type="text" class="form-control"
+                            <label for="agent_address_usual" class="input-group-text">Address</label>
+                            <input id="agent_address_usual" name="emgy_address" type="text" class="form-control"
                                 placeholder="Enter Your Address">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
-                            <label for="userDob" class="input-group-text">Telephone</label>
-                            <input id="userDob" name="emgy_telephone" type="text" class="form-control"
+                            <label for="agent_tel_usual" class="input-group-text">Telephone</label>
+                            <input id="agent_tel_usual" name="emgy_telephone" type="text" class="form-control"
                                 placeholder="Enter Your Telephone">
                         </div>
                     </div>
@@ -320,14 +341,14 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Fax :</label>
-                                <input type="text" id="userinstfax" name="userinstphone2" class="form-control"
+                                <input type="text" id="userinstfax" name="userinstfax2" class="form-control"
                                     placeholder="Enter Your Fax">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Email :</label>
-                                <input type="text" id="userinstemail" name="userinstphone2" class="form-control"
+                                <input type="text" id="userinstemail" name="userinstemail2" class="form-control"
                                     placeholder="Enter Your Email">
                             </div>
                         </div>
@@ -392,7 +413,7 @@
                     </ol>
                 </div>
             </div>
-
+            <input type="submit" value="submit"/>
         </form>
     </section>
 			</div>

@@ -13,6 +13,15 @@ use App\Models\ApplicantLanguageCulture;
 use App\Models\ApplicantCourseDetails;
 use App\Models\ApplicantPhotographyConsent;
 use App\Models\ApplicantCollageCommitment;
+
+
+use App\Models\AgentBusinessHistory;
+use App\Models\AgentDetails;
+use App\Models\AgentContactPerson;
+use App\Models\AgentDeclaration;
+use Mail;
+
+
 use App\Http\Requests\ApplicantPostRequest;
 
 use Illuminate\Http\Request;
@@ -81,11 +90,26 @@ public function store_ofshore(ApplicantPostRequest $req){
 
      
 
-dd('sucessfull');
 
 
 
-}
+        // $email=$applicant_personal_detail->stdemail;
+        // $data=[
+        //     'title'=>'hello'
+        // ];
+
+
+        // Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
+        // $message->to($email, 'ANE')->subject
+        //     ('Please verify your email');
+        // $message->from('admin@gmail.com','ANE');
+
+        // });
+
+        dd('sucess');
+    }
+
+
 
 public function onshore_form(){
 
@@ -155,7 +179,7 @@ public function agent(){
 
 }
     public function store_agent_application(Request $req){
-        dd($req->all());
+      
         $agent_details= AgentDetails::create($req->all());
         $req->merge([
             'agent_id'=>$agent_details->id

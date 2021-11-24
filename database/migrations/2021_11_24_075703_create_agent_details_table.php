@@ -22,12 +22,15 @@ class CreateAgentDetailsTable extends Migration
             $table->string('suburb');
             $table->string('country');
             $table->string('address_outside_aus');
+            $table->string('suburb_outside_aus');
             $table->string('post_code');
             $table->string('mobile_num');
             $table->string('telephone_num');
             $table->string('emergency_contact');
             $table->string('emgy_address');
             $table->string('emgy_telephone');
+            $table->string('abn');
+            $table->string('acn');
 
 
 

@@ -16,12 +16,15 @@ class AgentDetails extends Model
         'suburb',
         'country',
         'address_outside_aus',
+        'suburb_outside_aus',
         'post_code',
         'mobile_num',
         'telephone_num',
         'emergency_contact',
         'emgy_address',
         'emgy_telephone',
+        'abn',
+        'acn'
        
     ];
 }
