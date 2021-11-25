@@ -4,9 +4,9 @@
             <div class="card">
                 <div class="card-header">Welcome!</div>
                   <div class="card-body">
-                 
+                         {{$title}}
                         <div class="alert alert-success" role="alert">
-                     <p> 'A fresh mail has been sent to your email address'</p>
+                     <p> A fresh mail has been sent to your email address'</p>
                        </div>
                 
                </div>
