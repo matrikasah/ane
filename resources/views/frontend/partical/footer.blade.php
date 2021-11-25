@@ -52,8 +52,8 @@
       </div>
       <div class="col-md-2 col-sm-12 text-center">
       	<ul class="flag">
-      		<li><img src="image/Australian_Aboriginal.png" alt="images not found" class="img-full"></li>
-      		<li><img src="image/torres-strait-islanders.png" alt="images not found" class="img-full"></li>
+      		<li><img src="{{ asset('image/Australian_Aboriginal.png') }}" alt="images not found" class="img-full"></li>
+      		<li><img src="{{ asset('image/torres-strait-islanders.png') }}" alt="images not found" class="img-full"></li>
       	</ul>
 					
       </div>
