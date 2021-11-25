@@ -93,18 +93,18 @@ public function store_ofshore(ApplicantPostRequest $req){
 
 
 
-        // $email=$applicant_personal_detail->stdemail;
-        // $data=[
-        //     'title'=>'hello'
-        // ];
+        $email=$applicant_personal_detail->stdemail;
+        $data=[
+            'title'=>'hello'
+        ];
 
 
-        // Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
-        // $message->to($email, 'ANE')->subject
-        //     ('Please verify your email');
-        // $message->from('admin@gmail.com','ANE');
+        Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
+        $message->to($email, 'ANE')->subject
+            ('Please verify your email');
+        $message->from('admin@gmail.com','ANE');
 
-        // });
+        });
 
         dd('sucess');
     }
