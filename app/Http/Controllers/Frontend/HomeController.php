@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 
-
 use App\Models\ApplicantPersonalDetail;
 use App\Models\ApplicantEmergencyContact;
 use App\Models\ApplicantEducationAgent;
@@ -13,7 +12,6 @@ use App\Models\ApplicantLanguageCulture;
 use App\Models\ApplicantCourseDetails;
 use App\Models\ApplicantPhotographyConsent;
 use App\Models\ApplicantCollageCommitment;
-
 
 use Illuminate\Http\Request;
 
