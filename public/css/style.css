@@ -381,9 +381,10 @@ span.swiper-pagination-bullet-active {
   width: 100%;
   top: 0;
   background: #000000ad;
-  height: 500px;
+  height: auto;
   padding-top: 60px;
   color: #fff;
+  bottom: 0;
 }
 
 .swiper-slide p.bottom {
@@ -754,6 +755,7 @@ button.accordion-button.collapsed {
   border: none;
   border-bottom: 1px solid #d3d3d3;
   padding: 12px 20px;
+  color: #282828;
 }
 .sidebar .nav-tabs li:last-child .nav-link {
   border: none;
@@ -2096,8 +2098,12 @@ a.link:hover {
 .mission-wrap .small-title.title {
     border-color: #fff;
 }
-
-
+.flag{
+  display: flex;
+}
+.flag li {
+  margin: 0 10px 0 0;
+}
 
 
 @media print {
@@ -2189,6 +2195,9 @@ h1.innerpage-title {
 }
 .courses .card {
     min-height: 390px;
+}
+.parallax-window {
+  min-height: 560px;
 }
 }
 
@@ -2320,6 +2329,9 @@ footer img.img-full {
 .courses .card {
     min-height: 390px;
 }
+.parallax-window {
+  min-height: 600px;
+}
 }
 
 
@@ -2339,11 +2351,11 @@ footer img.img-full {
 }
 
 .navbar-collapse {
-    background: #282828;
+    /* background: #282828; */
     padding: 30px;
 }
 .navbar-collapse {
-    background: #282828;
+    /* background: #282828; */
     padding: 120px 30px 30px!important;
     position: absolute!important;
     top: -1px;
@@ -2373,6 +2385,9 @@ footer img.img-full {
 header .mainmenu li.nav-item.dropdown ul li.submenu .dropdown-menu {
     left: 0;
     top: 100%;
+}
+footer img.img-full {
+  height: 30px;
 }
 }
 
@@ -2557,7 +2572,32 @@ ul.contact-info {
 .courses .card {
     min-height: 417px;
 }
-
+.flag{
+  display: inline-block;
+  float: left;
+}
+footer img.img-full {
+  height: auto;
+  width: 80px;
+}
+.flag li {
+  margin: 0 10px 0 0;
+  float: left;
+}
+.parallax-window {
+  min-height: 600px;
+}
+.mainmenu li.nav-item.dropdown .dropdown-menu, .mainmenu li.nav-item.dropdown ul li.submenu .dropdown-menu {
+  
+  transform: none;
+  transform-origin: unset;
+  transition: none;
+}
 }
 
 /* responsive code */
+
+
+
+
+
