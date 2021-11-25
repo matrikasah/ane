@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +15,14 @@ use App\Http\Controllers\Frontend\HomeController;
 */
 
 Route::get('/', function () {
-    return view('frontend.pages.index');
+    return redirect('/home');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-//frontend routes
+require __DIR__.'/auth.php';
 
 Route::get('/home',[HomeController::class,'index']);
 Route::get('/apply-offshore',[HomeController::class,'offshore_form']);
@@ -48,3 +52,5 @@ Route::get('/notice',[HomeController::class,'notice']);
 
 
 Route::post('/apply-offshore/store',[HomeController::class,'store_ofshore'])->name('offshore.store');
+Route::post('/apply-onshore/store',[HomeController::class,'store_onshore'])->name('onshore.store');
+Route::post('/apply-agent/store',[HomeController::class,'store_agent_application'])->name('agent.store');

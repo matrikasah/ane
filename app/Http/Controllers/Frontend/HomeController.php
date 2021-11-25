@@ -13,6 +13,16 @@ use App\Models\ApplicantCourseDetails;
 use App\Models\ApplicantPhotographyConsent;
 use App\Models\ApplicantCollageCommitment;
 
+
+use App\Models\AgentBusinessHistory;
+use App\Models\AgentDetails;
+use App\Models\AgentContactPerson;
+use App\Models\AgentDeclaration;
+use Mail;
+
+
+use App\Http\Requests\ApplicantPostRequest;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -30,7 +40,7 @@ public function offshore_form(){
 
 }
 
-public function store_ofshore(Request $req){
+public function store_ofshore(ApplicantPostRequest $req){
    
     
     $req->merge([
@@ -79,15 +89,82 @@ public function store_ofshore(Request $req){
 
      
 
-dd('sucessfull');
 
 
 
-}
+        $email=$applicant_personal_detail->stdemail;
+        $data=[
+            'title'=>'hello'
+        ];
+
+
+        Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
+        $message->to($email, 'ANE')->subject
+            ('Please verify your email');
+        $message->from('admin@gmail.com','ANE');
+
+        });
+
+        dd('sucess');
+    }
+
+
 
 public function onshore_form(){
 
     return view('frontend.pages.apply-onshore');
+
+}
+
+public function store_onshore(Request $req){
+ 
+   
+    $req->merge([
+        'offshore_student'=>0,
+        
+    ]);
+
+    $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
+    
+    $req->merge([
+    'applicant_id'=>$applicant_personal_detail->id
+
+    ]);
+    $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
+    $req->merge([
+        'applicant_id'=>$applicant_personal_detail->id
+    
+        ]);
+    $application_education_agent=ApplicantEducationAgent::create($req->all());
+    $req->merge([
+        'applicant_id'=>$applicant_personal_detail->id
+    
+        ]);
+    $applicant_education=ApplicantEducation::create($req->all());
+    $req->merge([
+        'applicant_id'=>$applicant_personal_detail->id
+    
+        ]);
+     $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
+     $req->merge([
+        'applicant_id'=>$applicant_personal_detail->id
+    
+        ]);
+     $applicant_course=ApplicantCourseDetails::create($req->all());
+     $req->merge([
+        'applicant_id'=>$applicant_personal_detail->id
+    
+        ]);
+    $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
+    
+    $req->merge([
+        'applicant_id'=>$applicant_personal_detail->id
+    
+        ]);
+     $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
+
+     dd('sucessfull');
+     
 
 }
 public function agent_form(){
@@ -100,6 +177,46 @@ public function agent(){
     return view('frontend.pages.become-agent');
 
 }
+    public function store_agent_application(Request $req){
+      
+        $agent_details= AgentDetails::create($req->all());
+        $req->merge([
+            'agent_id'=>$agent_details->id
+        ]);
+        $agent_business_history=AgentBusinessHistory::create($req->all());
+       
+        $agent_contact_person1=AgentContactPerson::create([
+            'keyStaff'=>$req->keyStaff,
+            'useragentname'=>$req->useragentname,
+            'userinstname'=>$req->userinstname,
+            'userinsttitle'=>$req->userinstname,
+            'userinstphone'=>$req->userinstphone,
+            'userinstfax'=>$req->userinstfax,
+            'userinstemail'=>$req->userinstemail,
+            'agent_id'=>$agent_details->id,
+        ]);
+
+        $agent_contact_person2=AgentContactPerson::create([
+            'keyStaff'=>$req->keyStaff,
+            'useragentname'=>$req->useragentname2,
+            'userinstname'=>$req->userinstname2,
+            'userinsttitle'=>$req->userinstname2,
+            'userinstphone'=>$req->userinstphone2,
+            'userinstfax'=>$req->userinstfax2,
+            'userinstemail'=>$req->userinstemail2,
+            'agent_id'=>$agent_details->id,
+        ]);
+        $req->merge([
+            'agent_id'=>$agent_details->id
+        ]);
+        $agent_declaration=AgentDeclaration::create($req->all());
+
+        dd('sucessfull');
+
+    }
+
+
+
 
 public function who_can_apply(){
 
