@@ -3,7 +3,7 @@
     
 
 	<section class="featured-img">
-		<img src="image/course-featured.jpg">
+		<img src="{{ asset('image/course-featured.jpg') }}">
 		<div class="overlap-featured-breadcrumb">
 			<div class="container">
 				<div class="row">
@@ -12,7 +12,7 @@
 						<p>Pre-departure guidelines for international students</p>
 						<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb">
-						    <li class="breadcrumb-item"><a href="#">Home</a></li>
+						    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
 						    <li class="breadcrumb-item active" aria-current="page">international students</li>
 						  </ol>
 						</nav>
@@ -62,7 +62,7 @@
 					
 						<div class="tab-content content-text" id="myTabContent">
 						  <div class="tab-pane fade show active" id="international1" role="tabpanel" aria-labelledby="home-tab">					  		
-							  	<img src="image/ane-campus-1.jpg" class="img-responsive course-detail-img">
+							  	<img src="{{ asset('image/ane-campus-1.jpg') }}" class="img-responsive course-detail-img">
 							  	<h2>About Sydney Campus </h2>
 							  	<p class="para">
 							  		Sydney campus’ premises feature a unique integration of modern architecture and teaching facilities which is located 
@@ -77,7 +77,7 @@
 							  	</p>
 							</div>
 						  <div class="tab-pane fade" id="international2" role="tabpanel" aria-labelledby="profile-tab">
-						  	<img src="image/ANE1.jpg" class="img-responsive course-detail-img">
+						  	<img src="{{ asset('image/ANE1.jpg') }}" class="img-responsive course-detail-img">
 							  	<h2>STUDENT PROTECTION THROUGH LEGISLATION </h2>
 							  	<p class="para">
 							  		ANE college follows all relevant Commonwealth 
@@ -458,14 +458,14 @@
 	</section>
 
 
-<section class="gap enrollment">
+	<section class="gap enrollment">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/contact.svg">
+				  		<img src="{{ asset('image/contact.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Contact</h5>
@@ -478,7 +478,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/consult.svg">
+				  		<img src="{{ asset('image/consult.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Consult</h5>
@@ -491,7 +491,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/admission.svg">
+				  		<img src="{{ asset('image/admission.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Admission</h5>
@@ -503,5 +503,4 @@
 		</div>
 	</div>
 </section>
-
 @endsection

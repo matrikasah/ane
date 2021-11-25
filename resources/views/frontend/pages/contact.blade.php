@@ -2,7 +2,7 @@
 @section('content')
 
 <section class="featured-img">
-    <img src="image/course-featured.jpg">
+    <img src="{{ asset('image/course-featured.jpg') }}">
     <div class="overlap-featured-breadcrumb">
         <div class="container">
             <div class="row">
@@ -11,7 +11,7 @@
                     <p>Get in touch with us</p>
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Contact us</li>
                       </ol>
                     </nav>
@@ -386,49 +386,49 @@
 
 
 <section class="gap enrollment">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" data-aos="fade-up">
-            <div class="card-body">
-                  <div class="left">
-                      <img src="image/contact.svg">
-                  </div>
-                  <div class="right">
-                      <h5 class="card-title">Contact</h5>
-                    <p class="card-text">Feel free to contact us anytime you need.</p>
-                  </div>
-              </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" data-aos="fade-up">
-            <div class="card-body">
-                  <div class="left">
-                      <img src="image/consult.svg">
-                  </div>
-                  <div class="right">
-                      <h5 class="card-title">Consult</h5>
-                    <p class="card-text">Dedicated staff are there to answer any questions.</p>
-                  </div>
-              </div>
-              </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="card" data-aos="fade-up">
-            <div class="card-body">
-                  <div class="left">
-                      <img src="image/admission.svg">
-                  </div>
-                  <div class="right">
-                      <h5 class="card-title">Admission</h5>
-                    <p class="card-text">Apply in ANE College for your interested course right away.</p>
-                  </div>
-              </div>
-              </div>
-        </div>
-    </div>
-</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="card" data-aos="fade-up">
+				<div class="card-body">
+				  	<div class="left">
+				  		<img src="{{ asset('image/contact.svg') }}">
+				  	</div>
+				  	<div class="right">
+				  		<h5 class="card-title">Contact</h5>
+					    <p class="card-text">Feel free to contact us anytime you need.</p>
+				  	</div>
+				  </div>
+				  </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="card" data-aos="fade-up">
+				<div class="card-body">
+				  	<div class="left">
+				  		<img src="{{ asset('image/consult.svg') }}">
+				  	</div>
+				  	<div class="right">
+				  		<h5 class="card-title">Consult</h5>
+					    <p class="card-text">Dedicated staff are there to answer any questions.</p>
+				  	</div>
+				  </div>
+				  </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="card" data-aos="fade-up">
+				<div class="card-body">
+				  	<div class="left">
+				  		<img src="{{ asset('image/admission.svg') }}">
+				  	</div>
+				  	<div class="right">
+				  		<h5 class="card-title">Admission</h5>
+					    <p class="card-text">Apply in ANE College for your interested course right away.</p>
+				  	</div>
+				  </div>
+				  </div>
+			</div>
+		</div>
+	</div>
 </section>
 
 

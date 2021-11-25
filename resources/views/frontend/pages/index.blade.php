@@ -91,7 +91,7 @@
 					</div>
 					<p>ANE College is a Registered Training Organization (RTO) approved by the Australian Skills Quality Authority (ASQA), www.asqa.gov.au, and complaint to the Standards of Registered Training Organization (RTO) established to provide nationally accredited and recognized qualifications. Dynamic and vibrant, the ANE College is a place where opportunity is explored. The educational-training organization is for the professions dedicated to providing experiences focused on employability outcomes.</p>
 					<p>With employability at the centre of everything we do, we offer relevant courses taught by leading experts. We have flexible study options and a personalized approach, which will help you bring your dream job into a reality. We offer courses like Diploma of Hospitality Management, Diploma of Early Childhood Education and Care, Certificate IV in Commercial Cookery, Certificate IV in Disability, Diploma of Community Services, and many others.</p>
-					<a href="about.php" class="btn btn-primary hvr-icon-wobble-horizontal">view more <i class="fas fa-arrow-right hvr-icon"></i></a>
+					<a href="{{route('about')}}" class="btn btn-primary hvr-icon-wobble-horizontal">view more <i class="fas fa-arrow-right hvr-icon"></i></a>
 				
 			</div>
 		</div>
@@ -104,7 +104,7 @@
 		<div class="row">
 			<div class="col-md-12 col-lg-7 col-xl-6">
 				<div class="make-history">
-					<img src="image/make-history.jpg" class="img-responsive img-full">
+					<img src="{{ asset('image/make-history.jpg') }}" class="img-responsive img-full">
 					<div class="make-history-overlap">
 						<h2>Make history</h2>
 						<p>We are here to turn your aspirations into reality! Students in ANE College enjoy an exceptional education under the guidance of highly professionals and experts.</p>
@@ -118,7 +118,7 @@
 				<ul>
 					<li  data-aos="fade-up">
 						<div class="icon-img">
-							<img src="image/SUCCESS COACHES.svg" class="img-responsive img-full">
+							<img src="{{ asset('image/SUCCESS COACHES.svg') }}" class="img-responsive img-full">
 						</div>
 						<div class="icon-text">
 							<h5>Success Coaches</h5>
@@ -129,7 +129,7 @@
 					</li>
 					<li  data-aos="fade-up">
 						<div class="icon-img">
-							<img src="image/COURSE AND CAREERS ADVISORS.svg" class="img-responsive img-full">
+							<img src="{{ asset('image/COURSE AND CAREERS ADVISORS.svg') }}" class="img-responsive img-full">
 						</div>
 						<div class="icon-text">
 							<h5>Course and Careers Advisors</h5>
@@ -140,7 +140,7 @@
 					</li>
 					<li  data-aos="fade-up">
 						<div class="icon-img">
-							<img src="image/OFFSHORE STUDENT SUPORT.svg" class="img-responsive img-full">
+							<img src="{{ asset('image/OFFSHORE STUDENT SUPORT.svg') }}" class="img-responsive img-full">
 						</div>
 						<div class="icon-text">
 							<h5>Offshore Student suport</h5>
@@ -170,7 +170,7 @@
 			          <div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-									  		<img src="image/ANE1.jpg" class="card-img-top" alt="...">
+									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
 									  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -190,7 +190,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="image/ANE1.jpg" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -210,7 +210,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="image/ANE1.jpg" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -230,7 +230,7 @@
 							<div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-									  		<img src="image/ANE1.jpg" class="card-img-top" alt="...">
+									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
 									  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -250,7 +250,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="image/ANE1.jpg" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -318,7 +318,7 @@
 							<!-- <div class="news-category">
 								<h5>News</h5>
 							</div> -->
-						  <img src="image/news.jpg" class="card-img-top" alt="...">
+						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
 						  <div class="card-body">
 						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
 							<div class="note">
@@ -333,7 +333,7 @@
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
-						  <img src="image/news.jpg" class="card-img-top" alt="...">
+						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
 						  <div class="card-body">
 						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
 							<div class="note">
@@ -348,7 +348,7 @@
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
-						  <img src="image/news.jpg" class="card-img-top" alt="...">
+						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
 						  <div class="card-body">
 						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
 							<div class="note">
@@ -365,7 +365,7 @@
 
 
 <section class="gap Testimonials">
-	<div class="parallax-window" data-parallax="scroll" data-image-src="image/uni.png"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('image/uni.png') }}"></div>
 	<div class="Testimonials-content">
 	  <div class="container">
 	    <div class="row">
@@ -475,7 +475,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/contact.svg">
+				  		<img src="{{ asset('image/contact.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Contact</h5>
@@ -488,7 +488,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/consult.svg">
+				  		<img src="{{ asset('image/consult.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Consult</h5>
@@ -501,7 +501,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/admission.svg">
+				  		<img src="{{ asset('image/admission.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Admission</h5>
