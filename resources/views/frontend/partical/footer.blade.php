@@ -87,8 +87,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-footer">
-        <a href="apply-offshore.php" class="btn btn-secondary  hvr-bounce-to-right">offshore student</a>
-        <a href="apply-onshore.php" class="btn btn-primary  hvr-bounce-to-right">onshore student</a>
+        <a href="{{route('apply-offshore')}}" class="btn btn-secondary  hvr-bounce-to-right">offshore student</a>
+        <a href="{{route('apply-onshore')}}" class="btn btn-primary  hvr-bounce-to-right">onshore student</a>
       </div>
     </div>
   </div>

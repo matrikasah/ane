@@ -65,122 +65,138 @@
         </section>
         <section class="mainmenu">
             <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
                 
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="{{ asset('image/logo.png')}} " height="80px"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <i class="fas fa-bars"></i>
-                </button>
-                <div style="flex-direction: column;" class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul style="align-self: flex-end; margin-right: 0px;" class="navbar-nav ml-auto mb-2 mb-lg-0" id="tab-menu">
-                        <li class="nav-item dropdown">
-                          <a class="btn nav-link dropdown-toggle  hvr-bounce-to-right drop-new" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" onclick="check();" aria-expanded="false">
-                            ANE portal
-                          </a>
-                          <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="apply-offshore.php">Student Portal</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="apply-onshore.php">Staff Portal</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="btn nav-link dropdown-toggle  hvr-bounce-to-right drop-new" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" onclick="check();" aria-expanded="false">
-                            Apply Now
-                          </a>
-                          <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="/apply-offshore">Offshore student</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/apply-onshore">Onshore student</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            
-                                <li class="nav-item dropdown submenu">
-                                      <a class="nav-link dropdown-toggle drop-new" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                         Agent
-                                      </a>
-                                      <ul class="dropdown-menu show" aria-labelledby="navbarDropdown2">
-                                        <li><a class="dropdown-item" href="/become-agent"> Become an Agent</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="/apply-agent">Apply now</a></li>								            
-                                      </ul>
-                                    </li>
-                          </ul>
-                        </li>
-                  </ul>
-                  <ul class="navbar-nav ml-auto mb-2 mb-lg-0" id="menu-topbar-right">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="/home">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle drop-new" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Study with us
-                          </a>
-                          <ul class="dropdown-menu show" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="/about">Why study with us</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/international-students">International students</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/message-ceo">Message from CEO</a></li>
-                            
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle drop-new" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            find a Course
-                          </a>
-                          <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown3">
-                            <li><a class="dropdown-item" href="course.php">Diploma of Early Childhood Education and Care</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="course.php">Diploma of Hospitality Management</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="course.php">Certificate IV in Commercial Cookery</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="course.php">Certificate IV in Disability</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="course.php">Diploma of Community Services</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle drop-new" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Admission
-                          </a>
-                          <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown4">
-                            <li><a class="dropdown-item" href="/how-to-apply">How to Apply</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/intake-date">Intake Dates</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/who-can-apply">Who can apply</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle drop-new" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Student information
-                          </a>
-                          <ul class=" dropdown-menu show" aria-labelledby="navbarDropdown5">
-                            <li><a class="dropdown-item" href="/first-day">First Day at college</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/orientation">Orientation</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/campus-location">Campus Map</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/student-support">Student Support</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/rules-regulations">College rules & regulations</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/airport-pick-up">Airport pick-up</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/oshc">OSHC</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/faqs">FAQs</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/contact">Contact Us</a>
-                        </li>
-                  </ul>
-                </div>
-              </div>
-</nav>
+            <nav>
+                    <a class="navbar-brand" href="home"> <img src="image/logo.png" height="80px"> </a>
+                    
+                    <a id="resp-menu" class="responsive-menu" href="#"><i class="fas fa-bars"></i></a> 
+                    <div class="menu-wrap d-none d-lg-block">
+                        <ul class="menu" id="short-menu">
+                          <li><a class="link-box" href="#"> ANE portal</a>
+                            <ul class="sub-menu">
+                            <li><a href="#">student portal</a></li>
+                            <li><a href="#">staff portal</a></li>  
+                            </ul>
+                          </li>
+                          <li><a class="link-box"  href="#"> Apply now</a>
+                              <ul class="sub-menu">
+                              <li><a href="{{route('apply-offshore')}}">offshore</a></li>
+                              <li><a href="{{route('apply-onshore')}}">onshore</a>
+                                <li><a href="#">agent</a>
+                                <ul>
+                                <li><a href="{{route('become-agent')}}">Become agent</a></li>
+                              <li><a href="{{route('apply-agent')}}">Apply now</a>
+                                </ul>
+                              </li>
+                              </ul>
+                            </li>
+                        </ul> 
+
+                        <ul class="menu">
+                            <li><a class="homer" href="{{ route('home') }}"> Home</a></li>
+                            <li><a  href="#"> study with us</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{route('about')}}">why study with us</a></li>
+                              <li><a href="{{route('international-student')}}">international students</a></li>
+                              <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="#">find a courses</a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="#">Diploma of Hospitality Management</a></li>
+                              <li><a href="#">Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="#">Certificate IV in Disability</a></li>
+                              <li><a href="#">Diploma of Community Services</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="#"> admission</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{route('how-to-apply')}}">How to Apply</a></li>
+                              <li><a href="{{route('intake-date')}}">Intake Dates</a></li>
+                              <li><a href="{{route('who-can-apply')}}">Who can apply</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="#"> student information</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{route('first-day')}}">First Day at college</a></li>
+                              <li><a href="{{route('orientation')}}">Orientation</a></li>
+                              <li><a href="{{route('campus-location')}}">Campus Map</a></li>
+                              <li><a href="{{route('student-support')}}">Student Support</a></li>
+                              <li><a href="{{route('rules-regulations')}}">College rules & regulations</a></li>
+                              <li><a href="{{route('airport-pick-up')}}">Airport pick-up</a></li>
+                              <li><a href="{{route('oshc')}}">OSHC</a></li>
+                              <li><a href="{{route('faqs')}}">FAQs</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="{{route('contact')}}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-wrap d-lg-none">
+                    <ul class="menu">
+                          <li><a href="#"> ANE portal</a>
+                            <ul class="sub-menu">
+                            <li><a href="#">student portal</a></li>
+                            <li><a href="#">staff portal</a></li>  
+                            </ul>
+                          </li>
+                          <li><a class="link-box"  href="#"> Apply now</a>
+                              <ul class="sub-menu">
+                              <li><a href="{{route('apply-offshore')}}">offshore</a></li>
+                              <li><a href="{{route('apply-onshore')}}">onshore</a>
+                                <li><a href="#">agent</a>
+                                <ul>
+                                <li><a href="{{route('become-agent')}}">Become agent</a></li>
+                              <li><a href="{{route('apply-agent')}}">Apply now</a>
+                                </ul>
+                              </li>
+                              </ul>
+                            </li>
+                        
+                            <li><a class="homer" href="{{ route('home') }}"> Home</a></li>
+                            <li><a  href="#"> study with us</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{route('about')}}">why study with us</a></li>
+                              <li><a href="{{route('international-student')}}">international students</a></li>
+                              <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="#">find a courses</a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="#">Diploma of Hospitality Management</a></li>
+                              <li><a href="#">Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="#">Certificate IV in Disability</a></li>
+                              <li><a href="#">Diploma of Community Services</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="#"> admission</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{route('how-to-apply')}}">How to Apply</a></li>
+                              <li><a href="{{route('intake-date')}}">Intake Dates</a></li>
+                              <li><a href="{{route('who-can-apply')}}">Who can apply</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="#"> student information</a>
+                            <ul class="sub-menu">
+                              <li><a href="{{route('first-day')}}">First Day at college</a></li>
+                              <li><a href="{{route('orientation')}}">Orientation</a></li>
+                              <li><a href="{{route('campus-location')}}">Campus Map</a></li>
+                              <li><a href="{{route('student-support')}}">Student Support</a></li>
+                              <li><a href="{{route('rules-regulations')}}">College rules & regulations</a></li>
+                              <li><a href="{{route('airport-pick-up')}}">Airport pick-up</a></li>
+                              <li><a href="{{route('oshc')}}">OSHC</a></li>
+                              <li><a href="{{route('faqs')}}">FAQs</a></li>
+                            </ul>
+                            </li>
+                            <li><a  href="{{route('contact')}}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            </div>
             </div>
         </section>
     </header>
