@@ -20,7 +20,19 @@
 	</div>
 </section>
 
-
+@if(session()->has('message'))
+<div classs="container p-5">
+	<div class="row no-gutters">
+		<div class="col-lg-6 col-md-12 m-auto">
+			<div class="alert alert-success fade show" role="alert">
+				
+			 	<h4 class="alert-heading">Well done!</h4>
+			  	<p> {{ session()->get('message') }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+@endif
 <section class="innerpage-content offshoreForm">
 	<div class="container">
         <div class="row   mt-5">
@@ -1463,7 +1475,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_sign" type="text">
+                                <input class="form-control signNdate userDate"  name="date_of_sign" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>

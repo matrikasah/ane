@@ -15,22 +15,22 @@ class CreateAgentDetailsTable extends Migration
     {
         Schema::create('agent_details', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('surname');
-            $table->string('givenname');
-            $table->string('address_in_aus');
-            $table->string('suburb');
-            $table->string('country');
-            $table->string('address_outside_aus');
-            $table->string('suburb_outside_aus');
-            $table->string('post_code');
-            $table->string('mobile_num');
-            $table->string('telephone_num');
-            $table->string('emergency_contact');
-            $table->string('emgy_address');
-            $table->string('emgy_telephone');
-            $table->string('abn');
-            $table->string('acn');
+            $table->string('name')->nullable();
+            $table->string('surname')->nullable();
+            $table->string('givenname')->nullable();
+            $table->string('address_in_aus')->nullable();
+            $table->string('suburb')->nullable();
+            $table->string('country')->nullable();
+            $table->string('address_outside_aus')->nullable();
+            $table->string('suburb_outside_aus')->nullable();
+            $table->string('post_code')->nullable();
+            $table->string('mobile_num')->nullable();
+            $table->string('telephone_num')->nullable();
+            $table->string('emergency_contact')->nullable();
+            $table->string('emgy_address')->nullable();
+            $table->string('emgy_telephone')->nullable();
+            $table->string('abn')->nullable();
+            $table->string('acn')->nullable();
 
 
 

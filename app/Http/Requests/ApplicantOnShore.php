@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ApplicantPostRequest extends FormRequest
+class ApplicantOnShore extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,7 @@ class ApplicantPostRequest extends FormRequest
     public function rules()
     {
         return [
-        
+         
             'stdsurname' => 'required|regex:/^[a-zA-Z]+$/u|min:2|max:10',
             'stdgivenname' => 'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
             'stdhomeaddress' => 'required',
@@ -42,25 +42,8 @@ class ApplicantPostRequest extends FormRequest
             'langbirthCoun'=>'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
             'otherlanguages'=>'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
 
-            'ieltsscr'=>'sometimes|nullable|numeric',
-            'ptescr'=>'sometimes|nullable|numeric',
-            'toeflscr'=>'sometimes|nullable|numeric',
-            'otherscr'=>'sometimes|nullable|numeric',
 
-            
 
-      
-        ];
-
-        // $messages = [
-        //     'stdsurname.required' => 'Please Enter SurName Thankyou!',
-        // ];
-    }
-
-    public function messages(){
-        return [
-            'stdsurname.required' => 'Please Enter SurName Thankyou!',
-            'stdsurname.string' => 'Please Enter string Thankyou!',
 
         ];
     }

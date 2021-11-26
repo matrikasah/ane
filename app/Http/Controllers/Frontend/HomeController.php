@@ -23,6 +23,8 @@ use Mail;
 
 
 use App\Http\Requests\ApplicantPostRequest;
+use App\Http\Requests\ApplicantOnShore;
+use App\Http\Requests\AgentPostRequest;
 
 use Illuminate\Http\Request;
 
@@ -93,20 +95,21 @@ public function store_ofshore(ApplicantPostRequest $req){
 
 
 
-        $email=$applicant_personal_detail->stdemail;
-        $data=[
-            'title'=>'hello'
-        ];
+        // $email=$applicant_personal_detail->stdemail;
+        // $data=[
+        //     'title'=>'hello'
+        // ];
 
 
-        Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
-        $message->to($email, 'ANE')->subject
-            ('Please verify your email');
-        $message->from('admin@gmail.com','ANE');
+        // Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
+        // $message->to($email, 'ANE')->subject
+        //     ('Please verify your email');
+        // $message->from('admin@gmail.com','ANE');
 
-        });
+        // });
 
-        dd('sucess');
+        return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
+
     }
 
 
@@ -117,7 +120,7 @@ public function onshore_form(){
 
 }
 
-public function store_onshore(Request $req){
+public function store_onshore(ApplicantOnShore $req){
  
    
     $req->merge([
@@ -164,7 +167,7 @@ public function store_onshore(Request $req){
         ]);
      $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
 
-     dd('sucessfull');
+     return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
      
 
 }
@@ -178,7 +181,7 @@ public function agent(){
     return view('frontend.pages.become-agent');
 
 }
-    public function store_agent_application(Request $req){
+    public function store_agent_application(AgentPostRequest $req){
       
         $agent_details= AgentDetails::create($req->all());
         $req->merge([
@@ -212,7 +215,7 @@ public function agent(){
         ]);
         $agent_declaration=AgentDeclaration::create($req->all());
 
-        dd('sucessfull');
+        return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
     }
 

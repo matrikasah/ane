@@ -19,7 +19,19 @@
 		</div>
 	</div>
 </section>
-
+@if(session()->has('message'))
+<div classs="container p-5">
+	<div class="row no-gutters">
+		<div class="col-lg-6 col-md-12 m-auto">
+			<div class="alert alert-success fade show" role="alert">
+				
+			 	<h4 class="alert-heading">Well done!</h4>
+			  	<p> {{ session()->get('message') }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+@endif
 
 <section class="innerpage-content agentSection">
 	<div class="container">
@@ -30,6 +42,7 @@
                         <h1>Become an agent</h1>
                     </div>
             </div>
+    
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
@@ -39,6 +52,14 @@
                 </div>
             </div>
         </div>
+        <ul class="error">
+            @foreach($errors->all() as $error)
+            <li><div class="alert alert-danger" role="alert">
+                {{ $error }}
+                </div>
+            </li>
+            @endforeach
+        </ul>
 		<div class="row content-text">
 			<div class="col-12">
 				
@@ -46,6 +67,7 @@
         
         <form action="{{route('agent.store')}}" method="POST">
             @csrf
+           
             <div class="AgentDetails p-1 mt-4 gap">
                 <div class="personalDetailsHead mainFormHeadings">
                     <h3 class="bold-text">Details</h3>
@@ -413,7 +435,7 @@
                     </ol>
                 </div>
             </div>
-            <input type="submit" value="submit"/>
+            <button type="submit" class="btn btn-black mb-2 hvr-sweep-to-right">Submit</button>
         </form>
     </section>
 			</div>

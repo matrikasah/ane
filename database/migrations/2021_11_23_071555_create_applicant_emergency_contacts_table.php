@@ -15,12 +15,12 @@ class CreateApplicantEmergencyContactsTable extends Migration
     {
         Schema::create('applicant_emergency_contacts', function (Blueprint $table) {
             $table->id();
-            $table->string('fullName');
-            $table->string('relationship');
-            $table->string('contactNum');
-            $table->string('mobile');
-            $table->string('emergency_pay');
-            $table->bigInteger('applicant_id');
+            $table->string('fullName')->nullable();
+            $table->string('relationship')->nullable();
+            $table->string('contactNum')->nullable();
+            $table->string('mobile')->nullable();
+            $table->string('emergency_pay')->nullable();
+            $table->bigInteger('applicant_id')->nullable();
             
 
 

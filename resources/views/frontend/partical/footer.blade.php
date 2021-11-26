@@ -1,4 +1,7 @@
 
+
+
+
 <footer class="footer-content" id="footer">
 	<div class="container">
 		
@@ -93,7 +96,6 @@
     </div>
   </div>
 </div>
-
 
 
 

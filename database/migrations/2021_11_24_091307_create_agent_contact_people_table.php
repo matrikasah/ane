@@ -15,14 +15,14 @@ class CreateAgentContactPeopleTable extends Migration
     {
         Schema::create('agent_contact_people', function (Blueprint $table) {
             $table->id();
-            $table->string('keyStaff');
-            $table->string('useragentname');
-            $table->string('userinstname');
-            $table->string('userinsttitle');
-            $table->string('userinstphone');
-            $table->string('userinstfax');
-            $table->string('userinstemail');
-            $table->bigInteger('agent_id');
+            $table->string('keyStaff')->nullable();
+            $table->string('useragentname')->nullable();
+            $table->string('userinstname')->nullable();
+            $table->string('userinsttitle')->nullable();
+            $table->string('userinstphone')->nullable();
+            $table->string('userinstfax')->nullable();
+            $table->string('userinstemail')->nullable();
+            $table->bigInteger('agent_id')->nullable();
             $table->timestamps();
         });
     }

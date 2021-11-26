@@ -135,6 +135,9 @@ $(document).ready(function () {
 $("#userDob").datepicker({
   format: "dd-mm-yyyy",
 });
+$(".userDate").datepicker({
+  format: "dd-mm-yyyy",
+});
 
 $("#datepicker").datepicker({
   format: "dd-mm-yyyy",
