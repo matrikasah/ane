@@ -1,6 +1,5 @@
 @include('frontend.partical.header')
 
-
 @yield('content')
 
 

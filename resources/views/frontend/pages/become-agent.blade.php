@@ -20,7 +20,19 @@
 		</div>
 	</div>
 </section>
-
+@if(session()->has('message'))
+<div classs="container p-5">
+	<div class="row no-gutters">
+		<div class="col-lg-6 col-md-12 m-auto">
+			<div class="alert alert-success fade show" role="alert">
+				
+			 	<h4 class="alert-heading">Well done!</h4>
+			  	<p> {{ session()->get('message') }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+@endif
 
 <section class="innerpage-content">
 	<div class="container">
@@ -95,7 +107,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/consult.svg">
+				  		<img src="{{ asset('image/consult.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Consult</h5>
@@ -108,7 +120,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/admission.svg">
+				  		<img src="{{ asset('image/admission.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Admission</h5>

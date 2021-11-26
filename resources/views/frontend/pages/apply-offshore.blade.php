@@ -33,6 +33,14 @@
 	</div>
 </div>
 @endif
+<ul class="error">
+    @foreach($errors->all() as $error)
+    <li><div class="alert alert-danger" role="alert">
+        {{ $error }}
+        </div>
+    </li>
+    @endforeach
+</ul>
 <section class="innerpage-content offshoreForm">
 	<div class="container">
         <div class="row   mt-5">
@@ -46,8 +54,8 @@
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
-                    <a type="button"  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                  
-                    <a type="button" target="_blank" href="{{ asset('image/StudentEnrolmentForm(Offshore).pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
+                    <a  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                  
+                    <a target="_blank" href="{{ asset('image/StudentEnrolmentForm(Offshore).pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
@@ -66,13 +74,7 @@
                 contract.</p>
             <form action="{{route('offshore.store')}}" method="POST" >
                 @csrf
-                <ul class="error">
-                    @foreach($errors->all() as $error)
-                    <li><div class="alert alert-danger" role="alert">
-                        {{ $error }}
-                        </div>
-                    </li>
-                    @endforeach
+                
                 </ul>
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
@@ -1475,7 +1477,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate userDate"  name="date_of_sign" type="text">
+                                <input class="form-control signNdate" name="date_of_sign" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>

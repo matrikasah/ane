@@ -1,7 +1,4 @@
 
-
-
-
 <footer class="footer-content" id="footer">
 	<div class="container">
 		
@@ -70,7 +67,7 @@
 			</div>
 			<div class="col-7">
 				<ul class="nav  font-size-sm  copyright">
-					<li id="menu-item-4460" class="nav-item px-3 menu-item-4460"><a title="" href="policy.php" class=" p-0 nav-link">Our Compliance and Policy</a></li>
+					<li id="menu-item-4460" class="nav-item px-3 menu-item-4460"><a title="" href="{{route('policy')}}" class=" p-0 nav-link">Our Compliance and Policy</a></li>
 					<!-- <li id="menu-item-4461" class="nav-item px-3 menu-item-4461"><a title="" href="" class=" p-0 nav-link">Refund policy</a></li>
 					<li id="menu-item-4461" class="nav-item px-3 menu-item-4461"><a title="" href="terms&condition.php" class=" p-0 nav-link">Terms & condition</a></li> -->
 				</ul>
@@ -101,12 +98,8 @@
 
 
 
-<<<<<<< HEAD
-<script src="js/jquery-3.5.1.min.js"></script> 
-=======
 
 <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script> 
->>>>>>> 3e10cb57f7f6592aaa8dc627933f3f0d9e388358
 
 <script defer src="{{ asset('font-awesome/js/all.js') }}"></script>
 <!-- <script src="bootstrap/js/bootstrap.bundle.js"></script>   -->

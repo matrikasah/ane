@@ -80,58 +80,40 @@
 						  	<img src="{{ asset('image/ANE1.jpg') }}" class="img-responsive course-detail-img">
 							  	<h2>STUDENT PROTECTION THROUGH LEGISLATION </h2>
 							  	<p class="para">
-							  		ANE college follows all relevant Commonwealth 
-									and State laws and regulations. All these 
-									documents and more can be sourced at (http://
-									www.austlii.edu.au/databases.html). 
-									These acts form complex laws and legislations 
-									that all businesses must follow. ANE college 
-									ensures its policy and procedures are in 
-									line with these regulations and provide the 
-									following summary of each for the students’ 
-									information. Students are encouraged to seek 
-									further information on each piece of legislation 
-									by accessing the Acts online or by speaking to 
-									the ANE officer in-charge.
+                                  ANE college follows all relevant Commonwealth and State laws and regulations. All these documents and more
+                                    can be sourced at <a href="http://www.austlii.edu.au/databases.html">http://www.austlii.edu.au/databases.html</a>. These acts form complex laws and legislations that
+                                    all businesses must follow. ANE college ensures its policy and procedures are in line with these regulations and
+                                    provide the following summary of each for the students’ information. The students are encouraged to
+                                    seek further information on each piece of legislation by accessing the Acts online or by speaking to the ANE officer
+                                    in-charge.
 
 							  	</p>
 						  </div>
 						  <div class="tab-pane fade" id="international3" role="tabpanel" aria-labelledby="contact-tab">
 						  		<h2>PRE-DEPARTURE CHECK LIST</h2>
-						  		<ul>
-										<li><i class="fas fa-angle-double-right"></i>Passport and Visa – Check that your passport is valid for at least 6 months prior to your 
-										 arrival in Australia, and that you have all your visa documentation. It is also a good idea to 
-										 make copies of your passport in case you lose your passport</li>
-										<li><i class="fas fa-angle-double-right"></i>The students’ enrolment and orientation documents – You will need your electronic 
-										 Confirmation of Enrolment (C.O.E) and the students’ information pack, which you will 
-										 have received from your college</li>
-										<li><i class="fas fa-angle-double-right"></i>Overseas Student Health Cover (OSHC) – This is a requirement for entry to Australia, so 
-	 												make sure you have your health cover policy arranged before you leave home.</li>
-										<li><i class="fas fa-angle-double-right"></i>Travel Insurance – You should also consider travel insurance, which covers things your 
-	 									OSHC may not – such as cancelled flights, lost documents, dental or optical care, etc</li>
-										<li><i class="fas fa-angle-double-right"></i>Airfares – Make sure you are aware of the date and time of your flight. Keep your flight 
-										 details in a safe and secure place, with your passport and visa.</li>
-										<li><i class="fas fa-angle-double-right"></i>Contact details – You may want to have a list of emergency contact details for family, as
-										 			well as your embassy, accommodation, and institution details. If you have used an
-										 education agent, keep their contact details on you, in case you need to contact them
-										 once you arrive in Australia.</li>
-										<li><i class="fas fa-angle-double-right"></i>Australian currency – There are money exchange places available at Australian airports 
-										 and in cities, but it is recommended to have some Australian currency on you prior to
-										 leaving your home country</li>
-	 									<li><i class="fas fa-angle-double-right"></i>
-										Transport from the airport – Whether you are taking public transport, a taxi, or you are being 
-										 picked up from the airport by your education provider, it is important that you have all the 
-										 details including the time, the route and, if your travel has been arranged by your institution, 
-										 their contact details. If you need a map to assist you in getting to your accommodation from 
-										 the airport, they will be available at the airport, or you can print one prior to leaving
-	 									</li>
-	 									<li><i class="fas fa-angle-double-right"></i>
-	 										Accommodation details – Make sure you have the address of where you will be staying 
-										 as well as their phone number and payment confirmation (if you have already paid for
-										your accommodation)
-	 									</li>
-	 									
-									</ul>
+                                  <p class="para">Prior to your departure to Australia, you should ensure that all your documentations must be up-to-dated
+                                    and travelling arrangements are well prepared.</p>
+                                    <p class="bold-text">Documentations include:</p>   
+                                    <ul>
+										<li><i class="fas fa-angle-double-right"></i> and Visa</li>
+                                        <li><i class="fas fa-angle-double-right"></i>ANE College’s Enrolment documents</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Overseas Student Health Cover (OSHC)</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Travel Insurance.</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Airfares</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Contact details – You may want to have a list of emergency contact details for family, as well as your
+                                        embassy, accommodation, and institution details. If you have used an education agent, keep their contact
+                                        details on you, in case you need to contact them once you arrive in Australia.</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Australian currency – There are money exchange places available at Australian airports and in cities,
+                                        but it is recommended to have some Australian currency on you prior to leaving your home country.</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Transport from the airport – Whether you are taking public transport, a taxi, or you are being picked up
+                                        from the airport by your education provider, it is important that you have all the details including the time,
+                                        the route and, if your travel has been arranged by your institution, their contact details. If you need a map
+                                        to assist you in getting to your accommodation from the airport, they will be available at the airport, or you
+                                        can print one prior to leaving.</li>
+                                        <li><i class="fas fa-angle-double-right"></i>Accommodation details – Make sure you have the address of where you will be staying as well as their
+                                        phone number and payment confirmation (if you have already paid for your accommodation).</li>
+                                    </ul>
+						  		
 
 									
 						  </div>
@@ -156,20 +138,23 @@
 										
 						  </div>
 						  <div class="tab-pane fade" id="international5" role="tabpanel" aria-labelledby="contact-tab">
-
+                            <p class="para">Most items you will need are available in Australia, though the cost of some may be higher than in your
+                            home country. Here is some advice on what international students may want to bring with them, and what
+                            is not necessary; and remember you are only allowed 20 - 30kgs of luggage on the flight to Australia.</p>
 
 										<h2>DO BRING</h2>
+                                        <p class="para">Please refer to Australian Border Force website: List of items you can and can't bring in (abf.gov.au) for
+                                        things that you can bring it in or you cannot bring it in Australia. Basically, you can bring your personal
+                                        items, as following:</p>
 	 									<ul>
-	 									 	<li><i class="fas fa-angle-double-right"></i> Clothing</li>
-											<li><i class="fas fa-angle-double-right"></i> Electrical goods - computers, hair dryers, stereos and rice-cookers are items some international students choose to 
-											 bring with them. However, bear in mind that these items may attract customs duty Goods and services tax (GST).
-											 If in doubt, refer to the section on Customs Regulations above.</li>
-											<li><i class="fas fa-angle-double-right"></i>You are expected to supply your own computing device such as a laptop, notebook or pad that is capable of Wi-Fi 
-	 										connectivity and loaded with the Microsoft suite of programs – Minimum - Word, Excel, and PowerPoint.</li>
-											<li><i class="fas fa-angle-double-right"></i>Electricity adaptor plugs - Australia has 240-volt, AC 50 Hz cycle electricity.</li>
-											<li><i class="fas fa-angle-double-right"></i>Optical Spares – if you wear glasses or contact lenses you should bring spares.</li>
-											<li><i class="fas fa-angle-double-right"></i>Other personal items - you may find it useful to bring things like a small sewing kit, battery operated alarm clock, 
-	 										umbrella, dictionary, and prescriptions for medicines, sports gear, toiletries, and other favourite personal items.</li>
+	 									 	<li><i class="fas fa-angle-double-right"></i> Clothing: It depends on the state where you will be living and studying, your clothes must be suitable for
+                                            the season in Australia, such as, spring, summer, autumn, and winter clothes. </li>
+											<li><i class="fas fa-angle-double-right"></i> Electrical goods: laptop, iPad, hair dryers and so on …are items you choose to bring in with you. However,
+                                            you should bear in mind that these items may attract customs duty Goods and services tax (GST). Also,
+                                            you should be aware of that electricity adaptor plugs - Australia has 240-volt, AC 50 Hz cycle electricity. If
+                                            in doubt, refer to ‘Australian Border Force’ website above. 
+                                            </li>
+											
 											<li class="sub-list"><i class="fas fa-angle-double-right"></i> Document folder including:
 												<ul>
 													<li>

@@ -46,17 +46,17 @@
                                 <ul class="contact-info">
                                     <li>
                                             <span class="label">
-                                                <span><img src="image/phone.svg" class="img-full"></span>
+                                                <span><img src="{{ asset('image/phone.svg') }}" class="img-full"></span>
                                                 <span class="bold-text">Phone</span> <a href="tel:+61 2 9281 5929">+61 2 9281 5929</a> </span>
                                         </li>
                                     <li>
                                         <span class="label">
-                                            <span><img src="image/message.svg" class="img-full"></span>
+                                            <span><img src="{{ asset('image/message.svg') }}" class="img-full"></span>
                                             <span class="bold-text">Email</span> <a href="mailto:sydney.campus@ane.edu.au">sydney.campus@ane.edu.au</a></span>
                                     </li>
                                     <li>
                                         <span class="label">
-                                            <span><img src="image/location.svg" class="img-full"></span>
+                                            <span><img src="{{ asset('image/location.svg') }}" class="img-full"></span>
                                             <span class="bold-text">Location</span> Suite 67 & 68 Level 6, 8-24 Kippax Street Surry Hills NSW 2010 </span>
                                     </li>
                                 </ul>
@@ -98,8 +98,8 @@
                         </div>
                         
                         <div class="row contact-info">
-                            <div class="col-sm-4 contact-block  mt-4">
-                                <h5>Management team</h5>
+                            <div class="col-sm-3 contact-block  mt-4">
+                                <h5>Enrollment</h5>
                                 <ul>
                                     <li>
                                         <div class="name">charles lecrec</div>
@@ -115,7 +115,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-sm-4 contact-block mt-4">
+                            <div class="col-sm-3 contact-block mt-4">
                                 <h5>Finance team</h5>
                                 <ul>
                                     <li>
@@ -132,8 +132,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-sm-4 contact-block mt-4">
-                                <h5>IT team</h5>
+                            <div class="col-sm-3 contact-block mt-4">
+                                <h5>Student Service</h5>
                                 <ul>
                                     <li>
                                         <div class="name">charles lecrec</div>
@@ -149,42 +149,8 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-sm-4 contact-block mt-4">
-                                <h5>Support team</h5>
-                                <ul>
-                                    <li>
-                                        <div class="name">charles lecrec</div>
-                                        <div class="designation">designation</div>
-                                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                                    </li>
-                                    <li>
-                                        <div class="name">charles lecrec</div>
-                                        <div class="designation">designation</div>
-                                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4 contact-block mt-4">
-                                <h5>Faculty team</h5>
-                                <ul>
-                                    <li>
-                                        <div class="name">charles lecrec</div>
-                                        <div class="designation">designation</div>
-                                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                                    </li>
-                                    <li>
-                                        <div class="name">charles lecrec</div>
-                                        <div class="designation">designation</div>
-                                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4 contact-block mt-4">
-                                <h5>24/7 Student assistance</h5>
+                            <div class="col-sm-3 contact-block mt-4">
+                                <h5>Marketing Team</h5>
                                 <ul>
                                     <li>
                                         <div class="name">charles lecrec</div>
@@ -206,7 +172,7 @@
                         
                     </div>
                   <div class="tab-pane fade" id="international2" role="tabpanel" aria-labelledby="profile-tab">
-                          <div class="row">
+                         <!-- <div class="row">
                               <div class="col-sm-12">
                                   <div class="small-title title">
                                     <h3>Canberra Campus</h3>
@@ -215,17 +181,17 @@
                                 <ul class="contact-info">
                                     <li>
                                             <span class="label">
-                                                <span><img src="image/phone.svg" class="img-full"></span>
+                                                <span><img src="{{ asset('image/phone.svg') }}" class="img-full"></span>
                                                 <span class="bold-text">Phone</span> +61 2 9281 5929</span>
                                         </li>
                                     <li>
                                         <span class="label">
-                                            <span><img src="image/message.svg" class="img-full"></span>
+                                            <span><img src="{{ asset('image/message.svg') }}" class="img-full"></span>
                                             <span class="bold-text">Email</span> sydney.campus@ane.edu.au</span>
                                     </li>
                                     <li>
                                         <span class="label">
-                                            <span><img src="image/location.svg" class="img-full"></span>
+                                            <span><img src="{{ asset('image/location.svg') }}" class="img-full"></span>
                                             <span class="bold-text">Location</span> Suite 67 & 68 Level 6, 8-24 Kippax Street Surry Hills NSW 2010 </span>
                                     </li>
                                 </ul>
@@ -369,6 +335,10 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>-->
+                        <div class="coming-soon">
+                            <div class="speaker"><i class="fas fa-bullhorn"></i></div>
+                            <h1>coming soon !!</h1>
                         </div>
                   </div>
                                 
@@ -389,7 +359,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card">
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/contact.svg') }}">
@@ -402,7 +372,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card">
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/consult.svg') }}">
@@ -415,7 +385,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card">
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/admission.svg') }}">
