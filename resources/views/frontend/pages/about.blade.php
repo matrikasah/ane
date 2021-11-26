@@ -2,7 +2,7 @@
 @section('content')
 
 <section class="featured-img">
-	<img src="image/course-featured.jpg">
+	<img src="{{ asset('image/course-featured.jpg') }}">
 	<div class="overlap-featured-breadcrumb">
 		<div class="container">
 			<div class="row">
@@ -11,7 +11,7 @@
 					<p>what are we</p>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb">
-					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
 					    <li class="breadcrumb-item active" aria-current="page">Why study with us</li>
 					  </ol>
 					</nav>
@@ -30,7 +30,7 @@
 			<div class="col-sm-12">
 				<div class="mission-vision  content-text">
 					<div class="mission-img d-none  d-xl-block" data-aos="fade-up">
-						<img src="image/about-us.jpg" class="img-responsive img-full">
+						<img src="{{ asset('image/about-us.jpg') }}" class="img-responsive img-full">
 					</div>
 					<div class="about-wrap " data-aos="fade-up">
 							<div class="small-title title">
@@ -83,7 +83,7 @@ ANE College maintains suitable, up-to-date premises and equipment that satisfy a
 						<p>The core value of ANE College is to uphold freedom of thoughts, multiculturalism, responsibility, and integrity in all activities and services toward the students and others as a whole. These principles benefit the students through high standards of education and training, up-to-date methods, quality materials, and professional staff.</p>
 					</div>
 					<div class="mission-img d-none  d-xl-block" data-aos="fade-up">
-						<img src="image/mission.jpg" class="img-responsive img-full">
+						<img src="{{ asset('image/mission.jpg') }}" class="img-responsive img-full">
 					</div>
 				</div>
 			</div>
@@ -95,7 +95,7 @@ ANE College maintains suitable, up-to-date premises and equipment that satisfy a
 			<div class="col-sm-12">
 				<div class="mission-vision  content-text">
 					<div class="mission-img d-none  d-xl-block" data-aos="fade-up">
-						<img src="image/training.jpg" class="img-responsive img-full">
+						<img src="{{ asset('image/training.jpg') }}" class="img-responsive img-full">
 					</div>
 					<div class="about-wrap " data-aos="fade-up">
 						<div class="small-title title">
@@ -148,7 +148,7 @@ ANE College maintains suitable, up-to-date premises and equipment that satisfy a
 						<p>ANE College is committed to reduce the impact on the environment. We extend public understanding of environmental challenges.</p>
 					</div>
 					<div class="mission-img d-none  d-xl-block" data-aos="fade-up">
-						<img src="image/pri.jpg" class="img-responsive img-full">
+						<img src="{{ asset('image/pri.jpg') }}" class="img-responsive img-full">
 					</div>
 				</div>
 			</div>
@@ -164,7 +164,7 @@ ANE College maintains suitable, up-to-date premises and equipment that satisfy a
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/contact.svg">
+				  		<img src="{{ asset('image/contact.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Contact</h5>
@@ -177,7 +177,7 @@ ANE College maintains suitable, up-to-date premises and equipment that satisfy a
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/consult.svg">
+				  		<img src="{{ asset('image/consult.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Consult</h5>
@@ -190,7 +190,7 @@ ANE College maintains suitable, up-to-date premises and equipment that satisfy a
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/admission.svg">
+				  		<img src="{{ asset('image/admission.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Admission</h5>

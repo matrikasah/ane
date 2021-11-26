@@ -54,9 +54,9 @@
               <p class="para">Australian National Education acknowledges and pays respect to the past, present and future Traditional Custodians and Elders of this nation and the continuation of cultural, spiritual and educational practices of Aboriginal and Torres Strait Islander peoples.</p>
       </div>
       <div class="col-md-2 col-sm-12 text-center">
-      	<ul class="d-flex">
-      		<li><img src="image/Australian_Aboriginal.png" alt="images not found" class="img-full"></li>
-      		<li><img src="image/torres-strait-islanders.png" alt="images not found" class="img-full"></li>
+      	<ul class="flag">
+      		<li><img src="{{ asset('image/Australian_Aboriginal.png') }}" alt="images not found" class="img-full"></li>
+      		<li><img src="{{ asset('image/torres-strait-islanders.png') }}" alt="images not found" class="img-full"></li>
       	</ul>
 					
       </div>
@@ -90,8 +90,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-footer">
-        <a href="apply-offshore.php" class="btn btn-secondary  hvr-bounce-to-right">offshore student</a>
-        <a href="apply-onshore.php" class="btn btn-primary  hvr-bounce-to-right">onshore student</a>
+        <a href="{{route('apply-offshore')}}" class="btn btn-secondary  hvr-bounce-to-right">offshore student</a>
+        <a href="{{route('apply-onshore')}}" class="btn btn-primary  hvr-bounce-to-right">onshore student</a>
       </div>
     </div>
   </div>
@@ -101,20 +101,26 @@
 
 
 
+<<<<<<< HEAD
 <script src="js/jquery-3.5.1.min.js"></script> 
+=======
 
-<script defer src="font-awesome/js/all.js"></script>
+<script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script> 
+>>>>>>> 3e10cb57f7f6592aaa8dc627933f3f0d9e388358
+
+<script defer src="{{ asset('font-awesome/js/all.js') }}"></script>
 <!-- <script src="bootstrap/js/bootstrap.bundle.js"></script>   -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  -->
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/parallax.min.js"></script>
+<script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('js/parallax.min.js') }}"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/Script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<script src="{{ asset('js/Script.js') }}"></script>
 </body>
 </html>

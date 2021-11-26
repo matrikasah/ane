@@ -1,13 +1,3 @@
-// var swiper = new Swiper(".mySwiper", {
-//         slidesPerView: 3,
-//         spaceBetween: 30,
-//         pagination: {
-//           el: ".swiper-pagination",
-//         },
-//         autoplay: {
-//     delay: 2000,
-//   },
-//       });\\
 
 
 function check(){
@@ -143,39 +133,27 @@ $("#datepicker").datepicker({
   format: "dd-mm-yyyy",
 });
 
-// $('.drop-new').click(function(){
-    
-//     alert('dddd');
-// })
 
 $('.dropdown-toggle').click(function() {
   $('.drop-new').dblclick();
   alert('dddd');
 });
 
-// function closePrint () {
-//   document.body.removeChild(this.__container__);
-// }
+
+$(document).ready(function(){ 
+	var touch 	= $('#resp-menu');
+	var menu 	= $('.menu');
  
-// function setPrint () {
-//   this.contentWindow.__container__ = this;
-//   this.contentWindow.onbeforeunload = closePrint;
-//   this.contentWindow.onafterprint = closePrint;
-//   // Required for IE
-//   this.contentWindow.focus();
-//   this.contentWindow.print();
-// }
- 
-// function printPage(sURL) {
-//   var oHideFrame = document.createElement("iframe");
-//   oHideFrame.onload = setPrint;
-//   oHideFrame.style.position = "fixed";
-//   oHideFrame.style.right = "0";
-//   oHideFrame.style.bottom = "0";
-//   oHideFrame.style.width = "0";
-//   oHideFrame.style.height = "0";
-//   oHideFrame.style.border = "0";
-//   oHideFrame.style.padding = "0";
-//   oHideFrame.src = sURL;
-//   document.body.appendChild(oHideFrame);
-// }
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 992 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});

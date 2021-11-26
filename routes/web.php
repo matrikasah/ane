@@ -24,27 +24,27 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/home',[HomeController::class,'index']);
-Route::get('/apply-offshore',[HomeController::class,'offshore_form']);
-Route::get('/apply-onshore',[HomeController::class,'onshore_form']);
-Route::get('/apply-agent',[HomeController::class,'agent_form']);
-Route::get('/become-agent',[HomeController::class,'agent']);
-Route::get('/how-to-apply',[HomeController::class,'how_to_apply']);
-Route::get('/intake-date',[HomeController::class,'intake_date']);
-Route::get('/who-can-apply',[HomeController::class,'who_can_apply']);
-Route::get('/first-day',[HomeController::class,'first_day']);
-Route::get('/orientation',[HomeController::class,'orientation']);
-Route::get('/campus-location',[HomeController::class,'campus_location']);
-Route::get('/student-support',[HomeController::class,'student_support']);
-Route::get('/rules-regulations',[HomeController::class,'rules_regulations']);
-Route::get('/airport-pick-up',[HomeController::class,'airport_pick_up']);
-Route::get('/oshc',[HomeController::class,'oshc']);
-Route::get('/faqs',[HomeController::class,'faqs']);
-Route::get('/about',[HomeController::class,'about']);
-Route::get('/international-students',[HomeController::class,'international_student']);
-Route::get('/message-ceo',[HomeController::class,'message_ceo']);
-Route::get('/contact',[HomeController::class,'contact']);
-Route::get('/notice',[HomeController::class,'notice']);
+Route::get('/home',[HomeController::class,'index'])->name('home');
+Route::get('/apply-offshore',[HomeController::class,'offshore_form'])->name('apply-offshore');
+Route::get('/apply-onshore',[HomeController::class,'onshore_form'])->name('apply-onshore');
+Route::get('/apply-agent',[HomeController::class,'agent_form'])->name('apply-agent');
+Route::get('/become-agent',[HomeController::class,'agent'])->name('become-agent');
+Route::get('/how-to-apply',[HomeController::class,'how_to_apply'])->name('how-to-apply');
+Route::get('/intake-date',[HomeController::class,'intake_date'])->name('intake-date');
+Route::get('/who-can-apply',[HomeController::class,'who_can_apply'])->name('who-can-apply');
+Route::get('/first-day',[HomeController::class,'first_day'])->name('first-day');
+Route::get('/orientation',[HomeController::class,'orientation'])->name('orientation');
+Route::get('/campus-location',[HomeController::class,'campus_location'])->name('campus-location');
+Route::get('/student-support',[HomeController::class,'student_support'])->name('student-support');
+Route::get('/rules-regulations',[HomeController::class,'rules_regulations'])->name('rules-regulations');
+Route::get('/airport-pick-up',[HomeController::class,'airport_pick_up'])->name('airport-pick-up');
+Route::get('/oshc',[HomeController::class,'oshc'])->name('oshc');
+Route::get('/faqs',[HomeController::class,'faqs'])->name('faqs');
+Route::get('/about',[HomeController::class,'about'])->name('about');
+Route::get('/international-students',[HomeController::class,'international_student'])->name('international-student');
+Route::get('/message-ceo',[HomeController::class,'message_ceo'])->name('message-ceo');
+Route::get('/contact',[HomeController::class,'contact'])->name('contact');
+Route::get('/notice',[HomeController::class,'notice'])->name('notice');
 
 
 

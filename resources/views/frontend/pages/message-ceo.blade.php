@@ -1,7 +1,7 @@
 @extends('frontend.master')
 @section('content')
 <section class="featured-img">
-	<img src="image/course-featured.jpg">
+	<img src="{{ asset('image/course-featured.jpg') }}">
 	<div class="overlap-featured-breadcrumb">
 		<div class="container">
 			<div class="row">
