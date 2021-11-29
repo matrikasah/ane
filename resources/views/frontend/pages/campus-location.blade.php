@@ -6,12 +6,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-8 col-lg-7">
-					<h1 class="innerpage-title">Campus Location</h1>
+					<h1 class="innerpage-title">Campus map</h1>
 					<p>Orientation Procedure</p>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb">
 					    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">Campus location</li>
+					    <li class="breadcrumb-item active" aria-current="page">Campus map</li>
 					  </ol>
 					</nav>
 				</div>
@@ -24,7 +24,7 @@
 <section class="innerpage-content">
 	<div class="container">
 		<div class="row content-text">
-			<div class="col-sm-5">
+			<div class="col-md-8 col-sm-12">
 				<div class=" campus-map">
 				<div class="small-title title">
 					<h3>Sydney Campus</h3>
@@ -34,7 +34,7 @@
 				<img src="{{ asset('image/Sample_Map.png') }}" class="img-full">
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<!-- <div class="col-sm-5">
 				<div class="border-l campus-map">
 				<div class="small-title title">
 					<h3>Canberra Campus</h3>
@@ -42,7 +42,7 @@
 				</div>
 				<img src="{{ asset('image/location-map.png') }}" class="img-full">
 				</div>
-			</div>
+			</div> -->
 			
 		</div>
 	</div>

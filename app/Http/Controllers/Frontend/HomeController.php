@@ -309,8 +309,36 @@ public function notice(){
     return view('frontend.pages.notice');
 
 }
+public function glazed(){
 
+    return view('frontend.pages.glazed-beef');
 
+}
+public function pork(){
+
+    return view('frontend.pages.pork-thyme');
+
+}
+public function Cauliflower(){
+
+    return view('frontend.pages.Cauliflower');
+
+}
+public function child_education(){
+    return view('frontend.pages.childhood-education');
+}
+public function hospitality_management(){
+    return view('frontend.pages.hospitality-manangement');
+}
+public function commercial_cookery(){
+    return view('frontend.pages.commercial-cookery');
+}
+public function disability(){
+    return view('frontend.pages.disability');
+}
+public function community_service(){
+    return view('frontend.pages.community-services');
+}
 
 
 }

@@ -111,8 +111,8 @@ label.form-check-label {
   font-weight: 500;
   color: #000;
 }
-.top-space {
-  padding-top: 25%;
+a.navbar-brand {
+    margin-top: 10px;
 }
 .top-space .input-group-text {
   font-size: 18px;
@@ -292,10 +292,15 @@ span.code {
 }
 
 .news .card-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-family: "Poppins", sans-serif !important;
   font-size: 15px;
   text-align: center;
+  text-transform: uppercase;
+}
+.news .card p.para {
+  height: 21px;
+  overflow: hidden;
 }
 .note {
   display: flex;
@@ -1702,6 +1707,15 @@ footer ul.nav li a, .copyright {
 }
 .dis-b p:first-child span.bold-text {
     display: block;
+    margin-left: 0;
+    margin-right: 5px;
+}
+.gutter-space{
+  margin-left: 0;
+  margin-right: 20px;
+}
+.dis-b p.address {
+  font-size: 14px;
 }
 .location {
     border-right: 1px solid #00000078;
@@ -1988,8 +2002,13 @@ p.next-orientation {
 ul.contact-info {
     display: flex;
     margin-bottom: 80px;
+    list-style: none;
+    padding-left: 20px;
 }
-
+.contact-info .label a {
+  text-decoration: none;
+  color: #282828;
+}
 .contact-tab ul li span {
     display: block;
 }
@@ -2029,7 +2048,7 @@ ul.contact-info {
 }
 
 .contact-block h5 {
-    background: #fff;
+    background: #f7f7f7;
     padding: 20px;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -2107,7 +2126,26 @@ a.link:hover {
   margin: 0 10px 0 0;
 }
 
-
+.content-text p.para a{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+img.card-img-top {
+  height: 300px;
+  width: auto;
+}
+.news .card a {
+  text-decoration: none;
+  color: #282828;
+}
+.news .card:hover {
+  box-shadow: 0px 0px 8px #00000040;
+  margin-top: -10px;
+  -webkit-transition: margin-top 0.5s ease-out;
+  -moz-transition: margin-top 0.5s ease-out;
+  -o-transition: margin-top 0.5s ease-out;
+  transition: margin-top 0.5s ease-out;
+}
 @media print {
 
     .featured-img, header, .button-lists.bd-example, .fixed-arrow, footer, button.btn.btn-black.mb-2.hvr-sweep-to-right{

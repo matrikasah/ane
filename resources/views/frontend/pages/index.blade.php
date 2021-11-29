@@ -172,7 +172,7 @@
 			          <div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+									  		<img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
 									  		<a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -317,47 +317,65 @@
 				<div class="row">
 		      <div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
+							<a href="/Cauliflower">
 							<!-- <div class="news-category">
 								<h5>News</h5>
 							</div> -->
-						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
+						  <img src="{{ asset('image/article-3.jpg') }}" class="card-img-top" alt="...">
 						  <div class="card-body">
-						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
-							<div class="note">
-								<p><i class="fas fa-user-alt"></i>nostrud exercitation</p>
-								<p><i class="far fa-calendar-check"></i>1st  Nov, 2021</p>
+						  	<h5 class="card-title">Cauliflower puree</h5>
+							  <p class="para">You can make this in a flash with just two steps Its smooth, creamy, rich and velvety flavour
+								makes it a great side dish.</p>
+							  <div class="note">
+							  <p><i class="fas fa-user-alt"></i>Ryka Johnson</p>
+								<p><i class="far fa-calendar-check"></i>Aug, 2020</p>
 							</div>
 						  </div>
+						  </a>
 						</div>
 					</div>
 					<div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
+							<a href="/glazed">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
-						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
+						  <img src="{{ asset('image/article-1.jpg') }}" class="card-img-top" alt="...">
 						  <div class="card-body">
-						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
+						  	<h5 class="card-title">Glazed beef & honeyed carrots</h5>
+							  <p class="para">A classic reinvente/in just a few steps and all done in the one pan, so it's easy for aryone to
+								pull off, This glute415nd dairy-free dish is packed with so much flavour, it can be reserved
+								for a special nigtit.</p>
 							<div class="note">
-								<p><i class="fas fa-user-alt"></i>nostrud exercitation</p>
-								<p><i class="far fa-calendar-check"></i>1st  Nov, 2021</p>
+								<p><i class="fas fa-user-alt"></i>Ryka Johnson</p>
+								<p><i class="far fa-calendar-check"></i>Aug, 2020</p>
 							</div>
 						  </div>
+						  </a>
 						</div>
 					</div>
 					<div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
+							<a href="/pork">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
-						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
+						  <img src="{{ asset('image/article-2.jpg') }}" class="card-img-top" alt="...">
 						  <div class="card-body">
-						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
-							<div class="note">
-								<p><i class="fas fa-user-alt"></i> nostrud exercitation</p>
-								<p><i class="far fa-calendar-check"></i>1st  Nov, 2021</p>
+						  	<h5 class="card-title">Pork & thyme meatballs</h5>
+							  <p class="para">A refreshing and warming autumn
+								dish that's as hearty as it is zesty
+								The use of thyme and lemon lifts
+								this gluten- and dairy-free meal
+								so it's not heavy, Baked meatballs
+								mean you spend less time cooking
+								and end up with a better result.</p>
+							  <div class="note">
+							  <p><i class="fas fa-user-alt"></i>Ryka Johnson</p>
+								<p><i class="far fa-calendar-check"></i>Aug, 2020</p>
 							</div>
 						  </div>
+						  </a>
 						</div>
 					</div>
 				</div>
