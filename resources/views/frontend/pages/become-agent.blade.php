@@ -20,7 +20,19 @@
 		</div>
 	</div>
 </section>
-
+@if(session()->has('message'))
+<div classs="container p-5">
+	<div class="row no-gutters">
+		<div class="col-lg-6 col-md-12 m-auto">
+			<div class="alert alert-success fade show" role="alert">
+				
+			 	<h4 class="alert-heading">Well done!</h4>
+			  	<p> {{ session()->get('message') }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+@endif
 
 <section class="innerpage-content">
 	<div class="container">

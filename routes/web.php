@@ -54,3 +54,12 @@ Route::get('/notice',[HomeController::class,'notice'])->name('notice');
 Route::post('/apply-offshore/store',[HomeController::class,'store_ofshore'])->name('offshore.store');
 Route::post('/apply-onshore/store',[HomeController::class,'store_onshore'])->name('onshore.store');
 Route::post('/apply-agent/store',[HomeController::class,'store_agent_application'])->name('agent.store');
+
+
+Route::get('/course',[HomeController::class,'course'])->name('course');
+Route::get('/child-education',[HomeController::class,'child_education'])->name('child-education');
+Route::get('/commercial-cookery',[HomeController::class,'commercial_cookery'])->name('commercial-cookery');
+Route::get('/community-service',[HomeController::class,'community_service'])->name('community-service');
+Route::get('/hospitality-management',[HomeController::class,'hospitality_management'])->name('hospitality-management');
+Route::get('/disability',[HomeController::class,'disability'])->name('disability');
+Route::get('/policy',[HomeController::class,'policy'])->name('policy');

@@ -15,14 +15,14 @@ class CreateAgentBusinessHistoriesTable extends Migration
     {
         Schema::create('agent_business_histories', function (Blueprint $table) {
             $table->id();
-          $table->longText('how_long_operation');
-          $table->longText('deal_area');
-          $table->longText('totalnumber_student');
-          $table->longText('country_student_send');
-          $table->longText('student_in_austrila');
-          $table->longText('partners');
-          $table->longText('institutions');
-         $table->bigInteger('agent_id');
+          $table->longText('how_long_operation')->nullable();
+          $table->longText('deal_area')->nullable();
+          $table->longText('totalnumber_student')->nullable();
+          $table->longText('country_student_send')->nullable();
+          $table->longText('student_in_austrila')->nullable();
+          $table->longText('partners')->nullable();
+          $table->longText('institutions')->nullable();
+         $table->bigInteger('agent_id')->nullable();
           $table->timestamps();
 
         });

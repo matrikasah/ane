@@ -15,14 +15,14 @@ class CreateApplicantLanguageCulturesTable extends Migration
     {
         Schema::create('applicant_language_cultures', function (Blueprint $table) {
             $table->id();
-            $table->string('langbirthCoun');
-            $table->string('ausCtzen');
-            $table->string('ausAbor');
-            $table->string('onlyAbor');
-            $table->string('onlyTorres');
-            $table->string('englanguage');
-            $table->string('otherlanguages');
-            $table->bigInteger('applicant_id');
+            $table->string('langbirthCoun')->nullable();
+            $table->string('ausCtzen')->nullable();
+            $table->string('ausAbor')->nullable();
+            $table->string('onlyAbor')->nullable();
+            $table->string('onlyTorres')->nullable();
+            $table->string('englanguage')->nullable();
+            $table->string('otherlanguages')->nullable();
+            $table->bigInteger('applicant_id')->nullable();
 
             $table->timestamps();
         });

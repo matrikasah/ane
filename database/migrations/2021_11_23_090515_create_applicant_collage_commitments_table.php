@@ -22,7 +22,7 @@ class CreateApplicantCollageCommitmentsTable extends Migration
             $table->string('mydocs')->nullable();
             $table->string('applicant_signB')->nullable();
             $table->string('date_of_signB')->nullable();
-           $table->bigInteger('applicant_id');
+           $table->bigInteger('applicant_id')->nullable();
 
 
             $table->timestamps();
