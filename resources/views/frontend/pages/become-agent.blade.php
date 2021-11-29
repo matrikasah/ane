@@ -95,7 +95,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/consult.svg">
+				  		<img src="{{ asset('image/consult.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Consult</h5>
@@ -108,7 +108,7 @@
 				<div class="card" data-aos="fade-up">
 				<div class="card-body">
 				  	<div class="left">
-				  		<img src="image/admission.svg">
+				  		<img src="{{ asset('image/admission.svg') }}">
 				  	</div>
 				  	<div class="right">
 				  		<h5 class="card-title">Admission</h5>

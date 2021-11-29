@@ -12,8 +12,8 @@
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet"></link>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"></link>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!--<link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"></link>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -69,7 +69,7 @@
                 <div class="col-sm-12">
                 
             <nav>
-                    <a class="navbar-brand" href="home"> <img src="image/logo.png" height="80px"> </a>
+                    <a class="navbar-brand" href="home"> <img src="{{ asset('image/logo.png') }}" height="80px"> </a>
                     
                     <a id="resp-menu" class="responsive-menu" href="#"><i class="fas fa-bars"></i></a> 
                     <div class="menu-wrap d-none d-lg-block">
@@ -103,13 +103,13 @@
                               <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
                             </ul>
                             </li>
-                            <li><a  href="#">find a courses</a>
+                            <li><a  href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
-                              <li><a href="#">Diploma of Early Childhood Education and Care</a></li>
-                              <li><a href="#">Diploma of Hospitality Management</a></li>
-                              <li><a href="#">Certificate IV in Commercial Cookery</a></li>
-                              <li><a href="#">Certificate IV in Disability</a></li>
-                              <li><a href="#">Diploma of Community Services</a></li>
+                              <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>
+                              <li><a href="{{route('commercial-cookery')}}">Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="{{route('disability')}}">Certificate IV in Disability</a></li>
+                              <li><a href="{{route('community-service')}}">Diploma of Community Services</a></li>
                             </ul>
                             </li>
                             <li><a  href="#"> admission</a>
@@ -163,13 +163,13 @@
                               <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
                             </ul>
                             </li>
-                            <li><a  href="#">find a courses</a>
+                            <li><a  href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
-                              <li><a href="#">Diploma of Early Childhood Education and Care</a></li>
-                              <li><a href="#">Diploma of Hospitality Management</a></li>
-                              <li><a href="#">Certificate IV in Commercial Cookery</a></li>
-                              <li><a href="#">Certificate IV in Disability</a></li>
-                              <li><a href="#">Diploma of Community Services</a></li>
+                              <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>
+                              <li><a href="{{route('commercial-cookery')}}">Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="{{route('disability')}}">Certificate IV in Disability</a></li>
+                              <li><a href="{{route('community-service')}}">Diploma of Community Services</a></li>
                             </ul>
                             </li>
                             <li><a  href="#"> admission</a>

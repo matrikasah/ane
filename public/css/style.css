@@ -45,6 +45,10 @@ section.mainmenu {
   position: absolute;
   width: 100%;
   z-index: 9;
+  background: -moz-linear-gradient( top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100% );
+    background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100% );
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
 }
 .headmenu ul li a {
   font-size: 13px;
@@ -60,28 +64,11 @@ section.mainmenu .navbar-light .navbar-nav .nav-link {
 }
 .overlap-vid-text {
   position: absolute;
-  padding-top: 15%;
-  top: 0;
-  color: #ffffff;
-  width: 100%;
-  left: 0;
-  height: 100%;
-  background: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    top: 70%;
+    color: #ffffff;
+    width: 100%;
+    left: 0;
+    height: 100%;
 }
 .overlap-vid-text h1 {
   font-size: 57px;
@@ -124,8 +111,8 @@ label.form-check-label {
   font-weight: 500;
   color: #000;
 }
-.top-space {
-  padding-top: 50px;
+a.navbar-brand {
+    margin-top: 10px;
 }
 .top-space .input-group-text {
   font-size: 18px;
@@ -142,7 +129,7 @@ label.form-check-label {
   background-color: #1a1a1a;
   box-shadow: 0px 0px 8px 0px #8f8f8f5e;
   border-top: 5px solid #e5b349;
-  min-height: 285px;
+  min-height: 260px;
 }
 .overlap-cards .card-body {
   flex: 1 1 auto;
@@ -158,7 +145,7 @@ label.form-check-label {
 
 .overlap-cards {
   position: relative;
-  top: -80px;
+  top: -60px;
 }
 .overlap-cards p.card-text {
   font-size: 14px;
@@ -463,7 +450,7 @@ footer#footer {
   padding: 50px 0 30px;
 }
 footer h2 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1456,9 +1443,9 @@ input[type="number"] {
 .noteMessage {
   padding: 0.5rem;
   color: red;
-  border: 1px solid #ff3e3e;
-  margin-top: 1rem;
-  color: #ff3e3e;
+  border: 2px solid #e5b349;
+    margin-top: 1rem;
+    color: #e5b349;
 }
 .table-responsive {
   overflow-x: auto !important;
@@ -1958,6 +1945,7 @@ p.next-orientation {
     text-transform: uppercase;
     font-weight: 500;
         border: none;
+        color:#282828;
 }
 .contact-tab .nav-tabs .nav-item:active, .contact-tab .nav-tabs .nav-item:focus, .contact-tab .nav-tabs .nav-link:active, .contact-tab .nav-tabs .nav-link:focus{
   border: none;
@@ -1974,7 +1962,7 @@ p.next-orientation {
 }
 .contact-tab .tab-content>.active {
     background: #f1f1f185;
-    padding: 80px;
+    padding: 50px;
 }
 .contact-info li {
     width: 30%;
@@ -1983,6 +1971,20 @@ p.next-orientation {
     padding: 20px;
     text-align: center;
 }
+.coming-soon{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 600;
+    padding: 80px 0;
+    color: #e5b349;
+    border: 2px solid #e5b349;
+}
+.coming-soon h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
 ul.contact-info {
     display: flex;
     margin-bottom: 80px;
@@ -2126,7 +2128,11 @@ margin: 0;
 
 
 
-
+@media (min-width: 1240px){
+    .overlap-cards .row {
+    margin: 0 70px;
+}
+}
 
 
 
@@ -2139,18 +2145,14 @@ margin: 0;
     padding-top: 80px;
     margin-top: 80px;
   }
-  .overlap-vid-text {
-    padding-top: 21%;
-}
+ 
 .overlap-vid-text h1 {
     font-size: 50px;
 }
 section.mainmenu .navbar-light .navbar-nav .nav-link {
     padding: 15px 10px;
 }
-.overlap-cards .card {
-    min-height: 330px;
-}
+
 .featured-img img {
     width: 100%;
     height: 300px;
@@ -2199,6 +2201,13 @@ h1.innerpage-title {
 .parallax-window {
   min-height: 560px;
 }
+li.breadcrumb-item {
+    margin: 0;
+    display: inline-block;
+}
+ol.breadcrumb {
+    display: inline-block;
+}
 }
 
 
@@ -2239,8 +2248,7 @@ h1.innerpage-title {
   }
   .overlap-vid-text {
     position: absolute;
-    padding-top: 50%;
-    top: -1px;
+    top: 87%;
   }
   .course-search.d-flex {
     background: #e5b349;
@@ -2312,7 +2320,7 @@ footer img.img-full {
     margin-top: 50px;
 }
 .overlap-cards .card {
-    min-height: 265px;
+    min-height: 310px;
 }
 .enrollment .left img {
     display: none;
@@ -2331,6 +2339,13 @@ footer img.img-full {
 }
 .parallax-window {
   min-height: 600px;
+}
+li.breadcrumb-item {
+    margin: 0;
+    display: inline-block;
+}
+ol.breadcrumb {
+    display: inline-block;
 }
 }
 
@@ -2587,6 +2602,19 @@ footer img.img-full {
 .parallax-window {
   min-height: 600px;
 }
+
+li.breadcrumb-item {
+    margin: 0;
+    display: inline-block;
+}
+ol.breadcrumb {
+    display: flex;
+}
+li.breadcrumb-item.active {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 }
 
 /* responsive code */
@@ -2610,7 +2638,7 @@ footer img.img-full {
   margin-right:0;
 }
 .mainmenu nav .menu-wrap ul.menu {
-  float: right;
+  /*float: right;*/
 }
 .mainmenu nav {
   display: flex;
@@ -2625,9 +2653,18 @@ footer img.img-full {
 }
 ul#short-menu li .sub-menu {
   z-index: 1000;
+  width: 130px;
+    text-align: left;
 }
 ul#short-menu {
-  margin: 5px 0;
+    margin: 5px 0;
+    float: right;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+ul#short-menu li .sub-menu ul {
+    width: 155px;
 }
 #short-menu .link-box {
   border: 2px solid #e5b349;
@@ -2644,7 +2681,7 @@ ul#short-menu {
 .menu li a {
   font-weight: 400;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 12px 15px;
     display: block;
     color: #fff;
     transition: all 0.2s ease-in-out 0s;
@@ -2714,7 +2751,7 @@ ul#short-menu {
 }
 
 .menu ul ul {
-  left: -169px;
+  left: -154px;
   top: 0px;
   visibility: hidden;
   opacity: 0;
@@ -2760,8 +2797,20 @@ ul#short-menu {
   text-decoration: none;
 }
 
-a.homer {
+.menu li a.homer {
   color:var(--primary-color)
+}
+
+.mainmenu .menu li a.active, .mainmenu .menu li a:hover {
+    color: #e5b349;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+.mainmenu .sub-menu li a:hover, .mainmenu .sub-menu li a:active{
+     color: #fff;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -2829,11 +2878,13 @@ a.homer {
       color: var(--primary-color); 
   }
 
-  .menu li a:hover,.menu li:hover>a {
+  .mainmenu .menu li a:hover, .mainmenu .menu li:hover>a, .mainmenu .menu li a:active, .mainmenu .menu li a:focus {
       background: var(--primary-color);
       color: #fff;
   }
-
+   .mainmenu  .sub-menu li:hover a, .mainmenu  .sub-menu li a:active, .mainmenu .sub-menu li a:focus{
+        color: #fff!important;
+    }
   .menu ul {
       visibility: hidden;
       opacity: 0;

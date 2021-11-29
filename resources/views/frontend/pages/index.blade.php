@@ -8,16 +8,16 @@
 	</video>
 	<div class="overlap-vid-text">
 	<div class="container">
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-lg-7 col-md-8 col-sm-12" id="menu-topbar-left">
 				<h1>Advancing Knowledge, Transforming Lives!</h1>
 				<p>A learning community aspiring to grow in knowledge and envisioning comprehensive development into practical professionalism. </p>
-				<!-- <a type="button" href="apply-international-students.php" class="btn btn-primary "></a> -->
+				
 				<button type="button" class="btn btn-primary hvr-bounce-to-right" data-bs-toggle="modal" data-bs-target="#exampleModal">
 			  Apply now
 			</button>
 			</div>
-		</div>
+		</div>-->
 		<div class="row top-space">
 			<div class="col-lg-7 col-md-12 col-sm-12">
 				<div class="course-search d-flex" data-aos="fade-up">
@@ -25,9 +25,11 @@
 						<span class="input-group-text" id="addon-wrapping">Find a course</span>
 					  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
 					    <option selected>Choose your course</option>
-					    <option value="1">One</option>
-					    <option value="2">Two</option>
-					    <option value="3">Three</option>
+					    <option value="1">Diploma of Early Childhood Education and Care</option>
+					    <option value="2">Diploma of Hospitality Management</option>
+					    <option value="3">Certificate IV in Commercial Cookery</option>
+					    <option value="4">Certificate IV in Disability</option>
+					    <option value="5">Diploma of Community Services</option>
 					  </select>
 					  <button class="btn btn-black hvr-sweep-to-right" type="button">GO</button>
 					</div>
@@ -41,7 +43,7 @@
 <section class="overlap-cards">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card card-c1" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Job Ready Programs.svg') }}">
@@ -50,7 +52,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card card-c2" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Suitable Partnerships.svg') }}">
@@ -59,7 +61,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card card-c3" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Support Services.svg') }}">
@@ -68,7 +70,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<!--<div class="col-lg-3 col-md-6 col-sm-12">
 				<div class="card card-c4" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Articulation Pathways.svg') }}">
@@ -76,7 +78,7 @@
 				    <p class="card-text">We have partnered with Australian universities that offer articulation, gaining credit and recognition.</p>
 				  </div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 </section>
@@ -171,7 +173,7 @@
 									<div class="card">
 										<div class="overlap-img">							
 									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-									  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+									  		<a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
 									  	
@@ -191,7 +193,7 @@
 								<div class="card">
 									<div class="overlap-img">							
 								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+								  		<a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
 								  	
@@ -211,7 +213,7 @@
 								<div class="card">
 									<div class="overlap-img">							
 								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+								  		<a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
 								  	
@@ -231,7 +233,7 @@
 									<div class="card">
 										<div class="overlap-img">							
 									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-									  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+									  		<a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
 									  	
@@ -251,7 +253,7 @@
 								<div class="card">
 									<div class="overlap-img">							
 								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+								  		<a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
 								  	
@@ -270,7 +272,7 @@
 						</div>
 						<div class="swiper-pagination"></div>
 				</div>
-				<a  href="course.php" class="btn btn-primary hvr-bounce-to-right mt-4">view all <i class="fas fa-angle-double-right"></i></a>
+				<a  href="{{route('course')}}" class="btn btn-primary hvr-bounce-to-right mt-4">view all <i class="fas fa-angle-double-right"></i></a>
 			</div>
 		</div>
 	</div>
@@ -291,7 +293,7 @@
 			</div>
 			<div class="col-md-6 col-lg-6">
 				<div class="button-block">
-					<a href="contact.php" class="btn btn-primary btn-black hvr-sweep-to-right" >Enquiry</a>
+					<a href="{{route('contact')}}" class="btn btn-primary btn-black hvr-sweep-to-right" >Enquiry</a>
 					<button type="button" class="btn btn-primary btn-black hvr-sweep-to-right" data-bs-toggle="modal" data-bs-target="#exampleModal">
 			  Apply now
 			</button>

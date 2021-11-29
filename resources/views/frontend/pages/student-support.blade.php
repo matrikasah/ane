@@ -78,7 +78,7 @@
 						<li><i class="fas fa-angle-double-right"></i>Demonstration procedures</li>
 						<li><i class="fas fa-angle-double-right"></i>Pre-teaching technical terminology</li>
 						<li><i class="fas fa-angle-double-right"></i>Writing Skills</li>
-						<li><i class="fas fa-angle-double-right"></i><li><i class="fas fa-angle-double-right"></i>Use of latest information literacy</li>
+						<li><i class="fas fa-angle-double-right"></i>Use of latest information literacy</li>
 						<li><i class="fas fa-angle-double-right"></i>Assistance with assessments or tasks</li>
 						<li><i class="fas fa-angle-double-right"></i>Referencing</li>
 						<li><i class="fas fa-angle-double-right"></i>Use of information technology</li>
@@ -87,7 +87,7 @@
 					</ul>
 					<p class="para">
 					We offer additional tutorial times for students if needed. Our trainers are ready to work even in smaller groups.</p>
-					<a class="link" href="intake-dates.php">College Academic Calendar and Intakes:</a>
+					<a class="link" href="{{route('intake-date')}}">College Academic Calendar and Intakes:</a>
 					<br>
 					<br>
 					<h3>

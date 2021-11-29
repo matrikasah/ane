@@ -20,7 +20,19 @@
 	</div>
 </section>
 
-
+@if(session()->has('message'))
+<div classs="container p-5">
+	<div class="row no-gutters">
+		<div class="col-lg-6 col-md-12 m-auto">
+			<div class="alert alert-success fade show" role="alert">
+				
+			 	<h4 class="alert-heading">Well done!</h4>
+			  	<p> {{ session()->get('message') }}</p>
+			</div>
+		</div>
+	</div>
+</div>
+@endif
 <section class="innerpage-content offshoreForm">
 	<div class="container">
         <div class="row   mt-5">
@@ -31,11 +43,13 @@
                     <h1>OFFSHORE STUDENT ENROLLMENT FORM</h1>
                 </div>
             </div>
+
+ 
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
-                    <a type="button"  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                  
-                    <a type="button" target="_blank" href="{{ asset('image/StudentEnrolmentForm(Offshore).pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
+                    <a  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                  
+                    <a target="_blank" href="{{ asset('image/StudentEnrolmentForm(Offshore).pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
                     </div>
                 </div>
             </div>
@@ -52,8 +66,8 @@
                 on our website <a target="_blank" href="http://www.ane.edu.au">www.ane.edu.au</a>.
                 Once signed and the issue of a receipt for initial fees this document is a binding
                 contract.</p>
-            <form action="{{route('offshore.store')}}" method="POST" >
-                @csrf
+
+           
                 <ul class="error">
                     @foreach($errors->all() as $error)
                     <li><div class="alert alert-danger" role="alert">
@@ -62,6 +76,11 @@
                     </li>
                     @endforeach
                 </ul>
+
+            <form action="{{route('offshore.store')}}" method="POST" >
+                @csrf
+                
+          
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
                         <h3>Personal Details</h3>

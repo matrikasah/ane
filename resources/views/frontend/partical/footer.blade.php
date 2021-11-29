@@ -4,13 +4,13 @@
 		
 		<div class="row  justify-content-center">
 			<div class="col-md-12 col-sm-12">
-				<h2>Australian national education</h2>
+				<h2>ANE College</h2>
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<div class="location dis-b">
 					<p class="address"><a href="https://goo.gl/maps/81MgEWYVeXZ56i2d6"><span class="bold-text">Sydney Campus : </span> Suite 67 & 68 Level 6, 8-24 Kippax Street, Surry Hills NSW 2010, Australia</a>  </p>
 					<p class="address"><a title="+61 2 9281 5929" href="tel:+61 2 9281 5929">  <span class="bold-text">Phone : </span> +61 2 9281 5929</a> <a title="sydney.campus@ane.edu.au" href="mailto:sydney.campus@ane.edu.au"><span  class="bold-text">Email : </span>sydney.campus@ane.edu.au</a> </p>
-					<p class="address"><a href="#"> <span class="bold-text">CRICOS: </span>03430J </a> <a href="#"><span class="bold-text">ABN: </span>37 168 731 048</a><a href="#"> <span class="bold-text">RTO:</span> 41138</a></p> 
+					<p class="address"><a href="#"> <span class="bold-text">CRICOS: </span>03859B </a> <a href="#"><span class="bold-text">ABN: </span>18 634 728 466</a><a href="#"> <span class="bold-text">RTO:</span> 45624</a></p> 
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12">
@@ -48,7 +48,7 @@
 		</div>
 		<div class="row  footer-divider">
 			<div class="col-md-10 col-sm-12">
-              <p class="para">Australian National Education acknowledges and pays respect to the past, present and future Traditional Custodians and Elders of this nation and the continuation of cultural, spiritual and educational practices of Aboriginal and Torres Strait Islander peoples.</p>
+              <p class="para">ANE College acknowledges and respects Aboriginal and Torres Strait Islander people, the Traditional Owners of the land upon which our campuses are situated.</p>
       </div>
       <div class="col-md-2 col-sm-12 text-center">
       	<ul class="flag">
@@ -67,7 +67,7 @@
 			</div>
 			<div class="col-7">
 				<ul class="nav  font-size-sm  copyright">
-					<li id="menu-item-4460" class="nav-item px-3 menu-item-4460"><a title="" href="policy.php" class=" p-0 nav-link">Our Compliance and Policy</a></li>
+					<li id="menu-item-4460" class="nav-item px-3 menu-item-4460"><a title="" href="{{route('policy')}}" class=" p-0 nav-link">Our Compliance and Policy</a></li>
 					<!-- <li id="menu-item-4461" class="nav-item px-3 menu-item-4461"><a title="" href="" class=" p-0 nav-link">Refund policy</a></li>
 					<li id="menu-item-4461" class="nav-item px-3 menu-item-4461"><a title="" href="terms&condition.php" class=" p-0 nav-link">Terms & condition</a></li> -->
 				</ul>

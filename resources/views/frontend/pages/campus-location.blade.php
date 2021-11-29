@@ -31,7 +31,7 @@
 					<h1>location map</h1>
 				</div>
 
-				<img src="image/Sample_Map.png" class="img-full">
+				<img src="{{ asset('image/Sample_Map.png') }}" class="img-full">
 				</div>
 			</div>
 			<div class="col-sm-5">
@@ -40,7 +40,7 @@
 					<h3>Canberra Campus</h3>
 					<h1>location map</h1>
 				</div>
-				<img src="image/location-map.png" class="img-full">
+				<img src="{{ asset('image/location-map.png') }}" class="img-full">
 				</div>
 			</div>
 			

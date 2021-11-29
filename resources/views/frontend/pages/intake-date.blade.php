@@ -85,7 +85,7 @@
 					    <ul>
 							<li><i class="fas fa-angle-double-right"></i>Start Date : 19/09/2022</li>
 							<li><i class="fas fa-angle-double-right"></i>Finish Date : 27/11/2022</li>
-							<li><i class="fas fa-angle-double-right"></i>Term Break : 28/12 - 08/01/2023</li>
+							<li><i class="fas fa-angle-double-right"></i>Term Break : 28/11 - 08/01/2023</li>
 						</ul>
 				  	</div>
 				  </div>
@@ -140,7 +140,7 @@
 					  	</tr>
 						<tr>
 					  		<td>27/12 </td>
-					  		<td>Public Holiday (Christmas Holiday)</td>
+					  		<td>Public Holiday (Christmas Day)</td>
 					  	</tr>	 
 					  	
 					  </tbody>
