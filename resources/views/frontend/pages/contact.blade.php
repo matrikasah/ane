@@ -407,7 +407,7 @@
         </div>
 
         <div class="row contact-info">
-            <div class="col-sm-3 contact-block  mt-4">
+            <div class="col-lg-3 col-md-6 contact-block  mt-4">
                 <h5>Enrollment</h5>
                 <ul>
                     <li>
@@ -424,7 +424,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3 contact-block mt-4">
+            <div class="col-lg-3 col-md-6 contact-block mt-4">
                 <h5>Finance team</h5>
                 <ul>
                     <li>
@@ -441,7 +441,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3 contact-block mt-4">
+            <div class="col-lg-3 col-md-6 contact-block mt-4">
                 <h5>Student Service</h5>
                 <ul>
                     <li>
@@ -458,7 +458,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3 contact-block mt-4">
+            <div class="col-lg-3 col-md-6 contact-block mt-4">
                 <h5>Marketing Team</h5>
                 <ul>
                     <li>

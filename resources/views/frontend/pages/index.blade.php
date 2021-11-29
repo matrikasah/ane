@@ -192,7 +192,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -212,7 +212,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -232,7 +232,7 @@
 							<div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+									  		<img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
 									  		<a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -252,7 +252,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -321,7 +321,9 @@
 							<!-- <div class="news-category">
 								<h5>News</h5>
 							</div> -->
+							<div class="article-img">
 						  <img src="{{ asset('image/article-3.jpg') }}" class="card-img-top" alt="...">
+						  </div>
 						  <div class="card-body">
 						  	<h5 class="card-title">Cauliflower puree</h5>
 							  <p class="para">You can make this in a flash with just two steps Its smooth, creamy, rich and velvety flavour
@@ -340,7 +342,9 @@
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
+							<div class="article-img">
 						  <img src="{{ asset('image/article-1.jpg') }}" class="card-img-top" alt="...">
+							</div>
 						  <div class="card-body">
 						  	<h5 class="card-title">Glazed beef & honeyed carrots</h5>
 							  <p class="para">A classic reinvente/in just a few steps and all done in the one pan, so it's easy for aryone to
@@ -360,7 +364,9 @@
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
+							<div class="article-img">
 						  <img src="{{ asset('image/article-2.jpg') }}" class="card-img-top" alt="...">
+							</div>
 						  <div class="card-body">
 						  	<h5 class="card-title">Pork & thyme meatballs</h5>
 							  <p class="para">A refreshing and warming autumn

@@ -66,5 +66,5 @@ Route::get('/policy',[HomeController::class,'policy'])->name('policy');
 Route::get('/glazed',[HomeController::class,'glazed']);
 Route::get('/pork',[HomeController::class,'pork']);
 Route::get('/Cauliflower',[HomeController::class,'Cauliflower']);
-
+Route::get('/course',[HomeController::class,'course'])->name('course');
 

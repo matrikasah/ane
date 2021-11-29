@@ -339,6 +339,8 @@ public function disability(){
 public function community_service(){
     return view('frontend.pages.community-services');
 }
-
+public function course(){
+    return view('frontend.pages.course');
+}
 
 }

@@ -55,7 +55,7 @@
 		</div>
 		<div class="row  footer-divider">
 			<div class="col-md-10 col-sm-12">
-              <p class="para">ANE College acknowledges and respects Aboriginal and Torres Strait Islander people, the Traditional Owners of the land upon which our campuses are situated.</p>
+              <p class="para">ANE College acknowledges and pays respect to Aboriginal and Torres Strait Islander people, the Traditional Owners of the land upon which our campus is situated. We also pay our respects to Custodians and Elders, both past and present.</p>
       </div>
       <div class="col-md-2 col-sm-12 text-center">
       	<ul class="flag">

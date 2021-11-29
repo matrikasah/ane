@@ -42,7 +42,7 @@
 						<a href="{{ asset('image/brochure_updating_20211107.pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-angle-double-down"></i></a>
 					</div>
 				</div>
-				<img src="{{ asset('image/ANE6024.jpg') }}" class="img-responsive course-detail-img">
+				<img src="{{ asset('image/disability.jpg') }}" class="img-responsive course-detail-img">
 
 				
 

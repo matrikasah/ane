@@ -1669,7 +1669,7 @@ footer#footer .row {
 
 p.address {
     margin-bottom: 5px;
-    display: flex;
+    display: block;
 
 }
 
@@ -1706,7 +1706,7 @@ footer ul.nav li a, .copyright {
   transition: color 0.5s ease-out;
 }
 .dis-b p:first-child span.bold-text {
-    display: block;
+    display: inline-block;
     margin-left: 0;
     margin-right: 5px;
 }
@@ -2045,6 +2045,7 @@ ul.contact-info {
 }
 .contact-info .contact-block ul {
     background: var(--primary-color);
+    padding-left: 0;
 }
 
 .contact-block h5 {
@@ -2073,9 +2074,11 @@ ul.contact-info {
     display: block;
     margin: 0;
     font-size: 12px;
+    text-decoration: none;
 }
 .contact-info .contact-block ul li a svg{
   color: #282828;
+  margin-right: 5px;
 }
 .designation {
     font-weight: 400;
@@ -2130,15 +2133,16 @@ a.link:hover {
   color: var(--primary-color);
   text-decoration: none;
 }
-img.card-img-top {
+.news .article-img {
   height: 300px;
-  width: auto;
+  width: 100%;
+  overflow: hidden;
 }
 .news .card a {
   text-decoration: none;
   color: #282828;
 }
-.news .card:hover {
+.gap.news .card:hover {
   box-shadow: 0px 0px 8px #00000040;
   margin-top: -10px;
   -webkit-transition: margin-top 0.5s ease-out;
@@ -2245,6 +2249,9 @@ li.breadcrumb-item {
 }
 ol.breadcrumb {
     display: inline-block;
+}
+.news .article-img {
+  height: auto;
 }
 }
 
@@ -2396,6 +2403,21 @@ ol.breadcrumb {
 
 /* 768px reponsive */
 @media (max-width: 768px) {
+  
+  .button-lists button.btn, .button-lists a.btn {
+    padding: 6px 12px;
+  }
+  .contact-info .label a {
+    font-size: 12px;
+}
+
+  .sidebar .news .card {
+    min-height: auto;
+}
+
+  .innerpage-content .courses .card {
+    min-height: 340px;
+}
   .mainmenu ul#tab-menu {
    float: none; 
 }
@@ -2442,6 +2464,11 @@ header .mainmenu li.nav-item.dropdown ul li.submenu .dropdown-menu {
 footer img.img-full {
   height: 30px;
 }
+.news .article-img {
+  height: 180px;
+}.news .card {
+  min-height: 340px;
+}
 }
 
 
@@ -2453,6 +2480,15 @@ footer img.img-full {
 
 @media (max-width: 576px) {
 
+  .button-lists button.btn, .button-lists a.btn {
+    padding: 6px 19px;
+  }
+  .contact-info .label a {
+    font-size: 12px;
+}
+.news .card {
+  min-height: auto;
+}
 .overlap-featured-breadcrumb {
     padding-top: 30%;
 }
