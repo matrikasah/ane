@@ -4,22 +4,29 @@
 		
 		<div class="row  justify-content-center">
 			<div class="col-md-12 col-sm-12">
-				<h2>Australian national education</h2>
+				<h2>ANE College</h2>
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<div class="location dis-b">
 					<p class="address"><a href="https://goo.gl/maps/81MgEWYVeXZ56i2d6"><span class="bold-text">Sydney Campus : </span> Suite 67 & 68 Level 6, 8-24 Kippax Street, Surry Hills NSW 2010, Australia</a>  </p>
 					<p class="address"><a title="+61 2 9281 5929" href="tel:+61 2 9281 5929">  <span class="bold-text">Phone : </span> +61 2 9281 5929</a> <a title="sydney.campus@ane.edu.au" href="mailto:sydney.campus@ane.edu.au"><span  class="bold-text">Email : </span>sydney.campus@ane.edu.au</a> </p>
-					<p class="address"><a href="#"> <span class="bold-text">CRICOS: </span>03430J </a> <a href="#"><span class="bold-text">ABN: </span>37 168 731 048</a><a href="#"> <span class="bold-text">RTO:</span> 41138</a></p> 
+					
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12">
 				<div class="dis-b">
-					<p class="address"><a href="https://goo.gl/maps/81MgEWYVeXZ56i2d6"><span class="bold-text">Canberra Campus : </span> Suite 67 & 68 Level 6, 8-24 Kippax Street, Surry Hills NSW 2010, Australia</a> </p>
-					
+					<!-- <p class="address">
+						<a href="https://goo.gl/maps/81MgEWYVeXZ56i2d6">
+							<span class="bold-text">Canberra Campus : </span> Suite 67 & 68 Level 6, 8-24 Kippax Street, Surry Hills NSW 2010, Australia
+						</a> 
+					</p> -->
+					<p class="address">
+						<span class="bold-text">CRICOS: </span><span class="gutter-space">	03859B</span>
+						<span class="bold-text">ABN: </span><span class="gutter-space">18 634 728 466</span>
+							 <span class="bold-text">RTO:</span><span class="gutter-space"> 45624</span></p> 
 				</div>
 				
-				<p class="address"><a title="+61 2 9281 5929" href="tel:+61 2 9281 5929">  <span class="bold-text">Phone : </span> +61 2 9281 5929</a> <a title="sydney.campus@ane.edu.au" href="mailto:sydney.campus@ane.edu.au"><span  class="bold-text">Email : </span>sydney.campus@ane.edu.au</a> </p>
+				<!-- <p class="address"><a title="+61 2 9281 5929" href="tel:+61 2 9281 5929">  <span class="bold-text">Phone : </span> +61 2 9281 5929</a> <a title="sydney.campus@ane.edu.au" href="mailto:sydney.campus@ane.edu.au"><span  class="bold-text">Email : </span>sydney.campus@ane.edu.au</a> </p> -->
 				
 				<ul class="social-media">
 					<li><a title="Facebook" href="http://www.facebook.com"><i class="fab fa-facebook-f" aria-hidden="true"></i> <span class="sr-only">Facebook</span></a></li>
@@ -48,7 +55,7 @@
 		</div>
 		<div class="row  footer-divider">
 			<div class="col-md-10 col-sm-12">
-              <p class="para">Australian National Education acknowledges and pays respect to the past, present and future Traditional Custodians and Elders of this nation and the continuation of cultural, spiritual and educational practices of Aboriginal and Torres Strait Islander peoples.</p>
+              <p class="para">ANE College acknowledges and pays respect to Aboriginal and Torres Strait Islander people, the Traditional Owners of the land upon which our campus is situated. We also pay our respects to Custodians and Elders, both past and present.</p>
       </div>
       <div class="col-md-2 col-sm-12 text-center">
       	<ul class="flag">

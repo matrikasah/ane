@@ -30,9 +30,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
- 
+
     public function index(){
-    
+
         return view('frontend.pages.index');
 
     }
@@ -44,15 +44,15 @@ public function offshore_form(){
 }
 
 public function store_ofshore(ApplicantPostRequest $req){
-   
-    
+
+
     $req->merge([
         'offshore_student'=>1,
-        
+
     ]);
 
     $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
-    
+
     $req->merge([
     'applicant_id'=>$applicant_personal_detail->id
 
@@ -60,37 +60,37 @@ public function store_ofshore(ApplicantPostRequest $req){
     $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
     $application_education_agent=ApplicantEducationAgent::create($req->all());
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
     $applicant_education=ApplicantEducation::create($req->all());
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
      $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
      $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
      $applicant_course=ApplicantCourseDetails::create($req->all());
      $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
     $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
-    
+
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
      $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
 
-     
+
 
 
 
@@ -121,15 +121,15 @@ public function onshore_form(){
 }
 
 public function store_onshore(ApplicantOnShore $req){
- 
-   
+
+
     $req->merge([
         'offshore_student'=>0,
-        
+
     ]);
 
     $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
-    
+
     $req->merge([
     'applicant_id'=>$applicant_personal_detail->id
 
@@ -137,38 +137,38 @@ public function store_onshore(ApplicantOnShore $req){
     $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
     $application_education_agent=ApplicantEducationAgent::create($req->all());
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
     $applicant_education=ApplicantEducation::create($req->all());
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
      $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
      $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
      $applicant_course=ApplicantCourseDetails::create($req->all());
      $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
     $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
-    
+
     $req->merge([
         'applicant_id'=>$applicant_personal_detail->id
-    
+
         ]);
      $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
 
      return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
-     
+
 
 }
 public function agent_form(){
@@ -182,13 +182,13 @@ public function agent(){
 
 }
     public function store_agent_application(AgentPostRequest $req){
-      
+
         $agent_details= AgentDetails::create($req->all());
         $req->merge([
             'agent_id'=>$agent_details->id
         ]);
         $agent_business_history=AgentBusinessHistory::create($req->all());
-       
+
         $agent_contact_person1=AgentContactPerson::create([
             'keyStaff'=>$req->keyStaff,
             'useragentname'=>$req->useragentname,
@@ -309,8 +309,10 @@ public function notice(){
     return view('frontend.pages.notice');
 
 }
+public function glazed(){
 
-
+    return view('frontend.pages.glazed-beef');
+}
 public function course(){
 
     return view('frontend.pages.course');
@@ -350,5 +352,15 @@ public function policy(){
 
 
 
+public function pork(){
+
+    return view('frontend.pages.pork-thyme');
+
+}
+public function Cauliflower(){
+
+    return view('frontend.pages.Cauliflower');
+
+}
 
 }

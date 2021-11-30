@@ -43,7 +43,7 @@
 <section class="overlap-cards">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card card-c1" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Job Ready Programs.svg') }}">
@@ -52,7 +52,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card card-c2" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Suitable Partnerships.svg') }}">
@@ -61,7 +61,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="card card-c3" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Support Services.svg') }}">
@@ -70,7 +70,7 @@
 				  </div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-12">
+			<!--<div class="col-lg-3 col-md-6 col-sm-12">
 				<div class="card card-c4" data-aos="fade-up">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Articulation Pathways.svg') }}">
@@ -78,7 +78,7 @@
 				    <p class="card-text">We have partnered with Australian universities that offer articulation, gaining credit and recognition.</p>
 				  </div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 </section>
@@ -172,7 +172,7 @@
 			          <div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+									  		<img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
 									  		<a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -192,7 +192,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -212,7 +212,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -232,7 +232,7 @@
 							<div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+									  		<img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
 									  		<a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -252,7 +252,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+								  		<img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
 								  		<a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -317,47 +317,71 @@
 				<div class="row">
 		      <div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
+							<a href="/Cauliflower">
 							<!-- <div class="news-category">
 								<h5>News</h5>
 							</div> -->
-						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
+							<div class="article-img">
+						  <img src="{{ asset('image/article-3.jpg') }}" class="card-img-top" alt="...">
+						  </div>
 						  <div class="card-body">
-						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
-							<div class="note">
-								<p><i class="fas fa-user-alt"></i>nostrud exercitation</p>
-								<p><i class="far fa-calendar-check"></i>1st  Nov, 2021</p>
+						  	<h5 class="card-title">Cauliflower puree</h5>
+							  <p class="para">You can make this in a flash with just two steps Its smooth, creamy, rich and velvety flavour
+								makes it a great side dish.</p>
+							  <div class="note">
+							  <p><i class="fas fa-user-alt"></i>Ryka Johnson</p>
+								<p><i class="far fa-calendar-check"></i>Aug, 2020</p>
 							</div>
 						  </div>
+						  </a>
 						</div>
 					</div>
 					<div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
+							<a href="/glazed">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
-						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
+							<div class="article-img">
+						  <img src="{{ asset('image/article-1.jpg') }}" class="card-img-top" alt="...">
+							</div>
 						  <div class="card-body">
-						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
+						  	<h5 class="card-title">Glazed beef & honeyed carrots</h5>
+							  <p class="para">A classic reinvente/in just a few steps and all done in the one pan, so it's easy for aryone to
+								pull off, This glute415nd dairy-free dish is packed with so much flavour, it can be reserved
+								for a special nigtit.</p>
 							<div class="note">
-								<p><i class="fas fa-user-alt"></i>nostrud exercitation</p>
-								<p><i class="far fa-calendar-check"></i>1st  Nov, 2021</p>
+								<p><i class="fas fa-user-alt"></i>Ryka Johnson</p>
+								<p><i class="far fa-calendar-check"></i>Aug, 2020</p>
 							</div>
 						  </div>
+						  </a>
 						</div>
 					</div>
 					<div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
+							<a href="/pork">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
-						  <img src="{{ asset('image/news.jpg') }}" class="card-img-top" alt="...">
+							<div class="article-img">
+						  <img src="{{ asset('image/article-2.jpg') }}" class="card-img-top" alt="...">
+							</div>
 						  <div class="card-body">
-						  	<h5 class="card-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</h5>
-							<div class="note">
-								<p><i class="fas fa-user-alt"></i> nostrud exercitation</p>
-								<p><i class="far fa-calendar-check"></i>1st  Nov, 2021</p>
+						  	<h5 class="card-title">Pork & thyme meatballs</h5>
+							  <p class="para">A refreshing and warming autumn
+								dish that's as hearty as it is zesty
+								The use of thyme and lemon lifts
+								this gluten- and dairy-free meal
+								so it's not heavy, Baked meatballs
+								mean you spend less time cooking
+								and end up with a better result.</p>
+							  <div class="note">
+							  <p><i class="fas fa-user-alt"></i>Ryka Johnson</p>
+								<p><i class="far fa-calendar-check"></i>Aug, 2020</p>
 							</div>
 						  </div>
+						  </a>
 						</div>
 					</div>
 				</div>

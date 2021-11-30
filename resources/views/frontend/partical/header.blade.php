@@ -123,7 +123,7 @@
                             <ul class="sub-menu">
                               <li><a href="{{route('first-day')}}">First Day at college</a></li>
                               <li><a href="{{route('orientation')}}">Orientation</a></li>
-                              <li><a href="{{route('campus-location')}}">Campus Map</a></li>
+                              <!-- <li><a href="{{route('campus-location')}}">Campus Map</a></li> -->
                               <li><a href="{{route('student-support')}}">Student Support</a></li>
                               <li><a href="{{route('rules-regulations')}}">College rules & regulations</a></li>
                               <li><a href="{{route('airport-pick-up')}}">Airport pick-up</a></li>
@@ -183,7 +183,7 @@
                             <ul class="sub-menu">
                               <li><a href="{{route('first-day')}}">First Day at college</a></li>
                               <li><a href="{{route('orientation')}}">Orientation</a></li>
-                              <li><a href="{{route('campus-location')}}">Campus Map</a></li>
+                              <!-- <li><a href="{{route('campus-location')}}">Campus Map</a></li> -->
                               <li><a href="{{route('student-support')}}">Student Support</a></li>
                               <li><a href="{{route('rules-regulations')}}">College rules & regulations</a></li>
                               <li><a href="{{route('airport-pick-up')}}">Airport pick-up</a></li>

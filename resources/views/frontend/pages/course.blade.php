@@ -37,7 +37,7 @@
                               <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-                                          <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                          <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                       </div>	
                                           
@@ -57,7 +57,7 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-                                          <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                          <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                       </div>	
                                           
@@ -77,7 +77,7 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-                                          <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                          <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                       </div>	
                                           
@@ -97,7 +97,7 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-                                          <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                          <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                       </div>	
                                           
@@ -117,7 +117,7 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-                                          <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                          <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                       </div>	
                                           
@@ -137,7 +137,7 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-                                          <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                          <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                       </div>	
                                           
@@ -161,7 +161,7 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -181,7 +181,7 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -201,7 +201,7 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -221,7 +221,7 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -245,7 +245,7 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -265,7 +265,7 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -289,7 +289,7 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -309,7 +309,7 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -333,7 +333,7 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
@@ -353,7 +353,7 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-                                              <img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
+                                              <img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
                                           </div>	
                                               
