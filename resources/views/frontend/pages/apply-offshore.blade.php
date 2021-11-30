@@ -33,14 +33,6 @@
 	</div>
 </div>
 @endif
-<ul class="error">
-    @foreach($errors->all() as $error)
-    <li><div class="alert alert-danger" role="alert">
-        {{ $error }}
-        </div>
-    </li>
-    @endforeach
-</ul>
 <section class="innerpage-content offshoreForm">
 	<div class="container">
         <div class="row   mt-5">
@@ -51,6 +43,8 @@
                     <h1>OFFSHORE STUDENT ENROLLMENT FORM</h1>
                 </div>
             </div>
+
+ 
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
@@ -72,10 +66,21 @@
                 on our website <a target="_blank" href="http://www.ane.edu.au">www.ane.edu.au</a>.
                 Once signed and the issue of a receipt for initial fees this document is a binding
                 contract.</p>
+
+           
+                <ul class="error">
+                    @foreach($errors->all() as $error)
+                    <li><div class="alert alert-danger" role="alert">
+                        {{ $error }}
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
+
             <form action="{{route('offshore.store')}}" method="POST" >
                 @csrf
                 
-                </ul>
+          
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
                         <h3>Personal Details</h3>

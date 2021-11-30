@@ -311,6 +311,44 @@ public function notice(){
 }
 
 
+public function course(){
+
+    return view('frontend.pages.course');
+
+}
+public function child_education(){
+
+    return view('frontend.pages.childhood-education');
+
+}
+public function commercial_cookery(){
+
+    return view('frontend.pages.commercial-cookery');
+
+}
+public function community_service(){
+
+    return view('frontend.pages.community-services');
+
+}
+public function hospitality_management(){
+
+    return view('frontend.pages.hospitality-manangement');
+
+}
+public function disability(){
+
+    return view('frontend.pages.disability');
+
+}
+
+public function policy(){
+
+    return view('frontend.pages.policy');
+
+}
+
+
 
 
 }
