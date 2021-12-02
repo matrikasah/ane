@@ -149,6 +149,14 @@ $(document).ready(function(){
 			menu.removeAttr('style');
 		}
 	});
+
+
+  $('#inputGroupSelect04.choosecourse').change(function(){
+    var link= $(this).val();
+    if(link != "blank"){
+      window.location.href = link;
+    }
+  })
 	
 });
 

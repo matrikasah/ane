@@ -24,7 +24,7 @@
 					<div class="input-group">
 						<span class="input-group-text" id="addon-wrapping">Find a course</span>
 					  <select class="form-select choosecourse" id="inputGroupSelect04" aria-label="Example select with button addon">
-					    <option value=''>Choose your course</option>
+					    <option value='blank'>Choose your course</option>
 					    <option value="{{ route('child-education') }}">Diploma of Early Childhood Education and Care</option>
 					    <option value="{{ route('hospitality-management') }}">Diploma of Hospitality Management</option>
 					    <option value="{{ route('commercial-cookery') }}">Certificate IV in Commercial Cookery</option>
