@@ -23,13 +23,13 @@
 				<div class="course-search d-flex" data-aos="fade-up">
 					<div class="input-group">
 						<span class="input-group-text" id="addon-wrapping">Find a course</span>
-					  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-					    <option selected>Choose your course</option>
-					    <option value="1">Diploma of Early Childhood Education and Care</option>
-					    <option value="2">Diploma of Hospitality Management</option>
-					    <option value="3">Certificate IV in Commercial Cookery</option>
-					    <option value="4">Certificate IV in Disability</option>
-					    <option value="5">Diploma of Community Services</option>
+					  <select class="form-select choosecourse" id="inputGroupSelect04" aria-label="Example select with button addon">
+					    <option value=''>Choose your course</option>
+					    <option value="{{ route('child-education') }}">Diploma of Early Childhood Education and Care</option>
+					    <option value="{{ route('hospitality-management') }}">Diploma of Hospitality Management</option>
+					    <option value="{{ route('commercial-cookery') }}">Certificate IV in Commercial Cookery</option>
+					    <option value="{{ route('disability') }}">Certificate IV in Disability</option>
+					    <option value="{{ route('community-service') }}">Diploma of Community Services</option>
 					  </select>
 					  <button class="btn btn-black hvr-sweep-to-right" type="button">GO</button>
 					</div>

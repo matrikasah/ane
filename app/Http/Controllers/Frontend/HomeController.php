@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 
-
 use App\Models\ApplicantPersonalDetail;
 use App\Models\ApplicantEmergencyContact;
 use App\Models\ApplicantEducationAgent;
@@ -13,7 +12,7 @@ use App\Models\ApplicantLanguageCulture;
 use App\Models\ApplicantCourseDetails;
 use App\Models\ApplicantPhotographyConsent;
 use App\Models\ApplicantCollageCommitment;
-
+use App\Models\Contact;
 
 use App\Models\AgentBusinessHistory;
 use App\Models\AgentDetails;
@@ -25,13 +24,14 @@ use Mail;
 use App\Http\Requests\ApplicantPostRequest;
 use App\Http\Requests\ApplicantOnShore;
 use App\Http\Requests\AgentPostRequest;
-
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
  
     public function index(){
+       
     
         return view('frontend.pages.index');
 
@@ -341,6 +341,11 @@ public function community_service(){
 }
 public function course(){
     return view('frontend.pages.course');
+}
+
+public function store_contact_form(ContactRequest $req){
+    Contact::create($req->all());
+    return back()->with('message', 'Thankyou Your for contacting us! we will respond soon.');
 }
 
 }

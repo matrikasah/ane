@@ -385,16 +385,26 @@
                 </div>
 
                 <div class="contact-form">
-                    <h5>SAY HI!!!</h5>
+                
+                <h5>SAY HI!!!</h5>
 
-                    <form>
+                @if(session()->has('message'))
+                <div class="alert alert-primary" role="alert">
+                    {{ session()->get('message') }}
+                </div>
+                @endif
 
-                        <input type="text" class="form-control" placeholder="Full Name">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <input type="text" class="form-control" placeholder="Phone">
+                
+
+                    <form method="POST" action="{{ route('contact.store') }}">
+                        @csrf
+
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        <input type="email" name='email' class="form-control" placeholder="Email" required>
+                        <input type="number" name="phone" class="form-control" placeholder="Phone" required>
 
 
-                        <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                        <textarea name='message' class="form-control p-3" id="exampleFormControlTextarea1" rows="3" placeholder="Message" required></textarea>
 
 
 
