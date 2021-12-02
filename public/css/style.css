@@ -2089,6 +2089,8 @@ ul.contact-info {
 .name {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 .content-text .contact-info li a{
   color: #282828;
