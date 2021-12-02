@@ -3,11 +3,7 @@
 
 
 <section class="featured-img">
-<<<<<<< HEAD
-    <img src="image/course-featured.jpg">
-=======
     <img src="{{ asset('image/course-featured.jpg') }}">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
     <div class="overlap-featured-breadcrumb">
         <div class="container">
             <div class="row">
@@ -16,11 +12,7 @@
                     <p>We offer you best the courses in town</p>
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-<<<<<<< HEAD
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-=======
                         <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                         <li class="breadcrumb-item active" aria-current="page">Course</li>
                       </ol>
                     </nav>
@@ -45,13 +37,8 @@
                               <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-<<<<<<< HEAD
-                                          <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                          <a href="commercial-cookery.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                           <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                       </div>	
                                           
                                       
@@ -70,13 +57,8 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-<<<<<<< HEAD
-                                          <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                          <a href="commercial-cookery.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                           <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                       </div>	
                                           
                                       
@@ -95,13 +77,8 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-<<<<<<< HEAD
-                                          <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                          <a href="commercial-cookery.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                           <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                       </div>	
                                           
                                       
@@ -120,13 +97,8 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-<<<<<<< HEAD
-                                          <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                          <a href="commercial-cookery.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                           <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                       </div>	
                                           
                                       
@@ -145,13 +117,8 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-<<<<<<< HEAD
-                                          <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                          <a href="commercial-cookery.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                           <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                       </div>	
                                           
                                       
@@ -170,13 +137,8 @@
                             <div class="col-sm-6">
                                 <div class="card">
                                     <div class="overlap-img">							
-<<<<<<< HEAD
-                                          <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                          <a href="commercial-cookery.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                           <img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
                                           <a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                       </div>	
                                           
                                       
@@ -199,13 +161,8 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="hospitality-manangement.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -224,13 +181,8 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="hospitality-manangement.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -249,13 +201,8 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="hospitality-manangement.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -274,13 +221,8 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="hospitality-manangement.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -303,13 +245,8 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="childhood-education.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -328,13 +265,8 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="childhood-education.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -357,13 +289,8 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="community-services.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -382,13 +309,8 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="community-services.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -411,13 +333,8 @@
                                   <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="disability.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -436,13 +353,8 @@
                                 <div class="col-sm-6">
                                     <div class="card">
                                         <div class="overlap-img">							
-<<<<<<< HEAD
-                                              <img src="image/ANE1.jpg" class="card-img-top" alt="...">
-                                              <a href="disability.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
-=======
                                               <img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
                                               <a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                                           </div>	
                                               
                                           
@@ -479,11 +391,7 @@
                 <div class="card" data-aos="fade-up">
                 <div class="card-body">
                       <div class="left">
-<<<<<<< HEAD
-                          <img src="image/contact.svg">
-=======
                           <img src="{{ asset('image/contact.svg') }}">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                       </div>
                       <div class="right">
                           <h5 class="card-title">Contact</h5>
@@ -496,11 +404,7 @@
                 <div class="card" data-aos="fade-up">
                 <div class="card-body">
                       <div class="left">
-<<<<<<< HEAD
-                          <img src="image/consult.svg">
-=======
                           <img src="{{ asset('image/consult.svg') }}">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                       </div>
                       <div class="right">
                           <h5 class="card-title">Consult</h5>
@@ -513,11 +417,7 @@
                 <div class="card" data-aos="fade-up">
                 <div class="card-body">
                       <div class="left">
-<<<<<<< HEAD
-                          <img src="image/admission.svg">
-=======
                           <img src="{{ asset('image/admission.svg') }}">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                       </div>
                       <div class="right">
                           <h5 class="card-title">Admission</h5>
