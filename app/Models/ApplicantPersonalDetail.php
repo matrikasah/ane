@@ -10,6 +10,7 @@ class ApplicantPersonalDetail extends Model
     use HasFactory;
 
     protected $fillable=[
+        'uid',
         'stdsurname',
         'stdgivenname',
         'stdhomeaddress',

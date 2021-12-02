@@ -3,7 +3,11 @@
 
 
 		<section class="featured-img">
+<<<<<<< HEAD
 			<img src="image/course-featured.jpg">
+=======
+			<img src="{{ asset('image/course-featured.jpg') }}">
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 			<div class="overlap-featured-breadcrumb">
 				<div class="container">
 					<div class="row">
@@ -12,8 +16,13 @@
 							<p>We offer you best the courses in town</p>
 							<nav aria-label="breadcrumb">
 							  <ol class="breadcrumb">
+<<<<<<< HEAD
 							    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
 							    <li class="breadcrumb-item"><a href="course.php">Course</a></li>
+=======
+							    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+							    <li class="breadcrumb-item"><a href="{{route('course')}}">Course</a></li>
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 							    <li class="breadcrumb-item active" aria-current="page">Certificate IV in Commercial Cookery</li>
 							  </ol>
 							</nav>
@@ -39,10 +48,17 @@
 								<button type="button" class="btn btn-outline-primary hvr-bounce-to-right" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								  Apply now <i class="fas fa-angle-double-right"></i>
 								</button>
+<<<<<<< HEAD
 								<a type="button" href="image/brochure_updating_20211107.pdf" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-angle-double-down"></i></a>
 								</div>
 							</div>
 							<img src="image/ANE6024.jpg" class="img-responsive course-detail-img">
+=======
+								<a  href="{{ asset('image/brochure_updating_20211107.pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-angle-double-down"></i></a>
+								</div>
+							</div>
+							<img src="{{ asset('image/cookery.jpg') }}" class="img-responsive course-detail-img">
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 
 							
 
@@ -639,6 +655,7 @@
 
 
 	<section class="gap enrollment">
+<<<<<<< HEAD
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12">
@@ -683,6 +700,52 @@
 			</div>
 		</div>
 	</section>
+=======
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="card" data-aos="fade-up">
+				<div class="card-body">
+				  	<div class="left">
+				  		<img src="{{ asset('image/contact.svg') }}">
+				  	</div>
+				  	<div class="right">
+				  		<h5 class="card-title">Contact</h5>
+					    <p class="card-text">Feel free to contact us anytime you need.</p>
+				  	</div>
+				  </div>
+				  </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="card" data-aos="fade-up">
+				<div class="card-body">
+				  	<div class="left">
+				  		<img src="{{ asset('image/consult.svg') }}">
+				  	</div>
+				  	<div class="right">
+				  		<h5 class="card-title">Consult</h5>
+					    <p class="card-text">Dedicated staff are there to answer any questions.</p>
+				  	</div>
+				  </div>
+				  </div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<div class="card" data-aos="fade-up">
+				<div class="card-body">
+				  	<div class="left">
+				  		<img src="{{ asset('image/admission.svg') }}">
+				  	</div>
+				  	<div class="right">
+				  		<h5 class="card-title">Admission</h5>
+					    <p class="card-text">Apply in ANE College for your interested course right away.</p>
+				  	</div>
+				  </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+</section>
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 
 
 @endsection

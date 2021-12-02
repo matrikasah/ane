@@ -15,18 +15,19 @@ class CreateApplicantPersonalDetailsTable extends Migration
     {
         Schema::create('applicant_personal_details', function (Blueprint $table) {
             $table->id();
-            $table->string('stdsurname');
-            $table->string('stdgivenname');
-            $table->string('stdhomeaddress');
-            $table->string('stdsuburb');
-            $table->string('stdpostcode');
-            $table->string('stdtelnum');
-            $table->string('stdemail');
-            $table->string('stddob');
-            $table->string('sex');
-            $table->string('is_disable');
-            $table->string('disable');
-            $table->string('offshore_student');          
+            $table->bigInteger('uid')->nullable();
+            $table->string('stdsurname')->nullable();
+            $table->string('stdgivenname')->nullable();
+            $table->string('stdhomeaddress')->nullable();
+            $table->string('stdsuburb')->nullable();
+            $table->string('stdpostcode')->nullable();
+            $table->string('stdtelnum')->nullable();
+            $table->string('stdemail')->nullable();
+            $table->string('stddob')->nullable();
+            $table->string('sex')->nullable();
+            $table->string('is_disable')->nullable();
+            $table->string('disable')->nullable();
+            $table->string('offshore_student')->nullable();          
             $table->timestamps();
         });
     }

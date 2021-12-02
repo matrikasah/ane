@@ -67,7 +67,7 @@
 		<div class="row">
 			<div class="col-sm-5 col-lg-4">
 				<div class="ceo-img">
-						<img src="image/offshore.jpg" class="img-responsive">
+						<img src="{{ asset('image/offshore.jpg') }}" class="img-responsive">
 					</div>
 			</div>
 			<div class="col-sm-7 col-lg-7 content-text">
@@ -78,7 +78,7 @@
 					<div class="step"><span>Step 1: Find a course</span></div>
 					<ul>
 						<li><i class="fas fa-angle-double-right"></i>
-							Browse a wide range of courses available in our <a href="course.php"> courses section.</a> 
+							Browse a wide range of courses available in our <a href="{{route('course')}}"> courses section.</a> 
 						</li>
 						<li><i class="fas fa-angle-double-right"></i>
 						Use filters to search the courses.

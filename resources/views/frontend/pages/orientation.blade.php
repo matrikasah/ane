@@ -76,6 +76,24 @@
 						<li><i class="fas fa-angle-double-right"></i>Attendance and Academic requirements as per Visa Condition.</li>
 						<li><i class="fas fa-angle-double-right"></i>Facilities and resources.</li>
 					</ul>
+                    <p class="bold-text">2.30 pm – 2.45 pm Break</p>
+                    <p class="bold-text">2.45 pm – 4.30 pm Visa requirements</p>
+                    
+                    <ul>
+						<li><i class="fas fa-angle-double-right"></i> Some important information regarding immigration requirements; Working
+                        regulations under student visa.</li>
+                        <li><i class="fas fa-angle-double-right"></i>Information about Overseas Student Health Cover (OSHC);</li>
+                        <li><i class="fas fa-angle-double-right"></i>Introduction to Australian Health system.</li>
+                        <li><i class="fas fa-angle-double-right"></i>Students registered into classes. The students meet the Training Manager.
+                        Students provided with the following information.</li>
+                        <li><i class="fas fa-angle-double-right"></i>Academic Calendar</li>
+                        <li><i class="fas fa-angle-double-right"></i>Textbooks and course information</li>
+                        <li><i class="fas fa-angle-double-right"></i>Timetables and subject information</li>
+                        <li><i class="fas fa-angle-double-right"></i>Trainer and Assessor introductions</li>
+                        <li><i class="fas fa-angle-double-right"></i>Student Support Information</li>
+                        <li><i class="fas fa-angle-double-right"></i> Subject Induction signed</li>
+                        <li><i class="fas fa-angle-double-right"></i>Complete the Student induction Declaration</li>
+                    </ul>
 					
 			</div>
 			

@@ -404,7 +404,11 @@
             <div class="card" data-aos="fade-up">
             <div class="card-body">
                   <div class="left">
+<<<<<<< HEAD
                       <img src="image/contact.svg">
+=======
+                      <img src="{{ asset('image/contact.svg') }}">
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                   </div>
                   <div class="right">
                       <h5 class="card-title">Contact</h5>
@@ -417,7 +421,11 @@
             <div class="card" data-aos="fade-up">
             <div class="card-body">
                   <div class="left">
+<<<<<<< HEAD
                       <img src="image/consult.svg">
+=======
+                      <img src="{{ asset('image/consult.svg') }}">
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                   </div>
                   <div class="right">
                       <h5 class="card-title">Consult</h5>
@@ -430,7 +438,11 @@
             <div class="card" data-aos="fade-up">
             <div class="card-body">
                   <div class="left">
+<<<<<<< HEAD
                       <img src="image/admission.svg">
+=======
+                      <img src="{{ asset('image/admission.svg') }}">
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
                   </div>
                   <div class="right">
                       <h5 class="card-title">Admission</h5>

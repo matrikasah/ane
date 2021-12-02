@@ -16,7 +16,7 @@ class CreateApplicantPhotographyConsentsTable extends Migration
         Schema::create('applicant_photography_consents', function (Blueprint $table) {
             $table->id();
             $table->string('photoConsent')->nullable();
-            $table->bigInteger('applicant_id');
+            $table->bigInteger('applicant_id')->nullable();
             $table->timestamps();
         });
     }

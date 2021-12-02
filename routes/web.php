@@ -56,7 +56,10 @@ Route::post('/apply-onshore/store',[HomeController::class,'store_onshore'])->nam
 Route::post('/apply-agent/store',[HomeController::class,'store_agent_application'])->name('agent.store');
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 Route::get('/course',[HomeController::class,'course'])->name('course');
 Route::get('/child-education',[HomeController::class,'child_education'])->name('child-education');
 Route::get('/commercial-cookery',[HomeController::class,'commercial_cookery'])->name('commercial-cookery');
@@ -64,3 +67,11 @@ Route::get('/community-service',[HomeController::class,'community_service'])->na
 Route::get('/hospitality-management',[HomeController::class,'hospitality_management'])->name('hospitality-management');
 Route::get('/disability',[HomeController::class,'disability'])->name('disability');
 Route::get('/policy',[HomeController::class,'policy'])->name('policy');
+<<<<<<< HEAD
+=======
+Route::get('/glazed',[HomeController::class,'glazed']);
+Route::get('/pork',[HomeController::class,'pork']);
+Route::get('/Cauliflower',[HomeController::class,'Cauliflower']);
+Route::get('/course',[HomeController::class,'course'])->name('course');
+
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88

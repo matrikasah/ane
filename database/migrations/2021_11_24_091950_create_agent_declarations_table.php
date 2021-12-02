@@ -15,12 +15,12 @@ class CreateAgentDeclarationsTable extends Migration
     {
         Schema::create('agent_declarations', function (Blueprint $table) {
             $table->id();
-            $table->longText('declaration');
-            $table->string('agentprintname');
-            $table->string('agent_sign');
-            $table->string('agent_position');
-            $table->string('date');
-            $table->bigInteger('agent_id');
+            $table->longText('declaration')->nullable();
+            $table->string('agentprintname')->nullable();
+            $table->string('agent_sign')->nullable();
+            $table->string('agent_position')->nullable();
+            $table->string('date')->nullable();
+            $table->bigInteger('agent_id')->nullable();
             $table->timestamps();
         });
     }

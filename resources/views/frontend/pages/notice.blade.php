@@ -24,7 +24,7 @@
 
 <section class="innerpage-content">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center content-text">
 				<div class="col-md-10 col-sm-12">
 					
 					<div class="small-title title">
@@ -32,10 +32,17 @@
 						<h1>Applications are now open to study in one of Australia’s fastest-rising training organizations in 2022!</h1>
 					</div>
 					<p class="para">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Become Goal-Oriented Individual
+					ANE College announces admission open for onshore and offshore students who want to live in our vibrant campus community.
+					With exceptional results, more than 80% of our students have been successfully involved in leading professionals. So, to guarantee an equally successful future for yourself, make sure to register right now.
 					</p>	
+					<div class="bold-text">Key Dates:</div>
+					<ul>
+						<li><i class="fas fa-angle-double-right"></i>10/01/2022- Start of Term</li>
+						<li><i class="fas fa-angle-double-right"></i>10/01/2022- Orientation Day</li>
+					</ul>
 					<p class="para">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					If you are confused about the admission procedure, <a href="{{route('intake-date')}}">click here!</a> 
 					</p>				
 				</div>
 			</div>

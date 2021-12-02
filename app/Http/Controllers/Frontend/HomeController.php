@@ -22,6 +22,8 @@ use Mail;
 
 
 use App\Http\Requests\ApplicantPostRequest;
+use App\Http\Requests\ApplicantOnShore;
+use App\Http\Requests\AgentPostRequest;
 
 use Illuminate\Http\Request;
 
@@ -92,20 +94,21 @@ public function store_ofshore(ApplicantPostRequest $req){
 
 
 
-        $email=$applicant_personal_detail->stdemail;
-        $data=[
-            'title'=>'hello'
-        ];
+        // $email=$applicant_personal_detail->stdemail;
+        // $data=[
+        //     'title'=>'hello'
+        // ];
 
 
-        Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
-        $message->to($email, 'ANE')->subject
-            ('Please verify your email');
-        $message->from('admin@gmail.com','ANE');
+        // Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
+        // $message->to($email, 'ANE')->subject
+        //     ('Please verify your email');
+        // $message->from('admin@gmail.com','ANE');
 
-        });
+        // });
 
-        dd('sucess');
+        return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
+
     }
 
 
@@ -116,7 +119,7 @@ public function onshore_form(){
 
 }
 
-public function store_onshore(Request $req){
+public function store_onshore(ApplicantOnShore $req){
  
    
     $req->merge([
@@ -163,7 +166,7 @@ public function store_onshore(Request $req){
         ]);
      $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
 
-     dd('sucessfull');
+     return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
      
 
 }
@@ -177,7 +180,7 @@ public function agent(){
     return view('frontend.pages.become-agent');
 
 }
-    public function store_agent_application(Request $req){
+    public function store_agent_application(AgentPostRequest $req){
       
         $agent_details= AgentDetails::create($req->all());
         $req->merge([
@@ -211,7 +214,7 @@ public function agent(){
         ]);
         $agent_declaration=AgentDeclaration::create($req->all());
 
-        dd('sucessfull');
+        return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
     }
 
@@ -305,8 +308,14 @@ public function notice(){
     return view('frontend.pages.notice');
 
 }
+public function glazed(){
 
+    return view('frontend.pages.glazed-beef');
 
+}
+public function pork(){
+
+<<<<<<< HEAD
 public function course(){
 
     return view('frontend.pages.course');
@@ -344,6 +353,33 @@ public function policy(){
 
 }
 
+=======
+    return view('frontend.pages.pork-thyme');
+>>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 
+}
+public function Cauliflower(){
+
+    return view('frontend.pages.Cauliflower');
+
+}
+public function child_education(){
+    return view('frontend.pages.childhood-education');
+}
+public function hospitality_management(){
+    return view('frontend.pages.hospitality-manangement');
+}
+public function commercial_cookery(){
+    return view('frontend.pages.commercial-cookery');
+}
+public function disability(){
+    return view('frontend.pages.disability');
+}
+public function community_service(){
+    return view('frontend.pages.community-services');
+}
+public function course(){
+    return view('frontend.pages.course');
+}
 
 }

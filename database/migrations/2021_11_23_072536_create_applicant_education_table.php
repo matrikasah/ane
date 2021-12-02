@@ -31,7 +31,7 @@ class CreateApplicantEducationTable extends Migration
             $table->string('priorlearn')->nullable();
 
 
-            $table->bigInteger('applicant_id');
+            $table->bigInteger('applicant_id')->nullable();
             $table->timestamps();
         });
     }

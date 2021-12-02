@@ -15,10 +15,10 @@ class CreateApplicantEducationAgentsTable extends Migration
     {
         Schema::create('applicant_education_agents', function (Blueprint $table) {
             $table->id();
-            $table->string('apply_through_agent');
-            $table->string('orgName');
-            $table->string('agentCnum');
-            $table->bigInteger('applicant_id');
+            $table->string('apply_through_agent')->nullable();
+            $table->string('orgName')->nullable();
+            $table->string('agentCnum')->nullable();
+            $table->bigInteger('applicant_id')->nullable();
 
 
 
