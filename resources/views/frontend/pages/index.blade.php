@@ -23,13 +23,13 @@
 				<div class="course-search d-flex" data-aos="fade-up">
 					<div class="input-group">
 						<span class="input-group-text" id="addon-wrapping">Find a course</span>
-					  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-					    <option selected>Choose your course</option>
-					    <option value="1">Diploma of Early Childhood Education and Care</option>
-					    <option value="2">Diploma of Hospitality Management</option>
-					    <option value="3">Certificate IV in Commercial Cookery</option>
-					    <option value="4">Certificate IV in Disability</option>
-					    <option value="5">Diploma of Community Services</option>
+					  <select class="form-select choosecourse" id="inputGroupSelect04" aria-label="Example select with button addon">
+					    <option value=''>Choose your course</option>
+					    <option value="{{ route('child-education') }}">Diploma of Early Childhood Education and Care</option>
+					    <option value="{{ route('hospitality-management') }}">Diploma of Hospitality Management</option>
+					    <option value="{{ route('commercial-cookery') }}">Certificate IV in Commercial Cookery</option>
+					    <option value="{{ route('disability') }}">Certificate IV in Disability</option>
+					    <option value="{{ route('community-service') }}">Diploma of Community Services</option>
 					  </select>
 					  <button class="btn btn-black hvr-sweep-to-right" type="button">GO</button>
 					</div>
@@ -172,11 +172,7 @@
 			          <div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-<<<<<<< HEAD
-									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-=======
 									  		<img src="{{ asset('image/childhood-education.jpg') }}" class="card-img-top" alt="...">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 									  		<a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -196,11 +192,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-<<<<<<< HEAD
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-=======
 								  		<img src="{{ asset('image/cookery.jpg') }}" class="card-img-top" alt="...">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 								  		<a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -220,11 +212,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-<<<<<<< HEAD
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-=======
 								  		<img src="{{ asset('image/hospitality-management.jpg') }}" class="card-img-top" alt="...">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 								  		<a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
@@ -244,11 +232,7 @@
 							<div class="swiper-slide">
 									<div class="card">
 										<div class="overlap-img">							
-<<<<<<< HEAD
-									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-=======
 									  		<img src="{{ asset('image/community-services.jpg') }}" class="card-img-top" alt="...">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 									  		<a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
@@ -268,11 +252,7 @@
 							<div class="swiper-slide">
 								<div class="card">
 									<div class="overlap-img">							
-<<<<<<< HEAD
-								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-=======
 								  		<img src="{{ asset('image/disability.jpg') }}" class="card-img-top" alt="...">
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 								  		<a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		

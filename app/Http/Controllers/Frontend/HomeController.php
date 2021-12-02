@@ -12,7 +12,7 @@ use App\Models\ApplicantLanguageCulture;
 use App\Models\ApplicantCourseDetails;
 use App\Models\ApplicantPhotographyConsent;
 use App\Models\ApplicantCollageCommitment;
-
+use App\Models\Contact;
 
 use App\Models\AgentBusinessHistory;
 use App\Models\AgentDetails;
@@ -24,13 +24,14 @@ use Mail;
 use App\Http\Requests\ApplicantPostRequest;
 use App\Http\Requests\ApplicantOnShore;
 use App\Http\Requests\AgentPostRequest;
-
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
  
     public function index(){
+       
     
         return view('frontend.pages.index');
 
@@ -315,47 +316,7 @@ public function glazed(){
 }
 public function pork(){
 
-<<<<<<< HEAD
-public function course(){
-
-    return view('frontend.pages.course');
-
-}
-public function child_education(){
-
-    return view('frontend.pages.childhood-education');
-
-}
-public function commercial_cookery(){
-
-    return view('frontend.pages.commercial-cookery');
-
-}
-public function community_service(){
-
-    return view('frontend.pages.community-services');
-
-}
-public function hospitality_management(){
-
-    return view('frontend.pages.hospitality-manangement');
-
-}
-public function disability(){
-
-    return view('frontend.pages.disability');
-
-}
-
-public function policy(){
-
-    return view('frontend.pages.policy');
-
-}
-
-=======
     return view('frontend.pages.pork-thyme');
->>>>>>> dd4aea1fc2022d1a4943096827efb1bcbfbfdc88
 
 }
 public function Cauliflower(){
@@ -380,6 +341,11 @@ public function community_service(){
 }
 public function course(){
     return view('frontend.pages.course');
+}
+
+public function store_contact_form(ContactRequest $req){
+    Contact::create($req->all());
+    return back()->with('message', 'Thankyou Your for contacting us! we will respond soon.');
 }
 
 }

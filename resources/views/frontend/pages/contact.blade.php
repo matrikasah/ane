@@ -385,16 +385,26 @@
                 </div>
 
                 <div class="contact-form">
-                    <h5>SAY HI!!!</h5>
+                
+                <h5>SAY HI!!!</h5>
 
-                    <form>
+                @if(session()->has('message'))
+                <div class="alert alert-primary" role="alert">
+                    {{ session()->get('message') }}
+                </div>
+                @endif
 
-                        <input type="text" class="form-control" placeholder="Full Name">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <input type="text" class="form-control" placeholder="Phone">
+                
+
+                    <form method="POST" action="{{ route('contact.store') }}">
+                        @csrf
+
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        <input type="email" name='email' class="form-control" placeholder="Email" required>
+                        <input type="number" name="phone" class="form-control" placeholder="Phone" required>
 
 
-                        <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                        <textarea name='message' class="form-control p-3" id="exampleFormControlTextarea1" rows="3" placeholder="Message" required></textarea>
 
 
 
@@ -411,16 +421,10 @@
                 <h5>Enrollment</h5>
                 <ul>
                     <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
+                        <div class="name">Enrolment Manager</div>
+                        <!--<div class="designation">designation</div>-->
                         <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                    </li>
-                    <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
-                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
+                        <a href="mailto:enrolmentmanager@ane.edu.au"><i class="far fa-envelope"></i>enrolmentmanager@ane.edu.au</a>
                     </li>
                 </ul>
             </div>
@@ -428,16 +432,10 @@
                 <h5>Finance team</h5>
                 <ul>
                     <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
+                        <div class="name">Finance Manager</div>
+                        <!--<div class="designation">designation</div>-->
                         <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                    </li>
-                    <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
-                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
+                        <a href="mailto:accounta@ane.edu.au"><i class="far fa-envelope"></i>accounta@ane.edu.au</a>
                     </li>
                 </ul>
             </div>
@@ -445,14 +443,8 @@
                 <h5>Student Service</h5>
                 <ul>
                     <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
-                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                    </li>
-                    <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
+                        <div class="name">Student Service Manager</div>
+                        <!--<div class="designation">designation</div>-->
                         <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
                         <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
                     </li>
@@ -462,16 +454,10 @@
                 <h5>Marketing Team</h5>
                 <ul>
                     <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
+                        <div class="name">Marketing Manager</div>
+                        <!--<div class="designation">designation</div>-->
                         <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
-                    </li>
-                    <li>
-                        <div class="name">charles lecrec</div>
-                        <div class="designation">designation</div>
-                        <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:sydney.campus@ane.edu.au"><i class="far fa-envelope"></i>sydney.campus@ane.edu.au</a>
+                        <a href="mailto:marketingmanager@ane.edu.au"><i class="far fa-envelope"></i>marketingmanager@ane.edu.au</a>
                     </li>
                 </ul>
             </div>
