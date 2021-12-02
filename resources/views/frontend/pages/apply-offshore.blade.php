@@ -436,9 +436,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex align-items-center">
-                            <div class="input-group mt-4">
-                                <span class="input-group-text flex-column">Are you of Australian Aboriginal or
+                        <div class="col-md-12 d-flex align-items-center">
+                            <div class="input-group mt-4 ">
+                                <span class="input-group-text flex-column ml-0" style="margin-right: 10px;">Are you of Australian Aboriginal or
                                     Torres Strait
                                     Islander origin?
                                     <br>
@@ -460,7 +460,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Aboriginal</span>
+                                <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Aboriginal</span>
                                 <div class="secondaryChoose d-flex">
                                     <div class="d-flex align-items-center">
                                         <input id="yesonlyAbor" name="onlyAbor" type="radio">
@@ -473,8 +473,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-6">
                             <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Torres Strait Islander</span>
+                                <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Torres Strait Islander</span>
                                 <div class="secondaryChoose d-flex">
                                     <div class="d-flex align-items-center">
                                         <input id="yesonlyTorres" name="onlyTorres" type="radio">
@@ -861,46 +863,83 @@
                 <!-- Proposed Study -->
                 <div class="proposedStudy mt-4 gap">
                     <div class=" mainFormHeadings">
-                        <h3>Preferred Commencement Month</h3>
+                        <h3>Preferred intake date</h3>
                     </div>
                     <div class="preferredMonth d-flex justify-content-between mt-4">
-                        <div class="specificMonth">
-                            <p>10 <sup>th</sup> Jan <br> 2022</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>10 <sup>th</sup> Jan  2022</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>4 <sup>th</sup> April <br> 2022</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>4 <sup>th</sup> April  2022</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>27 <sup>th</sup> June <br> 2022</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>27 <sup>th</sup> June  2022</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>19 <sup>th</sup> Sept <br> 2022</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>19 <sup>th</sup> Sept  2022</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>9 <sup>th</sup> Jan <br> 2023</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>9 <sup>th</sup> Jan  2023</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>3 <sup>rd</sup> April <br> 2023</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>3 <sup>rd</sup> April  2023</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>26 <sup>th</sup> June <br> 2023</p>
+                    </div>
+                    <div class="preferredMonth d-flex justify-content-between mt-4">
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>26 <sup>th</sup> June  2023</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>18 <sup>th</sup> Sept <br> 2023</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>18 <sup>th</sup> Sept  2023</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>8 <sup>th</sup> Jan <br> 2024</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>8 <sup>th</sup> Jan  2024</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>1 <sup>st</sup> April <br> 2024</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>1 <sup>st</sup> April  2024</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>24 <sup>th</sup> June <br> 2024</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>24 <sup>th</sup> June  2024</p>
+                            </label>
                         </div>
-                        <div class="specificMonth">
-                            <p>16 <sup>th</sup> Sept <br> 2024</p>
+                        <div class="form-check specificMonth">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            <p>16 <sup>th</sup> Sept  2024</p>
+                            </label>
                         </div>
-
                     </div>
                     <p class="secondarySpan mt-3">
                         It may not be always possible to commence at your preferred selection, but all consideration

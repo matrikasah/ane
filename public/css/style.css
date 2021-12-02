@@ -2152,6 +2152,46 @@ a.link:hover {
   -o-transition: margin-top 0.5s ease-out;
   transition: margin-top 0.5s ease-out;
 }
+
+.form-check.specificMonth input {
+  height: 15px;
+  border-radius: 3px!important;
+  width: 15px;
+  margin-top: 5px;
+  border: 1px solid #bbbbbb;
+}
+
+.form-check.specificMonth label.form-check-label {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.form-check.specificMonth {
+  margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media print {
 
     .featured-img, header, .button-lists.bd-example, .fixed-arrow, footer, button.btn.btn-black.mb-2.hvr-sweep-to-right{
@@ -2254,6 +2294,15 @@ ol.breadcrumb {
 }
 .news .article-img {
   height: auto;
+}
+.contact-info li {
+  min-height: 160px;
+}
+.calender .card {
+  min-height: 290px;
+}
+.calender .card-body {
+  align-items: flex-start;
 }
 }
 
@@ -2394,6 +2443,7 @@ li.breadcrumb-item {
 ol.breadcrumb {
     display: inline-block;
 }
+
 }
 
 
@@ -2471,6 +2521,7 @@ footer img.img-full {
 }.news .card {
   min-height: 340px;
 }
+
 }
 
 
@@ -2482,6 +2533,10 @@ footer img.img-full {
 
 @media (max-width: 576px) {
 
+
+  .calender .card {
+    min-height: auto;
+  }
   .button-lists button.btn, .button-lists a.btn {
     padding: 6px 19px;
   }
@@ -2691,6 +2746,9 @@ li.breadcrumb-item.active {
     overflow: hidden;
     white-space: nowrap;
 }
+.contact-info li {
+  min-height: auto;
+}
 }
 
 /* responsive code */
@@ -2873,7 +2931,7 @@ ul#short-menu li .sub-menu ul {
   text-decoration: none;
 }
 
-.menu li a.homer {
+.menu li a.homer, .menu li a.active {
   color:var(--primary-color)
 }
 
@@ -2985,6 +3043,7 @@ ul#short-menu li .sub-menu ul {
   .menu li>ul ul:hover {
       transform: initial;
   }
+  
 }
 
 @media (max-width: 767px){

@@ -7,11 +7,11 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-8 col-lg-7">
 					<h1 class="innerpage-title">Agent</h1>
-					<p>Become an agent</p>
+					<p>Apply to become an agent</p>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb">
 					    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">International Students</li>
+					    <li class="breadcrumb-item active" aria-current="page">Agent</li>
 					  </ol>
 					</nav>
 				</div>

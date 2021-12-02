@@ -31,7 +31,7 @@
 					    <option value="{{ route('disability') }}">Certificate IV in Disability</option>
 					    <option value="{{ route('community-service') }}">Diploma of Community Services</option>
 					  </select>
-					  <button class="btn btn-black hvr-sweep-to-right" type="button">GO</button>
+					  <button class="btn btn-black hvr-sweep-to-right" id="choose-course" type="button">GO</button>
 					</div>
 				</div>	
 			</div>

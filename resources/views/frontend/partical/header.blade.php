@@ -76,8 +76,8 @@
                         <ul class="menu" id="short-menu">
                           <li><a class="link-box" href="#"> ANE portal</a>
                             <ul class="sub-menu">
-                            <li><a href="#">student portal</a></li>
-                            <li><a href="#">staff portal</a></li>  
+                            <li><a href="#">student</a></li>
+                            <li><a href="#">admin</a></li>  
                             </ul>
                           </li>
                           <li><a class="link-box"  href="#"> Apply now</a>
@@ -94,16 +94,16 @@
                             </li>
                         </ul> 
 
-                        <ul class="menu">
-                            <li><a class="homer" href="{{ route('home') }}"> Home</a></li>
-                            <li><a  href="#"> study with us</a>
+                        <ul class="menu" id="menu-active-link">
+                            <li class=" menu-link  homer"><a class="@if(Route::is('home') ) active @endif"  href="{{ route('home') }}"> Home</a></li>
+                            <li class="menu-link"><a class="@if(Route::is('about') || Route::is('international-student') || Route::is('message-ceo')) active @endif" href="#"> study with us</a>
                             <ul class="sub-menu">
                               <li><a href="{{route('about')}}">why study with us</a></li>
                               <li><a href="{{route('international-student')}}">international students</a></li>
                               <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
                             </ul>
                             </li>
-                            <li><a  href="{{route('course')}}">find a courses</a>
+                            <li class="menu-link"><a class="@if(Route::is('course') || Route::is('child-education') || Route::is('hospitality-management')) || Route::is('commercial-cookery')) || Route::is('community-service')) || Route::is('disability')) active @endif" href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
                               <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
                               <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>
@@ -112,14 +112,14 @@
                               <li><a href="{{route('community-service')}}">Diploma of Community Services</a></li>
                             </ul>
                             </li>
-                            <li><a  href="#"> admission</a>
+                            <li class="menu-link"><a class="@if(Route::is('how-to-apply') || Route::is('intake-date') || Route::is('who-can-apply')) active @endif" href="#"> admission</a>
                             <ul class="sub-menu">
                               <li><a href="{{route('how-to-apply')}}">How to Apply</a></li>
                               <li><a href="{{route('intake-date')}}">Intake Dates</a></li>
                               <li><a href="{{route('who-can-apply')}}">Who can apply</a></li>
                             </ul>
                             </li>
-                            <li><a  href="#"> student information</a>
+                            <li class="menu-link"><a class="@if(Route::is('first-day') || Route::is('orientation') || Route::is('student-support')) || Route::is('rules-regulations')) || Route::is('airport-pick-up')  || Route::is('oshc') || Route::is('faqs')) active @endif" href="#"> student information</a>
                             <ul class="sub-menu">
                               <li><a href="{{route('first-day')}}">First Day at college</a></li>
                               <li><a href="{{route('orientation')}}">Orientation</a></li>
@@ -131,15 +131,15 @@
                               <li><a href="{{route('faqs')}}">FAQs</a></li>
                             </ul>
                             </li>
-                            <li><a  href="{{route('contact')}}">Contact Us</a></li>
+                            <li class="menu-link" ><a class="@if(Route::is('contact') ) active @endif" href="{{route('contact')}}">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="menu-wrap d-lg-none">
                     <ul class="menu">
                           <li><a href="#"> ANE portal</a>
                             <ul class="sub-menu">
-                            <li><a href="#">student portal</a></li>
-                            <li><a href="#">staff portal</a></li>  
+                            <li><a href="#">student </a></li>
+                            <li><a href="#">admin </a></li>  
                             </ul>
                           </li>
                           <li><a class="link-box"  href="#"> Apply now</a>
@@ -163,7 +163,7 @@
                               <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
                             </ul>
                             </li>
-                            <li><a  href="{{route('course')}}">find a courses</a>
+                            <li><a href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
                               <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
                               <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>

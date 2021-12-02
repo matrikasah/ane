@@ -151,8 +151,8 @@ $(document).ready(function(){
 	});
 
 
-  $('#inputGroupSelect04.choosecourse').change(function(){
-    var link= $(this).val();
+  $('#choose-course').click(function(){
+    var link= $('.choosecourse').val();
     if(link != "blank"){
       window.location.href = link;
     }
@@ -162,4 +162,13 @@ $(document).ready(function(){
 
 
 
-
+// // Add active class to the current button (highlight it)
+// var header = document.getElementById("menu-active-link");
+// var btns = header.getElementsByClassName("menu-link");
+// for (var i = 0; i < li.length; i++) {
+//   li[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
