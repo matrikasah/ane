@@ -103,13 +103,13 @@
                               <li><a href="{{route('message-ceo')}}">message from ceo</a></li>
                             </ul>
                             </li>
-                            <li><a  href="#">find a courses</a>
+                            <li><a  href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
-                              <li><a href="#">Diploma of Early Childhood Education and Care</a></li>
-                              <li><a href="#">Diploma of Hospitality Management</a></li>
-                              <li><a href="#">Certificate IV in Commercial Cookery</a></li>
-                              <li><a href="#">Certificate IV in Disability</a></li>
-                              <li><a href="#">Diploma of Community Services</a></li>
+                              <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>
+                              <li><a href="{{route('commercial-cookery')}}">Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="{{route('disability')}}">Certificate IV in Disability</a></li>
+                              <li><a href="{{route('community-service')}}">Diploma of Community Services</a></li>
                             </ul>
                             </li>
                             <li><a  href="#"> admission</a>

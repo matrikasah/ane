@@ -171,7 +171,7 @@
 									<div class="card">
 										<div class="overlap-img">							
 									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-									  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+									  		<a href="{{route('child-education')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
 									  	
@@ -191,7 +191,7 @@
 								<div class="card">
 									<div class="overlap-img">							
 								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+								  		<a href="{{route('commercial-cookery')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
 								  	
@@ -211,7 +211,7 @@
 								<div class="card">
 									<div class="overlap-img">							
 								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+								  		<a href="{{route('hospitality-management')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
 								  	
@@ -231,7 +231,7 @@
 									<div class="card">
 										<div class="overlap-img">							
 									  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-									  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+									  		<a href="{{route('community-service')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 									  	</div>	
 									  		
 									  	
@@ -251,7 +251,7 @@
 								<div class="card">
 									<div class="overlap-img">							
 								  		<img src="{{ asset('image/ANE1.jpg') }}" class="card-img-top" alt="...">
-								  		<a href="page.php" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
+								  		<a href="{{route('disability')}}" class="card-link"><i class="far fa-eye"></i> View Details</a>							  	
 								  	</div>	
 								  		
 								  	
@@ -270,7 +270,7 @@
 						</div>
 						<div class="swiper-pagination"></div>
 				</div>
-				<a  href="course.php" class="btn btn-primary hvr-bounce-to-right mt-4">view all <i class="fas fa-angle-double-right"></i></a>
+				<a  href="{{route('course')}}" class="btn btn-primary hvr-bounce-to-right mt-4">view all <i class="fas fa-angle-double-right"></i></a>
 			</div>
 		</div>
 	</div>

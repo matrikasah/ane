@@ -67,7 +67,7 @@
 			</div>
 			<div class="col-7">
 				<ul class="nav  font-size-sm  copyright">
-					<li id="menu-item-4460" class="nav-item px-3 menu-item-4460"><a title="" href="policy.php" class=" p-0 nav-link">Our Compliance and Policy</a></li>
+					<li id="menu-item-4460" class="nav-item px-3 menu-item-4460"><a title="" href="{{route('policy')}}" class=" p-0 nav-link">Our Compliance and Policy</a></li>
 					<!-- <li id="menu-item-4461" class="nav-item px-3 menu-item-4461"><a title="" href="" class=" p-0 nav-link">Refund policy</a></li>
 					<li id="menu-item-4461" class="nav-item px-3 menu-item-4461"><a title="" href="terms&condition.php" class=" p-0 nav-link">Terms & condition</a></li> -->
 				</ul>
