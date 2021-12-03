@@ -23,24 +23,48 @@ class ApplicantOnShore extends FormRequest
      */
     public function rules()
     {
+        // return [
+         
+        //     'stdsurname' => 'required|regex:/^[a-zA-Z]+$/u|min:2|max:10',
+        //     'stdgivenname' => 'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
+        //     'stdhomeaddress' => 'required',
+        //     'stdsuburb' => 'required',
+        //     'stdpostcode' => 'required|numeric',
+        //     'stdtelnum' => 'required|min:10|numeric',
+        //     'stdemail' => 'required|email',
+        //     'stddob' => 'required|date',
+        //     'fullName'=>'required',
+            
+        //     'relationship'=>'required|regex:/^[a-zA-Z]+$/u|min:1|max:30',
+        //     'contactNum'=>'required|numeric',
+        //     'mobile'=>'required|numeric',
+            
+        //     'langbirthCoun'=>'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
+        //     'otherlanguages'=>'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
+
+
+
+
+        // ];
+
         return [
          
-            'stdsurname' => 'required|regex:/^[a-zA-Z]+$/u|min:2|max:10',
-            'stdgivenname' => 'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
+            'stdsurname' => 'required',
+            'stdgivenname' => 'required',
             'stdhomeaddress' => 'required',
             'stdsuburb' => 'required',
             'stdpostcode' => 'required|numeric',
             'stdtelnum' => 'required|min:10|numeric',
             'stdemail' => 'required|email',
             'stddob' => 'required|date',
+            'fullName'=>'required',
             
-            'fullName'=>'required|regex:/^[a-zA-Z]+$/u|min:1|max:30',
-            'relationship'=>'required|regex:/^[a-zA-Z]+$/u|min:1|max:30',
+            'relationship'=>'required',
             'contactNum'=>'required|numeric',
             'mobile'=>'required|numeric',
             
-            'langbirthCoun'=>'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
-            'otherlanguages'=>'required|regex:/^[a-zA-Z]+$/u|min:3|max:20',
+            'langbirthCoun'=>'required',
+            'otherlanguages'=>'required',
 
 
 
