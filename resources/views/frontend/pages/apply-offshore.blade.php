@@ -492,7 +492,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">How well do you speak English?</span>
+                                <span class="input-group-text flex-column  ml-0 mr-0">How well do you speak English?</span>
                                 <div class="secondaryChoose englishChooseBox d-flex">
                                     <div class="d-flex align-items-center">
                                         <input id="verywilleng" name="englanguage" type="radio">
@@ -601,7 +601,7 @@
                                 <input id="otherreasons" name="proghistory" type="radio">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 ml-0 mr-0">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="todevBusiness"> To develop my existing business
                                 </label>
@@ -610,7 +610,7 @@
                         </div>
                         <div style="width: 100%;" class="col-md-6">
                             <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Do you wish to apply for Recognition of Prior
+                                <span class="input-group-text flex-column  ml-0 mr-0">Do you wish to apply for Recognition of Prior
                                     Learning?</span>
                                 <div class="secondaryChoose priorChoose d-flex">
                                     <div class="d-flex align-items-center">
@@ -640,7 +640,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Do you consider yourself to have a
+                                <span class="input-group-text flex-column  ml-0 mr-0">Do you consider yourself to have a
                                     disability, impairment or long-term condition?</span>
                                 <div class="secondaryChoose priorChoose d-flex">
                                     <div class="d-flex align-items-center">
