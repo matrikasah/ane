@@ -64,9 +64,9 @@ Route::get('/community-service',[HomeController::class,'community_service'])->na
 Route::get('/hospitality-management',[HomeController::class,'hospitality_management'])->name('hospitality-management');
 Route::get('/disability',[HomeController::class,'disability'])->name('disability');
 Route::get('/policy',[HomeController::class,'policy'])->name('policy');
-Route::get('/glazed',[HomeController::class,'glazed']);
-Route::get('/pork',[HomeController::class,'pork']);
-Route::get('/Cauliflower',[HomeController::class,'Cauliflower']);
+Route::get('/glazed',[HomeController::class,'glazed'])->name('glazed');
+Route::get('/pork',[HomeController::class,'pork'])->name('pork');
+Route::get('/Cauliflower',[HomeController::class,'Cauliflower'])->name('Cauliflower');
 Route::get('/course',[HomeController::class,'course'])->name('course');
 
 Route::get('/download-offsore',[HomeController::class,'offsore_download'])->name('offsore.download');

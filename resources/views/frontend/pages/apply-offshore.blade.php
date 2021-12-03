@@ -1521,7 +1521,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_sign" type="text">
+                                <input class="form-control signNdate mydatepicker" name="date_of_sign" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1629,7 +1629,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input name="date_of_sign" class="form-control signNdate" type="text">
+                                <input name="date_of_sign" class="form-control signNdate mydatepicker" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1692,7 +1692,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_signB" type="text">
+                                <input class="form-control signNdate mydatepicker" name="date_of_signB" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1760,7 +1760,15 @@
 	</div>
 </section>
 
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(".mydatepicker").datepicker({
+  format: "dd-mm-yyyy",
+});
+</script>
 
 
 
