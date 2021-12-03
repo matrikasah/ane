@@ -317,7 +317,7 @@
 				<div class="row">
 		      <div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
-							<a href="/Cauliflower">
+							<a href="{{route('Cauliflower')}}">
 							<!-- <div class="news-category">
 								<h5>News</h5>
 							</div> -->
@@ -338,7 +338,7 @@
 					</div>
 					<div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
-							<a href="/glazed">
+							<a href="{{route('glazed')}}">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
@@ -360,7 +360,7 @@
 					</div>
 					<div class="col-sm-4"  data-aos="fade-up">
 						<div class="card">
-							<a href="/pork">
+							<a href="{{route('pork')}}">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
