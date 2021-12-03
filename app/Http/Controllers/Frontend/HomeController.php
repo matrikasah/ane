@@ -26,7 +26,7 @@ use App\Http\Requests\ApplicantOnShore;
 use App\Http\Requests\AgentPostRequest;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
-
+use PDF;
 class HomeController extends Controller
 {
  
@@ -346,6 +346,25 @@ public function course(){
 public function store_contact_form(ContactRequest $req){
     Contact::create($req->all());
     return back()->with('message', 'Thankyou Your for contacting us! we will respond soon.');
+}
+
+public function offsore_download(Request $request){
+    $pdf = PDF::loadView('frontend.pages.offsore-pdf');
+    return $pdf->download('offsore.pdf');
+    
+
+}
+
+public function onsore_download(Request $request){
+    $pdf = PDF::loadView('frontend.pages.onshore-pdf');
+    return $pdf->download('onsore.pdf');
+}
+
+
+public function agent_download(Request $request){
+    $pdf = PDF::loadView('frontend.pages.agent-pdf');
+    return $pdf->download('agent.pdf');
+
 }
 
 }
