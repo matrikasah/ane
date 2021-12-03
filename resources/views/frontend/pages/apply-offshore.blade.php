@@ -97,28 +97,28 @@
                                     (USI) – <span class="secondarySpan"> Refer to
                                         Page 5 for assistance :</span></label>
                                 <input id="userUsi" name="stdusi" type="text" class="form-control"
-                                    placeholder="Unique Student Identifier (USI)">
+                                    placeholder="Unique Student Identifier (USI)" value="{{ old('stdusi') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userSurname" class="input-group-text">Surname</label>
                                 <input id="userSurname" name="stdsurname" type="text" class="form-control"
-                                    placeholder="Enter Your Surname">
+                                    placeholder="Enter Your Surname" value="{{ old('stdsurname') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userGivenName" class="input-group-text">Given Name</label>
                                 <input id="userGivenName" name="stdgivenname" type="text" class="form-control"
-                                    placeholder="Enter Your Given Name">
+                                    placeholder="Enter Your Given Name" value="{{ old('stdgivenname') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userHomeAddress" class="input-group-text">Home Address</label>
                                 <input id="userHomeAddress" name="stdhomeaddress" type="text" class="form-control"
-                                    placeholder="Enter Your Home Address">
+                                    placeholder="Enter Your Home Address" value="{{ old('stdhomeaddress') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">

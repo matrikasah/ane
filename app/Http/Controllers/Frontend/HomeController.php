@@ -90,23 +90,13 @@ public function store_ofshore(ApplicantPostRequest $req){
         ]);
      $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
 
-     
+        $data=[];
+        Mail::send('frontend.emailTemplate.mail-ofsore', $data, function($message){
+            $message->to('pandeyvivak25@gmail.com', 'ANE')->subject('Please verify your email');
+            $message->from('admin@gmail.com','ANE');
 
+        });
 
-
-
-        // $email=$applicant_personal_detail->stdemail;
-        // $data=[
-        //     'title'=>'hello'
-        // ];
-
-
-        // Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
-        // $message->to($email, 'ANE')->subject
-        //     ('Please verify your email');
-        // $message->from('admin@gmail.com','ANE');
-
-        // });
 
         return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
@@ -214,6 +204,12 @@ public function agent(){
             'agent_id'=>$agent_details->id
         ]);
         $agent_declaration=AgentDeclaration::create($req->all());
+        $data=[];
+        Mail::send('frontend.emailTemplate.mail-agent', $data, function($message){
+            $message->to('pandeyvivak25@gmail.com', 'ANE')->subject('Please verify your email');
+            $message->from('admin@gmail.com','ANE');
+
+        });
 
         return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
@@ -362,7 +358,8 @@ public function onsore_download(Request $request){
 
 
 public function agent_download(Request $request){
-    $pdf = PDF::loadView('frontend.pages.agent-pdf');
+    $agent=AgentDetails::findorFail(1);
+    $pdf = PDF::loadView('frontend.pages.agent-pdf', $agent);
     return $pdf->download('agent.pdf');
 
 }

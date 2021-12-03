@@ -83,42 +83,42 @@
                     <div class="col-md-6  mt-4">
                         <div class="input-group">
                             <label for="agent_name" class="input-group-text agent_nameLabel">Agent Name :</label>
-                            <input id="agent_name" name="name" type="text" class="form-control" placeholder="Agent Name">
+                            <input id="agent_name" name="name" type="text" value="{{ old('name') }}" class="form-control" placeholder="Agent Name">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_surname" class="input-group-text">Surname</label>
                             <input id="agent_surname" name="surname" type="text" class="form-control"
-                                placeholder="Enter Your Surname">
+                                placeholder="Enter Your Surname" value="{{ old('surname') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_givename" class="input-group-text">Given Name</label>
                             <input id="agent_givename" name="givenname" type="text" class="form-control"
-                                placeholder="Enter Your Given Name">
+                                placeholder="Enter Your Given Name" value="{{ old('givenname') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_ausaddress" class="input-group-text">Address in Australia</label>
                             <input id="agent_ausaddress" name="address_in_aus" type="text" class="form-control"
-                                placeholder="Enter Your Address in Australia">
+                                placeholder="Enter Your Address in Australia" value="{{ old('address_in_aus') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_suburb" class="input-group-text">Suburb</label>
                             <input id="agent_suburb" name="suburb" type="text" class="form-control"
-                                placeholder="Enter Your Suburb">
+                                placeholder="Enter Your Suburb" value="{{ old('suburb') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_country" class="input-group-text">Country</label>
                             <input id="agent_country" name="country" type="text" class="form-control"
-                                placeholder="Enter Your Country">
+                                placeholder="Enter Your Country" value="{{ old('country') }}">
                         </div>
                     </div>
                     <div class="col-md-12 mt-4">
@@ -126,7 +126,7 @@
                             <label for="agent_out_aus" class="input-group-text">Address <span class="secondarySpan"> (Outside
                                     Australia)</span> </label>
                             <input id="agent_out_aus" name="address_outside_aus" type="text" class="form-control"
-                                placeholder="Enter Your Address Outside Australia">
+                                placeholder="Enter Your Address Outside Australia" value="{{ old('address_outside_aus') }}">
                         </div>
                     </div>
 
@@ -135,14 +135,14 @@
                         <div class="input-group">
                             <label for="suburb_out_aus" class="input-group-text">Suburb </label>
                             <input id="suburb_out_aus" name="suburb_outside_aus"  type="text" class="form-control"
-                                placeholder="Enter Your Suburb">
+                                placeholder="Enter Your Suburb" value="{{ old('suburb_outside_aus') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_postcode" class="input-group-text">Postcode</label>
                             <input id="agent_postcode" name="post_code" type="text" class="form-control"
-                                placeholder="Enter Your Postcode">
+                                placeholder="Enter Your Postcode" value="{{ old('post_code') }}">
                         </div>
                     </div>
 
@@ -152,7 +152,7 @@
                         <div class="input-group">
                             <label for="agent_mobile" class="input-group-text">Mobile</label>
                             <input id="agent_mobile" name="mobile_num" type="number" class="form-control"
-                                placeholder="Enter Your Mobile">
+                                placeholder="Enter Your Mobile" value="{{ old('mobile_num') }}">
                         </div>
                     </div>
 
@@ -160,7 +160,7 @@
                         <div class="input-group">
                             <label for="agent_tel_work" class="input-group-text">Telephone (work)</label>
                             <input id="agent_tel_work" name="telephone_num" type="text" class="form-control"
-                                placeholder="Enter Your Telephone">
+                                placeholder="Enter Your Telephone" value="{{ old('telephone_num') }}">
                         </div>
                     </div>
 
@@ -169,7 +169,7 @@
                         <div class="input-group">
                             <label for="agent_abn" class="input-group-text">ABN</label>
                             <input id="agent_abn" name="abn" type="text" class="form-control"
-                                placeholder="Enter Your Postcode">
+                                placeholder="Enter Your Postcode" value="{{ old('abn') }}">
                         </div>
                     </div>
 
@@ -177,7 +177,7 @@
                         <div class="input-group">
                             <label for="agent_acn" class="input-group-text">ACN</label>
                             <input id="agent_acn" name="acn" type="text" class="form-control"
-                                placeholder="Enter Your Postcode">
+                                placeholder="Enter Your Postcode" value="{{ old('acn') }}">
                         </div>
                     </div>
 
@@ -185,21 +185,21 @@
                         <div class="input-group">
                             <label for="agent_emer_cont" class="input-group-text">Emergency Contact</label>
                             <input id="agent_emer_cont" name="emergency_contact" type="text" class="form-control"
-                                placeholder="Enter Your Emergency Contact">
+                                placeholder="Enter Your Emergency Contact" value="{{ old('emergency_contact') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_address_usual" class="input-group-text">Address</label>
                             <input id="agent_address_usual" name="emgy_address" type="text" class="form-control"
-                                placeholder="Enter Your Address">
+                                placeholder="Enter Your Address" value="{{ old('emgy_address') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_tel_usual" class="input-group-text">Telephone</label>
                             <input id="agent_tel_usual" name="emgy_telephone" type="text" class="form-control"
-                                placeholder="Enter Your Telephone">
+                                placeholder="Enter Your Telephone" value="{{ old('emgy_telephone') }}">
                         </div>
                     </div>
 
@@ -214,7 +214,7 @@
                         agent?
                         (Please provide a business plan if your company is new).
                     </label>
-                    <input class="agentAnswer mt-1" name="how_long_operation" id="agentDuration"></input>
+                    <input class="agentAnswer mt-1" name="how_long_operation" id="agentDuration" value="{{ old('how_long_operation') }}"></input>
                 </div>
 
 
@@ -223,7 +223,7 @@
                         international education?
 
                     </label>
-                    <input class="agentAnswer mt-1" name="deal_area" id="otherAreas"></input>
+                    <input class="agentAnswer mt-1" name="deal_area" id="otherAreas" value="{{ old('deal_area') }}"></input>
                 </div>
 
 
@@ -231,7 +231,7 @@
                     <label class="mt-3 nobgLabel" for="totalStds">What is the total number of students that your office
                         recruits each year?
                     </label>
-                    <input class="agentAnswer mt-1" name="totalnumber_student" id="totalStds"></input>
+                    <input class="agentAnswer mt-1" value="{{ old('totalnumber_student') }}" name="totalnumber_student" id="totalStds"></input>
                 </div>
 
 
@@ -239,7 +239,7 @@
                     <label class="mt-3 nobgLabel" for="whichCountry">Where (which countries) do you send most of your
                         students?
                     </label>
-                    <input class="agentAnswer mt-1" name="country_student_send" id="whichCountry"></input>
+                    <input class="agentAnswer mt-1" value="{{ old('country_student_send') }}" name="country_student_send" id="whichCountry"></input>
                 </div>
 
 
@@ -248,7 +248,7 @@
                         to study in the last 12 months?
 
                     </label>
-                    <input class="agentAnswer mt-1" name="student_in_austrila" id="stdCount"></input>
+                    <input class="agentAnswer mt-1" value="{{ old('student_in_austrila"') }}" name="student_in_austrila" id="stdCount"></input>
                 </div>
 
 
@@ -258,7 +258,7 @@
                         partnership or an affiliation?
 
                     </label>
-                    <input class="agentAnswer mt-1" name="partners" id="partners"></input>
+                    <input class="agentAnswer mt-1" value="{{ old('partners') }}" name="partners" id="partners"></input>
                 </div>
 
                 <div class="form-group mt-2">
@@ -266,7 +266,7 @@
                         (If Yes, please describe the institutions’ names.)
 
                     </label>
-                    <input class="agentAnswer mt-1" name="institutions" id="institutions"></input>
+                    <input class="agentAnswer mt-1" value="{{ old('institutions') }}" name="institutions" id="institutions"></input>
                 </div>
 
             </div>
@@ -275,7 +275,7 @@
             <div class="agencyInfo mt-4">
                 <h3 class="bold-text">Agency information (Contact person)</h3>
                 <p>Key staff contact (1) Position</p>
-                <input class="agentAnswer mt-1" name="keyStaff" id="keyStaff"></input>
+                <input class="agentAnswer mt-1" value="{{ old('keyStaff') }}" name="keyStaff" id="keyStaff"></input>
             </div>
 
             <div class="referessinfo mt-4">
@@ -291,42 +291,42 @@
                         <div class="input-group">
                             <label for="useragentname" class="input-group-text">Name :</label>
                             <input id="useragentname" name="useragentname" type="text" class="form-control"
-                                placeholder="Enter Your Name">
+                                placeholder="Enter Your Name" value="{{ old('useragentname') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="userinstname" class="input-group-text">Institution Name :</label>
                             <input id="userinstname" name="userinstname" type="text" class="form-control"
-                                placeholder="Enter Your Institution Name">
+                                placeholder="Enter Your Institution Name" value="{{ old('userinstname') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="userinsttitle" class="input-group-text">Title :</label>
                             <input id="userinsttitle" name="userinsttitle" type="text" class="form-control"
-                                placeholder="Enter Your Title">
+                                placeholder="Enter Your Title" value="{{ old('userinsttitle') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="userinstphone" class="input-group-text">Phone :</label>
                             <input type="number" id="userinstphone" name="userinstphone" class="form-control"
-                                placeholder="Enter Your Phone">
+                                placeholder="Enter Your Phone" value="{{ old('userinstphone') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="userinstphone" class="input-group-text">Fax :</label>
                             <input type="text" id="userinstfax" name="userinstfax" class="form-control"
-                                placeholder="Enter Your Fax">
+                                placeholder="Enter Your Fax" value="{{ old('userinstfax') }}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="userinstphone" class="input-group-text">Email :</label>
                             <input type="text" id="userinstemail" name="userinstemail" class="form-control"
-                                placeholder="Enter Your Email">
+                                placeholder="Enter Your Email" value="{{ old('userinstemail') }}">
                         </div>
                     </div>
 
@@ -341,42 +341,42 @@
                             <div class="input-group">
                                 <label for="useragentname" class="input-group-text">Name :</label>
                                 <input id="useragentname" name="useragentname2" type="text" class="form-control"
-                                    placeholder="Enter Your Name">
+                                    placeholder="Enter Your Name" value="{{ old('useragentname2') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstname" class="input-group-text">Institution Name :</label>
                                 <input id="userinstname" name="userinstname2" type="text" class="form-control"
-                                    placeholder="Enter Your Institution Name">
+                                    placeholder="Enter Your Institution Name" value="{{ old('userinstname2') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinsttitle" class="input-group-text">Title :</label>
                                 <input id="userinsttitle" name="userinsttitle2" type="text" class="form-control"
-                                    placeholder="Enter Your Title">
+                                    placeholder="Enter Your Title" value="{{ old('userinsttitle2') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Phone :</label>
                                 <input type="number" id="userinstphone" name="userinstphone2" class="form-control"
-                                    placeholder="Enter Your Phone">
+                                    placeholder="Enter Your Phone" value="{{ old('userinstphone2') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Fax :</label>
                                 <input type="text" id="userinstfax" name="userinstfax2" class="form-control"
-                                    placeholder="Enter Your Fax">
+                                    placeholder="Enter Your Fax" value="{{ old('userinstfax2') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Email :</label>
                                 <input type="text" id="userinstemail" name="userinstemail2" class="form-control"
-                                    placeholder="Enter Your Email">
+                                    placeholder="Enter Your Email" value="{{ old('userinstemail2') }}">
                             </div>
                         </div>
                     </div>
@@ -386,7 +386,7 @@
 
             <div class="declaration mt-4 gap">
                 <h3 class="bold-text">Declaration</h3>
-                <input class="agentAnswer mt-2" name="declaration" id="agentDeclaration"></input>
+                <input class="agentAnswer mt-2" value="{{ old('declaration') }}" name="declaration" id="agentDeclaration"></input>
 
 
                 <div class="row">
@@ -394,7 +394,7 @@
                         <div class="input-group">
                             <label for="printname" class="input-group-text">Print Name :</label>
                             <input type="text" id="printname" name="agentprintname" class="form-control"
-                                placeholder="Enter Your Name">
+                                placeholder="Enter Your Name" value="{{ old('agentprintname') }}">
                         </div>
                     </div>
                     <div class="row">
@@ -407,11 +407,11 @@
                             <textarea id="signature_capture" name="contractdata"></textarea> -->
                         </div>
                         <div class="col-md-6 mt-4">
-                            <input class="form-control signNdate" name="agent_position" type="text">
+                            <input class="form-control signNdate" name="agent_position" type="text" value="{{ old('agent_position') }}">
                             <p class="mt-1"><b>Position</b></p>
                         </div>
                         <div class="col-md-6 mt-4 ml-0">
-                            <input id="datepicker" class="form-control signNdate" name="date" type="text">
+                            <input id="datepicker" class="form-control signNdate" name="date" type="text" value="{{ old('date') }}">
                             <p class="mt-1"><b>Date</b></p>
                         </div>
                     </div>
