@@ -35,86 +35,42 @@
                     </div>
                     <div class="row">
 
-                        <div class="col-md-12 ">
-                            <div class="input-group">
+                       
                                 <p for="userUsi" class="input-group-text userusiLabel"><b>Unique Student Identifier
                                     (USI) – <span class="secondarySpan"> Refer to
                                         Page 5 for assistance : </span></b>  12342342 </p>
                                 
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-group">
+                         
+                      
                                 <p for="userSurname" class="input-group-text"> <b>Surname: </b>Ipsum </p>
                                 
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-group">
+                           
+                        
                                 <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>Lorem</p>
                                 
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-group">
+                        
+                      
                                 <p for="userHomeAddress" class="input-group-text"> <b>Home Address: </b> Sydney</p>
                                 
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
+                          
                                 
                                 <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> Perth</p>
-                               
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="userState" class="input-group-text">State & Postcode</label> -->
+                          
                                 <p for="userHomeAddress" class="input-group-text"> <b>State & Postcode: </b> 44600</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="telNum" class="input-group-text">Telephone Number </label> -->
+                            
                                 <p for="userHomeAddress" class="input-group-text"> <b>Telephone Number: </b> 1234567890</p>
                                 
-                            </div>
-                        </div>
+                         
 
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="userEmail" class="input-group-text">Email Address</label> -->
+                      
                                 <p for="userHomeAddress" class="input-group-text"> <b>Email Address: </b> sydney@gmail.com</p>
-                               
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="userDob" class="input-group-text">Date of Birth</label> -->
+                          
                                 <p for="userHomeAddress" class="input-group-text"> <b>Date of Birth: </b> 12-12-2020</p>
+                          
+                        
                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4 ml-0">
-                            <div class="input-group">
-                                <!-- <span class="input-group-text ml-0">Sex</span>
-                                <div class="d-flex align-items-center genderlabelDiv">
-                                   
-                                    <label class="genderLabel" for="maleGender">Male</label>
-                                </div>
-                                <div class="d-flex align-items-center ml-1 genderlabelDiv">
-                                    <input id="femaleGender" name="sex" type="radio">
-                                    <label class="genderLabel" for="femaleGender">Female</label>
-                                </div>
-                                <div class="d-flex align-items-center ml-1 genderlabelDiv">
-                                    <input id="othersGender" name="sex" type="radio">
-                                    <label class="genderLabel" for="femaleGender">Others</label>
-                                </div> -->
                                 <p for="userHomeAddress" class="input-group-text"> <b>Sex: </b> Male</p>
-                            </div>
-                        </div>
+                          
                     </div>
                 </div>
                 <div class="p-1 mt-4 emergencyContactDetails gap">
@@ -122,62 +78,22 @@
                         <h3>Emergency Contact Details</h3>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="fullName" class="input-group-text">Full Name</label>
-                                <input id="fullName" name="fullName" type="text" class="form-control "
-                                    placeholder="Enter Your Full Name"> -->
+                       
                                     <p for="userHomeAddress" class="input-group-text"> <b>Full Name: </b> Ipsum Lorem</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="relationship" class="input-group-text">Relationship</label>
-                                <input id="relationship" name="relationship" type="text" class="form-control "
-                                    placeholder="Relationship"> -->
+                           
+                       
                                     <p for="userHomeAddress" class="input-group-text"> <b>Relationship: </b> Good</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="contactNum" class="input-group-text">Contact Number</label>
-                                <input id="contactNum" name="contactNum" type="text" class="form-control "
-                                    placeholder="Contact Number"> -->
+                          
+                       
                                     <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> 098765434</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <div class="input-group">
-                                <!-- <label for="mobile" class="input-group-text">Mobile</label>
-                                <input id="mobile" name="mobile" type="number" class="form-control "
-                                    placeholder="Mobile"> -->
+                            
+                        
                                     <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b> 981234567</p>
-                            </div>
-                        </div>
+                         
                         <div class="d-flex mt-4" style="align-items: center;">
 
 
-                            <!-- <span class="secondarySpan ">In the event of an emergency do you give ANE College
-                                permission
-                                to
-                                organise emergency transport and treatment and
-
-                                agree to pay all costs related to the emergency?
-
-
-                            </span>
-
-                            <div class="d-flex secondaryspanChoose">
-                                <div class="d-flex align-items-center">
-                                    <input id="yes" name="emergency_pay" type="radio">
-                                    <label class="genderLabel" for="yes"> Yes </label>
-                                </div>
-
-                                <div class="d-flex align-items-center">
-                                    <input id="noemer" name="emergency_pay" type="radio">
-                                    <label class="genderLabel" for="noemer"> No</label>
-                                </div>
-                            </div> -->
+                          
                             <p for="userHomeAddress" class="input-group-text"> <b>In the event of an emergency do you give ANE College
                                 permission to organise emergency transport and treatment and agree to pay all costs related to the emergency?: </b> Yes</p>
                         </div>
@@ -190,40 +106,17 @@
 
                     </div>
                     <div class="row">
-                        <div class="col-md-6 mt-4 ml-0">
-                            <div class="input-group">
-                                <!-- <span class="input-group-text ml-0">Are you applying through agent?</span>
-                                <div class="agentChoose d-flex">
-                                    <div class="d-flex align-items-center" style="margin-right: 10px;">
-                                        <input id="yesagent" name="apply_through_agent" type="radio">
-                                        <label class="genderLabel" for="yesagent"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="noagent" name="apply_through_agent" type="radio">
-                                        <label class="genderLabel" for="noagent"> No </label>
-                                    </div>
-                                </div> -->
+                        
+                                
                                 <p for="userHomeAddress" class="input-group-text"> <b>Are you applying through agent?: </b> Yes</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4">
-                            <!-- <div class="input-group">
-                                <label for="orgName" class="input-group-text">Organization Name</label>
-                                <input id="orgName" name="orgName" type="text" class="form-control"
-                                    placeholder="Enter organization name">
-                            </div> -->
+                         
+                       
                             <p for="userHomeAddress" class="input-group-text"> <b>Organization Name?: </b> Nice</p>
 
-                        </div>
-                        <div class="col-md-6 mt-4 ml-0">
-                            <!-- <div class="input-group">
-                                <label for="agentCnum" class="input-group-text">Contact Number</label>
-                                <input id="agentCnum" name="agentCnum" type="text" class="form-control"
-                                    placeholder="Enter Contact Number">
-                            </div> -->
+                      
+                        
                             <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> 123456789</p>
-                        </div>
+                       
 
 
                     </div>
@@ -231,257 +124,66 @@
                 <div class="eduQualifications mt-4 gap">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="mainFormHeadings">
+                            
                                 <h3>Education</h3>
-                            </div>
+                           
                             <div class="educationContent">
-                                <!-- <p class="educationDesc mt-4">What is your highest COMPLETED school level? (ONE box
-                                    only.) -->
-                                </p>
-                                <div>
-                                    <!-- <div class="d-flex align-items-center">
-                                        <label class="genderLabel nopadding" for="year11"> Year 12 or equivalent
-                                        </label>
-                                        <input id="year11" name="higher_edu" type="radio">
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <label class="genderLabel nopadding" for="year11"> Year 11 or equivalent
-                                        </label>
-                                        <input id="year11" name="higher_edu" type="radio">
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <label class="genderLabel nopadding" for="year11"> Year 10 or equivalent
-                                        </label>
-                                        <input id="year11" name="higher_edu" type="radio">
-                                    </div> -->
+                               
                                     <p for="userHomeAddress" class="input-group-text"> <b>What is your highest COMPLETED school level?: </b> Year 12 or equivalent</p>
-                                    <!-- <div class="input-group mt-4">
-                                        <label for="completionYear" style="text-align: left;"
-                                            class="input-group-text">What YEAR did you
-                                            complete <br> the relevant
-                                            qualification?</label>
-                                        <input id="completionYear" name="yearCompletion" type="number"
-                                            class="form-control" placeholder="Completion year" style="height: 64px;">
-                                    </div> -->
+                                   
                                     <p for="userHomeAddress" class="input-group-text"> <b>What YEAR did you complete the relevant qualification: </b> 2011</p>
-                                    <!-- <div class="input-group mt-4">
-                                        <span style="text-align: left;" class="input-group-text ml-0">Are you still <br>
-                                            attending
-                                            secondary school?</span>
-                                      
-                                        <div class="secondaryChoose d-flex">
-                                            <div class="d-flex align-items-center" style="margin-right:10px">
-                                                <input id="yesSecondary" name="secondary" type="radio">
-                                                <label class="genderLabel " for="yesSecondary"> Yes </label>
-                                            </div>
-
-                                            <div class="d-flex align-items-center">
-                                                <input id="noSecondary" name="secondary" type="radio">
-                                                <label class="genderLabel" for="noSecondary"> No </label>
-                                            </div>
-                                        </div>
-                                    </div> -->
+                                   
                                     <p for="userHomeAddress" class="input-group-text"> <b>Are you still attending secondary school?: </b> No</p>
 
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="mainFormHeadings">
+                           
                                 <h3>Previous Qualification</h3>
-                            </div>
-                            <!-- <div class="qualificationContent">
-                                <p class="mt-4 educationDesc">Have you SUCCESSFULLY completed any of the following
-                                    qualifications?</p>
-                                <p class="mt-1 educationDesc">If YES, then tick ANY applicable boxes</p>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yesBach">Bachelor or Higher Degree
-                                    </label>
-                                    <input id="yesBach" name="prevquali" type="radio">
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yesDip">Advanced Diploma or Associate
-                                        Degree
-                                    </label>
-                                    <input id="yesDip" name="prevquali" type="radio">
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yesCerti">Certificate III </label>
-                                    <input id="yesCerti" name="prevquali" type="radio">
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yesOthers">Certificates other than the
-                                        above
-                                    </label>
-                                    <input id="yesOthers" name="prevquali" type="radio">
-                                </div>
-                            </div> -->
+                           
+                           
                             <p for="userHomeAddress" class="input-group-text"> <b>Qualifications that you have successfully completed: </b> Bachelor or Higher Degree</p>
                         </div>
                         <div class="col-md-4">
-                            <div class="mainFormHeadings">
+                            
                                 <h3>Employment</h3>
-                            </div>
-                            <!-- <div class="employmentContent">
-                                <p class="mt-4 educationDesc">Of the following categories, which BEST describes your
-                                    current employment status? (ONE box only.)</p>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yesfull">Full-time employee
-                                    </label>
-                                    <input id="yesfull" name="employment" type="radio">
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yespart">Part-time employee
-                                    </label>
-                                    <input id="yespart" name="employment" type="radio">
-                                </div>
-                               
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="yesSelf">Self-employed - not employing
-                                        others
-                                    </label>
-                                    <input id="yesSelf" name="employment" type="radio">
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="unemployed">Unemployed - seeking part-time
-                                        work
-                                    </label>
-                                    <input id="unemployed" name="employment" type="radio">
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <label class="genderLabel nopadding" for="notseeking">Not employed - not seeking
-                                        employment
-                                    </label>
-                                    <input id="notseeking" name="employment" type="radio">
-                                </div>
-                            </div> -->
+                           
+                           
                             <p for="userHomeAddress" class="input-group-text"> <b>What is your current employment status: </b> Part-time employee</p>
                         </div>
                     </div>
                 </div>
                 <!-- language and cultural diversity -->
                 <div class="languageNculture mt-4 gap">
-                    <div class="personalDetailsHead mainFormHeadings">
+                   
                         <h3>Language and Cultural Diversity</h3>
-                    </div>
+                   
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="input-group mt-4">
-                                <!-- <label for="langbirthCoun" class="input-group-text">Country of Birth</label>
-                                <input id="langbirthCoun" name="langbirthCoun" type="text" class="form-control"
-                                    placeholder="Enter Your Country of Birth"> -->
+                        
                                     <p for="userHomeAddress" class="input-group-text"> <b>Country of Birth: </b> Australia</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-group mt-4">
-                                <!-- <span class="input-group-text  ml-0">Australian Citizenship</span>
-                                <div class="secondaryChoose d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="yesAustralian" name="ausCtzen" type="radio">
-                                        <label class="genderLabel " for="yesAustralian"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="noAustralian" name="ausCtzen" type="radio">
-                                        <label class="genderLabel" for="noAustralian"> No </label>
-                                    </div>
-                                </div> -->
+                          
+                        
+                               
                                 <p for="userHomeAddress" class="input-group-text"> <b>Do you have Australian Citizenship?: </b> No</p>
-                            </div>
-                        </div>
-                        <div class="col-md-12 d-flex align-items-center">
-                            <!-- <div class="input-group mt-4">
-                                <span class="input-group-text flex-column ml-0" style="margin-right: 10px;">Are you of Australian Aboriginal or
-                                    Torres Strait
-                                    Islander origin?
-                                    <br>
-                                    <span style="font: size 12px; color: #666666; margin-top: 3px;"
-                                        class="spanThird">(For persons of both Aboriginal and Torres Strait
-                                        Islander origin, mark both ‘Yes’ boxes.</span></span>
-                                <div class="secondaryChoose d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="yesAborginal" name="ausAbor" type="radio">
-                                        <label class="genderLabel " for="yesAborginal"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="noAborginal" name="ausAbor" type="radio">
-                                        <label class="genderLabel" for="noAborginal"> No </label>
-                                    </div>
-                                </div>
-                            </div> -->
+                           
+                        
+                           
                             <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal or Torres Strait Islander origin?: </b> Yes</p>
-                        </div>
-                        <div class="col-md-6">
-                            <!-- <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Aboriginal</span>
-                                <div class="secondaryChoose d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="yesonlyAbor" name="onlyAbor" type="radio">
-                                        <label class="genderLabel " for="yesonlyAbor"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="noonlyAbor" name="onlyAbor" type="radio">
-                                        <label class="genderLabel" for="noonlyAbor"> No </label>
-                                    </div>
-                                </div>
-                            </div> -->
+                        
+                        
                             <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal?: </b> Yes</p>
-                        </div>
-                        <div class="col-md-6">
-                            <!-- <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Torres Strait Islander</span>
-                                <div class="secondaryChoose d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="yesonlyTorres" name="onlyTorres" type="radio">
-                                        <label class="genderLabel " for="yesonlyTorres"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="noonlyTorres" name="onlyTorres" type="radio">
-                                        <label class="genderLabel" for="noonlyTorres"> No </label>
-                                    </div>
-                                </div>
-                            </div> -->
+                        
+                        
                             <p for="userHomeAddress" class="input-group-text"> <b>Are you of Torres Strait Islander origin?: </b> Yes</p>
-                        </div>
-                        <div class="col-md-12">
-                            <!-- <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">How well do you speak English?</span>
-                                <div class="secondaryChoose englishChooseBox d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="verywilleng" name="englanguage" type="radio">
-                                        <label class="genderLabel " for="verywilleng"> Very Well </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="welleng" name="englanguage" type="radio">
-                                        <label class="genderLabel" for="welleng"> Well </label>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <input id="notwelleng" name="englanguage" type="radio">
-                                        <label class="genderLabel" for="notwelleng"> Not Well </label>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <input id="notatalleng" name="englanguage" type="radio">
-                                        <label class="genderLabel" for="notatalleng"> Not at all </label>
-                                    </div>
-                                </div>
-                            </div> -->
+                        
+                       
+                           
                             <p for="userHomeAddress" class="input-group-text"> <b>How well do you speak English? </b> Well</p>
 
-                        </div>
-                        <div class="col-md-6  ml-0">
-                            <!-- <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Main language spoken at home if not
-                                    English</span>
-                                <input name="otherlanguages" type="text" class="form-control"
-                                    placeholder="Main language">
-                            </div> -->
+                       
                             <p for="userHomeAddress" class="input-group-text"> <b>Main language spoken at home if not English: </b> Nepali</p>
-                        </div>
+                        
                     </div>
 
                 </div>
@@ -493,99 +195,9 @@
                         <h3>Program History</h3>
                     </div>
                     <div class="row">
-                        <!-- <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="togetjob"> To get a Job </label>
-                                <input id="togetjob" name="proghistory" type="radio">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="togetbetter"> To get a better job or promotion
-                                </label>
-                                <input id="togetbetter" name="proghistory" type="radio">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="toanothercourse"> To get into another course of
-                                    study
-                                </label>
-                                <input id="toanothercourse" name="proghistory" type="radio">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="todiffcareer"> To try for a different career
-                                </label>
-                                <input id="todiffcareer" name="proghistory" type="radio">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="jobrequirement"> It was a requirement of my job
-                                </label>
-                                <input id="jobrequirement" name="proghistory" type="radio">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="selfInterest"> For personal interest or
-                                    self-development
-                                </label>
-                                <input id="selfInterest" name="proghistory" type="radio">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="startBusiness"> To start my own business
-                                </label>
-                                <input id="startBusiness" name="proghistory" type="radio">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="extraskills">I wanted extra skills for my job
-                                </label>
-                                <input id="extraskills" name="proghistory" type="radio">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="otherreasons"> Other reasons
-                                </label>
-                                <input id="otherreasons" name="proghistory" type="radio">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="todevBusiness"> To develop my existing business
-                                </label>
-                                <input id="todevBusiness" name="proghistory" type="radio">
-                            </div>
-                        </div> -->
+                       
                         <p><b>Program History :</b>To develop my existing business</p>
-                        <!-- <div style="width: 100%;" class="col-md-6">
-                            <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Do you wish to apply for Recognition of Prior
-                                    Learning?</span>
-                                <div class="secondaryChoose priorChoose d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="yesprior" name="priorlearn" type="radio">
-                                        <label class="genderLabel " for="yesprior"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="noprior" name="priorlearn" type="radio">
-                                        <label class="genderLabel" for="noprior"> No </label>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div> -->
+    
                          <p><b>Do you wish to apply for Recognition of Prior Learning? :</b>Yes</p>
 
                     </div>
@@ -599,104 +211,12 @@
                         <h3>Disability</h3>
                     </div>
                     <div class="row">
-                        <!-- <div class="col-md-12">
-                            <div class="input-group mt-4">
-                                <span class="input-group-text flex-column  ml-0">Do you consider yourself to have a
-                                    disability, impairment or long-term condition?</span>
-                                <div class="secondaryChoose priorChoose d-flex">
-                                    <div class="d-flex align-items-center">
-                                        <input id="yeslongtermDis" name="is_disable" type="radio">
-                                        <label class="genderLabel " for="yeslongtermDis"> Yes </label>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <input id="nolongtermDis" name="is_disable" type="radio">
-                                        <label class="genderLabel" for="nolongtermDis"> No </label>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div> -->
+                       
                         <p><b>Do you consider yourself to have a disability, impairment or long-term condition? :</b>Yes</p>
-                        <!-- <p class="secondarySpan mt-2">If YES, then please indicate the areas of disability,
-                            impairment or long-term condition (You may indicate more than one
-                            area.)</p> -->
+                       
                         <p><b>If YES, then please indicate the areas of disability, impairment or long-term condition (You may indicate more than one
                             area.): </b> Learning, Vision</p>
-                        <!-- <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="hearDeaf"> Hearing/Deaf
-                                </label>
-                                <input id="hearDeaf" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="learning"> Learning
-                                </label>
-                                <input id="learning" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="vision"> Vision
-                                </label>
-                                <input id="vision" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="physical"> Physical
-                                </label>
-                                <input id="physical" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="mentalIllness"> Mental Illness
-                                </label>
-                                <input id="mentalIllness" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="medicalCond"> Medical Condition
-                                </label>
-                                <input id="medicalCond" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="intellectual"> Intellectual
-                                </label>
-                                <input id="intellectual" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="brainImpair"> Acquired Brain Impairment
-                                </label>
-                                <input id="brainImpair" name="disable[]" type="checkbox">
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="d-flex align-items-center mt-3">
-                                <label class="genderLabel jobLabel" for="otherDis"> Other
-                                </label>
-                                <input id="otherDis" name="disable[]" type="checkbox">
-                            </div>
-                        </div> -->
+                       
 
                     </div>
                 </div>
@@ -710,41 +230,9 @@
                     </div>
                     <div class="row">
                         <p><b>Test :</b>IELTS</p>
-                        <!-- <div class="col-md-4 mt-4">
-                            <p><b>Test:</b></p>
-
-                            <div class="input-group mt-4">
-                                <label for="ieltsscr" class="input-group-text flex-column">IELTS</label>
-                            </div>
-                            <div class="input-group mt-4">
-                                <label for="ptescr" class="input-group-text flex-column">PTE</label>
-                            </div>
-                            <div class="input-group mt-4">
-                                <label for="toeflscr" class="input-group-text flex-column">TOEFL</label>
-                            </div>
-                            <div class="input-group mt-4">
-                                <label for="otherscr" class="input-group-text flex-column">If Other (Please
-                                    Specify)</label>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-md-4 mt-4">
-                            <p><b>Score:</b></p>
-                            <input id="ieltsscr" name="ieltsscr" type="text" class="form-control mt-4"
-                                placeholder="Enter your IELTS score">
-                            <input id="ptescr" name="ptescr" type="text" class="form-control mt-4" placeholder="Enter your PTE score">
-                            <input id="toeflscr" name="toeflscr"  type="text" class="form-control mt-4"
-                                placeholder="Enter your TOEFL score">
-                            <input id="otherscr" name="otherscr" type="text" class="form-control mt-4"
-                                placeholder="Enter your other test score">
-                        </div> -->
+                      
                         <p><b>Score :</b>7</p>
-                        <!-- <div class="col-md-4 mt-4">
-                            <p><b>Year:</b></p>
-                            <input type="number" name="ieltsyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="pteyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="tofelyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="otheryear" class="form-control mt-4" placeholder="Enter Year">
-                        </div> -->
+                       
                         <p><b>Year :</b>2021</p>
                     </div>
                 </div>
@@ -757,71 +245,7 @@
                         <h3>Proposed Study</h3>
                     </div>
                     <div class="mt-4">
-                        <!-- <div class="table-responsive">
-
-
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Tick</th>
-                                        <th scope="col">Course Code</th>
-                                        <th scope="col">Course Name</th>
-                                        <th scope="col">Tuition Fee</th>
-                                        <th scope="col">Enrollment Fee</th>
-                                        <th scope="col">Materials Fee</th>
-                                        <th scope="col">Time</th>
-                                    </tr>
-
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>CHC43115</td>
-                                        <td>Certificate IV in Disability</td>
-                                        <td>$11400</td>
-                                        <td>$250.00</td>
-                                        <td>$850.00</td>
-                                        <td>52 weeks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>CHC50113</td>
-                                        <td>Diploma of Early Childhood Education and Care</td>
-                                        <td>$20900</td>
-                                        <td>$250.00</td>
-                                        <td>$1500.00</td>
-                                        <td>104 weeks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>CHC52015</td>
-                                        <td>Diploma of Community Services</td>
-                                        <td>$19200</td>
-                                        <td>$250.00</td>
-                                        <td>$1000.00</td>
-                                        <td>78 weeks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>SIT40516</td>
-                                        <td>Certificate IV in Commercial Cookery</td>
-                                        <td>$15950</td>
-                                        <td>$250.00</td>
-                                        <td>$1500.00</td>
-                                        <td>78 weeks</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>SIT50416</td>
-                                        <td>Diploma of Hospitality Management</td>
-                                        <td>$11300</td>
-                                        <td>$250.00</td>
-                                        <td>$850.00</td>
-                                        <td>78 weeks</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div> -->
+                        
                         <p><b>Proposed Study: </b>Certificate IV in Disability</p>
                     </div>
                 </div>
@@ -834,87 +258,7 @@
                         <h3>Preferred intake date</h3>
                     </div>
                     <p><b>Preferred intake date :</b>Jan  2022</p>
-                    <!-- <div class="preferredMonth d-flex justify-content-between mt-4">
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>10 <sup>th</sup> Jan  2022</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>4 <sup>th</sup> April  2022</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>27 <sup>th</sup> June  2022</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>19 <sup>th</sup> Sept  2022</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>9 <sup>th</sup> Jan  2023</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>3 <sup>rd</sup> April  2023</p>
-                            </label>
-                        </div>
-                    </div> -->
-                    <!-- <div class="preferredMonth d-flex justify-content-between mt-4">
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>26 <sup>th</sup> June  2023</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>18 <sup>th</sup> Sept  2023</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>8 <sup>th</sup> Jan  2024</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>1 <sup>st</sup> April  2024</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>24 <sup>th</sup> June  2024</p>
-                            </label>
-                        </div>
-                        <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            <p>16 <sup>th</sup> Sept  2024</p>
-                            </label>
-                        </div>
-                    </div> -->
-                    <!-- <p class="secondarySpan mt-3">
-                        It may not be always possible to commence at your preferred selection, but all consideration
-                        will be provided for that
-                        selection
-                    </p> -->
+                   
                 </div>
 
 
@@ -924,24 +268,7 @@
                     <div class=" mainFormHeadings">
                         <h3>Photography Consent</h3>
                     </div>
-                    <!-- <div class="row">
-                        <div class="input-group mt-4">
-                            <span class="input-group-text flex-column ml-0">I consent to having my photograph used in
-                                documents for advertising for this organisation.</span>
-                            <div class="secondaryChoose d-flex">
-                                <div class="d-flex align-items-center">
-                                    <input id="yesConcent" name="photoConsent" type="radio">
-                                    <label class="genderLabel " for="yesConcent"> Yes </label>
-                                </div>
-
-                                <div class="d-flex align-items-center">
-                                    <input id="noConcent" name="photoConsent" type="radio">
-                                    <label class="genderLabel" for="noConcent"> No </label>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> -->
+                   
 
                     <p><b>I consent to having my photograph used in documents for advertising for this organisation. :</b>Yes</p>
                 </div>
@@ -1087,10 +414,12 @@
                                 </div>
                             </div>
                             <div class="borderbottomDiv d-flex justify-content-between row">
+                                <p><b>Situation</b></p>
                                 <div class="col-md-6">
                                     <p>Student withdraws their visa application on request from ANE college.</p>
                                 </div>
                                 <div class="col-md-6">
+                                    <p><b>Refund</b></p>
                                     <ul>
                                         <li>Student is subjected to receive <b>Full Refund</b> of : </li>
                                         <ol>
@@ -1107,11 +436,13 @@
 
                             <div class="borderbottomDiv d-flex justify-content-between row makegreyBg">
                                 <div class="col-md-6">
+                                    <p><b>Situation</b></p>
                                     <p>Student cannot start their course on time because the Visa Application
 
                                         processing is delayed by circumstances beyond the student’s control.</p>
                                 </div>
                                 <div class="col-md-6">
+                                    <p><b>Refund</b></p>
                                     <ul>
                                         <li>Student is subjected to No Refund. </li>
 
@@ -1124,12 +455,14 @@
 
 
                             <div class="borderbottomDiv d-flex justify-content-between row">
+                                <p><b>Situation</b></p>
                                 <div class="col-md-6">
                                     <p>Student’s visa is cancelled because they fail to comply with enrolment conditions
 
                                         or breach their visa conditions.</p>
                                 </div>
                                 <div class="col-md-6">
+                                    <p><b>Refund</b></p>
                                     <ul>
                                         <li>Student is subjected to No Refund of Course Tuition Fees, nor the Materials
                                             Fee for the course withdrawn from and any
@@ -1237,27 +570,19 @@
 
                             <div class="scheduleCcontent">
 
-                                <div class="borderbottomDiv d-flex justify-content-between row makegreyBg mt-3">
-                                    <div class="scheduleBSituation col-md-6 ">
-                                        <p><b>Situation</b></p>
-
-                                    </div>
-                                    <!-- <div class="scheduleBRefund col-md-6">
-                                        <p><b>Situation</b></p>
-
-
-                                    </div> -->
-                                </div>
+                               
 
 
                                 <div class="borderbottomDiv d-flex justify-content-between row">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>Cancellation/Withdrawal before or after the Commencement Date of a course
 
                                             which is part of a package program.</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <ul>
                                             <li>Student is subjected to <b>No Refund:</b> </li>
                                         </ul>
@@ -1271,6 +596,7 @@
                                 <div class="borderbottomDiv d-flex justify-content-between row makegreyBg">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>Cancellation of CoE and Reporting for breach of student visa conditions,
 
                                             conditions of enrolment and/or National Standards (Unsatisfactory
@@ -1279,6 +605,7 @@
                                             Unsatisfactory Academic Progress, Non-payment of Fees, etc.)</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <ul>
                                             <li>Student is subjected to No Refund of Unspent Tuition Fees and Materials
                                                 Fees
@@ -1293,10 +620,12 @@
                                 <div class="borderbottomDiv d-flex justify-content-between row">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>Cancellation/Withdrawal due to demonstrated Compassionate and/or Compelling
                                             Circumstances and approved by ANE college.</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <ul>
                                             <li>Student is subjected to receive <b>Full Refund</b> of: Tuition Fees for
                                                 the
@@ -1320,22 +649,13 @@
 
 
 
-                                <div class="borderbottomDiv d-flex justify-content-between row makegreyBg mt-3">
-                                    <div class="scheduleBSituation col-md-6 ">
-                                        <p><b>Situation</b></p>
-
-                                    </div>
-                                    <!-- <div class="scheduleBRefund col-md-6">
-                                        <p><b>Situation</b></p>
-
-
-                                    </div> -->
-                                </div>
+                                
 
 
                                 <div class="borderbottomDiv d-flex justify-content-between row">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>CoE is cancelled as a result of a students’ enrolment cancellation/withdrawal
 
                                             more than 8 weeks (56 days) before the commencement date of their non-
@@ -1343,6 +663,7 @@
                                             package course.</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <ul>
                                             <li>Student is subjected to receive <b>Full Refund </b>of:</li>
                                         </ul>
@@ -1363,6 +684,7 @@
                                 <div class="borderbottomDiv d-flex justify-content-between row makegreyBg">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>CoE is cancelled for a non-packaged course as a result of a students’
                                             enrolment
 
@@ -1370,6 +692,7 @@
                                         </p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <ul>
                                             <li>Before the commencement date of their non-package course, student is
                                                 entitled to a <b>75% refund</b> of:</li>
@@ -1390,11 +713,13 @@
                                 <div class="borderbottomDiv d-flex justify-content-between row">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>CoE is cancelled for a no packaged course as a result of their enrolment
 
                                             cancellation/withdrawal less than 2 weeks (14 days)</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <p>Before, or after the commencement date of their non-package course, students
                                             are
                                             subjected to <b>No-Refund</b> of their
@@ -1407,6 +732,7 @@
                                 <div class="borderbottomDiv d-flex justify-content-between row makegreyBg">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>CoE is cancelled as a result of a breach of student visa conditions,
                                             conditions
 
@@ -1415,10 +741,10 @@
                                             Unsatisfactory Academic Progress, Non-payment of Fees, etc.)</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <p>Student is subjected to <b>No Refund</b> of their pre-paid Course Tuition
                                             Fees
                                             and Materials Fee.</p>
-
                                     </div>
                                 </div>
 
@@ -1427,11 +753,13 @@
                                 <div class="borderbottomDiv d-flex justify-content-between row">
 
                                     <div class=" col-md-6">
+                                        <p><b>Situation</b></p>
                                         <p>CoE is cancelled due to demonstrated compassionate and/or compelling
 
                                             circumstances</p>
                                     </div>
                                     <div class="col-md-6">
+                                        <p><b>Refund</b></p>
                                         <ul>
                                             <li>Student is subjected to receive <b>Full Refund</b> of: Tuition Fees for
                                                 the

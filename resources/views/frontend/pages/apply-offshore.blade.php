@@ -173,7 +173,7 @@
                                 </div>
                                 <div class="d-flex align-items-center ml-1 genderlabelDiv">
                                     <input id="othersGender" name="sex" type="radio">
-                                    <label class="genderLabel" for="femaleGender">Others</label>
+                                    <label class="genderLabel" for="othersGender">Others</label>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +438,7 @@
                         </div>
                         <div class="col-md-12 d-flex align-items-center">
                             <div class="input-group mt-4 ">
-                                <span class="input-group-text flex-column ml-0" style="margin-right: 10px;">Are you of Australian Aboriginal or
+                                <span class="input-group-text torres-strait flex-column ml-0 mr-0" style="margin-left: 0px;">Are you of Australian Aboriginal or
                                     Torres Strait
                                     Islander origin?
                                     <br>
