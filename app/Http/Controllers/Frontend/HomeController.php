@@ -356,7 +356,7 @@ public function offsore_download(Request $request){
 }
 
 public function onsore_download(Request $request){
-    $pdf = PDF::loadView('frontend.pages.onshore-pdf');
+    $pdf = PDF::loadView('frontend.pages.onsore-pdf');
     return $pdf->download('onsore.pdf');
 }
 
