@@ -43,4 +43,22 @@ class ApplicantPersonalDetail extends Model
 
     } 
 
+
+    public function emergencycontacts(){
+        return $this->hasOne(ApplicantEmergencyContact::class, 'applicant_id');
+    }
+
+    public function applicationagents(){
+        return $this->hasOne(ApplicantEducationAgent::class, 'applicant_id');
+    }
+
+    public function applicationeducation(){
+        return $this->hasOne(ApplicantEducation::class, 'applicant_id');
+    }
+
+    public function applicationcultural(){
+        return $this->hasOne(ApplicantLanguageCulture::class, 'applicant_id');
+    }
+
+
 }

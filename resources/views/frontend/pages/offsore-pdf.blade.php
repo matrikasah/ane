@@ -45,40 +45,40 @@
                         </div>
                         <div class="col-md-6">
                             <div class="input-group">
-                                <p for="userSurname" class="input-group-text"> <b>Surname: </b>Ipsum </p>
+                                <p for="userSurname" class="input-group-text"> <b>Surname: </b>{{$applicant->ewrewrewr}}</p>
                                 
                                 
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-group">
-                                <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>Lorem</p>
+                                <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>{{$applicant->stdgivenname}}</p>
                                 
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-group">
-                                <p for="userHomeAddress" class="input-group-text"> <b>Home Address: </b> Sydney</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Home Address: </b> {{$applicant->	stdhomeaddress}}</p>
                                 
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> Perth</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> {{$applicant->stdsuburb}}</p>
                                
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <!-- <label for="userState" class="input-group-text">State & Postcode</label> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>State & Postcode: </b> 44600</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>State & Postcode: </b> {{$applicant->stdpostcode}}</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <!-- <label for="telNum" class="input-group-text">Telephone Number </label> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>Telephone Number: </b> 1234567890</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Telephone Number: </b> {{$applicant->stdtelnum}}</p>
                                 
                             </div>
                         </div>
@@ -86,14 +86,14 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <!-- <label for="userEmail" class="input-group-text">Email Address</label> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>Email Address: </b> sydney@gmail.com</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Email Address: </b> {{$applicant->stdemail}}</p>
                                
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <!-- <label for="userDob" class="input-group-text">Date of Birth</label> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>Date of Birth: </b> 12-12-2020</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Date of Birth: </b> {{$applicant->stddob}}</p>
                                
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                     <input id="othersGender" name="sex" type="radio">
                                     <label class="genderLabel" for="femaleGender">Others</label>
                                 </div> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>Sex: </b> Male</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Sex: </b> {{$applicant->sex}}</p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                                 <!-- <label for="fullName" class="input-group-text">Full Name</label>
                                 <input id="fullName" name="fullName" type="text" class="form-control "
                                     placeholder="Enter Your Full Name"> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>Full Name: </b> Ipsum Lorem</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>Full Name: </b> {{$applicant->emergencycontacts->fullName}}</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -135,7 +135,7 @@
                                 <!-- <label for="relationship" class="input-group-text">Relationship</label>
                                 <input id="relationship" name="relationship" type="text" class="form-control "
                                     placeholder="Relationship"> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>Relationship: </b> Good</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>Relationship: </b>{{$applicant->emergencycontacts->relationship}}</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -143,7 +143,7 @@
                                 <!-- <label for="contactNum" class="input-group-text">Contact Number</label>
                                 <input id="contactNum" name="contactNum" type="text" class="form-control "
                                     placeholder="Contact Number"> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> 098765434</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> {{$applicant->emergencycontacts->contactNum}}</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -151,7 +151,7 @@
                                 <!-- <label for="mobile" class="input-group-text">Mobile</label>
                                 <input id="mobile" name="mobile" type="number" class="form-control "
                                     placeholder="Mobile"> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b> 981234567</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b>{{$applicant->emergencycontacts->mobile}}</p>
                             </div>
                         </div>
                         <div class="d-flex mt-4" style="align-items: center;">
@@ -179,7 +179,7 @@
                                 </div>
                             </div> -->
                             <p for="userHomeAddress" class="input-group-text"> <b>In the event of an emergency do you give ANE College
-                                permission to organise emergency transport and treatment and agree to pay all costs related to the emergency?: </b> Yes</p>
+                                permission to organise emergency transport and treatment and agree to pay all costs related to the emergency?: </b> N/A</p>
                         </div>
 
                     </div>
@@ -204,7 +204,7 @@
                                         <label class="genderLabel" for="noagent"> No </label>
                                     </div>
                                 </div> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>Are you applying through agent?: </b> Yes</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Are you applying through agent?: </b> @if($applicant->applicationagents->apply_through_agent == 'on') Yes @else No @endif</p>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -213,7 +213,7 @@
                                 <input id="orgName" name="orgName" type="text" class="form-control"
                                     placeholder="Enter organization name">
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Organization Name?: </b> Nice</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Organization Name?: </b> {{$applicant->applicationagents->orgName}}</p>
 
                         </div>
                         <div class="col-md-6 mt-4 ml-0">
@@ -222,7 +222,7 @@
                                 <input id="agentCnum" name="agentCnum" type="text" class="form-control"
                                     placeholder="Enter Contact Number">
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> 123456789</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> {{$applicant->applicationagents->agentCnum}}</p>
                         </div>
 
 
@@ -237,7 +237,7 @@
                             <div class="educationContent">
                                 <!-- <p class="educationDesc mt-4">What is your highest COMPLETED school level? (ONE box
                                     only.) -->
-                                </p>
+                                <!-- </p> -->
                                 <div>
                                     <!-- <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 12 or equivalent
@@ -254,7 +254,7 @@
                                         </label>
                                         <input id="year11" name="higher_edu" type="radio">
                                     </div> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>What is your highest COMPLETED school level?: </b> Year 12 or equivalent</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>What is your highest COMPLETED school level?: </b> {{$applicant->applicationeducation->higher_edu}}</p>
                                     <!-- <div class="input-group mt-4">
                                         <label for="completionYear" style="text-align: left;"
                                             class="input-group-text">What YEAR did you
@@ -263,7 +263,7 @@
                                         <input id="completionYear" name="yearCompletion" type="number"
                                             class="form-control" placeholder="Completion year" style="height: 64px;">
                                     </div> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>What YEAR did you complete the relevant qualification: </b> 2011</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>What YEAR did you complete the relevant qualification: </b>  {{$applicant->applicationeducation->yearCompletion}}</p>
                                     <!-- <div class="input-group mt-4">
                                         <span style="text-align: left;" class="input-group-text ml-0">Are you still <br>
                                             attending
@@ -281,7 +281,7 @@
                                             </div>
                                         </div>
                                     </div> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>Are you still attending secondary school?: </b> No</p>
+                                    <!-- <p for="userHomeAddress" class="input-group-text"> <b>Are you still attending secondary school?: </b> No</p> -->
 
                                 </div>
                             </div>
@@ -316,7 +316,7 @@
                                     <input id="yesOthers" name="prevquali" type="radio">
                                 </div>
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Qualifications that you have successfully completed: </b> Bachelor or Higher Degree</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Qualifications that you have successfully completed: </b> {{$applicant->applicationeducation->prevquali}}</p>
                         </div>
                         <div class="col-md-4">
                             <div class="mainFormHeadings">
@@ -355,7 +355,7 @@
                                     <input id="notseeking" name="employment" type="radio">
                                 </div>
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>What is your current employment status: </b> Part-time employee</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>What is your current employment status: </b> {{$applicant->applicationeducation->employment}}</p>
                         </div>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
                                 <!-- <label for="langbirthCoun" class="input-group-text">Country of Birth</label>
                                 <input id="langbirthCoun" name="langbirthCoun" type="text" class="form-control"
                                     placeholder="Enter Your Country of Birth"> -->
-                                    <p for="userHomeAddress" class="input-group-text"> <b>Country of Birth: </b> Australia</p>
+                                    <p for="userHomeAddress" class="input-group-text"> <b>Country of Birth: </b> {{$applicant->applicationcultural->langbirthCoun}}</p>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -387,7 +387,7 @@
                                         <label class="genderLabel" for="noAustralian"> No </label>
                                     </div>
                                 </div> -->
-                                <p for="userHomeAddress" class="input-group-text"> <b>Do you have Australian Citizenship?: </b> No</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Do you have Australian Citizenship?: </b> @if($applicant->applicationcultural->ausCtzen == "on") Yes @else No  @endif</p>
                             </div>
                         </div>
                         <div class="col-md-12 d-flex align-items-center">
@@ -411,7 +411,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal or Torres Strait Islander origin?: </b> Yes</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal or Torres Strait Islander origin?: </b> N/A</p>
                         </div>
                         <div class="col-md-6">
                             <!-- <div class="input-group mt-4">
@@ -428,7 +428,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal?: </b> Yes</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal?: </b> N/A</p>
                         </div>
                         <div class="col-md-6">
                             <!-- <div class="input-group mt-4">
@@ -445,7 +445,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Are you of Torres Strait Islander origin?: </b> Yes</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Are you of Torres Strait Islander origin?: </b> N/A</p>
                         </div>
                         <div class="col-md-12">
                             <!-- <div class="input-group mt-4">
@@ -470,7 +470,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>How well do you speak English? </b> Well</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>How well do you speak English? </b>@if($applicant->applicationcultural->englanguage == "on") Yes @else No  @endif</p>
 
                         </div>
                         <div class="col-md-6  ml-0">
@@ -480,7 +480,7 @@
                                 <input name="otherlanguages" type="text" class="form-control"
                                     placeholder="Main language">
                             </div> -->
-                            <p for="userHomeAddress" class="input-group-text"> <b>Main language spoken at home if not English: </b> Nepali</p>
+                            <p for="userHomeAddress" class="input-group-text"> <b>Main language spoken at home if not English: </b> {{$applicant->applicationcultural->otherlanguages}}</p>
                         </div>
                     </div>
 
@@ -586,7 +586,7 @@
                                 </div>
                             </div>
                         </div> -->
-                         <p><b>Do you wish to apply for Recognition of Prior Learning? :</b>Yes</p>
+                         <!-- <p><b>Do you wish to apply for Recognition of Prior Learning? :</b>Yes</p> -->
 
                     </div>
                 </div>
