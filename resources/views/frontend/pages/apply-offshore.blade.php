@@ -97,28 +97,28 @@
                                     (USI) – <span class="secondarySpan"> Refer to
                                         Page 5 for assistance :</span></label>
                                 <input id="userUsi" name="stdusi" type="text" class="form-control"
-                                    placeholder="Unique Student Identifier (USI)">
+                                    placeholder="Unique Student Identifier (USI)" value="{{ old('stdusi') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userSurname" class="input-group-text">Surname</label>
                                 <input id="userSurname" name="stdsurname" type="text" class="form-control"
-                                    placeholder="Enter Your Surname">
+                                    placeholder="Enter Your Surname" value="{{ old('stdsurname') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userGivenName" class="input-group-text">Given Name</label>
                                 <input id="userGivenName" name="stdgivenname" type="text" class="form-control"
-                                    placeholder="Enter Your Given Name">
+                                    placeholder="Enter Your Given Name" value="{{ old('stdgivenname') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userHomeAddress" class="input-group-text">Home Address</label>
                                 <input id="userHomeAddress" name="stdhomeaddress" type="text" class="form-control"
-                                    placeholder="Enter Your Home Address">
+                                    placeholder="Enter Your Home Address" value="{{ old('stdhomeaddress') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -173,7 +173,7 @@
                                 </div>
                                 <div class="d-flex align-items-center ml-1 genderlabelDiv">
                                     <input id="othersGender" name="sex" type="radio">
-                                    <label class="genderLabel" for="femaleGender">Others</label>
+                                    <label class="genderLabel" for="othersGender">Others</label>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +438,7 @@
                         </div>
                         <div class="col-md-12 d-flex align-items-center">
                             <div class="input-group mt-4 ">
-                                <span class="input-group-text flex-column ml-0" style="margin-right: 10px;">Are you of Australian Aboriginal or
+                                <span class="input-group-text torres-strait flex-column ml-0 mr-0" style="margin-left: 0px;">Are you of Australian Aboriginal or
                                     Torres Strait
                                     Islander origin?
                                     <br>
@@ -1521,7 +1521,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_sign" type="text">
+                                <input class="form-control signNdate mydatepicker" name="date_of_sign" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1629,7 +1629,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input name="date_of_sign" class="form-control signNdate" type="text">
+                                <input name="date_of_sign" class="form-control signNdate mydatepicker" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1692,7 +1692,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="date_of_signB" type="text">
+                                <input class="form-control signNdate mydatepicker" name="date_of_signB" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1760,7 +1760,15 @@
 	</div>
 </section>
 
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(".mydatepicker").datepicker({
+  format: "dd-mm-yyyy",
+});
+</script>
 
 
 
