@@ -195,7 +195,7 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="contactNum" class="input-group-text">Contact Number</label>
-                                <input id="contactNum" name="contactNum" type="text" class="form-control "
+                                <input id="contactNum" name="contactNum" type="number" class="form-control "
                                     placeholder="Contact Number">
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                         <div class="col-md-6 mt-4 ml-0">
                             <div class="input-group">
                                 <label for="agentCnum" class="input-group-text">Contact Number</label>
-                                <input id="agentCnum" name="agentCnum" type="text" class="form-control"
+                                <input id="agentCnum" name="agentCnum" type="number" class="form-control"
                                     placeholder="Enter Contact Number">
                             </div>
                         </div>
@@ -759,12 +759,12 @@
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Score:</b></p>
-                            <input id="ieltsscr" name="ieltsscr" type="text" class="form-control mt-4"
+                            <input id="ieltsscr" name="ieltsscr" type="number" class="form-control mt-4"
                                 placeholder="Enter your IELTS score">
-                            <input id="ptescr" name="ptescr" type="text" class="form-control mt-4" placeholder="Enter your PTE score">
-                            <input id="toeflscr" name="toeflscr"  type="text" class="form-control mt-4"
+                            <input id="ptescr" name="ptescr" type="number" class="form-control mt-4" placeholder="Enter your PTE score">
+                            <input id="toeflscr" name="toeflscr"  type="number" class="form-control mt-4"
                                 placeholder="Enter your TOEFL score">
-                            <input id="otherscr" name="otherscr" type="text" class="form-control mt-4"
+                            <input id="otherscr" name="otherscr" type="number" class="form-control mt-4"
                                 placeholder="Enter your other test score">
                         </div>
                         <div class="col-md-4 mt-4">

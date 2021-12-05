@@ -365,4 +365,10 @@ public function agent_download(Request $request){
 
 }
 
+public function policy(){
+
+    return view('frontend.pages.policy');
+
+}
+
 }

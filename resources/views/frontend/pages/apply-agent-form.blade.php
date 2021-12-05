@@ -141,7 +141,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_postcode" class="input-group-text">Postcode</label>
-                            <input id="agent_postcode" name="post_code" type="text" class="form-control"
+                            <input id="agent_postcode" name="post_code" type="number" class="form-control"
                                 placeholder="Enter Your Postcode" value="{{ old('post_code') }}">
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_tel_work" class="input-group-text">Telephone (work)</label>
-                            <input id="agent_tel_work" name="telephone_num" type="text" class="form-control"
+                            <input id="agent_tel_work" name="telephone_num" type="number" class="form-control"
                                 placeholder="Enter Your Telephone" value="{{ old('telephone_num') }}">
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_abn" class="input-group-text">ABN</label>
-                            <input id="agent_abn" name="abn" type="text" class="form-control"
+                            <input id="agent_abn" name="abn" type="number" class="form-control"
                                 placeholder="Enter Your Postcode" value="{{ old('abn') }}">
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_acn" class="input-group-text">ACN</label>
-                            <input id="agent_acn" name="acn" type="text" class="form-control"
+                            <input id="agent_acn" name="acn" type="number" class="form-control"
                                 placeholder="Enter Your Postcode" value="{{ old('acn') }}">
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                     <div class="col-md-12 mt-4">
                         <div class="input-group">
                             <label for="agent_emer_cont" class="input-group-text">Emergency Contact</label>
-                            <input id="agent_emer_cont" name="emergency_contact" type="text" class="form-control"
+                            <input id="agent_emer_cont" name="emergency_contact" type="number" class="form-control"
                                 placeholder="Enter Your Emergency Contact" value="{{ old('emergency_contact') }}">
                         </div>
                     </div>
@@ -198,7 +198,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="agent_tel_usual" class="input-group-text">Telephone</label>
-                            <input id="agent_tel_usual" name="emgy_telephone" type="text" class="form-control"
+                            <input id="agent_tel_usual" name="emgy_telephone" type="number" class="form-control"
                                 placeholder="Enter Your Telephone" value="{{ old('emgy_telephone') }}">
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                         to study in the last 12 months?
 
                     </label>
-                    <input class="agentAnswer mt-1" value="{{ old('student_in_austrila"') }}" name="student_in_austrila" id="stdCount"></input>
+                    <input class="agentAnswer mt-1" value="{{ old('student_in_austrila') }}" name="student_in_austrila" id="stdCount"></input>
                 </div>
 
 
@@ -318,7 +318,7 @@
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
                             <label for="userinstphone" class="input-group-text">Fax :</label>
-                            <input type="text" id="userinstfax" name="userinstfax" class="form-control"
+                            <input type="number" id="userinstfax" name="userinstfax" class="form-control"
                                 placeholder="Enter Your Fax" value="{{ old('userinstfax') }}">
                         </div>
                     </div>
@@ -368,14 +368,14 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Fax :</label>
-                                <input type="text" id="userinstfax" name="userinstfax2" class="form-control"
+                                <input type="number" id="userinstfax" name="userinstfax2" class="form-control"
                                     placeholder="Enter Your Fax" value="{{ old('userinstfax2') }}">
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userinstphone" class="input-group-text">Email :</label>
-                                <input type="text" id="userinstemail" name="userinstemail2" class="form-control"
+                                <input type="email" id="userinstemail" name="userinstemail2" class="form-control"
                                     placeholder="Enter Your Email" value="{{ old('userinstemail2') }}">
                             </div>
                         </div>
