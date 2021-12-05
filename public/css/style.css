@@ -2202,7 +2202,15 @@ a.link:hover {
   border-radius: 25px;
 }
 
-
+.alert.alert-danger {
+  display: block;
+  position: absolute;
+  top: -20px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+}
 
 
 

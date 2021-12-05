@@ -67,14 +67,14 @@
                 contract.</p>
 
            
-                <ul class="error">
+                <!-- <ul class="error">
                     @foreach($errors->all() as $error)
                     <li><div class="alert alert-danger" role="alert">
                         {{ $error }}
                         </div>
                     </li>
                     @endforeach
-                </ul>
+                </ul> -->
 
             <form action="{{route('offshore.store')}}" method="POST" >
                 @csrf
@@ -97,6 +97,10 @@
                                         Page 5 for assistance :</span></label>
                                 <input id="userUsi" name="stdusi" type="text" class="form-control"
                                     placeholder="Unique Student Identifier (USI)" value="{{ old('stdusi') }}">
+                                    @if ($errors->has('stdusi'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdusi') }}</div>
+                                    @endif
+                                   
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -104,6 +108,9 @@
                                 <label for="userSurname" class="input-group-text">Surname</label>
                                 <input id="userSurname" name="stdsurname" type="text" class="form-control"
                                     placeholder="Enter Your Surname" value="{{ old('stdsurname') }}">
+                                    @if ($errors->has('stdsurname'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdsurname') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -111,6 +118,9 @@
                                 <label for="userGivenName" class="input-group-text">Given Name</label>
                                 <input id="userGivenName" name="stdgivenname" type="text" class="form-control"
                                     placeholder="Enter Your Given Name" value="{{ old('stdgivenname') }}">
+                                    @if ($errors->has('stdgivenname'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdgivenname') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -118,21 +128,30 @@
                                 <label for="userHomeAddress" class="input-group-text">Home Address</label>
                                 <input id="userHomeAddress" name="stdhomeaddress" type="text" class="form-control"
                                     placeholder="Enter Your Home Address" value="{{ old('stdhomeaddress') }}">
+                                    @if ($errors->has('stdhomeaddress'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdhomeaddress') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userSuburb" class="input-group-text">Suburb</label>
-                                <input id="userSuburb" name="stdsuburb" type="text" class="form-control"
+                                <input id="userSuburb" name="stdsuburb" value="{{ old('stdsuburb') }}" type="text" class="form-control"
                                     placeholder="Enter Your Suburb">
+                                    @if ($errors->has('stdsuburb'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdsuburb') }}</div>
+                                    @endif
                             </div>
                         </div>
 
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userState" class="input-group-text">State & Postcode</label>
-                                <input id="userState" name="stdpostcode" type="number" class="form-control"
+                                <input id="userState" name="stdpostcode" value="{{ old('stdpostcode') }}" type="number" class="form-control"
                                     placeholder="Enter Your State & Postcode">
+                                    @if ($errors->has('stdpostcode'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdpostcode') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -140,40 +159,52 @@
                                 <label for="telNum" class="input-group-text">Telephone Number <span
                                         style="display: block;" class="secondarySpan">(Including
                                         Country & Area Code) </span></label>
-                                <input id="telNum" name="stdtelnum" type="number" class="form-control"
+                                <input id="telNum" name="stdtelnum" value="{{ old('stdtelnum') }}" type="number" class="form-control"
                                     placeholder="Enter Your Telephone Number">
+                                    @if ($errors->has('stdtelnum'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdtelnum') }}</div>
+                                    @endif
                             </div>
                         </div>
 
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userEmail" class="input-group-text">Email Address</label>
-                                <input id="userEmail" name="stdemail" type="text" class="form-control"
+                                <input id="userEmail" name="stdemail" value="{{ old('stdemail') }}" type="text" class="form-control"
                                     placeholder="Enter Your Email Address">
+                                    @if ($errors->has('stdemail'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdemail') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userDob" class="input-group-text">Date of Birth</label>
-                                <input id="userDob" name="stddob" type="text" class="form-control"
+                                <input id="userDob" name="stddob" value="{{ old('stddob') }}"  type="text" class="form-control"
                                     placeholder="Enter Your Date of Birth">
+                                    @if ($errors->has('stddob'))
+                                    <div class="alert alert-danger">{{ $errors->first('stddob') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4 ml-0">
                             <div class="input-group">
                                 <span class="input-group-text ml-0">Sex</span>
                                 <div class="d-flex align-items-center genderlabelDiv">
-                                    <input id="maleGender" name="sex" type="radio">
+                                    <input id="maleGender" name="sex" value="{{ old('sex') }}"  type="radio">
                                     <label class="genderLabel" for="maleGender">Male</label>
                                 </div>
                                 <div class="d-flex align-items-center ml-1 genderlabelDiv">
-                                    <input id="femaleGender" name="sex" type="radio">
+                                    <input id="femaleGender" name="sex" value="{{ old('sex') }}"  type="radio">
                                     <label class="genderLabel" for="femaleGender">Female</label>
                                 </div>
                                 <div class="d-flex align-items-center ml-1 genderlabelDiv">
-                                    <input id="othersGender" name="sex" type="radio">
+                                    <input id="othersGender" name="sex" value="{{ old('sex') }}"  type="radio">
                                     <label class="genderLabel" for="othersGender">Others</label>
                                 </div>
+                                @if ($errors->has('sex'))
+                                    <div class="alert alert-danger">{{ $errors->first('sex') }}</div>
+                                    @endif
                             </div>
                         </div>
                     </div>
@@ -186,29 +217,41 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="fullName" class="input-group-text">Full Name</label>
-                                <input id="fullName" name="fullName" type="text" class="form-control "
+                                <input id="fullName" name="fullName" value="{{ old('fullName') }}"  type="text" class="form-control "
                                     placeholder="Enter Your Full Name">
+                                    @if ($errors->has('fullName'))
+                                    <div class="alert alert-danger">{{ $errors->first('fullName') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="relationship" class="input-group-text">Relationship</label>
-                                <input id="relationship" name="relationship" type="text" class="form-control "
+                                <input id="relationship" name="relationship" value="{{ old('relationship') }}" type="text" class="form-control "
                                     placeholder="Relationship">
+                                    @if ($errors->has('relationship'))
+                                    <div class="alert alert-danger">{{ $errors->first('relationship') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="contactNum" class="input-group-text">Contact Number</label>
-                                <input id="contactNum" name="contactNum" type="number" class="form-control "
+                                <input id="contactNum" name="contactNum"  value="{{ old('contactNum') }}" type="number" class="form-control "
                                     placeholder="Contact Number">
+                                    @if ($errors->has('contactNum'))
+                                    <div class="alert alert-danger">{{ $errors->first('contactNum') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="mobile" class="input-group-text">Mobile</label>
-                                <input id="mobile" name="mobile" type="number" class="form-control "
+                                <input id="mobile" name="mobile"  value="{{ old('mobile') }}" type="number" class="form-control "
                                     placeholder="Mobile">
+                                    @if ($errors->has('mobile'))
+                                    <div class="alert alert-danger">{{ $errors->first('mobile') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="d-flex mt-4" style="align-items: center;">
@@ -226,14 +269,17 @@
 
                             <div class="d-flex secondaryspanChoose">
                                 <div class="d-flex align-items-center">
-                                    <input id="yes" name="emergency_pay" type="radio">
+                                    <input id="yes" name="emergency_pay"  value="{{ old('emergency_pay') }}" type="radio">
                                     <label class="genderLabel" for="yes"> Yes </label>
                                 </div>
 
                                 <div class="d-flex align-items-center">
-                                    <input id="noemer" name="emergency_pay" type="radio">
+                                    <input id="noemer" name="emergency_pay" value="{{ old('emergency_pay') }}" type="radio">
                                     <label class="genderLabel" for="noemer"> No</label>
                                 </div>
+                                @if ($errors->has('emergency_pay'))
+                                    <div class="alert alert-danger">{{ $errors->first('emergency_pay') }}</div>
+                                    @endif
                             </div>
                         </div>
 
@@ -250,30 +296,40 @@
                                 <span class="input-group-text ml-0">Are you applying through agent?</span>
                                 <div class="agentChoose d-flex">
                                     <div class="d-flex align-items-center" style="margin-right: 10px;">
-                                        <input id="yesagent" name="apply_through_agent" type="radio">
+                                        <input id="yesagent" name="apply_through_agent" value="{{ old('apply_through_agent') }}" type="radio">
                                         <label class="genderLabel" for="yesagent"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noagent" name="apply_through_agent" type="radio">
+                                        <input id="noagent" name="apply_through_agent" value="{{ old('apply_through_agent') }}" type="radio">
                                         <label class="genderLabel" for="noagent"> No </label>
                                     </div>
+
+                                    @if ($errors->has('apply_through_agent'))
+                                    <div class="alert alert-danger">{{ $errors->first('apply_through_agent') }}</div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="orgName" class="input-group-text">Organization Name</label>
-                                <input id="orgName" name="orgName" type="text" class="form-control"
+                                <input id="orgName" name="orgName" value="{{ old('orgName') }}" type="text" class="form-control"
                                     placeholder="Enter organization name">
+                                    @if ($errors->has('orgName'))
+                                    <div class="alert alert-danger">{{ $errors->first('orgName') }}</div>
+                                    @endif
                             </div>
 
                         </div>
                         <div class="col-md-6 mt-4 ml-0">
                             <div class="input-group">
                                 <label for="agentCnum" class="input-group-text">Contact Number</label>
-                                <input id="agentCnum" name="agentCnum" type="number" class="form-control"
+                                <input id="agentCnum" name="agentCnum" value="{{ old('agentCnum') }}" type="number" class="form-control"
                                     placeholder="Enter Contact Number">
+                                    @if ($errors->has('agentCnum'))
+                                    <div class="alert alert-danger">{{ $errors->first('agentCnum') }}</div>
+                                    @endif
                             </div>
                         </div>
 
@@ -294,24 +350,30 @@
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 12 or equivalent
                                         </label>
-                                        <input id="year11" name="higher_edu" type="radio">
+                                        <input id="year11" name="higher_edu"  value="{{ old('higher_edu') }}" type="radio">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 11 or equivalent
                                         </label>
-                                        <input id="year11" name="higher_edu" type="radio">
+                                        <input id="year11" name="higher_edu" value="{{ old('higher_edu') }}" type="radio">
                                     </div>
                                     <div class="d-flex align-items-center">
                                         <label class="genderLabel nopadding" for="year11"> Year 10 or equivalent
                                         </label>
-                                        <input id="year11" name="higher_edu" type="radio">
+                                        <input id="year11" name="higher_edu" value="{{ old('higher_edu') }}" type="radio">
                                     </div>
+                                    @if ($errors->has('higher_edu'))
+                                    <div class="alert alert-danger">{{ $errors->first('higher_edu') }}</div>
+                                    @endif
                                     <div class="input-group mt-4">
                                         <label for="completionYear" class="input-group-text">What YEAR did you 
                                             complete <br> the relevant
                                             qualification?</label>
-                                        <input id="completionYear" name="yearCompletion" type="number"
+                                        <input id="completionYear" name="yearCompletion"  value="{{ old('yearCompletion') }}" type="number"
                                             class="form-control" placeholder="Completion year" style="height: 64px;">
+                                            @if ($errors->has('yearCompletion'))
+                                    <div class="alert alert-danger">{{ $errors->first('yearCompletion') }}</div>
+                                    @endif
                                     </div>
                                     <div class="input-group mt-4">
                                         <span style="text-align: left;" class="input-group-text ml-0">Are you still <br>
@@ -321,14 +383,17 @@
                                             placeholder="Completion year"> -->
                                         <div class="secondaryChoose d-flex">
                                             <div class="d-flex align-items-center" style="margin-right:10px">
-                                                <input id="yesSecondary" name="secondary" type="radio">
+                                                <input id="yesSecondary" name="secondary" value="{{ old('secondary') }}"  type="radio">
                                                 <label class="genderLabel " for="yesSecondary"> Yes </label>
                                             </div>
 
                                             <div class="d-flex align-items-center">
-                                                <input id="noSecondary" name="secondary" type="radio">
+                                                <input id="noSecondary" name="secondary"  value="{{ old('secondary') }}" type="radio">
                                                 <label class="genderLabel" for="noSecondary"> No </label>
                                             </div>
+                                            @if ($errors->has('secondary'))
+                                    <div class="alert alert-danger">{{ $errors->first('secondary') }}</div>
+                                    @endif
                                         </div>
                                     </div>
 
@@ -346,24 +411,28 @@
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesBach">Bachelor or Higher Degree
                                     </label>
-                                    <input id="yesBach" name="prevquali" type="radio">
+                                    <input id="yesBach" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
+                                    
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesDip">Advanced Diploma or Associate
                                         Degree
                                     </label>
-                                    <input id="yesDip" name="prevquali" type="radio">
+                                    <input id="yesDip" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesCerti">Certificate III </label>
-                                    <input id="yesCerti" name="prevquali" type="radio">
+                                    <input id="yesCerti" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesOthers">Certificates other than the
                                         above
                                     </label>
-                                    <input id="yesOthers" name="prevquali" type="radio">
+                                    <input id="yesOthers" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
                                 </div>
+                                @if ($errors->has('prevquali'))
+                                    <div class="alert alert-danger">{{ $errors->first('prevquali') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -376,32 +445,35 @@
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesfull">Full-time employee
                                     </label>
-                                    <input id="yesfull" name="employment" type="radio">
+                                    <input id="yesfull" name="employment"  value="{{ old('employment') }}"  type="radio">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yespart">Part-time employee
                                     </label>
-                                    <input id="yespart" name="employment" type="radio">
+                                    <input id="yespart" name="employment" value="{{ old('employment') }}" type="radio">
                                 </div>
                                 <!-- Self-employed - not employing others -->
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesSelf">Self-employed - not employing
                                         others
                                     </label>
-                                    <input id="yesSelf" name="employment" type="radio">
+                                    <input id="yesSelf" name="employment" value="{{ old('employment') }}" type="radio">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="unemployed">Unemployed - seeking part-time
                                         work
                                     </label>
-                                    <input id="unemployed" name="employment" type="radio">
+                                    <input id="unemployed" name="employment" value="{{ old('employment') }}" type="radio">
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="notseeking">Not employed - not seeking
                                         employment
                                     </label>
-                                    <input id="notseeking" name="employment" type="radio">
+                                    <input id="notseeking" name="employment" value="{{ old('employment') }}" type="radio">
                                 </div>
+                                @if ($errors->has('employment'))
+                                    <div class="alert alert-danger">{{ $errors->first('employment') }}</div>
+                                    @endif
                             </div>
                         </div>
                     </div>
@@ -415,8 +487,11 @@
                         <div class="col-md-6">
                             <div class="input-group mt-4">
                                 <label for="langbirthCoun" class="input-group-text">Country of Birth</label>
-                                <input id="langbirthCoun" name="langbirthCoun" type="text" class="form-control"
+                                <input id="langbirthCoun" name="langbirthCoun"  value="{{ old('langbirthCoun') }}" type="text" class="form-control"
                                     placeholder="Enter Your Country of Birth">
+                                    @if ($errors->has('langbirthCoun'))
+                                    <div class="alert alert-danger">{{ $errors->first('langbirthCoun') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -424,14 +499,17 @@
                                 <span class="input-group-text  ml-0">Australian Citizenship</span>
                                 <div class="secondaryChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yesAustralian" name="ausCtzen" type="radio">
+                                        <input id="yesAustralian" name="ausCtzen" value="{{ old('ausCtzen') }}"  type="radio">
                                         <label class="genderLabel " for="yesAustralian"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noAustralian" name="ausCtzen" type="radio">
+                                        <input id="noAustralian" name="ausCtzen"  value="{{ old('ausCtzen') }}" type="radio">
                                         <label class="genderLabel" for="noAustralian"> No </label>
                                     </div>
+                                    @if ($errors->has('ausCtzen'))
+                                    <div class="alert alert-danger">{{ $errors->first('ausCtzen') }}</div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -446,14 +524,17 @@
                                         Islander origin, mark both ‘Yes’ boxes.</span></span>
                                 <div class="secondaryChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yesAborginal" name="ausAbor" type="radio">
+                                        <input id="yesAborginal" name="ausAbor"  value="{{ old('ausAbor') }}"  type="radio">
                                         <label class="genderLabel " for="yesAborginal"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noAborginal" name="ausAbor" type="radio">
+                                        <input id="noAborginal" name="ausAbor"  value="{{ old('ausAbor') }}" type="radio">
                                         <label class="genderLabel" for="noAborginal"> No </label>
                                     </div>
+                                    @if ($errors->has('ausAbor'))
+                                    <div class="alert alert-danger">{{ $errors->first('ausAbor') }}</div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -462,14 +543,17 @@
                                 <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Aboriginal</span>
                                 <div class="secondaryChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yesonlyAbor" name="onlyAbor" type="radio">
+                                        <input id="yesonlyAbor" name="onlyAbor"  value="{{ old('onlyAbor') }}"  type="radio">
                                         <label class="genderLabel " for="yesonlyAbor"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noonlyAbor" name="onlyAbor" type="radio">
+                                        <input id="noonlyAbor" name="onlyAbor" value="{{ old('onlyAbor') }}" type="radio">
                                         <label class="genderLabel" for="noonlyAbor"> No </label>
                                     </div>
+                                    @if ($errors->has('onlyAbor'))
+                                    <div class="alert alert-danger">{{ $errors->first('onlyAbor') }}</div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -478,14 +562,17 @@
                                 <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Torres Strait Islander</span>
                                 <div class="secondaryChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yesonlyTorres" name="onlyTorres" type="radio">
+                                        <input id="yesonlyTorres" name="onlyTorres" value="{{ old('onlyTorres') }}" type="radio">
                                         <label class="genderLabel " for="yesonlyTorres"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noonlyTorres" name="onlyTorres" type="radio">
+                                        <input id="noonlyTorres" name="onlyTorres" value="{{ old('onlyTorres') }}" type="radio">
                                         <label class="genderLabel" for="noonlyTorres"> No </label>
                                     </div>
+                                    @if ($errors->has('onlyTorres'))
+                                    <div class="alert alert-danger">{{ $errors->first('onlyTorres') }}</div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -494,22 +581,26 @@
                                 <span class="input-group-text flex-column  ml-0 mr-0">How well do you speak English?</span>
                                 <div class="secondaryChoose englishChooseBox d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="verywilleng" name="englanguage" type="radio">
+                                        <input id="verywilleng" name="englanguage" value="{{ old('englanguage') }}" type="radio">
                                         <label class="genderLabel " for="verywilleng"> Very Well </label>
+                                        
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="welleng" name="englanguage" type="radio">
+                                        <input id="welleng" name="englanguage"  value="{{ old('englanguage') }}" type="radio">
                                         <label class="genderLabel" for="welleng"> Well </label>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <input id="notwelleng" name="englanguage" type="radio">
+                                        <input id="notwelleng" name="englanguage" value="{{ old('englanguage') }}"  type="radio">
                                         <label class="genderLabel" for="notwelleng"> Not Well </label>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <input id="notatalleng" name="englanguage" type="radio">
+                                        <input id="notatalleng" name="englanguage"  value="{{ old('englanguage') }}" type="radio">
                                         <label class="genderLabel" for="notatalleng"> Not at all </label>
                                     </div>
+                                    @if ($errors->has('englanguage'))
+                                    <div class="alert alert-danger">{{ $errors->first('englanguage') }}</div>
+                                    @endif
                                 </div>
                             </div>
 
@@ -518,8 +609,11 @@
                             <div class="input-group mt-4">
                                 <span class="input-group-text flex-column  ml-0">Main language spoken at home if not
                                     English</span>
-                                <input name="otherlanguages" type="text" class="form-control"
+                                <input name="otherlanguages" value="{{ old('otherlanguages') }}"  type="text" class="form-control"
                                     placeholder="Main language">
+                                    @if ($errors->has('otherlanguages'))
+                                    <div class="alert alert-danger">{{ $errors->first('otherlanguages') }}</div>
+                                    @endif
                             </div>
                         </div>
                     </div>
@@ -536,7 +630,7 @@
                         <div class="col-md-4">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="togetjob"> To get a Job </label>
-                                <input id="togetjob" name="proghistory" type="radio">
+                                <input id="togetjob" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
 
@@ -544,7 +638,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="togetbetter"> To get a better job or promotion
                                 </label>
-                                <input id="togetbetter" name="proghistory" type="radio">
+                                <input id="togetbetter" name="proghistory"  value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
 
@@ -553,7 +647,7 @@
                                 <label class="genderLabel jobLabel" for="toanothercourse"> To get into another course of
                                     study
                                 </label>
-                                <input id="toanothercourse" name="proghistory" type="radio">
+                                <input id="toanothercourse" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
 
@@ -561,14 +655,14 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="todiffcareer"> To try for a different career
                                 </label>
-                                <input id="todiffcareer" name="proghistory" type="radio">
+                                <input id="todiffcareer" name="proghistory"  value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="jobrequirement"> It was a requirement of my job
                                 </label>
-                                <input id="jobrequirement" name="proghistory" type="radio">
+                                <input id="jobrequirement" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -576,53 +670,59 @@
                                 <label class="genderLabel jobLabel" for="selfInterest"> For personal interest or
                                     self-development
                                 </label>
-                                <input id="selfInterest" name="proghistory" type="radio">
+                                <input id="selfInterest" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="startBusiness"> To start my own business
                                 </label>
-                                <input id="startBusiness" name="proghistory" type="radio">
+                                <input id="startBusiness" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="extraskills">I wanted extra skills for my job
                                 </label>
-                                <input id="extraskills" name="proghistory" type="radio">
+                                <input id="extraskills" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="otherreasons"> Other reasons
                                 </label>
-                                <input id="otherreasons" name="proghistory" type="radio">
+                                <input id="otherreasons" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
                         <div class="col-md-4 ml-0 mr-0">
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="todevBusiness"> To develop my existing business
                                 </label>
-                                <input id="todevBusiness" name="proghistory" type="radio">
+                                <input id="todevBusiness" name="proghistory" value="{{ old('proghistory') }}" type="radio">
                             </div>
                         </div>
+                        @if ($errors->has('proghistory'))
+                        <div class="alert alert-danger">{{ $errors->first('proghistory') }}</div>
+                        @endif
                         <div style="width: 100%;" class="col-md-6">
                             <div class="input-group mt-4">
                                 <span class="input-group-text flex-column  ml-0 mr-0">Do you wish to apply for Recognition of Prior
                                     Learning?</span>
                                 <div class="secondaryChoose priorChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yesprior" name="priorlearn" type="radio">
+                                        <input id="yesprior" name="priorlearn" value="{{ old('priorlearn') }}" type="radio">
                                         <label class="genderLabel " for="yesprior"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="noprior" name="priorlearn" type="radio">
+                                        <input id="noprior" name="priorlearn"  value="{{ old('priorlearn') }}" type="radio">
                                         <label class="genderLabel" for="noprior"> No </label>
                                     </div>
 
                                 </div>
+                                @if ($errors->has('priorlearn'))
+                                <div class="alert alert-danger">{{ $errors->first('priorlearn') }}</div>
+                                @endif
                             </div>
                         </div>
 
@@ -643,17 +743,19 @@
                                     disability, impairment or long-term condition?</span>
                                 <div class="secondaryChoose priorChoose d-flex">
                                     <div class="d-flex align-items-center">
-                                        <input id="yeslongtermDis" name="is_disable" type="radio">
+                                        <input id="yeslongtermDis" name="is_disable"  value="{{ old('is_disable') }}" type="radio">
                                         <label class="genderLabel " for="yeslongtermDis"> Yes </label>
                                     </div>
 
                                     <div class="d-flex align-items-center">
-                                        <input id="nolongtermDis" name="is_disable" type="radio">
+                                        <input id="nolongtermDis" name="is_disable" value="{{ old('is_disable') }}"  type="radio">
                                         <label class="genderLabel" for="nolongtermDis"> No </label>
                                     </div>
 
                                 </div>
-
+                                @if ($errors->has('is_disable'))
+                                <div class="alert alert-danger">{{ $errors->first('is_disable') }}</div>
+                                @endif
                             </div>
                         </div>
                         <p class="secondarySpan mt-2">If YES, then please indicate the areas of disability,
@@ -663,7 +765,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="hearDeaf"> Hearing/Deaf
                                 </label>
-                                <input id="hearDeaf" name="disable[]" type="checkbox">
+                                <input id="hearDeaf" name="disable[]"  value="{{ old('hearing') }}"  type="checkbox">
                             </div>
                         </div>
 
@@ -671,7 +773,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="learning"> Learning
                                 </label>
-                                <input id="learning" name="disable[]" type="checkbox">
+                                <input id="learning" name="disable[]" value="{{ old('learning') }}"  type="checkbox">
                             </div>
                         </div>
 
@@ -679,7 +781,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="vision"> Vision
                                 </label>
-                                <input id="vision" name="disable[]" type="checkbox">
+                                <input id="vision" name="disable[]" value="{{ old('vision') }}"  type="checkbox">
                             </div>
                         </div>
 
@@ -688,7 +790,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="physical"> Physical
                                 </label>
-                                <input id="physical" name="disable[]" type="checkbox">
+                                <input id="physical" name="disable[]" value="{{ old('physical') }}"  type="checkbox">
                             </div>
                         </div>
 
@@ -696,7 +798,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="mentalIllness"> Mental Illness
                                 </label>
-                                <input id="mentalIllness" name="disable[]" type="checkbox">
+                                <input id="mentalIllness" name="disable[]" value="{{ old('mental_illness') }}" type="checkbox">
                             </div>
                         </div>
 
@@ -704,7 +806,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="medicalCond"> Medical Condition
                                 </label>
-                                <input id="medicalCond" name="disable[]" type="checkbox">
+                                <input id="medicalCond" name="disable[]" value="{{ old('medical_condition') }}" type="checkbox">
                             </div>
                         </div>
 
@@ -713,7 +815,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="intellectual"> Intellectual
                                 </label>
-                                <input id="intellectual" name="disable[]" type="checkbox">
+                                <input id="intellectual" name="disable[]" value="{{ old('intellectual') }}" type="checkbox">
                             </div>
                         </div>
 
@@ -721,7 +823,7 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="brainImpair"> Acquired Brain Impairment
                                 </label>
-                                <input id="brainImpair" name="disable[]" type="checkbox">
+                                <input id="brainImpair" name="disable[]" value="{{ old('brain_impairment') }}" type="checkbox">
                             </div>
                         </div>
 
@@ -729,10 +831,12 @@
                             <div class="d-flex align-items-center mt-3">
                                 <label class="genderLabel jobLabel" for="otherDis"> Other
                                 </label>
-                                <input id="otherDis" name="disable[]" type="checkbox">
+                                <input id="otherDis" name="disable[]" value="{{ old('Other') }}" type="checkbox">
                             </div>
                         </div>
-
+                        @if ($errors->has('disable[]'))
+                        <div class="alert alert-danger">{{ $errors->first('disable[]') }}</div>
+                        @endif
                     </div>
                 </div>
 
@@ -763,20 +867,44 @@
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Score:</b></p>
-                            <input id="ieltsscr" name="ieltsscr" type="number" class="form-control mt-4"
+                            <input id="ieltsscr" name="ieltsscr"  value="{{ old('ieltsscr') }}" type="number" class="form-control mt-4"
                                 placeholder="Enter your IELTS score">
-                            <input id="ptescr" name="ptescr" type="number" class="form-control mt-4" placeholder="Enter your PTE score">
-                            <input id="toeflscr" name="toeflscr" type="number" class="form-control mt-4"
+                                @if ($errors->has('ieltsscr'))
+                                <div class="alert alert-danger">{{ $errors->first('ieltsscr') }}</div>
+                                @endif
+                            <input id="ptescr" name="ptescr" value="{{ old('ptescr') }}" type="number" class="form-control mt-4" placeholder="Enter your PTE score">
+                            @if ($errors->has('ptescr'))
+                                <div class="alert alert-danger">{{ $errors->first('ptescr') }}</div>
+                                @endif
+                            <input id="toeflscr" name="toeflscr" value="{{ old('toeflscr') }}" type="number" class="form-control mt-4"
                                 placeholder="Enter your TOEFL score">
-                            <input id="otherscr" name="otherscr" type="number" class="form-control mt-4"
+                                @if ($errors->has('toeflscr'))
+                                <div class="alert alert-danger">{{ $errors->first('toeflscr') }}</div>
+                                @endif
+                            <input id="otherscr" name="otherscr" value="{{ old('otherscr') }}" type="number" class="form-control mt-4"
                                 placeholder="Enter your other test score">
+                                @if ($errors->has('otherscr'))
+                                <div class="alert alert-danger">{{ $errors->first('otherscr') }}</div>
+                                @endif
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Year:</b></p>
-                            <input type="number" name="ieltsyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="pteyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="tofelyear" class="form-control mt-4" placeholder="Enter Year">
-                            <input type="number" name="otheryear" class="form-control mt-4" placeholder="Enter Year">
+                            <input type="number" name="ieltsyear"  value="{{ old('ieltsyear') }}" class="form-control mt-4" placeholder="Enter Year">
+                            @if ($errors->has('ieltsyear'))
+                            <div class="alert alert-danger">{{ $errors->first('ieltsyear') }}</div>
+                            @endif
+                            <input type="number" name="pteyear" value="{{ old('pteyear') }}" class="form-control mt-4" placeholder="Enter Year">
+                            @if ($errors->has('pteyear'))
+                            <div class="alert alert-danger">{{ $errors->first('pteyear') }}</div>
+                            @endif
+                            <input type="number" name="tofelyear"  value="{{ old('tofelyear') }}"  class="form-control mt-4" placeholder="Enter Year">
+                            @if ($errors->has('tofelyear'))
+                            <div class="alert alert-danger">{{ $errors->first('tofelyear') }}</div>
+                            @endif
+                            <input type="number" name="otheryear"  value="{{ old('otheryear') }}"  class="form-control mt-4" placeholder="Enter Year">
+                            @if ($errors->has('otheryear'))
+                            <div class="alert alert-danger">{{ $errors->first('otheryear') }}</div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -807,7 +935,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><input type="checkbox"></td>
+                                        <td><input type="checkbox" name="course[]"  value="{{ old('CHC43115') }}"></td>
                                         <td>CHC43115</td>
                                         <td>Certificate IV in Disability</td>
                                         <td>$11400</td>
@@ -816,7 +944,7 @@
                                         <td>52 weeks</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox"></td>
+                                        <td><input type="checkbox" name="course[]"  value="{{ old('CHC50113') }}" ></td>
                                         <td>CHC50113</td>
                                         <td>Diploma of Early Childhood Education and Care</td>
                                         <td>$20900</td>
@@ -825,7 +953,7 @@
                                         <td>104 weeks</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox"></td>
+                                        <td><input type="checkbox" name="course[]" value="{{ old('CHC52015') }}"></td>
                                         <td>CHC52015</td>
                                         <td>Diploma of Community Services</td>
                                         <td>$19200</td>
@@ -834,7 +962,7 @@
                                         <td>78 weeks</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox"></td>
+                                        <td><input type="checkbox" name="course[]" value="{{ old('SIT40516') }}"></td>
                                         <td>SIT40516</td>
                                         <td>Certificate IV in Commercial Cookery</td>
                                         <td>$15950</td>
@@ -843,7 +971,7 @@
                                         <td>78 weeks</td>
                                     </tr>
                                     <tr>
-                                        <td><input type="checkbox"></td>
+                                        <td><input type="checkbox" name="course[]"  value="{{ old('SIT50416') }}"></td>
                                         <td>SIT50416</td>
                                         <td>Diploma of Hospitality Management</td>
                                         <td>$11300</td>
@@ -853,6 +981,9 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            @if ($errors->has('course[]'))
+                            <div class="alert alert-danger">{{ $errors->first('course[]') }}</div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -866,37 +997,37 @@
                     </div>
                     <div class="preferredMonth d-flex justify-content-between mt-4">
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]"  value="{{ old('10/01/2022') }}"  id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>10 <sup>th</sup> Jan  2022</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]"  value="{{ old('04/04/2022') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>4 <sup>th</sup> April  2022</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('27/06/2022') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>27 <sup>th</sup> June  2022</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('19/09/2022') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>19 <sup>th</sup> Sept  2022</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('09/01/2023') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>9 <sup>th</sup> Jan  2023</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('03/04/2023') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>3 <sup>rd</sup> April  2023</p>
                             </label>
@@ -904,37 +1035,37 @@
                     </div>
                     <div class="preferredMonth d-flex justify-content-between mt-4">
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('26/06/2023') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>26 <sup>th</sup> June  2023</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('18/09/2023') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>18 <sup>th</sup> Sept  2023</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('08/01/2024') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>8 <sup>th</sup> Jan  2024</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('01/04/2024') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>1 <sup>st</sup> April  2024</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('24/06/2024') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>24 <sup>th</sup> June  2024</p>
                             </label>
                         </div>
                         <div class="form-check specificMonth">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('16/09/2024') }}" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
                             <p>16 <sup>th</sup> Sept  2024</p>
                             </label>
@@ -945,6 +1076,9 @@
                         will be provided for that
                         selection
                     </p>
+                    @if ($errors->has('intake[]'))
+                    <div class="alert alert-danger">{{ $errors->first('intake[]') }}</div>
+                    @endif
                 </div>
 
 
@@ -960,15 +1094,18 @@
                                 documents for advertising for this organisation.</span>
                             <div class="secondaryChoose d-flex">
                                 <div class="d-flex align-items-center">
-                                    <input id="yesConcent" name="photoConsent" type="radio">
+                                    <input id="yesConcent" name="photoConsent" value="{{ old('photoConsent') }}" type="radio">
                                     <label class="genderLabel " for="yesConcent"> Yes </label>
                                 </div>
 
                                 <div class="d-flex align-items-center">
-                                    <input id="noConcent" name="photoConsent" type="radio">
+                                    <input id="noConcent" name="photoConsent" value="{{ old('photoConsent') }}" type="radio">
                                     <label class="genderLabel" for="noConcent"> No </label>
                                 </div>
                             </div>
+                            @if ($errors->has('photoConsent'))
+                            <div class="alert alert-danger">{{ $errors->first('photoConsent') }}</div>
+                            @endif
                         </div>
 
                     </div>
@@ -1520,7 +1657,7 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate mydatepicker" name="date_of_sign" type="text">
+                                <input class="form-control signNdate mydatepicker" name="date_of_sign" value="{{ old('date_of_sign') }}" type="text">
                                 <p class="mt-1"><b>Date</b></p>
                             </div>
                         </div>
@@ -1611,15 +1748,20 @@
 
                         <div style="width: 60%;" class="input-group mt-2 giveMaxWidth ml-0">
                             <label for="stdname" class="input-group-text">Student Name:</label>
-                            <input id="stdname" name="stdname" type="text" class="form-control"
+                            <input id="stdname" name="stdname" value="{{ old('stdname') }}" type="text" class="form-control"
                                 placeholder="Enter Your Name">
+                                @if ($errors->has('stdname'))
+                                <div class="alert alert-danger">{{ $errors->first('stdname') }}</div>
+                                @endif
                         </div>
                         <div class="yourNameDesc mt-4">
-                            <p>I, <input name="stdname" type="text" class="form-control nosideBorders"
+                            <p>I, <input name="stdname" value="{{ old('stdname') }}"  type="text" class="form-control nosideBorders"
                                     placeholder="Enter Your Name">(insert name) will create my own USI and advise ANE
                                 College. I also give permission for ANE College to verify my records
                                 by viewing them via the USI. I understand my enrolment cannot be confirmed until I
                                 provide the USI.</p>
+
+                                
                         </div>
 
                         <div class="row">
@@ -1628,8 +1770,11 @@
                                 <p class="mt-1"><b>Applicant Signature</b></p>
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input name="date_of_sign" class="form-control signNdate mydatepicker" type="text">
+                                <input name="date_of_sign" value="{{ old('date_of_sign') }}"  class="form-control signNdate mydatepicker" type="text">
                                 <p class="mt-1"><b>Date</b></p>
+                                @if ($errors->has('date_of_sign'))
+                                <div class="alert alert-danger">{{ $errors->first('date_of_sign') }}</div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -1644,7 +1789,7 @@
 
                         <div class="yourNameDescB mt-4">
                             <p>I (insert
-                                name), <input name="stdnameB" type="text" class="form-control nosideBorders"
+                                name), <input name="stdnameB"  value="{{ old('stdnameB') }}" type="text" class="form-control nosideBorders"
                                     placeholder="Enter Name"> authorise ANE College to apply pursuant to sub-section
                                 9(2) of the Student
 
@@ -1658,41 +1803,50 @@
                             <p class="mt-2"> <b>Select one of the following and attach a copy:</b> </p>
                             <div class="row">
                                 <div class="col-md-4 d-flex">
-                                    <input type="radio" name="mydocs" id="license" type="checkbox">
+                                    <input type="radio" name="mydocs" value="{{ old('mydocs') }}"  id="license" type="checkbox">
                                     <label class="nobgLabel" for="license">Driving License</label>
                                 </div>
                                 <div class="col-md-4 d-flex">
-                                    <input type="radio" name="mydocs" id="medicard" type="checkbox">
+                                    <input type="radio" name="mydocs" value="{{ old('mydocs') }}"  id="medicard" type="checkbox">
                                     <label class="nobgLabel" for="medicard">Medicare card</label>
                                 </div>
                                 <div class="col-md-4 d-flex">
-                                    <input type="radio" name="mydocs" id="passport" type="checkbox">
+                                    <input type="radio" name="mydocs" value="{{ old('mydocs') }}"  id="passport" type="checkbox">
                                     <label class="nobgLabel" for="passport">Passport</label>
                                 </div>
                                 <div class="col-md-4 d-flex">
-                                    <input type="radio" name="mydocs" id="birthCerti" type="checkbox">
+                                    <input type="radio" name="mydocs" value="{{ old('mydocs') }}"  id="birthCerti" type="checkbox">
                                     <label class="nobgLabel" for="birthCerti">Australian Birth Certificate</label>
                                 </div>
                                 <div class="col-md-4 d-flex">
-                                    <input type="radio" name="mydocs" id="regCerti" type="checkbox">
+                                    <input type="radio" name="mydocs" value="{{ old('mydocs') }}"  id="regCerti" type="checkbox">
                                     <label class="nobgLabel" for="regCerti">Certificate of Registration by
                                         Descent</label>
                                 </div>
                                 <div class="col-md-4 d-flex">
-                                    <input type="radio" name="mydocs" id="ctzenCerti" type="checkbox">
+                                    <input type="radio" name="mydocs" value="{{ old('mydocs') }}"  id="ctzenCerti" type="checkbox">
                                     <label class="nobgLabel" for="ctzenCerti">Citizenship Certificate</label>
                                 </div>
+                                @if ($errors->has('mydocs'))
+                                <div class="alert alert-danger">{{ $errors->first('mydocs') }}</div>
+                                @endif
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate" name="applicant_signB" type="text">
+                                <input class="form-control signNdate" name="applicant_signB"  type="text">
                                 <p class="mt-1"><b>Applicant Signature</b></p>
+                                @if ($errors->has('applicant_signB'))
+                                <div class="alert alert-danger">{{ $errors->first('applicant_signB') }}</div>
+                                @endif
                             </div>
                             <div class="col-md-6 mt-4">
-                                <input class="form-control signNdate mydatepicker" name="date_of_signB" type="text">
+                                <input class="form-control signNdate mydatepicker" name="date_of_signB"  value="{{ old('date_of_signB') }}" type="text">
                                 <p class="mt-1"><b>Date</b></p>
+                                @if ($errors->has('date_of_signB'))
+                                <div class="alert alert-danger">{{ $errors->first('date_of_signB') }}</div>
+                                @endif
                             </div>
                         </div>
 
