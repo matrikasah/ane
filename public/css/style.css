@@ -2174,9 +2174,33 @@ a.link:hover {
 }
 
 
+.datepicker-days {
+  padding: 15px;
+  font-size: 12px;
+  background: #e5b34926;
+}
 
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active:active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover:active{
+  background-color:var(--primary-color)!important;
+  background-image:var(--primary-color)!important;
+}
 
+.alert.alert-warning {
+  color: #000;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  position: fixed;
+  top: 10px;
+  z-index: 1000;
+}
 
+.alert-warning button.close {
+  background: #e5b349;
+  border: none;
+  outline: none;
+  padding: 0 7px;
+  border-radius: 25px;
+}
 
 
 

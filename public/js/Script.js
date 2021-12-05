@@ -172,3 +172,7 @@ $(document).ready(function(){
 //   this.className += " active";
 //   });
 // }
+$('#myAlert').on('closed.bs.alert', function () {
+  $(".alert").alert('close')
+})
+

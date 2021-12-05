@@ -24,11 +24,10 @@
 <div classs="container p-5">
 	<div class="row no-gutters">
 		<div class="col-lg-6 col-md-12 m-auto">
-			<div class="alert alert-success fade show" role="alert">
-				
-			 	<h4 class="alert-heading">Well done!</h4>
-			  	<p> {{ session()->get('message') }}</p>
-			</div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Well done!</strong> {{ session()->get('message') }}
+                    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
 		</div>
 	</div>
 </div>
@@ -132,7 +131,7 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userState" class="input-group-text">State & Postcode</label>
-                                <input id="userState" name="stdpostcode" type="text" class="form-control"
+                                <input id="userState" name="stdpostcode" type="number" class="form-control"
                                     placeholder="Enter Your State & Postcode">
                             </div>
                         </div>

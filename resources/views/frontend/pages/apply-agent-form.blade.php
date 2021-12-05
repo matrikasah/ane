@@ -34,11 +34,10 @@
             <div classs="container p-5">
                 <div class="row no-gutters">
                     <div class="col-lg-6 col-md-12 m-auto">
-                        <div class="alert alert-success fade show" role="alert">
-                            
-                             <h4 class="alert-heading">Well done!</h4>
-                              <p> {{ session()->get('message') }}</p>
-                        </div>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Well done!</strong> {{ session()->get('message') }}
+                    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -214,7 +213,7 @@
                         agent?
                         (Please provide a business plan if your company is new).
                     </label>
-                    <input class="agentAnswer mt-1" name="how_long_operation" id="agentDuration" value="{{ old('how_long_operation') }}"></input>
+                    <textarea class="form-control agentAnswer mt-1"  name="how_long_operation" id="agentDuration" value="{{ old('how_long_operation') }}" rows="3"></textarea>
                 </div>
 
 
@@ -223,7 +222,8 @@
                         international education?
 
                     </label>
-                    <input class="agentAnswer mt-1" name="deal_area" id="otherAreas" value="{{ old('deal_area') }}"></input>
+                    <textarea class="form-control agentAnswer mt-1" name="deal_area" id="otherAreas" value="{{ old('deal_area') }}" rows="3"></textarea>
+
                 </div>
 
 
@@ -231,7 +231,8 @@
                     <label class="mt-3 nobgLabel" for="totalStds">What is the total number of students that your office
                         recruits each year?
                     </label>
-                    <input class="agentAnswer mt-1" value="{{ old('totalnumber_student') }}" name="totalnumber_student" id="totalStds"></input>
+                    <textarea class="form-control agentAnswer mt-1" value="{{ old('totalnumber_student') }}" name="totalnumber_student" id="totalStds" rows="3"></textarea>
+                    
                 </div>
 
 
@@ -239,7 +240,8 @@
                     <label class="mt-3 nobgLabel" for="whichCountry">Where (which countries) do you send most of your
                         students?
                     </label>
-                    <input class="agentAnswer mt-1" value="{{ old('country_student_send') }}" name="country_student_send" id="whichCountry"></input>
+                    <textarea class="form-control agentAnswer mt-1" value="{{ old('country_student_send') }}" name="country_student_send" id="whichCountry" rows="3"></textarea>
+                    
                 </div>
 
 
@@ -248,7 +250,8 @@
                         to study in the last 12 months?
 
                     </label>
-                    <input class="agentAnswer mt-1" value="{{ old('student_in_austrila') }}" name="student_in_austrila" id="stdCount"></input>
+                    <textarea class="form-control agentAnswer mt-1" value="{{ old('student_in_austrila') }}" name="student_in_austrila" id="stdCount" rows="3"></textarea>
+                    
                 </div>
 
 
@@ -258,7 +261,8 @@
                         partnership or an affiliation?
 
                     </label>
-                    <input class="agentAnswer mt-1" value="{{ old('partners') }}" name="partners" id="partners"></input>
+                    <textarea class="form-control agentAnswer mt-1" value="{{ old('partners') }}" name="partners" id="partners" rows="3"></textarea>
+                  
                 </div>
 
                 <div class="form-group mt-2">
@@ -266,7 +270,8 @@
                         (If Yes, please describe the institutions’ names.)
 
                     </label>
-                    <input class="agentAnswer mt-1" value="{{ old('institutions') }}" name="institutions" id="institutions"></input>
+                    <textarea class="form-control agentAnswer mt-1" value="{{ old('institutions') }}" name="institutions" id="institutions" rows="3"></textarea>
+                  
                 </div>
 
             </div>

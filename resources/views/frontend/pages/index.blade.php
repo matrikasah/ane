@@ -2,7 +2,7 @@
 @section('content')
 	
 
-<section class="overlap-vid" style="background: url('{{asset('image/logo.png')}}'); background-position: center; background-size: auto 200px; background-repeat: no-repeat;">
+<section class="overlap-vid" style="background: #64a464 url('{{asset('image/logo.png')}}'); background-position: center; background-size: auto 200px; background-repeat: no-repeat;">
 	<video loop autoplay muted playsinline id="vid">
 	  <source src="{{ asset('image/ane3.mp4') }}" >
 	</video>
