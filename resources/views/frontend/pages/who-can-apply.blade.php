@@ -62,7 +62,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/contact.svg') }}">
@@ -75,7 +75,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/consult.svg') }}">
@@ -88,7 +88,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/admission.svg') }}">

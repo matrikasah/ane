@@ -345,7 +345,8 @@ public function store_contact_form(ContactRequest $req){
 }
 
 public function offsore_download(Request $request){
-    $pdf = PDF::loadView('frontend.pages.offsore-pdf');
+    $applicant=ApplicantPersonalDetail::findorFail(1);
+    $pdf = PDF::loadView('frontend.pages.offsore-pdf', compact('applicant'));
     return $pdf->download('offsore.pdf');
     
 
@@ -361,6 +362,12 @@ public function agent_download(Request $request){
     $agent=AgentDetails::findorFail(1);
     $pdf = PDF::loadView('frontend.pages.agent-pdf', $agent);
     return $pdf->download('agent.pdf');
+
+}
+
+public function policy(){
+
+    return view('frontend.pages.policy');
 
 }
 

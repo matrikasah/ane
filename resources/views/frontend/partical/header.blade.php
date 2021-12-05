@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="d-flex align-items-center">
                 <ul id="menu-topbar-left" class="nav mx-n3 line-height-one py-1 font-montserrat">
-                    <li id="menu-item-4456" class="nav-item px-3 menu-item-4456"><a title="(56) 123 456 789" href="tel:(56)%20123%20456%20789" class="text-white p-0 font-size-xs nav-link"> <i class="fas fa-phone-volume"></i> +61 2 9281 5929</a></li>
+                    <li id="menu-item-4456" class="nav-item px-3 menu-item-4456"><a title="+61292815929" href="tel:+61292815929" class="text-white p-0 font-size-xs nav-link"> <i class="fas fa-phone-volume"></i> +61 2 9281 5929</a></li>
                     <li id="menu-item-4457" class="nav-item px-3 menu-item-4457"><a title="hello@skola.com" href="mailto:sydney.campus@ane.edu.au" class="text-white p-0 font-size-xs nav-link"><i class="far fa-envelope"></i> sydney.campus@ane.edu.au</a></li>
                 </ul>
                 <ul id="menu-topbar-right" class="nav ml-auto mr-n3 font-size-sm py-1 d-none d-sm-flex d-md-flex">
@@ -69,7 +69,7 @@
                 <div class="col-sm-12">
                 
             <nav>
-                    <a class="navbar-brand" href="home"> <img src="{{ asset('image/logo.png') }}" height="80px"> </a>
+                    <a class="navbar-brand" href="{{ route('home') }}"> <img src="{{ asset('image/logo.png') }}" height="80px"> </a>
                     
                     <a id="resp-menu" class="responsive-menu" href="#"><i class="fas fa-bars"></i></a> 
                     <div class="menu-wrap d-none d-lg-block">

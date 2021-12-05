@@ -14,9 +14,9 @@ use App\Http\Controllers\Frontend\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/home');
-});
+// Route::get('/', function () {
+//     return redirect('/home');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -24,7 +24,8 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/home',[HomeController::class,'index'])->name('home');
+// Route::get('/home',[HomeController::class,'index'])->name('home');
+Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('/apply-offshore',[HomeController::class,'offshore_form'])->name('apply-offshore');
 Route::get('/apply-onshore',[HomeController::class,'onshore_form'])->name('apply-onshore');
 Route::get('/apply-agent',[HomeController::class,'agent_form'])->name('apply-agent');
