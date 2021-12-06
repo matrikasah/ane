@@ -96,7 +96,7 @@
                                     (USI) – <span class="secondarySpan"> Refer to
                                         Page 5 for assistance :</span></label>
                                 <input id="userUsi" name="stdusi" type="text" class="form-control"
-                                    placeholder="Unique Student Identifier (USI)" value="{{ old('stdusi') }}">
+                                    placeholder="Unique Student Identifier (USI)" value="{{ old('stdusi') }}" >
                                     @if ($errors->has('stdusi'))
                                     <div class="alert alert-danger">{{ $errors->first('stdusi') }}</div>
                                     @endif
@@ -107,7 +107,7 @@
                             <div class="input-group">
                                 <label for="userSurname" class="input-group-text">Surname</label>
                                 <input id="userSurname" name="stdsurname" type="text" class="form-control"
-                                    placeholder="Enter Your Surname" value="{{ old('stdsurname') }}">
+                                    placeholder="Enter Your Surname" value="{{ old('stdsurname') }}" required>
                                     @if ($errors->has('stdsurname'))
                                     <div class="alert alert-danger">{{ $errors->first('stdsurname') }}</div>
                                     @endif
@@ -117,7 +117,7 @@
                             <div class="input-group">
                                 <label for="userGivenName" class="input-group-text">Given Name</label>
                                 <input id="userGivenName" name="stdgivenname" type="text" class="form-control"
-                                    placeholder="Enter Your Given Name" value="{{ old('stdgivenname') }}">
+                                    placeholder="Enter Your Given Name" value="{{ old('stdgivenname') }}" required>
                                     @if ($errors->has('stdgivenname'))
                                     <div class="alert alert-danger">{{ $errors->first('stdgivenname') }}</div>
                                     @endif
@@ -127,7 +127,7 @@
                             <div class="input-group">
                                 <label for="userHomeAddress" class="input-group-text">Home Address</label>
                                 <input id="userHomeAddress" name="stdhomeaddress" type="text" class="form-control"
-                                    placeholder="Enter Your Home Address" value="{{ old('stdhomeaddress') }}">
+                                    placeholder="Enter Your Home Address" value="{{ old('stdhomeaddress') }}" required>
                                     @if ($errors->has('stdhomeaddress'))
                                     <div class="alert alert-danger">{{ $errors->first('stdhomeaddress') }}</div>
                                     @endif
@@ -137,7 +137,7 @@
                             <div class="input-group">
                                 <label for="userSuburb" class="input-group-text">Suburb</label>
                                 <input id="userSuburb" name="stdsuburb" value="{{ old('stdsuburb') }}" type="text" class="form-control"
-                                    placeholder="Enter Your Suburb">
+                                    placeholder="Enter Your Suburb" required>
                                     @if ($errors->has('stdsuburb'))
                                     <div class="alert alert-danger">{{ $errors->first('stdsuburb') }}</div>
                                     @endif
@@ -148,7 +148,7 @@
                             <div class="input-group">
                                 <label for="userState" class="input-group-text">State & Postcode</label>
                                 <input id="userState" name="stdpostcode" value="{{ old('stdpostcode') }}" type="number" class="form-control"
-                                    placeholder="Enter Your State & Postcode">
+                                    placeholder="Enter Your State & Postcode" required>
                                     @if ($errors->has('stdpostcode'))
                                     <div class="alert alert-danger">{{ $errors->first('stdpostcode') }}</div>
                                     @endif
@@ -160,7 +160,7 @@
                                         style="display: block;" class="secondarySpan">(Including
                                         Country & Area Code) </span></label>
                                 <input id="telNum" name="stdtelnum" value="{{ old('stdtelnum') }}" type="number" class="form-control"
-                                    placeholder="Enter Your Telephone Number">
+                                    placeholder="Enter Your Telephone Number" required>
                                     @if ($errors->has('stdtelnum'))
                                     <div class="alert alert-danger">{{ $errors->first('stdtelnum') }}</div>
                                     @endif
@@ -171,7 +171,7 @@
                             <div class="input-group">
                                 <label for="userEmail" class="input-group-text">Email Address</label>
                                 <input id="userEmail" name="stdemail" value="{{ old('stdemail') }}" type="text" class="form-control"
-                                    placeholder="Enter Your Email Address">
+                                    placeholder="Enter Your Email Address" required>
                                     @if ($errors->has('stdemail'))
                                     <div class="alert alert-danger">{{ $errors->first('stdemail') }}</div>
                                     @endif
@@ -218,7 +218,7 @@
                             <div class="input-group">
                                 <label for="fullName" class="input-group-text">Full Name</label>
                                 <input id="fullName" name="fullName" value="{{ old('fullName') }}"  type="text" class="form-control "
-                                    placeholder="Enter Your Full Name">
+                                    placeholder="Enter Your Full Name" required>
                                     @if ($errors->has('fullName'))
                                     <div class="alert alert-danger">{{ $errors->first('fullName') }}</div>
                                     @endif
@@ -248,7 +248,7 @@
                             <div class="input-group">
                                 <label for="mobile" class="input-group-text">Mobile</label>
                                 <input id="mobile" name="mobile"  value="{{ old('mobile') }}" type="number" class="form-control "
-                                    placeholder="Mobile">
+                                    placeholder="Mobile" required>
                                     @if ($errors->has('mobile'))
                                     <div class="alert alert-danger">{{ $errors->first('mobile') }}</div>
                                     @endif
@@ -411,24 +411,24 @@
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesBach">Bachelor or Higher Degree
                                     </label>
-                                    <input id="yesBach" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
+                                    <input id="yesBach" name="prevquali"  value="{{ old('prevquali') }}" type="radio" required>
                                     
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesDip">Advanced Diploma or Associate
                                         Degree
                                     </label>
-                                    <input id="yesDip" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
+                                    <input id="yesDip" name="prevquali"  value="{{ old('prevquali') }}" type="radio" required>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesCerti">Certificate III </label>
-                                    <input id="yesCerti" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
+                                    <input id="yesCerti" name="prevquali"  value="{{ old('prevquali') }}" type="radio" required>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesOthers">Certificates other than the
                                         above
                                     </label>
-                                    <input id="yesOthers" name="prevquali"  value="{{ old('prevquali') }}" type="radio">
+                                    <input id="yesOthers" name="prevquali"  value="{{ old('prevquali') }}" type="radio" required>
                                 </div>
                                 @if ($errors->has('prevquali'))
                                     <div class="alert alert-danger">{{ $errors->first('prevquali') }}</div>

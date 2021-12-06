@@ -82,7 +82,7 @@
                     <div class="col-md-6  mt-4">
                         <div class="input-group">
                             <label for="agent_name" class="input-group-text agent_nameLabel">Agent Name :</label>
-                            <input id="agent_name" name="name" type="text" value="{{ old('name') }}"  class="form-control" placeholder="Agent Name">
+                            <input id="agent_name" name="name" type="text" value="{{ old('name') }}"  class="form-control" placeholder="Agent Name" required>
                            
                             @if ($errors->has('name'))
                             <div class="alert alert-danger">{{ $errors->first('name') }}</div>
@@ -93,7 +93,7 @@
                         <div class="input-group">
                             <label for="agent_surname" class="input-group-text">Surname</label>
                             <input id="agent_surname" name="surname" type="text" class="form-control"
-                                placeholder="Enter Your Surname" value="{{ old('surname') }}">
+                                placeholder="Enter Your Surname" value="{{ old('surname') }}" required>
                                
                                 @if ($errors->has('surname'))
                             <div class="alert alert-danger">{{ $errors->first('surname') }}</div>
@@ -104,7 +104,7 @@
                         <div class="input-group">
                             <label for="agent_givename" class="input-group-text">Given Name</label>
                             <input id="agent_givename" name="givenname" type="text" class="form-control"
-                                placeholder="Enter Your Given Name" value="{{ old('givenname') }}">
+                                placeholder="Enter Your Given Name" value="{{ old('givenname') }}" required>
                                 @if ($errors->has('givenname'))
                             <div class="alert alert-danger">{{ $errors->first('givenname') }}</div>
                             @endif
@@ -114,7 +114,7 @@
                         <div class="input-group">
                             <label for="agent_ausaddress" class="input-group-text">Address in Australia</label>
                             <input id="agent_ausaddress" name="address_in_aus" type="text" class="form-control"
-                                placeholder="Enter Your Address in Australia" value="{{ old('address_in_aus') }}">
+                                placeholder="Enter Your Address in Australia" value="{{ old('address_in_aus') }}" required>
                                 @if ($errors->has('address_in_aus'))
                             <div class="alert alert-danger">{{ $errors->first('address_in_aus') }}</div>
                             @endif
@@ -124,7 +124,7 @@
                         <div class="input-group">
                             <label for="agent_suburb" class="input-group-text">Suburb</label>
                             <input id="agent_suburb" name="suburb" type="text" class="form-control"
-                                placeholder="Enter Your Suburb" value="{{ old('suburb') }}">
+                                placeholder="Enter Your Suburb" value="{{ old('suburb') }}" required>
                                 @if ($errors->has('suburb'))
                             <div class="alert alert-danger">{{ $errors->first('suburb') }}</div>
                             @endif
@@ -134,7 +134,7 @@
                         <div class="input-group">
                             <label for="agent_country" class="input-group-text">Country</label>
                             <input id="agent_country" name="country" type="text" class="form-control"
-                                placeholder="Enter Your Country" value="{{ old('country') }}">
+                                placeholder="Enter Your Country" value="{{ old('country') }}" required>
                                 @if ($errors->has('country'))
                             <div class="alert alert-danger">{{ $errors->first('country') }}</div>
                             @endif
@@ -145,7 +145,7 @@
                             <label for="agent_out_aus" class="input-group-text">Address <span class="secondarySpan"> (Outside
                                     Australia)</span> </label>
                             <input id="agent_out_aus" name="address_outside_aus" type="text" class="form-control"
-                                placeholder="Enter Your Address Outside Australia" value="{{ old('address_outside_aus') }}">
+                                placeholder="Enter Your Address Outside Australia" value="{{ old('address_outside_aus') }}" required>
                                 @if ($errors->has('address_outside_aus'))
                             <div class="alert alert-danger">{{ $errors->first('address_outside_aus') }}</div>
                             @endif
@@ -157,7 +157,7 @@
                         <div class="input-group">
                             <label for="suburb_out_aus" class="input-group-text">Suburb </label>
                             <input id="suburb_out_aus" name="suburb_outside_aus"  type="text" class="form-control"
-                                placeholder="Enter Your Suburb" value="{{ old('suburb_outside_aus') }}">
+                                placeholder="Enter Your Suburb" value="{{ old('suburb_outside_aus') }}" required>
                                 @if ($errors->has('suburb_outside_aus'))
                             <div class="alert alert-danger">{{ $errors->first('suburb_outside_aus') }}</div>
                             @endif
@@ -167,7 +167,7 @@
                         <div class="input-group">
                             <label for="agent_postcode" class="input-group-text">Postcode</label>
                             <input id="agent_postcode" name="post_code" type="number" class="form-control"
-                                placeholder="Enter Your Postcode" value="{{ old('post_code') }}">
+                                placeholder="Enter Your Postcode" value="{{ old('post_code') }}" required>
                                 @if ($errors->has('post_code'))
                             <div class="alert alert-danger">{{ $errors->first('post_code') }}</div>
                             @endif
@@ -180,7 +180,7 @@
                         <div class="input-group">
                             <label for="agent_mobile" class="input-group-text">Mobile</label>
                             <input id="agent_mobile" name="mobile_num" type="number" class="form-control"
-                                placeholder="Enter Your Mobile" value="{{ old('mobile_num') }}">
+                                placeholder="Enter Your Mobile" value="{{ old('mobile_num') }}" required>
                                 @if ($errors->has('mobile_num'))
                             <div class="alert alert-danger">{{ $errors->first('mobile_num') }}</div>
                             @endif
@@ -203,7 +203,7 @@
                         <div class="input-group">
                             <label for="agent_abn" class="input-group-text">ABN</label>
                             <input id="agent_abn" name="abn" type="number" class="form-control"
-                                placeholder="Enter Your Postcode" value="{{ old('abn') }}">
+                                placeholder="Enter Your Postcode" value="{{ old('abn') }}" required>
                                 @if ($errors->has('abn'))
                             <div class="alert alert-danger">{{ $errors->first('abn') }}</div>
                             @endif
@@ -214,7 +214,7 @@
                         <div class="input-group">
                             <label for="agent_acn" class="input-group-text">ACN</label>
                             <input id="agent_acn" name="acn" type="number" class="form-control"
-                                placeholder="Enter Your Postcode" value="{{ old('acn') }}">
+                                placeholder="Enter Your Postcode" value="{{ old('acn') }}" required>
                                 @if ($errors->has('acn'))
                             <div class="alert alert-danger">{{ $errors->first('acn') }}</div>
                             @endif
@@ -225,7 +225,7 @@
                         <div class="input-group">
                             <label for="agent_emer_cont" class="input-group-text">Emergency Contact</label>
                             <input id="agent_emer_cont" name="emergency_contact" type="number" class="form-control"
-                                placeholder="Enter Your Emergency Contact" value="{{ old('emergency_contact') }}">
+                                placeholder="Enter Your Emergency Contact" value="{{ old('emergency_contact') }}" required>
                                 @if ($errors->has('emergency_contact'))
                             <div class="alert alert-danger">{{ $errors->first('emergency_contact') }}</div>
                             @endif
@@ -235,7 +235,7 @@
                         <div class="input-group">
                             <label for="agent_address_usual" class="input-group-text">Address</label>
                             <input id="agent_address_usual" name="emgy_address" type="text" class="form-control"
-                                placeholder="Enter Your Address" value="{{ old('emgy_address') }}">
+                                placeholder="Enter Your Address" value="{{ old('emgy_address') }}" required>
                                 @if ($errors->has('emgy_address'))
                             <div class="alert alert-danger">{{ $errors->first('emgy_address') }}</div>
                             @endif
@@ -245,7 +245,7 @@
                         <div class="input-group">
                             <label for="agent_tel_usual" class="input-group-text">Telephone</label>
                             <input id="agent_tel_usual" name="emgy_telephone" type="number" class="form-control"
-                                placeholder="Enter Your Telephone" value="{{ old('emgy_telephone') }}">
+                                placeholder="Enter Your Telephone" value="{{ old('emgy_telephone') }}" required>
                                 @if ($errors->has('emgy_telephone'))
                             <div class="alert alert-danger">{{ $errors->first('emgy_telephone') }}</div>
                             @endif
@@ -513,7 +513,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mt-4">
-                            <input class="form-control signNdate" name="agent_sign" type="text">
+                            <input class="form-control signNdate" name="agent_sign" type="text" required>
                             @if ($errors->has('agent_sign'))
                                 <div class="alert alert-danger">{{ $errors->first('agent_sign') }}</div>
                                 @endif

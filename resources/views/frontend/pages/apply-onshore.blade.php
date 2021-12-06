@@ -63,14 +63,14 @@
                 Once signed and the issue of a receipt for initial fees this document is a binding
                 contract.</p>
 
-                <ul class="error">
+                <!-- <ul class="error">
                     @foreach($errors->all() as $error)
                     <li><div class="alert alert-danger" role="alert">
                         {{ $error }}
                         </div>
                     </li>
                     @endforeach
-                </ul>
+                </ul> -->
             <form action="{{route('onshore.store')}}" method="POST">
                 @csrf
                 
@@ -93,6 +93,9 @@
                                         Page 5 for assistance :</span></label>
                                 <input id="userUsi" name="stdusi" type="text" class="form-control"
                                     placeholder="Unique Student Identifier (USI)">
+                                    @if ($errors->has('stdusi'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdusi') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -100,6 +103,9 @@
                                 <label for="userSurname" class="input-group-text">Surname</label>
                                 <input id="userSurname" name="stdsurname" type="text" class="form-control "
                                     placeholder="Enter Your Surname">
+                                    @if ($errors->has('stdsurname'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdsurname') }}</div>
+                                    @endif
                                 
                             </div>
                         </div>
@@ -108,6 +114,9 @@
                                 <label for="userGivenName" class="input-group-text">Given Name</label>
                                 <input id="userGivenName" name="stdgivenname" type="text" class="form-control"
                                     placeholder="Enter Your Given Name">
+                                    @if ($errors->has('stdgivenname'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdgivenname') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -115,6 +124,9 @@
                                 <label for="userHomeAddress" class="input-group-text">Home Address</label>
                                 <input id="userHomeAddress" name="stdhomeaddress" type="text" class="form-control"
                                     placeholder="Enter Your Home Address">
+                                    @if ($errors->has('stdhomeaddress'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdhomeaddress') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -122,6 +134,9 @@
                                 <label for="userSuburb" class="input-group-text">Suburb</label>
                                 <input id="userSuburb" name="stdsuburb" type="text" class="form-control"
                                     placeholder="Enter Your Suburb">
+                                    @if ($errors->has('stdsuburb'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdsuburb') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -129,6 +144,9 @@
                                 <label for="userState" class="input-group-text">State & Postcode</label>
                                 <input id="userState" name="stdpostcode" type="number" class="form-control"
                                     placeholder="Enter Your State & Postcode">
+                                    @if ($errors->has('stdpostcode'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdpostcode') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -136,6 +154,9 @@
                                 <label for="telNum" class="input-group-text">Telephone Number </label>
                                 <input id="telNum" name="stdtelnum" type="number" class="form-control"
                                     placeholder="Enter Your Telephone Number">
+                                    @if ($errors->has('stdtelnum'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdtelnum') }}</div>
+                                    @endif
                             </div>
                         </div>
 
@@ -144,6 +165,9 @@
                                 <label for="userEmail" class="input-group-text">Email Address</label>
                                 <input id="userEmail" name="stdemail" type="text" class="form-control"
                                     placeholder="Enter Your Email Address">
+                                    @if ($errors->has('stdemail'))
+                                    <div class="alert alert-danger">{{ $errors->first('stdemail') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -151,6 +175,9 @@
                                 <label for="userDob" class="input-group-text">Date of Birth</label>
                                 <input id="userDob" name="stddob" type="text" class="form-control"
                                     placeholder="Enter Your Date of Birth">
+                                    @if ($errors->has('stddob'))
+                                    <div class="alert alert-danger">{{ $errors->first('stddob') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4 ml-0">
@@ -168,6 +195,9 @@
                                     <input id="othersGender" name="sex" type="radio">
                                     <label class="genderLabel" for="femaleGender">Others</label>
                                 </div>
+                                @if ($errors->has('sex'))
+                                    <div class="alert alert-danger">{{ $errors->first('sex') }}</div>
+                                    @endif
                             </div>
                         </div>
                     </div>
@@ -182,6 +212,9 @@
                                 <label for="fullName" class="input-group-text">Full Name</label>
                                 <input id="fullName" name="fullName" type="text" class="form-control "
                                     placeholder="Enter Your Full Name">
+                                    @if ($errors->has('fullName'))
+                                    <div class="alert alert-danger">{{ $errors->first('fullName') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -189,6 +222,9 @@
                                 <label for="relationship" class="input-group-text">Relationship</label>
                                 <input id="relationship" name="relationship" type="text" class="form-control "
                                     placeholder="Relationship">
+                                    @if ($errors->has('relationship'))
+                                    <div class="alert alert-danger">{{ $errors->first('relationship') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -196,6 +232,9 @@
                                 <label for="contactNum" class="input-group-text">Contact Number</label>
                                 <input id="contactNum" name="contactNum" type="number" class="form-control "
                                     placeholder="Contact Number">
+                                    @if ($errors->has('contactNum'))
+                                    <div class="alert alert-danger">{{ $errors->first('contactNum') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -203,6 +242,9 @@
                                 <label for="mobile" class="input-group-text">Mobile</label>
                                 <input id="mobile" name="mobile" type="number" class="form-control "
                                     placeholder="Mobile">
+                                    @if ($errors->has('mobile'))
+                                    <div class="alert alert-danger">{{ $errors->first('mobile') }}</div>
+                                    @endif
                             </div>
                         </div>
                         <div class="d-flex mt-4" style="align-items: center;">
@@ -228,6 +270,9 @@
                                     <input id="noemer" name="emergency_pay" type="radio">
                                     <label class="genderLabel" for="noemer"> No</label>
                                 </div>
+                                @if ($errors->has('emergency_pay'))
+                                    <div class="alert alert-danger">{{ $errors->first('emergency_pay') }}</div>
+                                    @endif
                             </div>
                         </div>
 
@@ -252,6 +297,9 @@
                                         <input id="noagent" name="apply_through_agent" type="radio">
                                         <label class="genderLabel" for="noagent"> No </label>
                                     </div>
+                                    @if ($errors->has('apply_through_agent'))
+                                    <div class="alert alert-danger">{{ $errors->first('apply_through_agent') }}</div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -260,6 +308,9 @@
                                 <label for="orgName" class="input-group-text">Organization Name</label>
                                 <input id="orgName" name="orgName" type="text" class="form-control"
                                     placeholder="Enter organization name">
+                                    @if ($errors->has('orgName'))
+                                    <div class="alert alert-danger">{{ $errors->first('orgName') }}</div>
+                                    @endif
                             </div>
 
                         </div>
@@ -268,6 +319,9 @@
                                 <label for="agentCnum" class="input-group-text">Contact Number</label>
                                 <input id="agentCnum" name="agentCnum" type="number" class="form-control"
                                     placeholder="Enter Contact Number">
+                                    @if ($errors->has('agentCnum'))
+                                    <div class="alert alert-danger">{{ $errors->first('agentCnum') }}</div>
+                                    @endif
                             </div>
                         </div>
 
@@ -300,6 +354,9 @@
                                         </label>
                                         <input id="year11" name="higher_edu" type="radio">
                                     </div>
+                                    @if ($errors->has('higher_edu'))
+                                    <div class="alert alert-danger">{{ $errors->first('higher_edu') }}</div>
+                                    @endif
                                     <div class="input-group mt-4">
                                         <label for="completionYear" style="text-align: left;"
                                             class="input-group-text">What YEAR did you
@@ -307,6 +364,9 @@
                                             qualification?</label>
                                         <input id="completionYear" name="yearCompletion" type="number"
                                             class="form-control" placeholder="Completion year" style="height: 64px;">
+                                            @if ($errors->has('yearCompletion'))
+                                    <div class="alert alert-danger">{{ $errors->first('yearCompletion') }}</div>
+                                    @endif
                                     </div>
                                     <div class="input-group mt-4">
                                         <span style="text-align: left;" class="input-group-text ml-0">Are you still <br>
@@ -324,6 +384,9 @@
                                                 <input id="noSecondary" name="secondary" type="radio">
                                                 <label class="genderLabel" for="noSecondary"> No </label>
                                             </div>
+                                            @if ($errors->has('secondary'))
+                                            <div class="alert alert-danger">{{ $errors->first('secondary') }}</div>
+                                            @endif
                                         </div>
                                     </div>
 
@@ -359,6 +422,9 @@
                                     </label>
                                     <input id="yesOthers" name="prevquali" type="radio">
                                 </div>
+                                @if ($errors->has('prevquali'))
+                                            <div class="alert alert-danger">{{ $errors->first('prevquali') }}</div>
+                                            @endif
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -397,6 +463,9 @@
                                     </label>
                                     <input id="notseeking" name="employment" type="radio">
                                 </div>
+                                @if ($errors->has('employment'))
+                                <div class="alert alert-danger">{{ $errors->first('employment') }}</div>
+                                @endif
                             </div>
                         </div>
                     </div>
