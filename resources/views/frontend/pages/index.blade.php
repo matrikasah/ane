@@ -286,7 +286,7 @@
 					<div class="next title">
 						<h1>Next Orientation</h1>
 								<p><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>Sydney Campus</p>
-								<p><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>11th December 2021 | 9:00 am</p>
+								<p><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>10th January 2022</p>
 					</div>
 					<p class="next-orientation">If you have any queries do not hesitate to ask us just by filling out the form.</p>
 				</div>

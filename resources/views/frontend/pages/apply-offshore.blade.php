@@ -1659,6 +1659,9 @@
                             <div class="col-md-6 mt-4">
                                 <input class="form-control signNdate mydatepicker" name="date_of_sign" value="{{ old('date_of_sign') }}" type="text">
                                 <p class="mt-1"><b>Date</b></p>
+                                @if ($errors->has('date_of_sign'))
+                                <div class="alert alert-danger">{{ $errors->first('date_of_sign') }}</div>
+                                @endif
                             </div>
                         </div>
                     </div>
