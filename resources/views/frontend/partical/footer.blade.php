@@ -45,10 +45,10 @@
 					<li><a href="https://www.studyinaustralia.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Official Australian Government Website</a></li>
 					<li><a href="https://www.dese.gov.au/" target="_blank"  class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>Department of Education</a></li>
 					<li><a href="https://www.cityofsydney.nsw.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>City Details</a></li>
-					<li><a href="http://migrationblog.immi.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Migration Blog</a></li>
+					<!-- <li><a href="http://migrationblog.immi.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Migration Blog</a></li> -->
 					<li><a href="https://www.ato.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Australian Taxation Office</a></li>
-					<li><a href="{{route('international-student')}}" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Accommodation</a></li>
-					<li><a href="{{route('international-student')}}" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Job Searching</a></li>
+					<li><a href="http://www.domain.com.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Accommodation</a></li>
+					<li><a href="http://www.seek.com.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Job Searching</a></li>
 				</ul>
 				</div>
 			</div>
