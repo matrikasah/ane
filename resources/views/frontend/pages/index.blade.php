@@ -391,7 +391,7 @@
 
 
 <section class="gap Testimonials">
-	<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('image/uni.png') }}"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('image/uni.jpg') }}"></div>
 	<div class="Testimonials-content">
 	  <div class="container">
 	    <div class="row">

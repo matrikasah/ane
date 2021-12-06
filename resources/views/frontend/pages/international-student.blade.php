@@ -259,7 +259,7 @@
 											within the Opal network.
 											As well as the lowest single fares, Opal cards have lots of benefits for regular travellers. https://www.opal.com.au/ </p>
 											<ul>
-												 <li><i class="fas fa-angle-double-right"></i> <a href="http://www.sydneytrains.info/">Trains</a>  </li>
+												 <li><i class="fas fa-angle-double-right"></i> <a href="https://transportnsw.info/travel-info/ways-to-get-around/train#/">Trains</a>  </li>
 											 	<li><i class="fas fa-angle-double-right"></i> <a href="https://transportnsw.info/travel-info/ways-to-get-around/bus">Buses</a>   </li>
 											 	<li><i class="fas fa-angle-double-right"></i> <a href="https://transportnsw.info/travel-info/ways-to-get-around/ferry">Ferries</a>  </li>
 											</ul>

@@ -482,6 +482,7 @@ footer ul a {
     text-decoration: none;
     font-size: 14px;
     margin-left: 0;
+    display: inline-block;
 }
 .address a:last-child{
   border: none;
@@ -1140,6 +1141,7 @@ li#menu-item-4461 {
   margin-left: 0;
   text-decoration: none;
   color: var(--primary-color);
+  display: contents;
 }
 
 .contact-info.course-features-info ul li {
