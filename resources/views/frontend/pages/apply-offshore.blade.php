@@ -867,21 +867,21 @@
                         </div>
                         <div class="col-md-4 mt-4">
                             <p><b>Score:</b></p>
-                            <input id="ieltsscr" name="ieltsscr"  value="{{ old('ieltsscr') }}" type="number" class="form-control mt-4"
+                            <input id="ieltsscr" name="ieltsscr"  value="{{ old('ieltsscr') }}" type="text" class="form-control  allow_decimal mt-4"
                                 placeholder="Enter your IELTS score">
                                 @if ($errors->has('ieltsscr'))
                                 <div class="alert alert-danger">{{ $errors->first('ieltsscr') }}</div>
                                 @endif
-                            <input id="ptescr" name="ptescr" value="{{ old('ptescr') }}" type="number" class="form-control mt-4" placeholder="Enter your PTE score">
+                            <input id="ptescr" name="ptescr"  value="{{ old('ptescr') }}" type="text" class="form-control allow_decimal mt-4" placeholder="Enter your PTE score">
                             @if ($errors->has('ptescr'))
                                 <div class="alert alert-danger">{{ $errors->first('ptescr') }}</div>
                                 @endif
-                            <input id="toeflscr" name="toeflscr" value="{{ old('toeflscr') }}" type="number" class="form-control mt-4"
+                            <input id="toeflscr" name="toeflscr" value="{{ old('toeflscr') }}" type="text" class="form-control allow_decimal mt-4"
                                 placeholder="Enter your TOEFL score">
                                 @if ($errors->has('toeflscr'))
                                 <div class="alert alert-danger">{{ $errors->first('toeflscr') }}</div>
                                 @endif
-                            <input id="otherscr" name="otherscr" value="{{ old('otherscr') }}" type="number" class="form-control mt-4"
+                            <input id="otherscr" name="otherscr" value="{{ old('otherscr') }}" type="text" class="form-control allow_decimal mt-4"
                                 placeholder="Enter your other test score">
                                 @if ($errors->has('otherscr'))
                                 <div class="alert alert-danger">{{ $errors->first('otherscr') }}</div>
