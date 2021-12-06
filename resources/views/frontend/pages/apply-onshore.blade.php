@@ -175,15 +175,15 @@
                                         <div class="input-group">
                                             <span class="input-group-text ml-0">Sex</span>
                                             <div class="d-flex align-items-center genderlabelDiv">
-                                                <input id="maleGender" name="sex" type="radio" value="{{ old('sex') }}">
+                                                <input id="maleGender" name="sex" type="radio" value="Male">
                                                 <label class="genderLabel" for="maleGender">Male</label>
                                             </div>
                                             <div class="d-flex align-items-center ml-1 genderlabelDiv">
-                                                <input id="femaleGender" name="sex" type="radio" value="{{ old('sex') }}">
+                                                <input id="femaleGender" name="sex" type="radio" value="Female">
                                                 <label class="genderLabel" for="femaleGender">Female</label>
                                             </div>
                                             <div class="d-flex align-items-center ml-1 genderlabelDiv">
-                                                <input id="othersGender" name="sex" type="radio" value="{{ old('sex') }}">
+                                                <input id="othersGender" name="sex" type="radio" value="Others">
                                                 <label class="genderLabel" for="femaleGender">Others</label>
                                             </div>
                                             @if ($errors->has('sex'))
@@ -249,12 +249,12 @@
 
                                         <div class="d-flex secondaryspanChoose">
                                             <div class="d-flex align-items-center">
-                                                <input id="yes" name="emergency_pay" type="radio" value="{{ old('emergency_pay') }}">
+                                                <input id="yes" name="emergency_pay" type="radio" value="Yes">
                                                 <label class="genderLabel" for="yes"> Yes </label>
                                             </div>
 
                                             <div class="d-flex align-items-center">
-                                                <input id="noemer" name="emergency_pay" type="radio" value="{{ old('emergency_pay') }}">
+                                                <input id="noemer" name="emergency_pay" type="radio" value="No">
                                                 <label class="genderLabel" for="noemer"> No</label>
                                             </div>
                                             @if ($errors->has('emergency_pay'))
@@ -276,12 +276,12 @@
                                             <span class="input-group-text ml-0">Are you applying through agent?</span>
                                             <div class="agentChoose d-flex">
                                                 <div class="d-flex align-items-center" style="margin-right: 10px;">
-                                                    <input id="yesagent" name="apply_through_agent" type="radio" value="{{ old('apply_through_agent') }}">
+                                                    <input id="yesagent" name="apply_through_agent" type="radio" value="Yes">
                                                     <label class="genderLabel" for="yesagent"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="noagent" name="apply_through_agent" type="radio" value="{{ old('apply_through_agent') }}">
+                                                    <input id="noagent" name="apply_through_agent" type="radio" value="No">
                                                     <label class="genderLabel" for="noagent"> No </label>
                                                 </div>
                                                 @if ($errors->has('apply_through_agent'))
@@ -327,17 +327,17 @@
                                                 <div class="d-flex align-items-center">
                                                     <label class="genderLabel nopadding" for="year11"> Year 12 or equivalent
                                                     </label>
-                                                    <input id="year11" name="higher_edu" type="radio" value="{{ old('higher_edu') }}">
+                                                    <input id="year11" name="higher_edu" type="radio" value="year12">
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <label class="genderLabel nopadding" for="year11"> Year 11 or equivalent
                                                     </label>
-                                                    <input id="year11" name="higher_edu" type="radio" value="{{ old('higher_edu') }}">
+                                                    <input id="year11" name="higher_edu" type="radio" value="year11">
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <label class="genderLabel nopadding" for="year11"> Year 10 or equivalent
                                                     </label>
-                                                    <input id="year11" name="higher_edu" type="radio" value="{{ old('higher_edu') }}">
+                                                    <input id="year11" name="higher_edu" type="radio" value="year10">
                                                 </div>
                                                 @if ($errors->has('higher_edu'))
                                                 <div class="alert alert-danger">{{ $errors->first('higher_edu') }}</div>
@@ -359,12 +359,12 @@
                                             placeholder="Completion year"> -->
                                                     <div class="secondaryChoose d-flex">
                                                         <div class="d-flex align-items-center" style="margin-right:10px">
-                                                            <input id="yesSecondary" name="secondary" type="radio" value="{{ old('secondary') }}">
+                                                            <input id="yesSecondary" name="secondary" type="radio" value="Yes">
                                                             <label class="genderLabel " for="yesSecondary"> Yes </label>
                                                         </div>
 
                                                         <div class="d-flex align-items-center">
-                                                            <input id="noSecondary" name="secondary" type="radio" value="{{ old('secondary') }}">
+                                                            <input id="noSecondary" name="secondary" type="radio" value="No">
                                                             <label class="genderLabel" for="noSecondary"> No </label>
                                                         </div>
                                                         @if ($errors->has('secondary'))
@@ -387,27 +387,28 @@
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesBach">Bachelor or Higher Degree
                                                 </label>
-                                                <input id="yesBach" name="prevquali" type="radio" value="{{ old('prevquali')}}">
+                                                <input id="yesBach" name="prevquali"  value="Bachelor_or_Higher" type="radio" required>
+                                                
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesDip">Advanced Diploma or Associate
                                                     Degree
                                                 </label>
-                                                <input id="yesDip" name="prevquali" type="radio" value="{{ old('prevquali')}}">
+                                                <input id="yesDip" name="prevquali"  value="Advanced_Diploma" type="radio" required>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesCerti">Certificate III </label>
-                                                <input id="yesCerti" name="prevquali" type="radio" value="{{ old('prevquali')}}">
+                                                <input id="yesCerti" name="prevquali"  value="Certificate_III" type="radio" required>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesOthers">Certificates other than the
                                                     above
                                                 </label>
-                                                <input id="yesOthers" name="prevquali" type="radio" value="{{ old('prevquali')}}">
+                                                <input id="yesOthers" name="prevquali"  value="Certificates_other" type="radio" required>
                                             </div>
                                             @if ($errors->has('prevquali'))
-                                            <div class="alert alert-danger">{{ $errors->first('prevquali') }}</div>
-                                            @endif
+                                                <div class="alert alert-danger">{{ $errors->first('prevquali') }}</div>
+                                                @endif
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -420,31 +421,31 @@
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesfull">Full-time employee
                                                 </label>
-                                                <input id="yesfull" name="employment" type="radio" value="{{ old('employment')}}">
+                                                <input id="yesfull" name="employment" type="radio" value="Full-time">
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yespart">Part-time employee
                                                 </label>
-                                                <input id="yespart" name="employment" type="radio" value="{{ old('employment')}}">
+                                                <input id="yespart" name="employment" type="radio" value="Part-time">
                                             </div>
                                             <!-- Self-employed - not employing others -->
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesSelf">Self-employed - not employing
                                                     others
                                                 </label>
-                                                <input id="yesSelf" name="employment" type="radio" value="{{ old('employment')}}">
+                                                <input id="yesSelf" name="employment" type="radio" value="Self-employed">
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="unemployed">Unemployed - seeking part-time
                                                     work
                                                 </label>
-                                                <input id="unemployed" name="employment" type="radio" value="{{ old('employment')}}">
+                                                <input id="unemployed" name="employment" type="radio" value="Unemployed">
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="notseeking">Not employed - not seeking
                                                     employment
                                                 </label>
-                                                <input id="notseeking" name="employment" type="radio" value="{{ old('employment')}}">
+                                                <input id="notseeking" name="employment" type="radio" value="Not-employed">
                                             </div>
                                             @if ($errors->has('employment'))
                                             <div class="alert alert-danger">{{ $errors->first('employment') }}</div>
@@ -473,12 +474,12 @@
                                             <span class="input-group-text  ml-0">Australian Citizenship</span>
                                             <div class="secondaryChoose d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="yesAustralian" name="ausCtzen" type="radio" value="{{ old('ausCtzen')}}">
+                                                    <input id="yesAustralian" name="ausCtzen" type="radio" value="Yes">
                                                     <label class="genderLabel " for="yesAustralian"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="noAustralian" name="ausCtzen" type="radio" value="{{ old('ausCtzen')}}">
+                                                    <input id="noAustralian" name="ausCtzen" type="radio" value="No">
                                                     <label class="genderLabel" for="noAustralian"> No </label>
                                                 </div>
                                                 @if ($errors->has('ausCtzen'))
@@ -497,12 +498,12 @@
                                                     Islander origin, mark both ‘Yes’ boxes.</span></span>
                                             <div class="secondaryChoose d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="yesAborginal" name="ausAbor" type="radio" value="{{ old('ausAbor')}}">
+                                                    <input id="yesAborginal" name="ausAbor" type="radio" value="Yes">
                                                     <label class="genderLabel " for="yesAborginal"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="noAborginal" name="ausAbor" type="radio" value="{{ old('ausAbor')}}">
+                                                    <input id="noAborginal" name="ausAbor" type="radio" value="No">
                                                     <label class="genderLabel" for="noAborginal"> No </label>
                                                 </div>
                                             </div>
@@ -516,12 +517,12 @@
                                             <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Aboriginal</span>
                                             <div class="secondaryChoose d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="yesonlyAbor" name="onlyAbor" type="radio" value="{{ old('onlyAbor')}}">
+                                                    <input id="yesonlyAbor" name="onlyAbor" type="radio" value="Yes">
                                                     <label class="genderLabel " for="yesonlyAbor"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="noonlyAbor" name="onlyAbor" type="radio" value="{{ old('onlyAbor')}}">
+                                                    <input id="noonlyAbor" name="onlyAbor" type="radio" value="No">
                                                     <label class="genderLabel" for="noonlyAbor"> No </label>
                                                 </div>
                                                 @if ($errors->has('onlyAbor'))
@@ -535,12 +536,12 @@
                                             <span class="input-group-text flex-column  ml-0" style="margin-right: 10px;">Torres Strait Islander</span>
                                             <div class="secondaryChoose d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="yesonlyTorres" name="onlyTorres" type="radio" value="{{ old('onlyTorres')}}">
+                                                    <input id="yesonlyTorres" name="onlyTorres" type="radio" value="Yes">
                                                     <label class="genderLabel " for="yesonlyTorres"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="noonlyTorres" name="onlyTorres" type="radio" value="{{ old('onlyTorres')}}">
+                                                    <input id="noonlyTorres" name="onlyTorres" type="radio" value="No">
                                                     <label class="genderLabel" for="noonlyTorres"> No </label>
                                                 </div>
 
@@ -555,22 +556,26 @@
                                             <span class="input-group-text flex-column  ml-0">How well do you speak English?</span>
                                             <div class="secondaryChoose englishChooseBox d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="verywilleng" name="englanguage" type="radio" value="{{ old('englanguage')}}">
+                                                    <input id="verywilleng" name="englanguage" value="Very_Well" type="radio">
                                                     <label class="genderLabel " for="verywilleng"> Very Well </label>
+                                                    
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="welleng" name="englanguage" type="radio" value="{{ old('englanguage')}}">
+                                                    <input id="welleng" name="englanguage"  value="Well" type="radio">
                                                     <label class="genderLabel" for="welleng"> Well </label>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <input id="notwelleng" name="englanguage" type="radio" value="{{ old('englanguage')}}">
+                                                    <input id="notwelleng" name="englanguage" value="Not_Well"  type="radio">
                                                     <label class="genderLabel" for="notwelleng"> Not Well </label>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <input id="notatalleng" name="englanguage" type="radio" value="{{ old('englanguage')}}">
+                                                    <input id="notatalleng" name="englanguage"  value="Not_at_all" type="radio">
                                                     <label class="genderLabel" for="notatalleng"> Not at all </label>
                                                 </div>
+                                                @if ($errors->has('englanguage'))
+                                                <div class="alert alert-danger">{{ $errors->first('englanguage') }}</div>
+                                                @endif
                                             </div>
                                             @if ($errors->has('englanguage'))
                                             <div class="alert alert-danger">{{ $errors->first('englanguage') }}</div>
@@ -599,7 +604,7 @@
                                     <div class="col-md-4">
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="togetjob"> To get a Job </label>
-                                            <input id="togetjob" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="togetjob" name="proghistory" type="radio" value="togetjob">
                                         </div>
                                     </div>
 
@@ -607,7 +612,7 @@
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="togetbetter"> To get a better job or promotion
                                             </label>
-                                            <input id="togetbetter" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="togetbetter" name="proghistory" type="radio" value="togetbetter">
                                         </div>
                                     </div>
 
@@ -616,7 +621,7 @@
                                             <label class="genderLabel jobLabel" for="toanothercourse"> To get into another course of
                                                 study
                                             </label>
-                                            <input id="toanothercourse" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="toanothercourse" name="proghistory" type="radio" value="toanothercourse">
                                         </div>
                                     </div>
 
@@ -624,14 +629,14 @@
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="todiffcareer"> To try for a different career
                                             </label>
-                                            <input id="todiffcareer" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="todiffcareer" name="proghistory" type="radio" value="todiffcareer">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="jobrequirement"> It was a requirement of my job
                                             </label>
-                                            <input id="jobrequirement" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="jobrequirement" name="proghistory" type="radio" value="jobrequirement">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -639,35 +644,35 @@
                                             <label class="genderLabel jobLabel" for="selfInterest"> For personal interest or
                                                 self-development
                                             </label>
-                                            <input id="selfInterest" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="selfInterest" name="proghistory" type="radio" value="selfInterest">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="startBusiness"> To start my own business
                                             </label>
-                                            <input id="startBusiness" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="startBusiness" name="proghistory" type="radio" value="startBusiness">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="extraskills">I wanted extra skills for my job
                                             </label>
-                                            <input id="extraskills" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="extraskills" name="proghistory" type="radio" value="extraskills">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="otherreasons"> Other reasons
                                             </label>
-                                            <input id="otherreasons" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="otherreasons" name="proghistory" type="radio" value="otherreasons">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="d-flex align-items-center mt-3">
                                             <label class="genderLabel jobLabel" for="todevBusiness"> To develop my existing business
                                             </label>
-                                            <input id="todevBusiness" name="proghistory" type="radio" value="{{ old('proghistory')}}">
+                                            <input id="todevBusiness" name="proghistory" type="radio" value="todevBusiness">
                                         </div>
                                     </div>
                                     @if ($errors->has('proghistory'))
@@ -679,12 +684,12 @@
                                                 Learning?</span>
                                             <div class="secondaryChoose priorChoose d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="yesprior" name="priorlearn" type="radio" value="{{ old('priorlearn')}}">
+                                                    <input id="yesprior" name="priorlearn" type="radio" value="Yes">
                                                     <label class="genderLabel " for="yesprior"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="noprior" name="priorlearn" type="radio" value="{{ old('priorlearn')}}">
+                                                    <input id="noprior" name="priorlearn" type="radio" value="No">
                                                     <label class="genderLabel" for="noprior"> No </label>
                                                 </div>
 
@@ -712,12 +717,12 @@
                                                 disability, impairment or long-term condition?</span>
                                             <div class="secondaryChoose priorChoose d-flex">
                                                 <div class="d-flex align-items-center">
-                                                    <input id="yeslongtermDis" name="is_disable" type="radio" value="{{ old('is_disable')}}">
+                                                    <input id="yeslongtermDis" name="is_disable" type="radio" value="Yes">
                                                     <label class="genderLabel " for="yeslongtermDis"> Yes </label>
                                                 </div>
 
                                                 <div class="d-flex align-items-center">
-                                                    <input id="nolongtermDis" name="is_disable" type="radio" value="{{ old('is_disable')}}">
+                                                    <input id="nolongtermDis" name="is_disable" type="radio" value="No">
                                                     <label class="genderLabel" for="nolongtermDis"> No </label>
                                                 </div>
 
@@ -730,79 +735,79 @@
                                     <p class="secondarySpan mt-2">If YES, then please indicate the areas of disability,
                                         impairment or long-term condition (You may indicate more than one
                                         area.)</p>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="hearDeaf"> Hearing/Deaf
-                                            </label>
-                                            <input id="hearDeaf" name="disable[]" value="{{ old('hearing') }}" type="checkbox">
-                                        </div>
-                                    </div>
+                                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="hearDeaf"> Hearing/Deaf
+                                </label>
+                                <input id="hearDeaf" name="disable[]"  value="hearing"  type="checkbox">
+                            </div>
+                        </div>
 
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="learning"> Learning
-                                            </label>
-                                            <input id="learning" name="disable[]" value="{{ old('learning') }}" type="checkbox">
-                                        </div>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="learning"> Learning
+                                </label>
+                                <input id="learning" name="disable[]" value="learning"  type="checkbox">
+                            </div>
+                        </div>
 
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="vision"> Vision
-                                            </label>
-                                            <input id="vision" name="disable[]" value="{{ old('vision') }}" type="checkbox">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="physical"> Physical
-                                            </label>
-                                            <input id="physical" name="disable[]" value="{{ old('physical') }}" type="checkbox">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="mentalIllness"> Mental Illness
-                                            </label>
-                                            <input id="mentalIllness" name="disable[]" value="{{ old('mental_illness') }}" type="checkbox">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="medicalCond"> Medical Condition
-                                            </label>
-                                            <input id="medicalCond" name="disable[]" value="{{ old('medical_condition') }}" type="checkbox">
-                                        </div>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="vision"> Vision
+                                </label>
+                                <input id="vision" name="disable[]" value="vision"  type="checkbox">
+                            </div>
+                        </div>
 
 
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="intellectual"> Intellectual
-                                            </label>
-                                            <input id="intellectual" name="disable[]" value="{{ old('intellectual') }}" type="checkbox">
-                                        </div>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="physical"> Physical
+                                </label>
+                                <input id="physical" name="disable[]" value="physical"  type="checkbox">
+                            </div>
+                        </div>
 
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="brainImpair"> Acquired Brain Impairment
-                                            </label>
-                                            <input id="brainImpair" name="disable[]" value="{{ old('brain_impairment') }}" type="checkbox">
-                                        </div>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="mentalIllness"> Mental Illness
+                                </label>
+                                <input id="mentalIllness" name="disable[]" value="mentalIllness" type="checkbox">
+                            </div>
+                        </div>
 
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center mt-3">
-                                            <label class="genderLabel jobLabel" for="otherDis"> Other
-                                            </label>
-                                            <input id="otherDis" name="disable[]" value="{{ old('Other') }}" type="checkbox">
-                                        </div>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="medicalCond"> Medical Condition
+                                </label>
+                                <input id="medicalCond" name="disable[]" value="medicalCond" type="checkbox">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="intellectual"> Intellectual
+                                </label>
+                                <input id="intellectual" name="disable[]" value="intellectual" type="checkbox">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="brainImpair"> Acquired Brain Impairment
+                                </label>
+                                <input id="brainImpair" name="disable[]" value="brainImpair" type="checkbox">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center mt-3">
+                                <label class="genderLabel jobLabel" for="otherDis"> Other
+                                </label>
+                                <input id="otherDis" name="disable[]" value="otherDis" type="checkbox">
+                            </div>
+                        </div>
                                     @if ($errors->has('disable[]'))
                                     <div class="alert alert-danger">{{ $errors->first('disable[]') }}</div>
                                     @endif
@@ -900,52 +905,52 @@
 
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td><input type="checkbox" name="course[]" value="{{ old('CHC43115') }}"></td>
-                                                    <td>CHC43115</td>
-                                                    <td>Certificate IV in Disability</td>
-                                                    <td>$11400</td>
-                                                    <td>$250.00</td>
-                                                    <td>$850.00</td>
-                                                    <td>52 weeks</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" name="course[]" value="{{ old('CHC50113') }}"></td>
-                                                    <td>CHC50113</td>
-                                                    <td>Diploma of Early Childhood Education and Care</td>
-                                                    <td>$20900</td>
-                                                    <td>$250.00</td>
-                                                    <td>$1500.00</td>
-                                                    <td>104 weeks</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" name="course[]" value="{{ old('CHC52015') }}"></td>
-                                                    <td>CHC52015</td>
-                                                    <td>Diploma of Community Services</td>
-                                                    <td>$19200</td>
-                                                    <td>$250.00</td>
-                                                    <td>$1000.00</td>
-                                                    <td>78 weeks</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" name="course[]" value="{{ old('SIT40516') }}"></td>
-                                                    <td>SIT40516</td>
-                                                    <td>Certificate IV in Commercial Cookery</td>
-                                                    <td>$15950</td>
-                                                    <td>$250.00</td>
-                                                    <td>$1500.00</td>
-                                                    <td>78 weeks</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" name="course[]" value="{{ old('SIT50416') }}"></td>
-                                                    <td>SIT50416</td>
-                                                    <td>Diploma of Hospitality Management</td>
-                                                    <td>$11300</td>
-                                                    <td>$250.00</td>
-                                                    <td>$850.00</td>
-                                                    <td>78 weeks</td>
-                                                </tr>
-                                            </tbody>
+                                    <tr>
+                                        <td><input type="checkbox" name="course[]"  value="CHC43115"></td>
+                                        <td>CHC43115</td>
+                                        <td>Certificate IV in Disability</td>
+                                        <td>$11400</td>
+                                        <td>$250.00</td>
+                                        <td>$850.00</td>
+                                        <td>52 weeks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="course[]"  value="CHC50113" ></td>
+                                        <td>CHC50113</td>
+                                        <td>Diploma of Early Childhood Education and Care</td>
+                                        <td>$20900</td>
+                                        <td>$250.00</td>
+                                        <td>$1500.00</td>
+                                        <td>104 weeks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="course[]" value="CHC52015"></td>
+                                        <td>CHC52015</td>
+                                        <td>Diploma of Community Services</td>
+                                        <td>$19200</td>
+                                        <td>$250.00</td>
+                                        <td>$1000.00</td>
+                                        <td>78 weeks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="course[]" value="SIT40516"></td>
+                                        <td>SIT40516</td>
+                                        <td>Certificate IV in Commercial Cookery</td>
+                                        <td>$15950</td>
+                                        <td>$250.00</td>
+                                        <td>$1500.00</td>
+                                        <td>78 weeks</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="course[]"  value="SIT50416"></td>
+                                        <td>SIT50416</td>
+                                        <td>Diploma of Hospitality Management</td>
+                                        <td>$11300</td>
+                                        <td>$250.00</td>
+                                        <td>$850.00</td>
+                                        <td>78 weeks</td>
+                                    </tr>
+                                </tbody>
                                         </table>
                                         @if ($errors->has('course[]'))
                                         <div class="alert alert-danger">{{ $errors->first('course[]') }}</div>
@@ -958,94 +963,94 @@
 
                             <!-- Proposed Study -->
                             <div class="proposedStudy mt-4 gap">
-                                <div class=" mainFormHeadings">
-                                    <h3>Preferred intake date</h3>
-                                </div>
-                                <div class="preferredMonth d-flex justify-content-between mt-4">
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('10/01/2022') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>10 <sup>th</sup> Jan 2022</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('04/04/2022') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>4 <sup>th</sup> April 2022</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('27/06/2022') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>27 <sup>th</sup> June 2022</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('19/09/2022') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>19 <sup>th</sup> Sept 2022</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('09/01/2023') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>9 <sup>th</sup> Jan 2023</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('03/04/2023') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>3 <sup>rd</sup> April 2023</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="preferredMonth d-flex justify-content-between mt-4">
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('26/06/2023') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>26 <sup>th</sup> June 2023</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('18/09/2023') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>18 <sup>th</sup> Sept 2023</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('08/01/2024') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>8 <sup>th</sup> Jan 2024</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('01/04/2024') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>1 <sup>st</sup> April 2024</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('24/06/2024') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>24 <sup>th</sup> June 2024</p>
-                                        </label>
-                                    </div>
-                                    <div class="form-check specificMonth">
-                                        <input class="form-check-input" type="checkbox" name="intake[]" value="{{ old('16/09/2024') }}" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            <p>16 <sup>th</sup> Sept 2024</p>
-                                        </label>
-                                    </div>
-                                </div>
-                                <p class="secondarySpan mt-3">
-                                    It may not be always possible to commence at your preferred selection, but all consideration
-                                    will be provided for that
-                                    selection
-                                </p>
-                                @if ($errors->has('intake[]'))
-                                <div class="alert alert-danger">{{ $errors->first('intake[]') }}</div>
-                                @endif
+                            <div class=" mainFormHeadings">
+                                <h3>Preferred intake date</h3>
                             </div>
+                            <div class="preferredMonth d-flex justify-content-between mt-4">
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]"  value="10/01/2022"  id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>10 <sup>th</sup> Jan  2022</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]"  value="04/04/2022" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>4 <sup>th</sup> April  2022</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="27/06/2022" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>27 <sup>th</sup> June  2022</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="19/09/2022" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>19 <sup>th</sup> Sept  2022</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="09/01/2023" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>9 <sup>th</sup> Jan  2023</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="03/04/2023" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>3 <sup>rd</sup> April  2023</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="preferredMonth d-flex justify-content-between mt-4">
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="26/06/2023" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>26 <sup>th</sup> June  2023</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="18/09/2023" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>18 <sup>th</sup> Sept  2023</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="08/01/2024" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>8 <sup>th</sup> Jan  2024</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="01/04/2024" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>1 <sup>st</sup> April  2024</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="24/06/2024" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>24 <sup>th</sup> June  2024</p>
+                                    </label>
+                                </div>
+                                <div class="form-check specificMonth">
+                                    <input class="form-check-input" type="checkbox" name="intake[]" value="16/09/2024" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <p>16 <sup>th</sup> Sept  2024</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="secondarySpan mt-3">
+                                It may not be always possible to commence at your preferred selection, but all consideration
+                                will be provided for that
+                                selection
+                            </p>
+                            @if ($errors->has('intake[]'))
+                            <div class="alert alert-danger">{{ $errors->first('intake[]') }}</div>
+                            @endif
+                        </div>
 
 
 
@@ -1060,12 +1065,12 @@
                                             documents for advertising for this organisation.</span>
                                         <div class="secondaryChoose d-flex">
                                             <div class="d-flex align-items-center">
-                                                <input id="yesConcent" name="photoConsent" value="{{ old('photoConsent') }}" type="radio">
+                                                <input id="yesConcent" name="photoConsent" value="Yes" type="radio">
                                                 <label class="genderLabel " for="yesConcent"> Yes </label>
                                             </div>
 
                                             <div class="d-flex align-items-center">
-                                                <input id="noConcent" name="photoConsent" value="{{ old('photoConsent') }}" type="radio">
+                                                <input id="noConcent" name="photoConsent" value="No" type="radio">
                                                 <label class="genderLabel" for="noConcent"> No </label>
                                             </div>
                                         </div>
@@ -1783,32 +1788,35 @@
                                         .</p>
                                         <p class="mt-2"> <b>Select one of the following and attach a copy:</b> </p>
                                         <div class="row">
-                                            <div class="col-md-4 d-flex">
-                                                <input type="radio" name="mydocs" id="license" type="checkbox"  value="{{ old('mydocs')}}" >
-                                                <label class="nobgLabel" for="license">Driving License</label>
-                                            </div>
-                                            <div class="col-md-4 d-flex">
-                                                <input type="radio" name="mydocs" id="medicard" type="checkbox" value="{{ old('mydocs')}}">
-                                                <label class="nobgLabel" for="medicard">Medicare card</label>
-                                            </div>
-                                            <div class="col-md-4 d-flex">
-                                                <input type="radio" name="mydocs" id="passport" type="checkbox" value="{{ old('mydocs')}}">
-                                                <label class="nobgLabel" for="passport">Passport</label>
-                                            </div>
-                                            <div class="col-md-4 d-flex">
-                                                <input type="radio" name="mydocs" id="birthCerti" type="checkbox" value="{{ old('mydocs')}}">
-                                                <label class="nobgLabel" for="birthCerti">Australian Birth Certificate</label>
-                                            </div>
-                                            <div class="col-md-4 d-flex">
-                                                <input type="radio" name="mydocs" id="regCerti" type="checkbox" value="{{ old('mydocs')}}">
-                                                <label class="nobgLabel" for="regCerti">Certificate of Registration by
-                                                    Descent</label>
-                                            </div>
-                                            <div class="col-md-4 d-flex">
-                                                <input type="radio" name="mydocs" id="ctzenCerti" type="checkbox" value="{{ old('mydocs')}}">
-                                                <label class="nobgLabel" for="ctzenCerti">Citizenship Certificate</label>
-                                            </div>
+                                        <div class="col-md-4 d-flex">
+                                            <input type="radio" name="mydocs" value="Driving_License"  id="license" type="checkbox">
+                                            <label class="nobgLabel" for="license">Driving License</label>
                                         </div>
+                                        <div class="col-md-4 d-flex">
+                                            <input type="radio" name="mydocs" value="Medicare_card"  id="medicard" type="checkbox">
+                                            <label class="nobgLabel" for="medicard">Medicare card</label>
+                                        </div>
+                                        <div class="col-md-4 d-flex">
+                                            <input type="radio" name="mydocs" value="Passport"  id="passport" type="checkbox">
+                                            <label class="nobgLabel" for="passport">Passport</label>
+                                        </div>
+                                        <div class="col-md-4 d-flex">
+                                            <input type="radio" name="mydocs" value="Australian_Birth"  id="birthCerti" type="checkbox">
+                                            <label class="nobgLabel" for="birthCerti">Australian Birth Certificate</label>
+                                        </div>
+                                        <div class="col-md-4 d-flex">
+                                            <input type="radio" name="mydocs" value="Certificate_Registration "  id="regCerti" type="checkbox">
+                                            <label class="nobgLabel" for="regCerti">Certificate of Registration by
+                                                Descent</label>
+                                        </div>
+                                        <div class="col-md-4 d-flex">
+                                            <input type="radio" name="mydocs" value="Citizenship_Certificate"  id="ctzenCerti" type="checkbox">
+                                            <label class="nobgLabel" for="ctzenCerti">Citizenship Certificate</label>
+                                        </div>
+                                        @if ($errors->has('mydocs'))
+                                        <div class="alert alert-danger">{{ $errors->first('mydocs') }}</div>
+                                        @endif
+                                    </div>
                                         @if ($errors->has('mydocs'))
                                         <div class="alert alert-danger">{{ $errors->first('mydocs') }}</div>
                                         @endif
