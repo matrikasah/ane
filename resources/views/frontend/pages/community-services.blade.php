@@ -28,7 +28,45 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4">
-		@include('frontend.partical.sidebar-page')			
+		<div class="sidebar">
+					<div class="course-features-info">
+						<div class="title">
+							<h3>Course Features</h3>
+							<h1>Details on what we have for the course</h1>
+						</div>
+						<ul>
+							<li class="students-feature">
+								<i class="fas fa-info-circle"></i>
+								<span class="label">CRICOS Course Code</span>
+								<span class="value">102539E</span>
+							</li>
+							<li class="duration-feature">
+								<i class="fas fa-clock"></i>
+								<span class="label">Duration</span>
+								<span class="value">78 weeks </span>
+							</li>
+							<li class="lectures-feature">
+								<i class="fas fa-chalkboard-teacher"></i>
+								<span class="label">Face to face Class</span>
+								<span class="value">20 Hrs/W</span>
+							</li>
+
+							<li class="lectures-feature">
+								<i class="fas fa-laptop"></i>
+								<span class="label">Online Class</span>
+								<span class="value">5 Hrs/W</span>
+							</li>
+
+							<li class="language-feature">
+								<i class="fa fa-language"></i>
+								<span class="label">Language</span>
+								<span class="value">English</span>
+							</li>
+
+						</ul>
+					</div>
+					@include('frontend.partical.sidebar-page')
+				</div>			
 		</div>
 		<div class="col-sm-8">
 			<div class="course-detail">
@@ -631,7 +669,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/contact.svg') }}">
@@ -644,7 +682,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/consult.svg') }}">
@@ -657,7 +695,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/admission.svg') }}">

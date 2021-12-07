@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 
-
 use App\Models\ApplicantPersonalDetail;
 use App\Models\ApplicantEmergencyContact;
 use App\Models\ApplicantEducationAgent;
@@ -13,7 +12,7 @@ use App\Models\ApplicantLanguageCulture;
 use App\Models\ApplicantCourseDetails;
 use App\Models\ApplicantPhotographyConsent;
 use App\Models\ApplicantCollageCommitment;
-
+use App\Models\Contact;
 
 use App\Models\AgentBusinessHistory;
 use App\Models\AgentDetails;
@@ -25,13 +24,14 @@ use Mail;
 use App\Http\Requests\ApplicantPostRequest;
 use App\Http\Requests\ApplicantOnShore;
 use App\Http\Requests\AgentPostRequest;
-
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
-
+use PDF;
 class HomeController extends Controller
 {
 
     public function index(){
+
 
         return view('frontend.pages.index');
 
@@ -90,23 +90,13 @@ public function store_ofshore(ApplicantPostRequest $req){
         ]);
      $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
 
-
-
-
-
-
-        // $email=$applicant_personal_detail->stdemail;
-        // $data=[
-        //     'title'=>'hello'
-        // ];
-
-
-        // Mail::send('frontend.emailTemplate.mail-offshore-student', $data, function($message) use($email) {
-        // $message->to($email, 'ANE')->subject
-        //     ('Please verify your email');
-        // $message->from('admin@gmail.com','ANE');
+        // $data=[];
+        // Mail::send('frontend.emailTemplate.mail-ofsore', $data, function($message){
+        //     $message->to('pandeyvivak25@gmail.com', 'ANE')->subject('Please verify your email');
+        //     $message->from('admin@gmail.com','ANE');
 
         // });
+
 
         return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
@@ -214,6 +204,12 @@ public function agent(){
             'agent_id'=>$agent_details->id
         ]);
         $agent_declaration=AgentDeclaration::create($req->all());
+        // $data=[];
+        // Mail::send('frontend.emailTemplate.mail-agent', $data, function($message){
+        //     $message->to('pandeyvivak25@gmail.com', 'ANE')->subject('Please verify your email');
+        //     $message->from('admin@gmail.com','ANE');
+
+        // });
 
         return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
@@ -362,5 +358,33 @@ public function Cauliflower(){
     return view('frontend.pages.Cauliflower');
 
 }
+
+public function store_contact_form(ContactRequest $req){
+    Contact::create($req->all());
+    return back()->with('message', 'Thankyou Your for contacting us! we will respond soon.');
+}
+
+public function offsore_download(Request $request){
+    $applicant=ApplicantPersonalDetail::findorFail(1);
+    $pdf = PDF::loadView('frontend.pages.offsore-pdf', compact('applicant'));
+    return $pdf->download('offsore.pdf');
+
+
+}
+
+public function onsore_download(Request $request){
+    $pdf = PDF::loadView('frontend.pages.onsore-pdf');
+    return $pdf->download('onsore.pdf');
+}
+
+
+public function agent_download(Request $request){
+    $agent=AgentDetails::findorFail(1);
+    $pdf = PDF::loadView('frontend.pages.agent-pdf', $agent);
+    return $pdf->download('agent.pdf');
+
+}
+
+
 
 }

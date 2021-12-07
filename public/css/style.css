@@ -61,6 +61,8 @@ section.mainmenu .navbar-light .navbar-nav .nav-link {
 }
 .overlap-vid {
   position: relative;
+
+  
 }
 .overlap-vid-text {
   position: absolute;
@@ -480,6 +482,7 @@ footer ul a {
     text-decoration: none;
     font-size: 14px;
     margin-left: 0;
+    display: inline-block;
 }
 .address a:last-child{
   border: none;
@@ -1138,6 +1141,7 @@ li#menu-item-4461 {
   margin-left: 0;
   text-decoration: none;
   color: var(--primary-color);
+  display: contents;
 }
 
 .contact-info.course-features-info ul li {
@@ -2089,6 +2093,8 @@ ul.contact-info {
 .name {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 .content-text .contact-info li a{
   color: #282828;
@@ -2150,6 +2156,78 @@ a.link:hover {
   -o-transition: margin-top 0.5s ease-out;
   transition: margin-top 0.5s ease-out;
 }
+
+.form-check.specificMonth input {
+  height: 15px;
+  border-radius: 3px!important;
+  width: 15px;
+  margin-top: 5px;
+  border: 1px solid #bbbbbb;
+}
+
+.form-check.specificMonth label.form-check-label {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.form-check.specificMonth {
+  margin-left: 0;
+}
+
+
+.datepicker-days {
+  padding: 15px;
+  font-size: 12px;
+  background: #e5b34926;
+}
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active:active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover:active{
+  background-color:var(--primary-color)!important;
+  background-image:var(--primary-color)!important;
+}
+
+.alert.alert-warning {
+  color: #000;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  position: fixed;
+  top: 10px;
+  z-index: 1000;
+}
+
+.alert-warning button.close {
+  background: #e5b349;
+  border: none;
+  outline: none;
+  padding: 0 7px;
+  border-radius: 25px;
+}
+
+.alert.alert-danger {
+  display: block;
+  position: absolute;
+  top: -20px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media print {
 
     .featured-img, header, .button-lists.bd-example, .fixed-arrow, footer, button.btn.btn-black.mb-2.hvr-sweep-to-right{
@@ -2252,6 +2330,15 @@ ol.breadcrumb {
 }
 .news .article-img {
   height: auto;
+}
+.contact-info li {
+  min-height: 160px;
+}
+.calender .card {
+  min-height: 290px;
+}
+.calender .card-body {
+  align-items: flex-start;
 }
 }
 
@@ -2392,6 +2479,7 @@ li.breadcrumb-item {
 ol.breadcrumb {
     display: inline-block;
 }
+
 }
 
 
@@ -2469,6 +2557,7 @@ footer img.img-full {
 }.news .card {
   min-height: 340px;
 }
+
 }
 
 
@@ -2480,6 +2569,10 @@ footer img.img-full {
 
 @media (max-width: 576px) {
 
+
+  .calender .card {
+    min-height: auto;
+  }
   .button-lists button.btn, .button-lists a.btn {
     padding: 6px 19px;
   }
@@ -2689,6 +2782,9 @@ li.breadcrumb-item.active {
     overflow: hidden;
     white-space: nowrap;
 }
+.contact-info li {
+  min-height: auto;
+}
 }
 
 /* responsive code */
@@ -2871,7 +2967,7 @@ ul#short-menu li .sub-menu ul {
   text-decoration: none;
 }
 
-.menu li a.homer {
+.menu li a.homer, .menu li a.active {
   color:var(--primary-color)
 }
 
@@ -2983,6 +3079,7 @@ ul#short-menu li .sub-menu ul {
   .menu li>ul ul:hover {
       transform: initial;
   }
+  
 }
 
 @media (max-width: 767px){
@@ -2999,3 +3096,9 @@ ul#short-menu li .sub-menu ul {
 }
 
 /*end menu*/
+.agentAnswer{
+  padding: 0.5rem !important;
+}
+.torres-strait{
+  margin-left: 0px !important;
+}

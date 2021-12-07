@@ -28,7 +28,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-				@include('frontend.partical.sidebar-page')				
+						<div class="sidebar">
+							<div class="course-features-info">
+								<div class="title">
+									<h3>Course Features</h3>
+									<h1>Details on what we have for the course</h1>
+								</div>
+								<ul>
+									<li class="students-feature">
+										<i class="fas fa-info-circle"></i>
+										<span class="label">CRICOS Course Code</span>
+										<span class="value"> 102541M</span>
+									</li>
+									<li class="duration-feature">
+										<i class="fas fa-clock"></i>
+										<span class="label">Duration</span>
+										<span class="value">78 weeks </span>
+									</li>
+									<li class="lectures-feature">
+										<i class="fas fa-chalkboard-teacher"></i>
+										<span class="label">Face to face Class</span>
+										<span class="value">20 Hrs/W</span>
+									</li>
+
+									<li class="lectures-feature">
+										<i class="fas fa-laptop"></i>
+										<span class="label">Online Class</span>
+										<span class="value">5 Hrs/W</span>
+									</li>
+
+									<li class="language-feature">
+										<i class="fa fa-language"></i>
+										<span class="label">Language</span>
+										<span class="value">English</span>
+									</li>
+
+								</ul>
+							</div>
+							@include('frontend.partical.sidebar-page')
+						</div>			
 				</div>
 				<div class="col-sm-8">
 					<div class="course-detail">
@@ -254,6 +292,31 @@
 											</tbody>
 										</table>
 									</div>
+									</div>
+							    </div>
+						  </div>
+						  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingSixty">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixty" aria-expanded="false" aria-controls="flush-collapseSixty">
+								  Course duration
+							      </button>
+							    </h2>
+							    <div id="flush-collapseSixty" class="accordion-collapse collapse" aria-labelledby="flush-headingSixty" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">This qualification will be delivered over 78 
+									weeks of study.
+									Class sessions are planned to ensure 
+									that students have a mixture of practical 
+									and theoretical components and those 
+									classes cater for a wide variety of learning 
+									styles. Additionally, workplace practices 
+									and environments are simulated and used 
+									to conduct skills-based assessments in 
+									accordance with unit requirements.
+									The timing for this course will be advised in 
+									the Letter of Offer
+
+
+									
 									</div>
 							    </div>
 						  </div>
@@ -624,7 +687,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/contact.svg') }}">
@@ -637,7 +700,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/consult.svg') }}">
@@ -650,7 +713,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/admission.svg') }}">

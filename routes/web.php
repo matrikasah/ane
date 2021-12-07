@@ -14,9 +14,9 @@ use App\Http\Controllers\Frontend\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return redirect('/home');
-});
+// Route::get('/', function () {
+//     return redirect('/home');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -24,7 +24,8 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/home',[HomeController::class,'index'])->name('home');
+// Route::get('/home',[HomeController::class,'index'])->name('home');
+Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('/apply-offshore',[HomeController::class,'offshore_form'])->name('apply-offshore');
 Route::get('/apply-onshore',[HomeController::class,'onshore_form'])->name('apply-onshore');
 Route::get('/apply-agent',[HomeController::class,'agent_form'])->name('apply-agent');
@@ -54,6 +55,7 @@ Route::get('/notice',[HomeController::class,'notice'])->name('notice');
 Route::post('/apply-offshore/store',[HomeController::class,'store_ofshore'])->name('offshore.store');
 Route::post('/apply-onshore/store',[HomeController::class,'store_onshore'])->name('onshore.store');
 Route::post('/apply-agent/store',[HomeController::class,'store_agent_application'])->name('agent.store');
+Route::post('/contact-form/store',[HomeController::class,'store_contact_form'])->name('contact.store');
 
 
 Route::get('/course',[HomeController::class,'course'])->name('course');
@@ -63,8 +65,12 @@ Route::get('/community-service',[HomeController::class,'community_service'])->na
 Route::get('/hospitality-management',[HomeController::class,'hospitality_management'])->name('hospitality-management');
 Route::get('/disability',[HomeController::class,'disability'])->name('disability');
 Route::get('/policy',[HomeController::class,'policy'])->name('policy');
-Route::get('/glazed',[HomeController::class,'glazed']);
-Route::get('/pork',[HomeController::class,'pork']);
-Route::get('/Cauliflower',[HomeController::class,'Cauliflower']);
+Route::get('/glazed',[HomeController::class,'glazed'])->name('glazed');
+Route::get('/pork',[HomeController::class,'pork'])->name('pork');
+Route::get('/Cauliflower',[HomeController::class,'Cauliflower'])->name('Cauliflower');
 Route::get('/course',[HomeController::class,'course'])->name('course');
+
+Route::get('/download-offsore',[HomeController::class,'offsore_download'])->name('offsore.download');
+Route::get('/download-onsore',[HomeController::class,'onsore_download'])->name('onsore.download');
+Route::get('/download-agent',[HomeController::class,'agent_download'])->name('agent.download');
 

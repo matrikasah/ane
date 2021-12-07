@@ -259,7 +259,7 @@
 											within the Opal network.
 											As well as the lowest single fares, Opal cards have lots of benefits for regular travellers. https://www.opal.com.au/ </p>
 											<ul>
-												 <li><i class="fas fa-angle-double-right"></i> <a href="http://www.sydneytrains.info/">Trains</a>  </li>
+												 <li><i class="fas fa-angle-double-right"></i> <a href="https://transportnsw.info/travel-info/ways-to-get-around/train#/">Trains</a>  </li>
 											 	<li><i class="fas fa-angle-double-right"></i> <a href="https://transportnsw.info/travel-info/ways-to-get-around/bus">Buses</a>   </li>
 											 	<li><i class="fas fa-angle-double-right"></i> <a href="https://transportnsw.info/travel-info/ways-to-get-around/ferry">Ferries</a>  </li>
 											</ul>
@@ -447,7 +447,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/contact.svg') }}">
@@ -460,7 +460,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/consult.svg') }}">
@@ -473,7 +473,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card" >
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/admission.svg') }}">

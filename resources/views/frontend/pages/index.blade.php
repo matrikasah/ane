@@ -2,7 +2,7 @@
 @section('content')
 	
 
-<section class="overlap-vid">
+<section class="overlap-vid" style="background: #64a464 url('{{asset('image/logo.png')}}'); background-position: center; background-size: auto 200px; background-repeat: no-repeat;">
 	<video loop autoplay muted playsinline id="vid">
 	  <source src="{{ asset('image/ane3.mp4') }}" >
 	</video>
@@ -20,18 +20,18 @@
 		</div>-->
 		<div class="row top-space">
 			<div class="col-lg-7 col-md-12 col-sm-12">
-				<div class="course-search d-flex" data-aos="fade-up">
+				<div class="course-search d-flex">
 					<div class="input-group">
 						<span class="input-group-text" id="addon-wrapping">Find a course</span>
-					  <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-					    <option selected>Choose your course</option>
-					    <option value="1">Diploma of Early Childhood Education and Care</option>
-					    <option value="2">Diploma of Hospitality Management</option>
-					    <option value="3">Certificate IV in Commercial Cookery</option>
-					    <option value="4">Certificate IV in Disability</option>
-					    <option value="5">Diploma of Community Services</option>
+					  <select class="form-select choosecourse" id="inputGroupSelect04" aria-label="Example select with button addon">
+					    <option value='blank'>Choose your course</option>
+					    <option value="{{ route('child-education') }}">Diploma of Early Childhood Education and Care</option>
+					    <option value="{{ route('hospitality-management') }}">Diploma of Hospitality Management</option>
+					    <option value="{{ route('commercial-cookery') }}">Certificate IV in Commercial Cookery</option>
+					    <option value="{{ route('disability') }}">Certificate IV in Disability</option>
+					    <option value="{{ route('community-service') }}">Diploma of Community Services</option>
 					  </select>
-					  <button class="btn btn-black hvr-sweep-to-right" type="button">GO</button>
+					  <button class="btn btn-black hvr-sweep-to-right" id="choose-course" type="button">GO</button>
 					</div>
 				</div>	
 			</div>
@@ -44,7 +44,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card card-c1" data-aos="fade-up">
+				<div class="card card-c1">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Job Ready Programs.svg') }}">
 				    <h5 class="card-title">Job Ready Programs</h5>
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card card-c2" data-aos="fade-up">
+				<div class="card card-c2">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Suitable Partnerships.svg') }}">
 				    <h5 class="card-title">Suitable Partnerships</h5>
@@ -62,7 +62,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card card-c3" data-aos="fade-up">
+				<div class="card card-c3">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Support Services.svg') }}">
 				    <h5 class="card-title">Support Services</h5>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<!--<div class="col-lg-3 col-md-6 col-sm-12">
-				<div class="card card-c4" data-aos="fade-up">
+				<div class="card card-c4">
 				  <div class="card-body">
 				  	<img src="{{ asset('image/Articulation Pathways.svg') }}">
 				    <h5 class="card-title">Articulation Pathways</h5>
@@ -83,7 +83,7 @@
 	</div>
 </section>
 
-<section class="gap about" data-aos="fade-up">
+<section class="gap about">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10">
@@ -101,7 +101,7 @@
 </section>
 
 
-<section class="gap" data-aos="fade-up">
+<section class="gap">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-lg-7 col-xl-6">
@@ -118,7 +118,7 @@
 				<div class="support">
 					<h3>Support Service at your finger tips</h3>
 				<ul>
-					<li  data-aos="fade-up">
+					<li >
 						<div class="icon-img">
 							<img src="{{ asset('image/SUCCESS COACHES.svg') }}" class="img-responsive img-full">
 						</div>
@@ -129,7 +129,7 @@
 							</p>
 						</div>
 					</li>
-					<li  data-aos="fade-up">
+					<li >
 						<div class="icon-img">
 							<img src="{{ asset('image/COURSE AND CAREERS ADVISORS.svg') }}" class="img-responsive img-full">
 						</div>
@@ -140,7 +140,7 @@
 							</p>
 						</div>
 					</li>
-					<li  data-aos="fade-up">
+					<li >
 						<div class="icon-img">
 							<img src="{{ asset('image/OFFSHORE STUDENT SUPORT.svg') }}" class="img-responsive img-full">
 						</div>
@@ -159,7 +159,7 @@
 </section>
 
 
-<section class="gap courses" data-aos="fade-up">
+<section class="gap courses">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -278,7 +278,7 @@
 	</div>
 </section>
 
-<section class="gap enquiry"  data-aos="fade-up">
+<section class="gap enquiry" >
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-lg-5">
@@ -286,7 +286,7 @@
 					<div class="next title">
 						<h1>Next Orientation</h1>
 								<p><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>Sydney Campus</p>
-								<p><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>11th December 2021 | 9:00 am</p>
+								<p><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>10th January 2022</p>
 					</div>
 					<p class="next-orientation">If you have any queries do not hesitate to ask us just by filling out the form.</p>
 				</div>
@@ -315,9 +315,9 @@
 			</div>
 		</div>
 				<div class="row">
-		      <div class="col-sm-4"  data-aos="fade-up">
+		      <div class="col-sm-4" >
 						<div class="card">
-							<a href="/Cauliflower">
+							<a href="{{route('Cauliflower')}}">
 							<!-- <div class="news-category">
 								<h5>News</h5>
 							</div> -->
@@ -336,9 +336,9 @@
 						  </a>
 						</div>
 					</div>
-					<div class="col-sm-4"  data-aos="fade-up">
+					<div class="col-sm-4" >
 						<div class="card">
-							<a href="/glazed">
+							<a href="{{route('glazed')}}">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
@@ -358,9 +358,9 @@
 						  </a>
 						</div>
 					</div>
-					<div class="col-sm-4"  data-aos="fade-up">
+					<div class="col-sm-4" >
 						<div class="card">
-							<a href="/pork">
+							<a href="{{route('pork')}}">
 							<!-- <div class="news-category">
 								<h5>Events</h5>
 							</div> -->
@@ -391,7 +391,7 @@
 
 
 <section class="gap Testimonials">
-	<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('image/uni.png') }}"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('image/uni.jpg') }}"></div>
 	<div class="Testimonials-content">
 	  <div class="container">
 	    <div class="row">
@@ -498,7 +498,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card">
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/contact.svg') }}">
@@ -511,7 +511,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card">
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/consult.svg') }}">
@@ -524,7 +524,7 @@
 				  </div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<div class="card" data-aos="fade-up">
+				<div class="card">
 				<div class="card-body">
 				  	<div class="left">
 				  		<img src="{{ asset('image/admission.svg') }}">

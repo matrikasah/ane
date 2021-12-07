@@ -41,14 +41,14 @@
 				<div class="quick-link">
 				<h5>Useful links</h5>
 				<ul class="">
-					<li><a href="https://www.homeaffairs.gov.au/" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Department of Home Affairs</a></li>
-					<li><a href="https://www.studyinaustralia.gov.au/" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Official Australian Government Website</a></li>
-					<li><a href="https://www.education.gov.au/" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>Department of Education</a></li>
-					<li><a href="www.cityofsydney.nsw.gov.au/" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>City Details</a></li>
-					<li><a href="http://migrationblog.immi.gov.au/" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Migration Blog</a></li>
-					<li><a href="https://www.ato.gov.au/" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Australian Taxation Office</a></li>
-					<li><a href="international-students.php" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Accommodation</a></li>
-					<li><a href="international-students.php" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Job Searching</a></li>
+					<li><a href="http://www.border.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Department of Home Affairs</a></li>
+					<li><a href="https://www.studyinaustralia.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Official Australian Government Website</a></li>
+					<li><a href="https://www.dese.gov.au/" target="_blank"  class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>Department of Education</a></li>
+					<li><a href="https://www.cityofsydney.nsw.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon hvr-icon"></i>City Details</a></li>
+					<!-- <li><a href="http://migrationblog.immi.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Migration Blog</a></li> -->
+					<li><a href="https://www.ato.gov.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Australian Taxation Office</a></li>
+					<li><a href="http://www.domain.com.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Accommodation</a></li>
+					<li><a href="http://www.seek.com.au/" target="_blank" class="hvr-icon-forward"><i class="fas fa-angle-double-right hvr-icon"></i>Job Searching</a></li>
 				</ul>
 				</div>
 			</div>
@@ -122,5 +122,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 <script src="{{ asset('js/Script.js') }}"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 </html>

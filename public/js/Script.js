@@ -149,9 +149,36 @@ $(document).ready(function(){
 			menu.removeAttr('style');
 		}
 	});
+
+
+  $('#choose-course').click(function(){
+    var link= $('.choosecourse').val();
+    if(link != "blank"){
+      window.location.href = link;
+    }
+  })
 	
 });
 
 
 
+// // Add active class to the current button (highlight it)
+// var header = document.getElementById("menu-active-link");
+// var btns = header.getElementsByClassName("menu-link");
+// for (var i = 0; i < li.length; i++) {
+//   li[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
 
+
+$(".allow_decimal").on("input", function(evt) {
+  var self = $(this);
+  self.val(self.val().replace(/[^0-9\.]/g, ''));
+  if ((evt.which != 46 || self.val().indexOf('.') != -1) && (evt.which < 48 || evt.which > 57)) 
+  {
+    evt.preventDefault();
+  }
+});
