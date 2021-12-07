@@ -34,15 +34,15 @@
                                         <p for="userUsi" class="input-group-text userusiLabel"><b>Unique Student Identifier
                                                 (USI) – <span class="secondarySpan"> Refer to
                                                     Page 5 for assistance : </span></b> 12342342 </p>
-                                        <p for="userSurname" class="input-group-text"> <b>Surname: </b>Ipsum </p>
-                                        <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>Lorem</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Home Address: </b> Sydney</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> Perth</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>State & Postcode: </b> 44600</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Telephone Number: </b> 1234567890</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Email Address: </b> sydney@gmail.com</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Date of Birth: </b> 12-12-2020</p>
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Sex: </b> Male</p>
+                                        <p for="userSurname" class="input-group-text"> <b>Surname: </b>{{$applicant->stdsurname}}</p>
+                                        <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>{{$applicant->stdgivenname}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Home Address: </b> {{$applicant->stdhomeaddress}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> {{$applicant->stdsuburb}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>State & Postcode: </b> {{$applicant->stdpostcode}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Telephone Number: </b> {{$applicant->stdtelnum}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Email Address: </b> {{$applicant->stdemail}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Date of Birth: </b> {{$applicant->stddob}}</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Sex: </b> {{$applicant->sex}}</p>
                                     </div>
                                 </div>
                                 <div class="p-1 mt-4 emergencyContactDetails gap">
@@ -51,23 +51,23 @@
                                     </div>
                                     <div class="row">
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Full Name: </b> Ipsum Lorem</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Full Name: </b> {{$applicant->emergencycontacts->fullName}}</p>
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Relationship: </b> Good</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Relationship: </b> {{$applicant->emergencycontacts->relationship}}</p>
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> 098765434</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> {{$applicant->emergencycontacts->contactNum}}</p>
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b> 981234567</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b> {{$applicant->emergencycontacts->mobile}}</p>
 
                                         <div class="d-flex mt-4" style="align-items: center;">
 
 
 
                                             <p for="userHomeAddress" class="input-group-text"> <b>In the event of an emergency do you give ANE College
-                                                    permission to organise emergency transport and treatment and agree to pay all costs related to the emergency?: </b> Yes</p>
+                                                    permission to organise emergency transport and treatment and agree to pay all costs related to the emergency?: </b> {{$applicant->emergencycontacts->emergency_pay}}</p>
                                         </div>
 
                                     </div>
@@ -80,14 +80,14 @@
                                     <div class="row">
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Are you applying through agent?: </b> Yes</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Are you applying through agent?: </b> {{$applicant->applicationagents->apply_through_agent}}</p>
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Organization Name?: </b> Nice</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Organization Name?: </b> {{$applicant->applicationagents->orgName}}</p>
 
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> 123456789</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Contact Number: </b> {{$applicant->applicationagents->agentCnum}}</p>
 
 
 
@@ -101,11 +101,11 @@
 
                                             <div class="educationContent">
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>What is your highest COMPLETED school level?: </b> Year 12 or equivalent</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>What is your highest COMPLETED school level?: </b> {{$applicant->applicationeducation->higher_edu}}</p>
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>What YEAR did you complete the relevant qualification: </b> 2011</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>What YEAR did you complete the relevant qualification: </b> {{$applicant->applicationeducation->yearCompletion}}</p>
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Are you still attending secondary school?: </b> No</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Are you still attending secondary school?: </b> {{$applicant->applicationeducation->secondary}}</p>
 
                                             </div>
                                         </div>
@@ -115,14 +115,14 @@
                                         <h3>Previous Qualification</h3>
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>Qualifications that you have successfully completed: </b> Bachelor or Higher Degree</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>Qualifications that you have successfully completed: </b> {{$applicant->applicationeducation->prevquali}}</p>
                                     </div>
                                     <div class="col-md-4">
 
                                         <h3>Employment</h3>
 
 
-                                        <p for="userHomeAddress" class="input-group-text"> <b>What is your current employment status: </b> Part-time employee</p>
+                                        <p for="userHomeAddress" class="input-group-text"> <b>What is your current employment status: </b> {{$applicant->applicationeducation->employment}}</p>
                                     </div>
                                 </div>
                         </div>
@@ -133,28 +133,28 @@
 
                             <div class="row">
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Country of Birth: </b> Australia</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Country of Birth: </b> {{$applicant->applicationcultural->langbirthCoun}}</p>
 
 
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Do you have Australian Citizenship?: </b> No</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Do you have Australian Citizenship?: </b> {{$applicant->applicationcultural->ausCtzen}}</p>
 
 
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal or Torres Strait Islander origin?: </b> Yes</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal or Torres Strait Islander origin?: </b> {{$applicant->applicationcultural->ausAbor}}</p>
 
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal?: </b> Yes</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Are you of Australian Aboriginal?: </b> {{$applicant->applicationcultural->onlyAbor}}</p>
 
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Are you of Torres Strait Islander origin?: </b> Yes</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Are you of Torres Strait Islander origin?: </b> {{$applicant->applicationcultural->onlyTorres}}</p>
 
 
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>How well do you speak English? </b> Well</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>How well do you speak English? </b> {{$applicant->applicationcultural->englanguage}}</p>
 
 
-                                <p for="userHomeAddress" class="input-group-text"> <b>Main language spoken at home if not English: </b> Nepali</p>
+                                <p for="userHomeAddress" class="input-group-text"> <b>Main language spoken at home if not English: </b> {{$applicant->applicationcultural->otherlanguages}}</p>
 
                             </div>
 
@@ -168,9 +168,9 @@
                             </div>
                             <div class="row">
 
-                                <p><b>Program History :</b>To develop my existing business</p>
+                                <p><b>Program History :</b>{{$applicant->applicationeducation->proghistory}}</p>
 
-                                <p><b>Do you wish to apply for Recognition of Prior Learning? :</b>Yes</p>
+                                <p><b>Do you wish to apply for Recognition of Prior Learning? :</b>{{$applicant->applicationeducation->priorlearn}}</p>
 
                             </div>
                         </div>
@@ -184,10 +184,19 @@
                             </div>
                             <div class="row">
 
-                                <p><b>Do you consider yourself to have a disability, impairment or long-term condition? :</b>Yes</p>
+                                <p><b>Do you consider yourself to have a disability, impairment or long-term condition? :</b>{{$applicant->is_disable}}</p>
 
                                 <p><b>If YES, then please indicate the areas of disability, impairment or long-term condition (You may indicate more than one
-                                        area.): </b> Learning, Vision</p>
+                                        area.): </b>
+                                        @if (!is_null($applicant->disable))
+                                            @foreach ($applicant->disable as $item)
+                                                {{$item}}
+                                            @endforeach
+                                        @else
+                                            N/A
+                                        @endif
+
+                                           </p>
 
 
                             </div>
@@ -201,11 +210,26 @@
                                 <h3>English Proficieny Test</h3>
                             </div>
                             <div class="row">
-                                <p><b>Test :</b>IELTS</p>
+                                <p><b>Test :</b>@if ($applicant->applicationeducation->ieltsscr) IELTS @endif
+                                                @if ($applicant->applicationeducation->ptescr) PTE @endif
+                                                @if ($applicant->applicationeducation->toeflscr) TOFEL @endif
 
-                                <p><b>Score :</b>7</p>
 
-                                <p><b>Year :</b>2021</p>
+                            </p>
+
+                                <p><b>Score :</b>
+                                    @if ($applicant->applicationeducation->ieltsscr) {{$applicant->applicationeducation->ieltsscr}}@endif
+                                    @if ($applicant->applicationeducation->ptescr) {{$applicant->applicationeducation->ptescr}}@endif
+                                    @if ($applicant->applicationeducation->toeflscr) {{$applicant->applicationeducation->toeflscr}}@endif
+
+                                </p>
+
+                                <p><b>Year :</b>
+                                    @if ($applicant->applicationeducation->ieltsyear) {{$applicant->applicationeducation->ieltsyear}}@endif
+                                    @if ($applicant->applicationeducation->pteyear) {{$applicant->applicationeducation->pteyear}}@endif
+                                    @if ($applicant->applicationeducation->tofelyear) {{$applicant->applicationeducation->tofelyear}}@endif
+
+                                </p>
                             </div>
                         </div>
 
@@ -218,7 +242,19 @@
                             </div>
                             <div class="mt-4">
 
-                                <p><b>Proposed Study: </b>Certificate IV in Disability</p>
+                            <p><b>Proposed Study: </b>
+                                @if (!is_null($applicant->applicationeducation->course))
+
+
+                                        @foreach ($applicant->applicationeducation->course as $item)
+                                            {{$item}}
+                                        @endforeach
+                            @else
+                            N/A
+                               @endif
+
+
+                                </p>
                             </div>
                         </div>
 
@@ -229,7 +265,15 @@
                             <div class=" mainFormHeadings">
                                 <h3>Preferred intake date</h3>
                             </div>
-                            <p><b>Preferred intake date :</b>Jan 2022</p>
+                            <p><b>Preferred intake date :</b>
+                         @if (!is_null($applicant->applicationeducation->intake))
+                                @foreach ($applicant->applicationeducation->intake as $item)
+                               {{$item}}
+                                @endforeach
+                        @else
+                        N/A
+                        @endif
+                            </p>
 
                         </div>
 
@@ -242,7 +286,7 @@
                             </div>
 
 
-                            <p><b>I consent to having my photograph used in documents for advertising for this organisation. :</b>Yes</p>
+                            <p><b>I consent to having my photograph used in documents for advertising for this organisation. :</b>{{$applicant->photographyConsent->photoConsent}}</p>
                         </div>
 
 
@@ -879,7 +923,9 @@
                                     <!-- <label for="stdname" class="input-group-text">Student Name:</label>
                             <input id="stdname" name="stdname" type="text" class="form-control"
                                 placeholder="Enter Your Name"> -->
-                                    <p><b>Student Name: </b> Loree Ipsmm</p>
+                                    <p><b>Student Name: </b>@if($applicant->applicantCommitment->stdname)
+                                        {{$applicant->applicantCommitment->stdname}} @else N/A @endif
+                                    </p>
                                 </div>
                                 <div class="yourNameDesc mt-4">
                                     <p>I, <b>Lorem Ipsum</b> will create my own USI and advise ANE
@@ -891,11 +937,17 @@
                                 <div class="row">
                                     <div class="col-md-6 mt-4">
                                         <!-- <input name="applicantsign" class="form-control signNdate" type="text"> -->
-                                        <p class="mt-1"><b>Applicant Signature: </b></p>
+                                        <p class="mt-1"><b>Applicant Signature:@if ($applicant->applicantCommitment->applicant_sign)
+                                            {{$applicant->applicantCommitment->applicant_sign}} @else N/A
+                                        @endif  </b></p>
                                     </div>
                                     <div class="col-md-6 mt-4">
                                         <!-- <input name="signdate" class="form-control signNdate" type="text"> -->
-                                        <p class="mt-1"><b>Date: </b></p>
+                                        <p class="mt-1"><b>Date:@if ($applicant->applicantCommitment->date_of_sign)
+                                            {{$applicant->applicantCommitment->date_of_sign}} @else N/A
+                                        @endif
+                                        </b>
+                                    </p>
                                     </div>
                                 </div>
                             </div>
@@ -909,8 +961,9 @@
 
 
                                 <div class="yourNameDescB mt-4">
-                                    <p>I (insert
-                                        name), <b>Lroee Ipsdf</b> authorise ANE College to apply pursuant to sub-section
+                                    <p>I @if ($applicant->applicantCommitment->stdnameB)
+                                        {{$applicant->applicantCommitment->stdnameB}} @else N/A
+                                    @endif , <b></b> authorise ANE College to apply pursuant to sub-section
                                         9(2) of the Student
 
                                         Identifiers Act 2014, for a USI on my behalf. I have read, and I consent to the
@@ -919,7 +972,9 @@
 
                                         to the information detailed at <a target="_blank" href="http://www.usi.gov.au/Training-Organisations/Documents/Privacy-Notice.pdf">http://www.usi.gov.au/Training-Organisations/Documents/Privacy-Notice.pdf</a>
                                         .</p>
-                                    <p class="mt-2"> <b>One of the document copy:</b> </p>
+                                    <p class="mt-2"> <b>One of the document copy:</b> @if ($applicant->applicantCommitment->mydocs)
+                                        {{$applicant->applicantCommitment->mydocs}} @else N/A
+                                    @endif   </p>
                                     <div class="row">
                                         <div class="col-md-4 d-flex">
                                             <!-- <input type="radio" name="mydocs" id="license" type="checkbox">
@@ -934,11 +989,15 @@
                                 <div class="row">
                                     <div class="col-md-6 mt-4">
                                         <!-- <input class="form-control signNdate" name="applicant_signB" type="text"> -->
-                                        <p class="mt-1"><b>Applicant Signature: </b></p>
+                                        <p class="mt-1"><b>Applicant Signature: </b>  @if ($applicant->applicantCommitment->applicant_signB)
+                                            {{$applicant->applicantCommitment->applicant_signB}} @else N/A
+                                        @endif</p>
                                     </div>
                                     <div class="col-md-6 mt-4">
                                         <!-- <input class="form-control signNdate" name="date_of_signB" type="text"> -->
-                                        <p class="mt-1"><b>Date: </b></p>
+                                        <p class="mt-1"><b>Date: </b>@if ($applicant->applicantCommitment->date_of_signB)
+                                            {{$applicant->applicantCommitment->date_of_signB}} @else N/A
+                                        @endif </p>
                                     </div>
                                 </div>
 
@@ -995,7 +1054,7 @@
 
                         </div>
 
-                    
+
                     </form>
                 </div>
             </div>

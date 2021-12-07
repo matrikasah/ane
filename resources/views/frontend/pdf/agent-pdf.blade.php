@@ -30,59 +30,59 @@
                                     </div>
                                     <div class="row">
 
-                                        
-                                                <p><b>Agent Name: </b> Lorem Ipsum</p>
 
-                                      
-                                                <p for="userSurname" class="input-group-text"> <b>Surname: </b>Ipsum </p>
-                                          
-                                        
-                                                <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>Lorem</p>
+                                                <p><b>Agent Name: </b> {{$agent->name}}</p>
 
-                                
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Address in Australia: </b> Sydney</p>
 
-                                          
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> Perth</p>
+                                                <p for="userSurname" class="input-group-text"> <b>Surname: </b>{{$agent->surname}} </p>
 
-                                            
-                                       
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Country: </b> Nepal</p>
-                                           
+
+                                                <p for="userGivenName" class="input-group-text"> <b> Given Name: </b>{{$agent->givenname}}</p>
+
+
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Address in Australia: </b> {{$agent->address_in_aus}}</p>
+
+
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> {{$agent->suburb}}</p>
+
+
+
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Country: </b> {{$agent->country}}</p>
+
                                         <!-- <hr> -->
-                                        
+
                                                 <!-- <label for="telNum" class="input-group-text">Telephone Number </label> -->
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Address (Outside Australia): </b> china</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Address (Outside Australia): </b> {{$agent->address_outside_aus}}</p>
 
-                                            
 
-                                        
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> beiginn</p>
 
-                                        
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Postcode: </b> 12-12-2020</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Suburb: </b> {{$agent->suburb_outside_aus}}</p>
 
-                                            
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b> 12-12-2020</p>
 
-                                           
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Postcode: </b> {{$agent->post_code}}</p>
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Telephone: </b> 12-12-2020</p>
 
-                                           
-                                                <p for="userHomeAddress" class="input-group-text"> <b>ABN: </b> 12-12-2020</p>
 
-                                           
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Mobile: </b>{{$agent->mobile_num}}</p>
 
-                                                <p for="userHomeAddress" class="input-group-text"> <b>ACN: </b> 12-12-2020</p>
+
+
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Telephone: </b>{{$agent->telephone_num}}</p>
+
+
+                                                <p for="userHomeAddress" class="input-group-text"> <b>ABN: </b> {{$agent->abn}}</p>
+
+
+
+                                                <p for="userHomeAddress" class="input-group-text"> <b>ACN: </b> {{$agent->acn}}</p>
                                             <!-- <hr> -->
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Emergency Contact: </b> 12-12-2020</p>
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Address: </b> 12-12-2020</p>
-                                                <p for="userHomeAddress" class="input-group-text"> <b>Telephone: </b> 12-12-2020</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Emergency Contact: </b> {{$agent->emergency_contact}}</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Address: </b> {{$agent->emgy_address}}</p>
+                                                <p for="userHomeAddress" class="input-group-text"> <b>Telephone: </b> {{$agent->emgy_telephone}}</p>
 
-                                          
+
 
                                     </div>
                                 </div>
@@ -93,25 +93,25 @@
                                     <div class="row">
                                         <div class="col-md-6 mt-4">
                                             <div class="input-group">
-                                                
+
                                                 <p for="userHomeAddress" class="input-group-text"> <b>How long have you been in operation as an education agent? (Please provide a business plan if your company is new): </b> 5 Years</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-4">
                                             <div class="input-group">
-                                               
+
                                                 <p for="userHomeAddress" class="input-group-text"> <b>Does your company deal in areas other than international education?: </b> No</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-4">
                                             <div class="input-group">
-                                           
+
                                                 <p for="userHomeAddress" class="input-group-text"> <b>What is the total number of students that your office recruits each year?: </b> 15</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-4">
                                             <div class="input-group">
-                                              
+
                                                 <p for="userHomeAddress" class="input-group-text"> <b>Where (which countries) do you send most of your students?: </b> Nepal</p>
                                             </div>
                                         </div>
@@ -131,12 +131,12 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-4">
-                        
+
                                             <p for="userHomeAddress" class="input-group-text"> <b>Do you work with any other education agents as a partnership or an affiliation?: </b> No</p>
 
                                         </div>
                                         <div class="col-md-6 mt-4 ml-0">
-                                         
+
                                             <p for="userHomeAddress" class="input-group-text"> <b>Do you represent any other Australian institutions? (If Yes, please describe the institutions’ names): </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, provident?</p>
                                         </div>
 
@@ -149,12 +149,12 @@
                                             <div class="mainFormHeadings">
                                                 <h3>AGENCY INFORMATION (CONTACT PERSON)</h3>
                                             </div>
-                                            
+
 
                                                     <p for="userHomeAddress" class="input-group-text"> <b>Key staff contact (1) Position: </b> lorem raj</p>
 
 
-                                             
+
                                             <p style="font-size: 14px">Please include the details of two (2) referee we can contact, including one educational institution in Australia.</p>
                                         </div>
                                         <div class="col-md-4">

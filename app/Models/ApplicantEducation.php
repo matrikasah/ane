@@ -25,7 +25,19 @@ class ApplicantEducation extends Model
         'otheryear',
         'proghistory',
         'priorlearn',
+        'course',
+        'intake',
         'applicant_id'
 
     ];
+
+    protected $casts = [
+        'course' => 'array',
+        'intake'=>'array'
+    ];
+
+
+
+
+
 }

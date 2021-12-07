@@ -42,12 +42,24 @@
                 </div>
             </div>
             @endif
+            @if(session()->has('warning'))
+            <div classs="container p-5">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 col-md-12 m-auto">
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Well done!</strong> {{ session()->get('warning') }}
+                    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            @endif
 
 
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
-                    <a   onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                 
+                    <a   onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>
                     <a  target="_blank" href="{{ asset('image/AgentApplicationForm.pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
                     </div>
                 </div>
@@ -64,9 +76,9 @@
 
 		<div class="row content-text">
 			<div class="col-12">
-				
+
 					 <section class="offshoreForm">
-        
+
         <form action="{{route('agent.store')}}" method="POST">
             @csrf
 
@@ -83,7 +95,7 @@
                         <div class="input-group">
                             <label for="agent_name" class="input-group-text agent_nameLabel">Agent Name :</label>
                             <input id="agent_name" name="name" type="text" value="{{ old('name') }}"  class="form-control" placeholder="Agent Name" required>
-                           
+
                             @if ($errors->has('name'))
                             <div class="alert alert-danger">{{ $errors->first('name') }}</div>
                             @endif
@@ -94,7 +106,7 @@
                             <label for="agent_surname" class="input-group-text">Surname</label>
                             <input id="agent_surname" name="surname" type="text" class="form-control"
                                 placeholder="Enter Your Surname" value="{{ old('surname') }}" required>
-                               
+
                                 @if ($errors->has('surname'))
                             <div class="alert alert-danger">{{ $errors->first('surname') }}</div>
                             @endif
@@ -174,7 +186,7 @@
                         </div>
                     </div>
 
-                  
+
 
                     <div class="col-md-6 mt-4">
                         <div class="input-group">
@@ -582,7 +594,7 @@
   format: "dd-mm-yyyy",
 });
 </script>
-    
+
 
 
 

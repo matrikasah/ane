@@ -31,10 +31,18 @@
     </div>
 </div>
 @endif
-<<<<<<< HEAD
-
-=======
->>>>>>> 3fabda9003f7c685360186464f8b1de6b7b1af82
+@if(session()->has('warning'))
+<div classs="container p-5">
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-md-12 m-auto">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Sorry!</strong> {{ session()->get('warning') }}
+                <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
 
 <section class="innerpage-content onshoreForm">
     <div class="container">
@@ -392,7 +400,7 @@
                                                 <label class="genderLabel nopadding" for="yesBach">Bachelor or Higher Degree
                                                 </label>
                                                 <input id="yesBach" name="prevquali"  value="Bachelor_or_Higher" type="radio" required>
-                                                
+
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <label class="genderLabel nopadding" for="yesDip">Advanced Diploma or Associate
@@ -562,7 +570,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <input id="verywilleng" name="englanguage" value="Very_Well" type="radio">
                                                     <label class="genderLabel " for="verywilleng"> Very Well </label>
-                                                    
+
                                                 </div>
 
                                                 <div class="d-flex align-items-center">

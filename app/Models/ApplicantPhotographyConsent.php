@@ -9,8 +9,8 @@ class ApplicantPhotographyConsent extends Model
 {
     use HasFactory;
     protected $fillable =[
-'photoConsent',
-'applicant_id'
+        'photoConsent',
+        'applicant_id'
 
     ];
 

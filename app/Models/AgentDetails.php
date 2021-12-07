@@ -25,6 +25,8 @@ class AgentDetails extends Model
         'emgy_telephone',
         'abn',
         'acn'
-       
+
     ];
+
+
 }

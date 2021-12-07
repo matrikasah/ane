@@ -29,6 +29,8 @@ class CreateApplicantEducationTable extends Migration
             $table->string('otheryear')->nullable();
             $table->string('proghistory')->nullable();
             $table->string('priorlearn')->nullable();
+            $table->string('course')->nullable();
+            $table->string('intake')->nullable();
 
 
             $table->bigInteger('applicant_id')->nullable();

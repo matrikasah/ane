@@ -32,6 +32,18 @@
 	</div>
 </div>
 @endif
+@if(session()->has('warning'))
+<div classs="container p-5">
+	<div class="row no-gutters">
+		<div class="col-lg-6 col-md-12 m-auto">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Sorry </strong> {{ session()->get('warning') }}
+                    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+		</div>
+	</div>
+</div>
+@endif
 <section class="innerpage-content offshoreForm">
 	<div class="container">
         <div class="row   mt-5">
@@ -43,11 +55,11 @@
                 </div>
             </div>
 
- 
+
             <div class="col-sm-6">
                 <div class="button-lists bd-example">
                     <div class="btn-group">
-                    <a  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>                  
+                    <a  onclick="window.print();return false;" class="btn btn-outline-primary hvr-bounce-to-right">Print <i class="fas fa-print"></i></a>
                     <a target="_blank" href="{{ asset('image/StudentEnrolmentForm(Offshore).pdf') }}" class="btn btn-outline-secondary hvr-bounce-to-right">Download <i class="fas fa-download"></i></a>
                     </div>
                 </div>
@@ -56,7 +68,7 @@
 		<div class="row calender content-text">
 			<div class="col-12">
 				<section class="offshoreForm">
-        
+
        <div class="aneContent">
             <p class="enrollmentDesc">Before you complete this Enrollment Form, please read all available information and
                 Course Pre-
@@ -66,7 +78,7 @@
                 Once signed and the issue of a receipt for initial fees this document is a binding
                 contract.</p>
 
-           
+
                 <!-- <ul class="error">
                     @foreach($errors->all() as $error)
                     <li><div class="alert alert-danger" role="alert">
@@ -78,8 +90,8 @@
 
             <form action="{{route('offshore.store')}}" method="POST" >
                 @csrf
-                
-          
+
+
                 <div class="personalDetails p-1 mt-4 gap">
                     <div class="personalDetailsHead mainFormHeadings">
                         <h3>Personal Details</h3>
@@ -100,7 +112,7 @@
                                     @if ($errors->has('stdusi'))
                                     <div class="alert alert-danger">{{ $errors->first('stdusi') }}</div>
                                     @endif
-                                   
+
                             </div>
                         </div>
                         <div class="col-md-6 mt-4">
@@ -180,7 +192,9 @@
                         <div class="col-md-6 mt-4">
                             <div class="input-group">
                                 <label for="userDob" class="input-group-text">Date of Birth</label>
-                                <input id="userDob" name="stddob" value="{{ old('stddob') }}"  type="text" class="form-control"
+                                <input id="userDob" name="stddob" value="{{ old('stddob') }}"  type="text" class="form-control @error('stddob')
+
+                                @enderror"
                                     placeholder="Enter Your Date of Birth">
                                     @if ($errors->has('stddob'))
                                     <div class="alert alert-danger">{{ $errors->first('stddob') }}</div>
@@ -366,7 +380,7 @@
                                     <div class="alert alert-danger">{{ $errors->first('higher_edu') }}</div>
                                     @endif
                                     <div class="input-group mt-4">
-                                        <label for="completionYear" class="input-group-text">What YEAR did you 
+                                        <label for="completionYear" class="input-group-text">What YEAR did you
                                             complete <br> the relevant
                                             qualification?</label>
                                         <input id="completionYear" name="yearCompletion"  value="{{ old('yearCompletion') }}" type="number"
@@ -412,7 +426,7 @@
                                     <label class="genderLabel nopadding" for="yesBach">Bachelor or Higher Degree
                                     </label>
                                     <input id="yesBach" name="prevquali"  value="Bachelor_or_Higher" type="radio" required>
-                                    
+
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <label class="genderLabel nopadding" for="yesDip">Advanced Diploma or Associate
@@ -583,7 +597,7 @@
                                     <div class="d-flex align-items-center">
                                         <input id="verywilleng" name="englanguage" value="Very_Well" type="radio">
                                         <label class="genderLabel " for="verywilleng"> Very Well </label>
-                                        
+
                                     </div>
 
                                     <div class="d-flex align-items-center">
@@ -1745,9 +1759,9 @@
 
 
                     <div class="mt-3 sectionAPart">
-                        
+
                                 <p><b>Section A (You will create your own USI)</b></p>
-                            
+
 
                         <div style="width: 60%;" class="input-group mt-2 giveMaxWidth ml-0">
                             <label for="stdname" class="input-group-text">Student Name:</label>
@@ -1764,7 +1778,7 @@
                                 by viewing them via the USI. I understand my enrolment cannot be confirmed until I
                                 provide the USI.</p>
 
-                                
+
                         </div>
 
                         <div class="row">
@@ -1785,9 +1799,9 @@
 
                     <!--  -->
                     <div class="mt-3 sectionBPart">
-                       
+
                                 <p><b>Section B (Giving permission to ANE College to create your USI)</b></p>
-                          
+
 
 
                         <div class="yourNameDescB mt-4">

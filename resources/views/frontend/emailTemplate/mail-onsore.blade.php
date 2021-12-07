@@ -6,10 +6,10 @@
                   <div class="card-body">
 
                         <div class="alert alert-success" role="alert">
-                     <p> Agent has submitted Application Form</p>
+                     <p>Thankyou for submitting application Form. We will Surely Contact You</p>
                        </div>
-                       <p> You Can Download it from here</p>
-                       <a href="{{route('agent.download',$id)}}">Click here</a>
+                       <p>You can download Your application Form</p>
+                       <a href="{{route('onsore.download',$id)}}">Click here</a>
 
                </div>
            </div>

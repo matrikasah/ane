@@ -4,12 +4,13 @@
             <div class="card">
                 <div class="card-header">Welcome!</div>
                   <div class="card-body">
-                         
+
                         <div class="alert alert-success" role="alert">
-                     <p> A fresh mail has been sent to your email address'</p>
-                       </div>
-                       <a href="{{route('offsore.download')}}">Click here</a>
-                
+                         <p>Thankyou for submitting application Form. We will Surely Contact You</p>
+                        </div>
+                        <p>You can download Your application Form</p>
+                       <a href="{{route('offsore.download',$id)}}">Click here</a>
+
                </div>
            </div>
        </div>

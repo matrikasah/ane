@@ -44,64 +44,82 @@ public function offshore_form(){
 }
 
 public function store_ofshore(ApplicantPostRequest $req){
+    $applicant_email=$req->stdemail;
+    $check=ApplicantPersonalDetail::where('stdemail',$applicant_email)->first();
+    if($check){
+                return back()->with('warning','This Email is Already used Please Enter Valid Email');
+        }else{
+
+                $req->merge(['offshore_student'=>1]);
+                 $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
 
 
-    $req->merge([
-        'offshore_student'=>1,
+                    if(!$applicant_personal_detail){
+                        return back()->with('warning','please check form and try again');
+                    }else{
+                                $req->merge([
+                                'applicant_id'=>$applicant_personal_detail->id
 
-    ]);
+                                ]);
+                                $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
 
-    $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
-
-    $req->merge([
-    'applicant_id'=>$applicant_personal_detail->id
-
-    ]);
-    $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-    $application_education_agent=ApplicantEducationAgent::create($req->all());
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-    $applicant_education=ApplicantEducation::create($req->all());
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-     $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
-     $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-     $applicant_course=ApplicantCourseDetails::create($req->all());
-     $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-    $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
-
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-     $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
-
-        // $data=[];
-        // Mail::send('frontend.emailTemplate.mail-ofsore', $data, function($message){
-        //     $message->to('pandeyvivak25@gmail.com', 'ANE')->subject('Please verify your email');
-        //     $message->from('admin@gmail.com','ANE');
-
-        // });
+                                    ]);
+                                $application_education_agent=ApplicantEducationAgent::create($req->all());
 
 
-        return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
 
-    }
+                                    ]);
+                                $applicant_education=ApplicantEducation::create($req->all());
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
 
+                                    ]);
+                                $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
+
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
+
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
+                    }
+
+                    if(!($application_emergency_contact && $application_education_agent && $applicant_education &&  $applicant_language_culture)){
+
+                                    return back()->with('warning','Something went wrong Please try again');
+
+                            }else{
+
+                                    $user_id = $applicant_personal_detail->id;
+
+                                            $data = array('id'=>$user_id );
+
+                                            $email=$applicant_personal_detail['stdemail'];
+
+                                            Mail::send('frontend.emailTemplate.mail-ofsore', $data, function($message) use($email) {
+                                            $message->to($email, 'ANE')->subject
+                                                ('Please verify your email');
+                                            $message->from('ane.demo123@gmail.com','ANE');
+
+
+                                            });
+
+                                    }
+
+                    return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
+
+
+        }
+}
 
 
 public function onshore_form(){
@@ -111,53 +129,73 @@ public function onshore_form(){
 }
 
 public function store_onshore(ApplicantOnShore $req){
+    $applicant_email=$req->stdemail;
+    $check=ApplicantPersonalDetail::where('stdemail',$applicant_email)->first();
+    if($check){
+                return back()->with('warning','This Email is Already used Please Enter Valid Email');
+        }else{
+            $req->merge(['offshore_student'=>0,]);
+             $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
+
+                if(!$applicant_personal_detail){
+                    return back()->with('warning','Please Reenter the valid information');
+                        }
+                        else{
+                                $req->merge([
+                                'applicant_id'=>$applicant_personal_detail->id
+
+                                ]);
+                                $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $application_education_agent=ApplicantEducationAgent::create($req->all());
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $applicant_education=ApplicantEducation::create($req->all());
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
+
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
+
+                                $req->merge([
+                                    'applicant_id'=>$applicant_personal_detail->id
+
+                                    ]);
+                                $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
+                        }
+
+                        if($application_emergency_contact &&  $application_education_agent && $applicant_education && $applicant_language_culture && $applicant_collage_commitment){
+
+                                      $user_id = $applicant_personal_detail->id;
+
+                                            $data = array('id'=>$user_id );
+
+                                            $email=$applicant_personal_detail['stdemail'];
+
+                                            Mail::send('frontend.emailTemplate.mail-ofsore', $data, function($message) use($email) {
+                                            $message->to($email, 'ANE')->subject
+                                                ('Please verify your email');
+                                            $message->from('ane.demo123@gmail.com','ANE');
 
 
-    $req->merge([
-        'offshore_student'=>0,
+                                            });
 
-    ]);
-
-    $applicant_personal_detail=ApplicantPersonalDetail::create($req->all());
-
-    $req->merge([
-    'applicant_id'=>$applicant_personal_detail->id
-
-    ]);
-    $application_emergency_contact=ApplicantEmergencyContact::create($req->all());
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-    $application_education_agent=ApplicantEducationAgent::create($req->all());
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-    $applicant_education=ApplicantEducation::create($req->all());
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-     $applicant_language_culture=ApplicantLanguageCulture::create($req->all());
-     $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-     $applicant_course=ApplicantCourseDetails::create($req->all());
-     $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-    $applicant_photography_concent=ApplicantPhotographyConsent::create($req->all());
-
-    $req->merge([
-        'applicant_id'=>$applicant_personal_detail->id
-
-        ]);
-     $applicant_collage_commitment=ApplicantCollageCommitment::create($req->all());
-
-     return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
+                        }else{
+                                    return back()->with('warning','Your form cannot be submitted Please Try again');
+                               }
+          return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
+        }
 
 
 }
@@ -171,45 +209,74 @@ public function agent(){
     return view('frontend.pages.become-agent');
 
 }
-    public function store_agent_application(AgentPostRequest $req){
+public function store_agent_application(AgentPostRequest $req){
 
+
+    $agent_number=$req->mobile_num;
+    $check=AgentDetails::where('mobile_num',$agent_number)->first();
+    if($check){
+        return back()->with('warning','Mobile number already exists please try again with new number');
+    }else{
         $agent_details= AgentDetails::create($req->all());
-        $req->merge([
-            'agent_id'=>$agent_details->id
-        ]);
-        $agent_business_history=AgentBusinessHistory::create($req->all());
+                if($agent_details){
 
-        $agent_contact_person1=AgentContactPerson::create([
-            'keyStaff'=>$req->keyStaff,
-            'useragentname'=>$req->useragentname,
-            'userinstname'=>$req->userinstname,
-            'userinsttitle'=>$req->userinstname,
-            'userinstphone'=>$req->userinstphone,
-            'userinstfax'=>$req->userinstfax,
-            'userinstemail'=>$req->userinstemail,
-            'agent_id'=>$agent_details->id,
-        ]);
 
-        $agent_contact_person2=AgentContactPerson::create([
-            'keyStaff'=>$req->keyStaff,
-            'useragentname'=>$req->useragentname2,
-            'userinstname'=>$req->userinstname2,
-            'userinsttitle'=>$req->userinstname2,
-            'userinstphone'=>$req->userinstphone2,
-            'userinstfax'=>$req->userinstfax2,
-            'userinstemail'=>$req->userinstemail2,
-            'agent_id'=>$agent_details->id,
-        ]);
-        $req->merge([
-            'agent_id'=>$agent_details->id
-        ]);
-        $agent_declaration=AgentDeclaration::create($req->all());
-        // $data=[];
-        // Mail::send('frontend.emailTemplate.mail-agent', $data, function($message){
-        //     $message->to('pandeyvivak25@gmail.com', 'ANE')->subject('Please verify your email');
-        //     $message->from('admin@gmail.com','ANE');
+                                $req->merge(['agent_id'=>$agent_details->id ]);
+                                $agent_business_history=AgentBusinessHistory::create($req->all());
 
-        // });
+                                $agent_contact_person1=AgentContactPerson::create([
+                                    'keyStaff'=>$req->keyStaff,
+                                    'useragentname'=>$req->useragentname,
+                                    'userinstname'=>$req->userinstname,
+                                    'userinsttitle'=>$req->userinstname,
+                                    'userinstphone'=>$req->userinstphone,
+                                    'userinstfax'=>$req->userinstfax,
+                                    'userinstemail'=>$req->userinstemail,
+                                    'agent_id'=>$agent_details->id,
+                                ]);
+
+                                $agent_contact_person2=AgentContactPerson::create([
+                                    'keyStaff'=>$req->keyStaff,
+                                    'useragentname'=>$req->useragentname2,
+                                    'userinstname'=>$req->userinstname2,
+                                    'userinsttitle'=>$req->userinstname2,
+                                    'userinstphone'=>$req->userinstphone2,
+                                    'userinstfax'=>$req->userinstfax2,
+                                    'userinstemail'=>$req->userinstemail2,
+                                    'agent_id'=>$agent_details->id,
+                                ]);
+                                $req->merge([
+                                    'agent_id'=>$agent_details->id
+                                ]);
+                                $agent_declaration=AgentDeclaration::create($req->all());
+                  }else{
+                            return back()->with('warning','Agent Form Cannot be Created Please Try again');
+                        }
+
+                        if($agent_business_history &&  $agent_contact_person1 &&  $agent_contact_person2 &&   $agent_declaration){
+
+                                $user_id = $agent_details->id;
+
+                                $data = array('id'=>$user_id );
+
+                                $email='ane.demo123@gmail.com';
+
+                                $mail=Mail::send('frontend.emailTemplate.mail-agent', $data, function($message) use($email) {
+                                $message->to($email, 'ANE')->subject
+                                    ('Please verify your email');
+                                $message->from('ane.demo123@gmail.com','ANE');
+
+
+                                });
+
+
+                        }else{
+                            return back()->with('warning','Something Went Wrong Please Try again');
+                        }
+
+
+    }
+
 
         return back()->with('message', 'Thankyou Your Information is sucessfully  Added!');
 
@@ -364,23 +431,24 @@ public function store_contact_form(ContactRequest $req){
     return back()->with('message', 'Thankyou Your for contacting us! we will respond soon.');
 }
 
-public function offsore_download(Request $request){
-    $applicant=ApplicantPersonalDetail::findorFail(1);
-    $pdf = PDF::loadView('frontend.pages.offsore-pdf', compact('applicant'));
+public function offsore_download(Request $request,$id){
+    $applicant=ApplicantPersonalDetail::findorFail($id);
+    $pdf = PDF::loadView('frontend.pdf.offsore-pdf', compact('applicant'));
     return $pdf->download('offsore.pdf');
 
 
 }
 
-public function onsore_download(Request $request){
-    $pdf = PDF::loadView('frontend.pages.onsore-pdf');
+public function onsore_download(Request $request,$id){
+    $applicant=ApplicantPersonalDetail::findOrFail($id);
+    $pdf = PDF::loadView('frontend.pdf.onsore-pdf',compact('applicant'));
     return $pdf->download('onsore.pdf');
 }
 
 
-public function agent_download(Request $request){
-    $agent=AgentDetails::findorFail(1);
-    $pdf = PDF::loadView('frontend.pages.agent-pdf', $agent);
+public function agent_download(Request $request,$id){
+    $agent=AgentDetails::findorFail($id);
+    $pdf = PDF::loadView('frontend.pdf.agent-pdf',compact('agent'));
     return $pdf->download('agent.pdf');
 
 }

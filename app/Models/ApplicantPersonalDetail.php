@@ -22,26 +22,13 @@ class ApplicantPersonalDetail extends Model
         'sex',
         'is_disable',
         'disable',
+
         'offshore_student'
     ];
 
-    public function setDisableAttribute($value) 
-
-    { 
-
-        $this->attributes['disable'] = json_encode($value); 
-
-    } 
-
- 
-
-    public function getDisableAttribute($value) 
-
-    { 
-
-        return $this->attributes['disable'] = json_decode($value); 
-
-    } 
+  protected $casts =[
+      'disable'=>'array',
+  ];
 
 
     public function emergencycontacts(){
@@ -59,6 +46,14 @@ class ApplicantPersonalDetail extends Model
     public function applicationcultural(){
         return $this->hasOne(ApplicantLanguageCulture::class, 'applicant_id');
     }
+
+    public function photographyConsent(){
+        return $this->hasOne(ApplicantPhotographyConsent::class, 'applicant_id');
+    }
+    public function applicantCommitment(){
+        return $this->hasOne(ApplicantCollageCommitment::class, 'applicant_id');
+    }
+
 
 
 }
