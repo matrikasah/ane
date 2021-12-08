@@ -28,5 +28,14 @@ class AgentDetails extends Model
 
     ];
 
+    public function businessHistory(){
+      return  $this->hasOne(AgentBusinessHistory::class,'agent_id');
+    }
+    public function contactPerson(){
+       return $this->hasMany(AgentContactPerson::class,'agent_id');
+    }
+    public function declaration(){
+       return $this->hasOne(AgentDeclaration::class,'agent_id');
+    }
 
 }

@@ -427,8 +427,31 @@ public function Cauliflower(){
 }
 
 public function store_contact_form(ContactRequest $req){
-    Contact::create($req->all());
+   $contact=Contact::create($req->all());
+if($contact){
+                $data = [
+                'name'=>$contact->name,
+                'email'=>$contact->email,
+                'phone'=>$contact->phone,
+                'message'=>$contact->message ];
+
+                $email='ane.demo123@gmail.com';
+
+                $mail=Mail::send('frontend.emailTemplate.contact', ["data"=>$data], function($message) use($email) {
+                $message->to($email, 'ANE')->subject
+                    ('Contact Mail');
+                $message->from('ane.demo123@gmail.com','ANE');
+
+
+                });
+
     return back()->with('message', 'Thankyou Your for contacting us! we will respond soon.');
+}else{
+    return back()->with('message', 'Sorry Something went wrong please try again.');
+}
+
+
+
 }
 
 public function offsore_download(Request $request,$id){
