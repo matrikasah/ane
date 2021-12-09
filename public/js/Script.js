@@ -148,6 +148,13 @@ $(document).ready(function(){
 		if(w > 992 && menu.is(':hidden')) {
 			menu.removeAttr('style');
 		}
+
+
+    $('body').bind('cut copy paste', function (e) {
+      
+      e.preventDefault();
+      
+    });
 	});
 
 
