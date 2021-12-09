@@ -26,6 +26,7 @@ use App\Http\Requests\ApplicantOnShore;
 use App\Http\Requests\AgentPostRequest;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
+//dom PDF
 use PDF;
 class HomeController extends Controller
 {
