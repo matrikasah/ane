@@ -111,7 +111,7 @@
 							</button>
 						</h2>
 						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body">Australian National Education has the following entry requirements:
+							<div class="accordion-body">ANE has the following entry requirements:
 							International students must:
 								<ul>
 									<li>
@@ -302,7 +302,7 @@
 								and Induction activity will include information about the campus, living in Australia, accessing our support
 								services and methods for achieving success throughout the course, including course progress and
 								attendance requirements.
-								This course brochure should be read in conjunction with Australian National Education International Student
+								This course brochure should be read in conjunction with ANE International Student
 								Handbook. This can be found online at http://www.ane.edu.au.
 							</div>
 						</div>

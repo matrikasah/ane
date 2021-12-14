@@ -113,7 +113,7 @@
 							</button>
 						</h2>
 						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body">Australian National Education has the following entry requirements:
+							<div class="accordion-body">ANE has the following entry requirements:
 							International students must:
 								<ul>
 									<li>
@@ -215,8 +215,7 @@
 					</h2>
 					<div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
 						<div class="accordion-body">The CHC52015 Diploma of Community Services requires the successful completion of eight (8) core
-						units and eight (8) elective units. Electives for this qualification have been chosen by Australian National
-						Education to ensure that students achieve a broad range of skills and knowledge in community services.
+						units and eight (8) elective units. Electives for this qualification have been chosen by ANE to ensure that students achieve a broad range of skills and knowledge in community services.
 						Units included in this qualification are:
 							<div class="table-responsive">
 								<table class="table table-striped">
@@ -313,7 +312,7 @@
 								and Induction activity will include information about the campus, living in Australia, accessing our support
 								services and methods for achieving success throughout the course, including course progress and
 								attendance requirements.
-								This course brochure should be read in conjunction with Australian National Education International Student
+								This course brochure should be read in conjunction with ANE International Student
 								Handbook. This can be found online at http://www.ane.edu.au.
 							</div>
 						</div>

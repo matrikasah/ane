@@ -558,7 +558,7 @@
                 <p>Please return to:</p>
                 <div class="marketmangrdetails mt-3">
                     <p><b>Marketing Manager</b></p>
-                    <p>Australian National Education Pty. Ltd.</p>
+                    <p>ANE Pty. Ltd.</p>
                     <p>Suite 67 & 68, Level 6, 8-24 Kippax Street</p>
                     <p>Surry Hills, NSW 2010</p>
 

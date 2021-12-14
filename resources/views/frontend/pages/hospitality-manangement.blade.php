@@ -187,8 +187,7 @@
 							      <div class="accordion-body">The SIT50416 Diploma of Hospitality Management
 									requires the successful completion of fifteen (15) core
 									units and thirteen (13) elective units. Electives for this
-									qualification have been chosen by Australian National
-									Education to ensure that students achieve a broad range
+									qualification have been chosen by ANE to ensure that students achieve a broad range
 									of skills and knowledge in hospitality management.
 									Units included in this qualification are as follows. Please
 									note that due to the entry requirements, you will have
@@ -358,7 +357,7 @@
 									and Induction activity will include information about the campus, living in Australia, accessing our support
 									services and methods for achieving success throughout the course, including course progress and
 									attendance requirements.
-									This course brochure should be read in conjunction with Australian National Education International
+									This course brochure should be read in conjunction with ANE International
 									Student Handbook. This can be found online at http://www.ane.edu.au
 
 

@@ -426,6 +426,11 @@ public function Cauliflower(){
     return view('frontend.pages.Cauliflower');
 
 }
+public function agent_list(){
+
+    return view('frontend.pages.agent-list');
+
+}
 
 public function store_contact_form(ContactRequest $req){
    $contact=Contact::create($req->all());

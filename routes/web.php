@@ -69,6 +69,7 @@ Route::get('/glazed',[HomeController::class,'glazed'])->name('glazed');
 Route::get('/pork',[HomeController::class,'pork'])->name('pork');
 Route::get('/Cauliflower',[HomeController::class,'Cauliflower'])->name('Cauliflower');
 Route::get('/course',[HomeController::class,'course'])->name('course');
+Route::get('/agent-list',[HomeController::class,'agent_list'])->name('agent-list');
 
 Route::get('/download-offsore/{id}',[HomeController::class,'offsore_download'])->name('offsore.download');
 Route::get('/download-onsore/{id}',[HomeController::class,'onsore_download'])->name('onsore.download');

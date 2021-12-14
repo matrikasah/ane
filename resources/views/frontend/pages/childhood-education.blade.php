@@ -435,7 +435,7 @@
 											and Induction activity will include information about the campus, living in Australia, accessing our support
 											services and methods for achieving success throughout the course, including course progress and
 											attendance requirements.
-											This course brochure should be read in conjunction with Australian National Education International Student
+											This course brochure should be read in conjunction with ANE International Student
 											Handbook. This can be found online at http://www.ane.edu.au.
 										</div>
 									</div>

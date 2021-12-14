@@ -87,11 +87,18 @@
                                 <li><a href="#">agent</a>
                                 <ul>
                                 <li><a href="{{route('become-agent')}}">Become agent</a></li>
-                              <li><a href="{{route('apply-agent')}}">Apply now</a>
+                                <li><a href="{{route('agent-list')}}">Our Agents</a>
+                                <li><a href="{{route('apply-agent')}}">Apply now</a>
                                 </ul>
                               </li>
                               </ul>
-                            </li>
+                          </li>
+                          <li><a class="link-box" href="#">Download</a>
+                            <ul class="sub-menu">
+                            <li><a href="{{ asset('image/ane-pd-handbook.pdf') }}">Pre-Departure handbook</a></li>
+                            <li><a href="{{ asset('image/international_student_handbook.pdf') }}">International students handbook</a></li>  
+                            </ul>
+                          </li>
                         </ul> 
 
                         <ul class="menu" id="menu-active-link">
@@ -105,11 +112,11 @@
                             </li>
                             <li class="menu-link"><a class="@if(Route::is('course') || Route::is('child-education') || Route::is('hospitality-management')) || Route::is('commercial-cookery')) || Route::is('community-service')) || Route::is('disability')) active @endif" href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
-                              <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
-                              <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>
-                              <li><a href="{{route('commercial-cookery')}}">Certificate IV in Commercial Cookery</a></li>
-                              <li><a href="{{route('disability')}}">Certificate IV in Disability</a></li>
-                              <li><a href="{{route('community-service')}}">Diploma of Community Services</a></li>
+                              <li><a href="{{route('child-education')}}">CHC50113 - Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="{{route('hospitality-management')}}">SIT50416 - Diploma of Hospitality Management</a></li>
+                              <li><a href="{{route('commercial-cookery')}}">SIT40516 - Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="{{route('disability')}}">CHC43115 - Certificate IV in Disability</a></li>
+                              <li><a href="{{route('community-service')}}">CHC52015 - Diploma of Community Services</a></li>
                             </ul>
                             </li>
                             <li class="menu-link"><a class="@if(Route::is('how-to-apply') || Route::is('intake-date') || Route::is('who-can-apply')) active @endif" href="#"> admission</a>
@@ -165,11 +172,11 @@
                             </li>
                             <li><a href="{{route('course')}}">find a courses</a>
                             <ul class="sub-menu">
-                              <li><a href="{{route('child-education')}}">Diploma of Early Childhood Education and Care</a></li>
-                              <li><a href="{{route('hospitality-management')}}">Diploma of Hospitality Management</a></li>
-                              <li><a href="{{route('commercial-cookery')}}">Certificate IV in Commercial Cookery</a></li>
-                              <li><a href="{{route('disability')}}">Certificate IV in Disability</a></li>
-                              <li><a href="{{route('community-service')}}">Diploma of Community Services</a></li>
+                              <li><a href="{{route('child-education')}}">CHC50113 - Diploma of Early Childhood Education and Care</a></li>
+                              <li><a href="{{route('hospitality-management')}}">SIT50416 - Diploma of Hospitality Management</a></li>
+                              <li><a href="{{route('commercial-cookery')}}">SIT40516 - Certificate IV in Commercial Cookery</a></li>
+                              <li><a href="{{route('disability')}}">CHC43115 - Certificate IV in Disability</a></li>
+                              <li><a href="{{route('community-service')}}">CHC52015 - Diploma of Community Services</a></li>
                             </ul>
                             </li>
                             <li><a  href="#"> admission</a>

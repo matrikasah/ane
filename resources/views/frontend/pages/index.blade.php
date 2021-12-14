@@ -25,11 +25,11 @@
 						<span class="input-group-text" id="addon-wrapping">Find a course</span>
 					  <select class="form-select choosecourse" id="inputGroupSelect04" aria-label="Example select with button addon">
 					    <option value='blank'>Choose your course</option>
-					    <option value="{{ route('child-education') }}">Diploma of Early Childhood Education and Care</option>
-					    <option value="{{ route('hospitality-management') }}">Diploma of Hospitality Management</option>
-					    <option value="{{ route('commercial-cookery') }}">Certificate IV in Commercial Cookery</option>
-					    <option value="{{ route('disability') }}">Certificate IV in Disability</option>
-					    <option value="{{ route('community-service') }}">Diploma of Community Services</option>
+					    <option value="{{ route('child-education') }}">CHC50113 - Diploma of Early Childhood Education and Care</option>
+					    <option value="{{ route('hospitality-management') }}">SIT50416 - Diploma of Hospitality Management</option>
+					    <option value="{{ route('commercial-cookery') }}">SIT40516 - Certificate IV in Commercial Cookery</option>
+					    <option value="{{ route('disability') }}">CHC43115 - Certificate IV in Disability</option>
+					    <option value="{{ route('community-service') }}">CHC52015 - Diploma of Community Services</option>
 					  </select>
 					  <button class="btn btn-black hvr-sweep-to-right" id="choose-course" type="button">GO</button>
 					</div>
