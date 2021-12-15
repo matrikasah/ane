@@ -156,11 +156,18 @@
                                 <li><a href="#">agent</a>
                                 <ul>
                                 <li><a href="{{route('become-agent')}}">Become agent</a></li>
+                                <li><a href="{{route('agent-list')}}">Our Agents</a>
                               <li><a href="{{route('apply-agent')}}">Apply now</a>
                                 </ul>
                               </li>
                               </ul>
                             </li>
+                            <li><a class="link-box" href="#">Download</a>
+                            <ul class="sub-menu">
+                            <li><a href="{{ asset('image/ane-pd-handbook.pdf') }}" target="_blanck">Pre-Departure handbook</a></li>
+                            <li><a href="{{ asset('image/international_student_handbook.pdf') }}" target="_blanck">International students handbook</a></li>  
+                            </ul>
+                          </li>
                         
                             <li><a class="homer" href="{{ route('home') }}"> Home</a></li>
                             <li><a  href="#"> study with us</a>
