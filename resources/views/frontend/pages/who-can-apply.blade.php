@@ -32,26 +32,186 @@
 			</div>
 			<div class="col-sm-7 col-lg-7">
 				<div class="small-title title">
-						<h3>Who can apply</h3>
-						<h1>Entry requirements </h1>
+					<h3>Who can apply</h3>
+					<h1>Entry requirements for offshore students</h1>
+				</div>
+				<div class="accordion accordion-flush content-text" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							<div class="bold-text ml-0"> SIT40516 Certificate IV in Commercial Cookery</div>
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p class="para">Australian National Education has the following entry requirements:</p>
+								<p class="para">You must:</p>
+								<ul>
+									<li><i class="fas fa-angle-double-right"></i>be at least 18 years of age and have completed the equivalent of Year 12.</li>
+									<li><i class="fas fa-angle-double-right"></i>participate in a course entry interview to determine suitability for the course and student needs.</li>
+									<li class="sub-list"><i class="fas fa-angle-double-right"></i>have an IELTS* score of 5.5 (test results must be no more than 2 years old). English language competence can also be demonstrated through documented evidence of any of the following:
+									<ul>
+										<li> <i class="fas fa-angle-right"></i>
+										successfully completed an ANE administered LLN assessment and achieved ACSF Level 3 in learning, reading, writing, speaking and numeracy.
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										educated for 5 years in an English-speaking country; or
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										successful completion of an English Placement Test.
+										</li>
+									</ul>
+									</li>
+								</ul>
+
+								<p class="para">
+								<div class="bold-text">*Note</div>that other English language tests such as PTE and TOEFL can be accepted. You are required to provide your results so that we can confirm they are equivalent to IELTS 5.5.</p>
+
+							</div>
+						</div>
 					</div>
-					
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							<div class="bold-text ml-0"> SIT50416 Diploma of Hospitality Management</div>
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p class="para">Australian National Education has the following entry requirements:</p>
+								<p class="para">You must:</p>
+								<ul>
+									<li><i class="fas fa-angle-double-right"></i>be at least 18 years of age and have completed the equivalent of Year 12.</li>
+									<li><i class="fas fa-angle-double-right"></i>Have successfully completed the SIT40516 Certificate IV in Commercial Cookery with ANE.</li>
+									<li><i class="fas fa-angle-double-right"></i>participate in a course entry interview to determine suitability for the course and student needs</li>
+									<li class="sub-list"><i class="fas fa-angle-double-right"></i>have an IELTS* score of 5.5 (test results must be no more than 2 years old). English language competence can also be demonstrated through documented evidence of any of the following:
+									<ul>
+										<li> <i class="fas fa-angle-right"></i>
+										successfully completed an ANE administered LLN assessment and achieved ACSF Level 3 in learning, reading, writing, speaking and numeracy.
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										educated for 5 years in an English-speaking country; or
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										successful completion of an English Placement Test.
+										</li>
+									</ul>
+									</li>
+								</ul>
 
-					<div class="bold-text">FOR OFFSHORE STUDENTS</div>
-					<p class="para">The eligibility admission criteria differ from one course to another. However, some of the common entry requirements are:</p>
-					<ul>
-						<li><i class="fas fa-angle-double-right"></i>Be at least 18 years of age</li>
-						<li><i class="fas fa-angle-double-right"></i>Have completed Year 12 or equivalent.</li>
-						<li><i class="fas fa-angle-double-right"></i>Attend course entry interview</li>
-						<li><i class="fas fa-angle-double-right"></i>IELTS score not less than 5.5 in each band. The test results should not be expired, i.e., the result results must be no more than two years.
-						The English language competence can also be demonstrated through:</li>
-						<li><i class="fas fa-angle-double-right"></i>Being educated for five years in an English-speaking country,</li>
-						<li><i class="fas fa-angle-double-right"></i>Successful completion of English Placement Test</li>
-					</ul>
+								<p class="para">
+								<div class="bold-text">*Note</div>that other English language tests such as PTE and TOEFL can be accepted. You are required to provide your results so that we can confirm they are equivalent to IELTS 5.5.</p>
 
-					<p class="para">
-					<div class="bold-text">*Note</div>that other English language tests such as PTE and TOEFL can be accepted. Students are required to provide their results so that it can be confirmed they are equivalent to IELTS 5.5.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							<div class="bold-text ml-0"> CHC43115 Certificate IV in Disability</div>
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p class="para">Australian National Education has the following entry requirements:</p>
+								<p class="para">You must:</p>
+								<ul>
+									<li><i class="fas fa-angle-double-right"></i>be at least 18 years of age and have completed the equivalent of Year 12.</li>
+									<li><i class="fas fa-angle-double-right"></i>participate in a course entry interview to determine suitability for the course and student needs</li>
+									<li class="sub-list"><i class="fas fa-angle-double-right"></i>have an IELTS* score of 5.5 (test results must be no more than 2 years old). English language competence can also be demonstrated through documented evidence of any of the following:
+									<ul>
+										<li> <i class="fas fa-angle-right"></i>
+										successfully completed an ANE administered LLN assessment and achieved ACSF Level 3 in learning, reading, writing, speaking and numeracy.
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										educated for 5 years in an English-speaking country; or
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										successful completion of an English Placement Test.
+										</li>
+									</ul>
+									</li>
+								</ul>
 
+								<p class="para">
+								<div class="bold-text">*Note</div>that other English language tests such as PTE and TOEFL can be accepted. You are required to provide your results so that we can confirm they are equivalent to IELTS 5.5.</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+							<div class="bold-text ml-0"> CHC52015 Diploma of Community Services</div>
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p class="para">Australian National Education has the following entry requirements:</p>
+								<p class="para">You must:</p>
+								<ul>
+									<li><i class="fas fa-angle-double-right"></i>be at least 18 years of age and have completed the equivalent of Year 12.</li>
+									<li><i class="fas fa-angle-double-right"></i>Have successfully completed an AQF Level 4 qualification in the past three years</li>
+									<li><i class="fas fa-angle-double-right"></i>participate in a course entry interview to determine suitability for the course and student needs.</li>
+									<li class="sub-list"><i class="fas fa-angle-double-right"></i>have an IELTS* score of 5.5 (test results must be no more than 2 years old).  English language competence can also be demonstrated through documented evidence of any of the following:
+
+									<ul>
+										<li> <i class="fas fa-angle-right"></i>
+										successfully completed an ANE administered LLN assessment and achieved ACSF Level 3 in learning, reading, writing, speaking and numeracy.
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										educated for 5 years in an English-speaking country; or
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										successful completion of an English Placement Test.
+										</li>
+									</ul>
+									</li>
+								</ul>
+
+								<p class="para">
+								<div class="bold-text">*Note</div>that other English language tests such as PTE and TOEFL can be accepted. You are required to provide your results so that we can confirm they are equivalent to IELTS 5.5.</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="flush-headingFive">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+							<div class="bold-text ml-0"> CHC50113 Diploma of Early Childhood Education and Care</div>
+							</button>
+						</h2>
+						<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">
+								<p class="para">Australian National Education has the following entry requirements:</p>
+								<p class="para">You must:</p>
+								<ul>
+									<li><i class="fas fa-angle-double-right"></i>be at least 18 years of age and have completed the equivalent of Year 12.</li>
+									<li><i class="fas fa-angle-double-right"></i>⦁	Have successfully completed an AQF Level 3 qualification in the past three years</li>
+									<li><i class="fas fa-angle-double-right"></i>participate in a course entry interview to determine suitability for the course and student needs.</li>
+									<li class="sub-list"><i class="fas fa-angle-double-right"></i>have an IELTS* score of 5.5 (test results must be no more than 2 years old).  English language competence can also be demonstrated through documented evidence of any of the following:
+
+									<ul>
+										<li> <i class="fas fa-angle-right"></i>
+										successfully completed an ANE administered LLN assessment and achieved ACSF Level 3 in learning, reading, writing, speaking and numeracy.
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										educated for 5 years in an English-speaking country; or
+										</li>
+										<li> <i class="fas fa-angle-right"></i>
+										successful completion of an English Placement Test.
+										</li>
+									</ul>
+									</li>
+								</ul>
+
+								<p class="para">
+								<div class="bold-text">*Note</div>that other English language tests such as PTE and TOEFL can be accepted. You are required to provide your results so that we can confirm they are equivalent to IELTS 5.5.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			
 		</div>

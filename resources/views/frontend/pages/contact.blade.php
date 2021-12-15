@@ -435,7 +435,7 @@
                         <div class="name">Finance Manager</div>
                         <!--<div class="designation">designation</div>-->
                         <a href="tel:+61 2 9281 5929"><i class="fas fa-mobile-alt"></i>+61 2 9281 5929</a>
-                        <a href="mailto:accounta@ane.edu.au"><i class="far fa-envelope"></i>accounta@ane.edu.au</a>
+                        <a href="mailto:accounta@ane.edu.au"><i class="far fa-envelope"></i>accounts@ane.edu.au</a>
                     </li>
                 </ul>
             </div>
