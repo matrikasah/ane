@@ -95,8 +95,8 @@
                           </li>
                           <li><a class="link-box" href="#">Download</a>
                             <ul class="sub-menu">
-                            <li><a href="{{ asset('image/ane-pd-handbook.pdf') }}">Pre-Departure handbook</a></li>
-                            <li><a href="{{ asset('image/international_student_handbook.pdf') }}">International students handbook</a></li>  
+                            <li><a href="{{ asset('image/ane-pd-handbook.pdf') }}" target="_blanck">Pre-Departure handbook</a></li>
+                            <li><a href="{{ asset('image/international_student_handbook.pdf') }}" target="_blanck">International students handbook</a></li>  
                             </ul>
                           </li>
                         </ul> 
