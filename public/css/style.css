@@ -2573,6 +2573,12 @@ footer img.img-full {
 
 @media (max-width: 576px) {
 
+  .agent-list{
+    display: block;
+  }
+  .agent-list ul + ul{
+    padding-left: 0px;
+  }
 
   .calender .card {
     min-height: auto;
